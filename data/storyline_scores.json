@@ -1,0 +1,56 @@
+[
+  {
+    "score_id": "score-dfd6b7294e1b",
+    "storyline_id": "coffee-creative-sample",
+    "title_pair": {
+      "left": "COFFEE",
+      "right": "COFFEE WITH YOU"
+    },
+    "format": "x-with-you",
+    "left_scene": "Dinko sits properly on one rounded café chair at a small table, cradling a cream mug and looking neutral and slightly bored. A simple counter and compact coffee machine sit behind him.",
+    "right_scene": "Dinka and Dinko sit on separate matching café chair seats at the same table, their equal-size round bodies gently touching while each cradles a matching cream mug. The same counter and coffee machine remain behind them.",
+    "emotional_insight": "The same first cup feels warmer because the quiet routine is shared.",
+    "why_someone_would_share": "It resembles an achievable daily ritual people recognize in their own relationship.",
+    "relevant_social_learnings": [],
+    "brand_placement_opportunities": [
+      "coffee mug",
+      "coffee bag"
+    ],
+    "execution_risks": [
+      "characters sitting on the table",
+      "oversized mugs",
+      "different character sizes"
+    ],
+    "recommended_background_color": "dusty peach",
+    "recommended_accent_color": "muted sage",
+    "recommended_camera_angle": "medium straight-on",
+    "props": [
+      "table",
+      "chairs",
+      "mugs",
+      "counter",
+      "coffee machine"
+    ],
+    "character_count": 2,
+    "novel_angle": "The environment stays exactly matched so body contact becomes the only meaningful visual change.",
+    "scores": {
+      "emotional_clarity": 9,
+      "relatability": 9,
+      "visual_simplicity": 7,
+      "scroll_stopping_potential": 8,
+      "shareability": 8,
+      "save_potential": 8,
+      "comment_potential": 5,
+      "dinkly_brand_fit": 8,
+      "originality": 9,
+      "brand_integration_potential": 8,
+      "nano_banana_execution_ease": 6,
+      "risk_of_character_distortion": 6
+    },
+    "directional_total": 7.5,
+    "weakest_criterion": "comment_potential",
+    "improvement_recommendation": "Add a specific recognizable habit without using engagement bait.",
+    "evaluation_label": "directional creative evaluation, not a performance prediction",
+    "created_at": "2026-08-06T16:25:23+00:00"
+  }
+]

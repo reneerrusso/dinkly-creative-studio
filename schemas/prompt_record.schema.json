@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dinkly.local/schemas/prompt_record.schema.json",
+  "title": "DINKLY Prompt Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "title",
+    "format",
+    "source_storyline_id",
+    "template",
+    "character_reference",
+    "product_references",
+    "prompt",
+    "status",
+    "approved_by",
+    "approved_at",
+    "qa_notes",
+    "created_at"
+  ],
+  "properties": {
+    "id": {"type": "string", "minLength": 1},
+    "title": {"type": "string", "minLength": 1},
+    "format": {"type": "string", "minLength": 1},
+    "source_storyline_id": {"type": ["string", "null"]},
+    "template": {"type": "string", "minLength": 1},
+    "character_reference": {"type": "string", "minLength": 1},
+    "product_references": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "prompt": {"type": "string", "minLength": 1},
+    "status": {"type": "string", "enum": ["draft", "approved", "rejected"]},
+    "approved_by": {"type": ["string", "null"]},
+    "approved_at": {"type": ["string", "null"], "format": "date-time"},
+    "qa_notes": {"type": ["string", "null"]},
+    "created_at": {"type": "string", "format": "date-time"}
+  }
+}

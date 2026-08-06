@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dinkly.local/schemas/social_learning.schema.json",
+  "title": "DINKLY Social Learning",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "learning_id",
+    "pattern",
+    "evidence_post_ids",
+    "confidence",
+    "metric_supported",
+    "hypothesis",
+    "recommended_use",
+    "avoid_overgeneralizing",
+    "last_updated",
+    "contradicts_learning_ids",
+    "status"
+  ],
+  "properties": {
+    "learning_id": {"type": "string", "minLength": 1},
+    "pattern": {"type": "string", "minLength": 1},
+    "evidence_post_ids": {"type": "array", "items": {"type": "string"}, "minItems": 1, "uniqueItems": true},
+    "confidence": {"type": "string", "enum": ["high", "medium", "low"]},
+    "metric_supported": {"type": "boolean"},
+    "hypothesis": {"type": "string", "minLength": 1},
+    "recommended_use": {"type": "string", "minLength": 1},
+    "avoid_overgeneralizing": {"type": "string", "minLength": 1},
+    "last_updated": {"type": "string", "format": "date"},
+    "contradicts_learning_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "status": {"type": "string", "enum": ["active", "contradicted", "superseded", "testing"]}
+  }
+}
