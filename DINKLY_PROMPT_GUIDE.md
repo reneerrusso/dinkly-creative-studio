@@ -2,6 +2,15 @@
 
 This is the standing specification for future DINKLY comic prompts.
 
+## Knowledge-base priority
+
+Before creating a comic, read this guide together with [`brain/DINKLY_BRAND_BIBLE_v1.0.md`](brain/DINKLY_BRAND_BIBLE_v1.0.md) and inspect [`references/dinkly_young.png`](references/dinkly_young.png).
+
+- Use the reference image as the absolute source of truth for character appearance.
+- Use this Prompt Guide for current production mechanics and approved rule amendments.
+- Use the Brand Bible for mission, tone, emotional intent, story selection, and licensing fit.
+- When an older example conflicts with a newer production rule, use the newer and more specific production rule while preserving the brand's emotional North Star.
+
 ## Brand idea
 
 DINKLY makes ordinary moments feel better because they are shared. Comics should communicate this emotionally in under two seconds, without dialogue or a complex story.
@@ -14,7 +23,7 @@ The activity changes as little as possible. The emotional feeling changes.
 
 ## Character reference
 
-Use `dinkly_young.png` as the authoritative production-model reference.
+Use [`references/dinkly_young.png`](references/dinkly_young.png) as the authoritative production-model reference.
 
 - Dinka is the girl on the left of the reference: ponytail, red bow, and eyelashes.
 - Dinko is the boy on the right of the reference: exactly two hair tufts and no bow or ponytail.
