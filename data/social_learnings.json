@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "learning_id": "learning-20260806-varied-moments-repeated-format",
+    "pattern": "A high-sharing post combined several varied relationship moments under one repeated X WITH YOU structure.",
+    "evidence_post_ids": [
+      "post-5m-x-with-you-carousel-001"
+    ],
+    "confidence": "low",
+    "metric_supported": true,
+    "hypothesis": "Repeating one instantly understood title formula across different everyday and celebratory situations may help more viewers find at least one personally relatable moment and share the post.",
+    "recommended_use": "Test additional multi-topic X WITH YOU carousels with a consistent visual grammar, then compare them with single-topic posts and other carousels.",
+    "avoid_overgeneralizing": "This is one aggregate post. Its 5M views and 315K shares cannot isolate the effects of the carousel format, individual concepts, artwork, distribution, account size, or Sunday Morning audio, and slide-level contribution is unknown.",
+    "last_updated": "2026-08-06",
+    "contradicts_learning_ids": [],
+    "status": "testing"
+  },
+  {
+    "learning_id": "learning-20260806-low-energy-to-shared-abundance",
+    "pattern": "Every distinct comic uses a low-energy or subdued solo panel followed by a more joyful, socially connected, and visually abundant shared panel.",
+    "evidence_post_ids": [
+      "post-5m-x-with-you-carousel-001"
+    ],
+    "confidence": "low",
+    "metric_supported": true,
+    "hypothesis": "A clear emotional contrast that remains readable without the caption may strengthen recognition and sharing, especially when the right panel depicts an achievable form of companionship.",
+    "recommended_use": "Keep future left panels neutral, bored, or gently disappointed and test right panels where togetherness is the primary change, while avoiding unnecessary prop escalation.",
+    "avoid_overgeneralizing": "The right panels also contain more props, brighter expressions, and denser compositions, so this post does not prove that companionship alone caused the performance or that visual abundance is always beneficial.",
+    "last_updated": "2026-08-06",
+    "contradicts_learning_ids": [],
+    "status": "testing"
+  }
+]

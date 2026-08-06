@@ -1,1 +1,57 @@
-[]
+[
+  {
+    "id": "post-5m-x-with-you-carousel-001",
+    "title": "Untitled X WITH YOU carousel (operational title)",
+    "platform": null,
+    "post_date": null,
+    "views": 5000000,
+    "shares": 315000,
+    "likes": 300000,
+    "comments": 700,
+    "saves": 27000,
+    "follows_generated": null,
+    "watch_time": null,
+    "completion_rate": null,
+    "format": "carousel / X WITH YOU split comics",
+    "storyline": "Sundays; Target Run; A Win; Snacks",
+    "left_panel_summary": "Across four distinct comics, Dinko experiences an ordinary activity or personal win alone with a neutral, bored, or subdued expression.",
+    "right_panel_summary": "The matched activity becomes joyful and abundant with Dinka present; both characters smile, touch, or celebrate together.",
+    "caption": null,
+    "text_on_image": [
+      "SUNDAYS",
+      "SUNDAYS WITH YOU",
+      "TARGET RUN",
+      "TARGET RUN WITH YOU",
+      "A WIN",
+      "A WIN WITH YOU",
+      "SNACKS",
+      "SNACKS WITH YOU"
+    ],
+    "background_color": "warm cream; blush pink; soft lavender; powder blue",
+    "accent_color": "varies by comic; one dominant pastel background per comic",
+    "camera_angle": "straight-on, centered split composition",
+    "character_count": null,
+    "props": [
+      "pillow",
+      "television",
+      "pancakes",
+      "bowl",
+      "spatula",
+      "basket",
+      "shopping cart",
+      "groceries",
+      "A+ paper",
+      "balloons",
+      "confetti",
+      "popcorn",
+      "snack bags",
+      "cookies",
+      "candy",
+      "soda"
+    ],
+    "emotional_theme": "ordinary routines and small wins feel more joyful when shared",
+    "brand_integration": "Target is named as an everyday destination; paid or sponsored status is unknown",
+    "uploaded_asset_reference": "social_assets/post-5m-x-with-you-carousel-001/manifest.json",
+    "notes": "Aggregate post metrics supplied by the user: 5M views, 300K likes, 700 comments, 27K saves, and 315K shares. Audio: Sunday Morning by Maroon 5. Five image files were supplied, but only four distinct comics are visible; 196.png appears to be a four-up collage or cover. Platform, post date, original caption, follows generated, watch time, completion rate, posting order, and sponsorship status are unknown."
+  }
+]

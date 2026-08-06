@@ -1,0 +1,46 @@
+{
+  "post_id": "post-5m-x-with-you-carousel-001",
+  "asset_count": 5,
+  "distinct_comic_count_observed": 4,
+  "slide_order_confirmed": false,
+  "assets": [
+    {
+      "file": "196.png",
+      "role": "collage_or_cover",
+      "observed_content": "A four-up collage containing Sundays, Target Run, A Win, and Snacks"
+    },
+    {
+      "file": "194.png",
+      "role": "individual_comic",
+      "observed_title_pair": [
+        "SNACKS",
+        "SNACKS WITH YOU"
+      ]
+    },
+    {
+      "file": "193.png",
+      "role": "individual_comic",
+      "observed_title_pair": [
+        "A WIN",
+        "A WIN WITH YOU"
+      ]
+    },
+    {
+      "file": "192.png",
+      "role": "individual_comic",
+      "observed_title_pair": [
+        "TARGET RUN",
+        "TARGET RUN WITH YOU"
+      ]
+    },
+    {
+      "file": "191.png",
+      "role": "individual_comic",
+      "observed_title_pair": [
+        "SUNDAYS",
+        "SUNDAYS WITH YOU"
+      ]
+    }
+  ],
+  "source_note": "Five files were supplied for one post. Four distinct comics are visible; 196.png appears to be a collage or cover rather than a fifth distinct storyline. Confirm the actual posting order and whether another comic is missing."
+}
