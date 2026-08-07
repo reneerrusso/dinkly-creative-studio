@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dinkly.local/schemas/dinkly_agent_learning.schema.json",
+  "title": "DINKLY Agent Learning",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["id", "learning_type", "statement", "evidence_ids", "confidence", "status", "created_at", "updated_at"],
+  "properties": {
+    "id": {"type": "string", "minLength": 1},
+    "learning_type": {"enum": ["prompt_rule", "failure_pattern", "layout_rule", "character_rule", "prop_rule", "user_preference", "generation_preference"]},
+    "statement": {"type": "string", "minLength": 1},
+    "evidence_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "confidence": {"enum": ["high", "medium", "low"]},
+    "status": {"enum": ["proposed", "active", "rejected", "superseded"]},
+    "created_at": {"type": "string", "format": "date-time"},
+    "updated_at": {"type": "string", "format": "date-time"}
+  }
+}

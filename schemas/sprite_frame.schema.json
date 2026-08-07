@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dinkly.local/schemas/sprite_frame.schema.json",
+  "title": "DINKLY Sprite Frame",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "id",
+    "character_id",
+    "animation_id",
+    "frame_index",
+    "image_path",
+    "width",
+    "height",
+    "duration_ms",
+    "anchor_x",
+    "anchor_y",
+    "offset_x",
+    "offset_y",
+    "opacity",
+    "approved",
+    "validation_status",
+    "validation_warnings",
+    "created_at",
+    "updated_at"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "character_id": {
+      "type": "string"
+    },
+    "animation_id": {
+      "type": "string"
+    },
+    "frame_index": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "image_path": {
+      "type": "string"
+    },
+    "width": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "height": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "duration_ms": {
+      "type": "integer",
+      "minimum": 16
+    },
+    "anchor_x": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "anchor_y": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "offset_x": {
+      "type": "integer"
+    },
+    "offset_y": {
+      "type": "integer"
+    },
+    "opacity": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "approved": {
+      "type": "boolean"
+    },
+    "validation_status": {
+      "enum": [
+        "pending",
+        "valid",
+        "warning",
+        "invalid"
+      ]
+    },
+    "validation_warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "review_status": {
+      "enum": [
+        "Pass",
+        "Needs edit",
+        "Reject",
+        "Not reviewed"
+      ]
+    },
+    "review_notes": {
+      "type": "string"
+    },
+    "sha256": {
+      "type": "string"
+    },
+    "transparent": {
+      "type": "boolean"
+    },
+    "asset_url": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    }
+  }
+}

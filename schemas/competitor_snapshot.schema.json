@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dinkly.local/schemas/competitor_snapshot.schema.json",
+  "title": "Public Metric Snapshot",
+  "type": "object",
+  "required": ["id", "post_id", "captured_at", "provider"],
+  "properties": {
+    "id": {"type": "string"},
+    "post_id": {"type": "string"},
+    "captured_at": {"type": "string"},
+    "view_count": {"type": ["integer", "null"], "minimum": 0},
+    "like_count": {"type": ["integer", "null"], "minimum": 0},
+    "comment_count": {"type": ["integer", "null"], "minimum": 0},
+    "share_count": {"type": ["integer", "null"], "minimum": 0},
+    "follower_count": {"type": ["integer", "null"], "minimum": 0},
+    "provider": {"type": "string"}
+  },
+  "additionalProperties": false
+}

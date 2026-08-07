@@ -1,0 +1,14 @@
+[
+  {
+    "id": "chat-7846b5098c48",
+    "role": "user",
+    "message": "I love this concept. Give me more like this.",
+    "created_at": "2026-08-07T16:51:24.792551+00:00"
+  },
+  {
+    "id": "chat-334efe9d5cab",
+    "role": "agent",
+    "message": "Got it. I’ll give more weight to love this concept. give me like this in future generation decisions.",
+    "created_at": "2026-08-07T16:51:24.792551+00:00"
+  }
+]

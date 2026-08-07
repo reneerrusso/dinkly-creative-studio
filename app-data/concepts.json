@@ -1,0 +1,999 @@
+[
+  {
+    "format": "x-with-you",
+    "title_pair": {
+      "left": "BRUSHING TEETH",
+      "right": "BRUSHING TEETH WITH YOU"
+    },
+    "left_scene": "Dinko experiences toothbrush alone in side-by-side sinks, correct relative toothbrush scale, with a neutral, bored, or slightly sad expression—never happy.",
+    "right_scene": "Dinka and Dinko share the same toothbrush activity in the same setting, warmly connected while the environment remains recognizably consistent. Side-by-side sinks, correct relative toothbrush scale.",
+    "emotional_insight": "Domestic familiarity",
+    "emotional_theme": "everyday routines",
+    "recommended_background_color": "pistachio",
+    "recommended_accent_color": "dark green",
+    "recommended_camera_angle": "medium straight-on",
+    "brand_friendly": false,
+    "potential_product_category": null,
+    "notes": "Story Library seed: Toothbrush. Visual direction: Side-by-side sinks, correct relative toothbrush scale.",
+    "why_someone_would_share": "It turns the familiar feeling of domestic familiarity into a recognizable “that reminds me of us” moment.",
+    "props": [
+      "simple sink counter",
+      "two correctly scaled toothbrushes"
+    ],
+    "execution_risks": [
+      "Keep Dinka and Dinko the same size and preserve all locked character features.",
+      "Keep both characters grounded and unobscured by props.",
+      "Keep each toothbrush narrower than one eye and shorter than one-third of a body width."
+    ],
+    "brand_placement_opportunities": [],
+    "novel_angle": "Side-by-side sinks, correct relative toothbrush scale",
+    "status": "Approved",
+    "id": "concept-1c825b820d63",
+    "created_at": "2026-08-06T18:29:46+00:00",
+    "updated_at": "2026-08-06T18:29:46+00:00",
+    "score": {
+      "score_id": "score-29bf802e5a5c",
+      "storyline_id": "concept-1c825b820d63",
+      "title_pair": {
+        "left": "BRUSHING TEETH",
+        "right": "BRUSHING TEETH WITH YOU"
+      },
+      "format": "x-with-you",
+      "left_scene": "Dinko experiences toothbrush alone in side-by-side sinks, correct relative toothbrush scale, with a neutral, bored, or slightly sad expression—never happy.",
+      "right_scene": "Dinka and Dinko share the same toothbrush activity in the same setting, warmly connected while the environment remains recognizably consistent. Side-by-side sinks, correct relative toothbrush scale.",
+      "emotional_insight": "Domestic familiarity",
+      "why_someone_would_share": "It turns the familiar feeling of domestic familiarity into a recognizable “that reminds me of us” moment.",
+      "relevant_social_learnings": [
+        "learning-20260806-varied-moments-repeated-format",
+        "learning-20260806-low-energy-to-shared-abundance"
+      ],
+      "brand_placement_opportunities": [],
+      "execution_risks": [
+        "Keep Dinka and Dinko the same size and preserve all locked character features.",
+        "Keep both characters grounded and unobscured by props.",
+        "Keep each toothbrush narrower than one eye and shorter than one-third of a body width."
+      ],
+      "recommended_background_color": "pistachio",
+      "recommended_accent_color": "dark green",
+      "recommended_camera_angle": "medium straight-on",
+      "props": [
+        "simple sink counter",
+        "two correctly scaled toothbrushes"
+      ],
+      "character_count": 2,
+      "novel_angle": "Side-by-side sinks, correct relative toothbrush scale",
+      "scores": {
+        "emotional_clarity": 9,
+        "relatability": 8,
+        "visual_simplicity": 9,
+        "scroll_stopping_potential": 9,
+        "shareability": 8,
+        "save_potential": 6,
+        "comment_potential": 5,
+        "dinkly_brand_fit": 8,
+        "originality": 9,
+        "brand_integration_potential": 3,
+        "nano_banana_execution_ease": 8,
+        "risk_of_character_distortion": 4
+      },
+      "directional_total": 7.42,
+      "weakest_criterion": "brand_integration_potential",
+      "improvement_recommendation": "Identify one natural prop a partner product could replace without changing the story.",
+      "evaluation_label": "directional creative evaluation, not a performance prediction",
+      "created_at": "2026-08-06T18:29:46+00:00"
+    },
+    "source": "app"
+  },
+  {
+    "format": "x-with-you",
+    "title_pair": {
+      "left": "NO PLANS",
+      "right": "NO PLANS WITH YOU"
+    },
+    "left_scene": "Dinko experiences no plans alone in large negative space, floor cushions, with a neutral, bored, or slightly sad expression—never happy.",
+    "right_scene": "Dinka and Dinko share the same no plans activity in the same setting, warmly connected while the environment remains recognizably consistent. Large negative space, floor cushions.",
+    "emotional_insight": "Doing nothing becomes enough",
+    "emotional_theme": "home",
+    "recommended_background_color": "soft lavender",
+    "recommended_accent_color": "dark purple",
+    "recommended_camera_angle": "medium straight-on",
+    "brand_friendly": false,
+    "potential_product_category": null,
+    "notes": "Story Library seed: No plans. Visual direction: Large negative space, floor cushions.",
+    "why_someone_would_share": "It turns the familiar feeling of doing nothing becomes enough into a recognizable “that reminds me of us” moment.",
+    "props": [
+      "floor cushions"
+    ],
+    "execution_risks": [
+      "Keep Dinka and Dinko the same size and preserve all locked character features.",
+      "Keep both characters grounded and unobscured by props."
+    ],
+    "brand_placement_opportunities": [],
+    "novel_angle": "Large negative space, floor cushions",
+    "status": "Approved",
+    "id": "concept-fce1bdba7f09",
+    "created_at": "2026-08-06T18:53:03+00:00",
+    "updated_at": "2026-08-06T18:53:03+00:00",
+    "score": {
+      "score_id": "score-3e785c9a63b4",
+      "storyline_id": "concept-fce1bdba7f09",
+      "title_pair": {
+        "left": "NO PLANS",
+        "right": "NO PLANS WITH YOU"
+      },
+      "format": "x-with-you",
+      "left_scene": "Dinko experiences no plans alone in large negative space, floor cushions, with a neutral, bored, or slightly sad expression—never happy.",
+      "right_scene": "Dinka and Dinko share the same no plans activity in the same setting, warmly connected while the environment remains recognizably consistent. Large negative space, floor cushions.",
+      "emotional_insight": "Doing nothing becomes enough",
+      "why_someone_would_share": "It turns the familiar feeling of doing nothing becomes enough into a recognizable “that reminds me of us” moment.",
+      "relevant_social_learnings": [
+        "learning-20260806-varied-moments-repeated-format",
+        "learning-20260806-low-energy-to-shared-abundance"
+      ],
+      "brand_placement_opportunities": [],
+      "execution_risks": [
+        "Keep Dinka and Dinko the same size and preserve all locked character features.",
+        "Keep both characters grounded and unobscured by props."
+      ],
+      "recommended_background_color": "soft lavender",
+      "recommended_accent_color": "dark purple",
+      "recommended_camera_angle": "medium straight-on",
+      "props": [
+        "floor cushions"
+      ],
+      "character_count": 2,
+      "novel_angle": "Large negative space, floor cushions",
+      "scores": {
+        "emotional_clarity": 9,
+        "relatability": 6,
+        "visual_simplicity": 9,
+        "scroll_stopping_potential": 9,
+        "shareability": 8,
+        "save_potential": 6,
+        "comment_potential": 5,
+        "dinkly_brand_fit": 8,
+        "originality": 9,
+        "brand_integration_potential": 3,
+        "nano_banana_execution_ease": 10,
+        "risk_of_character_distortion": 1
+      },
+      "directional_total": 7.67,
+      "weakest_criterion": "brand_integration_potential",
+      "improvement_recommendation": "Identify one natural prop a partner product could replace without changing the story.",
+      "evaluation_label": "directional creative evaluation, not a performance prediction",
+      "created_at": "2026-08-06T18:53:03+00:00"
+    },
+    "source": "app"
+  },
+  {
+    "format": "x-with-you",
+    "title_pair": {
+      "left": "WALKS",
+      "right": "WALKS WITH YOU"
+    },
+    "left_scene": "Girl DINKLY walks alone with his nub arms tucked behind his round body. Setting: a quiet minimalist park path. Purposeful props: curved park path, one fallen leaf. Emotion: Quiet and reflective, never happy.",
+    "right_scene": "Boy DINKLY and Girl DINKLY walk close together and hold nub arms while looking at each other. Setting: the same quiet minimalist park path. Purposeful props: same curved path, two coffee cups, small flowers, one butterfly. Emotion: Warm, affectionate, and present.",
+    "emotional_insight": "Quiet and reflective, never happy. The same moment feels warmer together.",
+    "emotional_theme": "everyday routines",
+    "category": "Everyday routines",
+    "left_character": "girl",
+    "left_character_action": "walks alone with his nub arms tucked behind his round body",
+    "left_setting": "a quiet minimalist park path",
+    "left_props": [
+      "curved park path",
+      "one fallen leaf"
+    ],
+    "left_emotion": "Quiet and reflective, never happy.",
+    "right_characters": "boy_and_girl",
+    "right_character_actions": "walk close together and hold nub arms while looking at each other",
+    "right_setting": "the same quiet minimalist park path",
+    "right_props": [
+      "same curved path",
+      "two coffee cups",
+      "small flowers",
+      "one butterfly"
+    ],
+    "right_emotion": "Warm, affectionate, and present.",
+    "shared_environment": "Same park path, horizon, ground line, and side-view camera.",
+    "environmental_contrast": "Left uses one fallen leaf and open space. Right adds shared coffee, flowers, and one butterfly without changing the path.",
+    "recommended_background_color": "warm sage",
+    "recommended_accent_color": "soft coral",
+    "recommended_camera_angle": "medium profile view",
+    "brand_friendly": true,
+    "potential_product_category": "coffee",
+    "notes": "One path, one pace, and a clear shift from solitude to connection.",
+    "why_someone_would_share": "It turns quiet and reflective, never happy. the same moment feels warmer together. into a recognizable “that reminds me of us” moment.",
+    "props": [
+      "curved park path",
+      "one fallen leaf",
+      "same curved path",
+      "two coffee cups",
+      "small flowers",
+      "one butterfly"
+    ],
+    "execution_risks": [
+      "Imply walking without visible legs",
+      "Use nub-to-nub contact without fingers",
+      "Keep the butterfly small and secondary"
+    ],
+    "brand_placement_opportunities": [
+      "Replace one existing coffee prop without changing the story."
+    ],
+    "brand_categories": [
+      "coffee"
+    ],
+    "natural_product_placement": "Replace one existing coffee prop without changing the story.",
+    "novel_angle": "Left uses one fallen leaf and open space. Right adds shared coffee, flowers, and one butterfly without changing the path.",
+    "status": "Approved",
+    "migration_version": 2,
+    "id": "concept-d0c2b1b99bc0",
+    "created_at": "2026-08-06T19:41:30+00:00",
+    "updated_at": "2026-08-06T19:41:30+00:00",
+    "score": {
+      "score_id": "score-759adf297204",
+      "storyline_id": "concept-d0c2b1b99bc0",
+      "title_pair": {
+        "left": "WALKS",
+        "right": "WALKS WITH YOU"
+      },
+      "format": "x-with-you",
+      "left_scene": "Girl DINKLY walks alone with his nub arms tucked behind his round body. Setting: a quiet minimalist park path. Purposeful props: curved park path, one fallen leaf. Emotion: Quiet and reflective, never happy.",
+      "right_scene": "Boy DINKLY and Girl DINKLY walk close together and hold nub arms while looking at each other. Setting: the same quiet minimalist park path. Purposeful props: same curved path, two coffee cups, small flowers, one butterfly. Emotion: Warm, affectionate, and present.",
+      "emotional_insight": "Quiet and reflective, never happy. The same moment feels warmer together.",
+      "why_someone_would_share": "It turns quiet and reflective, never happy. the same moment feels warmer together. into a recognizable “that reminds me of us” moment.",
+      "relevant_social_learnings": [
+        "learning-20260806-varied-moments-repeated-format",
+        "learning-20260806-low-energy-to-shared-abundance"
+      ],
+      "brand_placement_opportunities": [
+        "Replace one existing coffee prop without changing the story."
+      ],
+      "execution_risks": [
+        "Imply walking without visible legs",
+        "Use nub-to-nub contact without fingers",
+        "Keep the butterfly small and secondary"
+      ],
+      "recommended_background_color": "warm sage",
+      "recommended_accent_color": "soft coral",
+      "recommended_camera_angle": "medium profile view",
+      "props": [
+        "curved park path",
+        "one fallen leaf",
+        "same curved path",
+        "two coffee cups",
+        "small flowers",
+        "one butterfly"
+      ],
+      "left_character": "girl",
+      "left_character_action": "walks alone with his nub arms tucked behind his round body",
+      "left_setting": "a quiet minimalist park path",
+      "left_props": [
+        "curved park path",
+        "one fallen leaf"
+      ],
+      "left_emotion": "Quiet and reflective, never happy.",
+      "right_characters": "boy_and_girl",
+      "right_character_actions": "walk close together and hold nub arms while looking at each other",
+      "right_setting": "the same quiet minimalist park path",
+      "right_props": [
+        "same curved path",
+        "two coffee cups",
+        "small flowers",
+        "one butterfly"
+      ],
+      "right_emotion": "Warm, affectionate, and present.",
+      "shared_environment": "Same park path, horizon, ground line, and side-view camera.",
+      "environmental_contrast": "Left uses one fallen leaf and open space. Right adds shared coffee, flowers, and one butterfly without changing the path.",
+      "character_count": 2,
+      "novel_angle": "Left uses one fallen leaf and open space. Right adds shared coffee, flowers, and one butterfly without changing the path.",
+      "scores": {
+        "emotional_clarity": 10,
+        "relatability": 9,
+        "visual_simplicity": 6,
+        "scroll_stopping_potential": 8,
+        "shareability": 9,
+        "save_potential": 8,
+        "comment_potential": 5,
+        "dinkly_brand_fit": 10,
+        "originality": 9,
+        "brand_integration_potential": 6,
+        "nano_banana_execution_ease": 6,
+        "risk_of_character_distortion": 5
+      },
+      "directional_total": 7.67,
+      "weakest_criterion": "comment_potential",
+      "improvement_recommendation": "Add a specific recognizable habit without using engagement bait.",
+      "evaluation_label": "directional creative evaluation, not a performance prediction",
+      "created_at": "2026-08-06T19:41:30+00:00"
+    },
+    "source": "app"
+  },
+  {
+    "format": "x-with-you",
+    "title_pair": {
+      "left": "GAME NIGHT",
+      "right": "GAME NIGHT WITH YOU"
+    },
+    "left_scene": "Boy DINKLY plays one turn of a simple board game alone on the floor. Setting: a minimal living-room game corner. Purposeful props: simple board game, one snack bowl, one fallen game piece. Emotion: Unenthused and slightly bored.",
+    "right_scene": "Boy DINKLY and Girl DINKLY play the same board game together on the floor and react to one playful turn. Setting: the same minimal living-room game corner. Purposeful props: same board game, two snack bowls, a few game pieces, small card stack. Emotion: Playfully competitive and laughing together.",
+    "emotional_insight": "Unenthused and slightly bored. The same moment feels warmer together.",
+    "emotional_theme": "home",
+    "category": "Home",
+    "left_character": "boy",
+    "left_character_action": "plays one turn of a simple board game alone on the floor",
+    "left_setting": "a minimal living-room game corner",
+    "left_props": [
+      "simple board game",
+      "one snack bowl",
+      "one fallen game piece"
+    ],
+    "left_emotion": "Unenthused and slightly bored.",
+    "right_characters": "boy_and_girl",
+    "right_character_actions": "play the same board game together on the floor and react to one playful turn",
+    "right_setting": "the same minimal living-room game corner",
+    "right_props": [
+      "same board game",
+      "two snack bowls",
+      "a few game pieces",
+      "small card stack"
+    ],
+    "right_emotion": "Playfully competitive and laughing together.",
+    "shared_environment": "Same game corner, floor, board position, and overhead camera.",
+    "environmental_contrast": "Left has one fallen piece and a stalled game. Right organizes the same board for two players with active reactions.",
+    "recommended_background_color": "mint",
+    "recommended_accent_color": "powder blue",
+    "recommended_camera_angle": "overhead medium-wide",
+    "brand_friendly": true,
+    "potential_product_category": "games",
+    "notes": "The board is the same; shared reactions create the warmth.",
+    "why_someone_would_share": "It turns unenthused and slightly bored. the same moment feels warmer together. into a recognizable “that reminds me of us” moment.",
+    "props": [
+      "simple board game",
+      "one snack bowl",
+      "one fallen game piece",
+      "same board game",
+      "two snack bowls",
+      "a few game pieces",
+      "small card stack"
+    ],
+    "execution_risks": [
+      "Keep game pieces large enough to read but smaller than an eye",
+      "No fingers holding cards",
+      "Keep both bodies on the floor and outside the board"
+    ],
+    "brand_placement_opportunities": [
+      "Replace one existing games prop without changing the story."
+    ],
+    "brand_categories": [
+      "games"
+    ],
+    "natural_product_placement": "Replace one existing games prop without changing the story.",
+    "novel_angle": "Left has one fallen piece and a stalled game. Right organizes the same board for two players with active reactions.",
+    "status": "Approved",
+    "migration_version": 2,
+    "id": "concept-fae2cbeaecba",
+    "created_at": "2026-08-06T19:48:59+00:00",
+    "updated_at": "2026-08-06T19:48:59+00:00",
+    "score": {
+      "score_id": "score-81ee815b7dd4",
+      "storyline_id": "concept-fae2cbeaecba",
+      "title_pair": {
+        "left": "GAME NIGHT",
+        "right": "GAME NIGHT WITH YOU"
+      },
+      "format": "x-with-you",
+      "left_scene": "Boy DINKLY plays one turn of a simple board game alone on the floor. Setting: a minimal living-room game corner. Purposeful props: simple board game, one snack bowl, one fallen game piece. Emotion: Unenthused and slightly bored.",
+      "right_scene": "Boy DINKLY and Girl DINKLY play the same board game together on the floor and react to one playful turn. Setting: the same minimal living-room game corner. Purposeful props: same board game, two snack bowls, a few game pieces, small card stack. Emotion: Playfully competitive and laughing together.",
+      "emotional_insight": "Unenthused and slightly bored. The same moment feels warmer together.",
+      "why_someone_would_share": "It turns unenthused and slightly bored. the same moment feels warmer together. into a recognizable “that reminds me of us” moment.",
+      "relevant_social_learnings": [
+        "learning-20260806-low-energy-to-shared-abundance"
+      ],
+      "brand_placement_opportunities": [
+        "Replace one existing games prop without changing the story."
+      ],
+      "execution_risks": [
+        "Keep game pieces large enough to read but smaller than an eye",
+        "No fingers holding cards",
+        "Keep both bodies on the floor and outside the board"
+      ],
+      "recommended_background_color": "mint",
+      "recommended_accent_color": "powder blue",
+      "recommended_camera_angle": "overhead medium-wide",
+      "props": [
+        "simple board game",
+        "one snack bowl",
+        "one fallen game piece",
+        "same board game",
+        "two snack bowls",
+        "a few game pieces",
+        "small card stack"
+      ],
+      "left_character": "boy",
+      "left_character_action": "plays one turn of a simple board game alone on the floor",
+      "left_setting": "a minimal living-room game corner",
+      "left_props": [
+        "simple board game",
+        "one snack bowl",
+        "one fallen game piece"
+      ],
+      "left_emotion": "Unenthused and slightly bored.",
+      "right_characters": "boy_and_girl",
+      "right_character_actions": "play the same board game together on the floor and react to one playful turn",
+      "right_setting": "the same minimal living-room game corner",
+      "right_props": [
+        "same board game",
+        "two snack bowls",
+        "a few game pieces",
+        "small card stack"
+      ],
+      "right_emotion": "Playfully competitive and laughing together.",
+      "shared_environment": "Same game corner, floor, board position, and overhead camera.",
+      "environmental_contrast": "Left has one fallen piece and a stalled game. Right organizes the same board for two players with active reactions.",
+      "character_count": 2,
+      "novel_angle": "Left has one fallen piece and a stalled game. Right organizes the same board for two players with active reactions.",
+      "scores": {
+        "emotional_clarity": 10,
+        "relatability": 9,
+        "visual_simplicity": 5,
+        "scroll_stopping_potential": 8,
+        "shareability": 9,
+        "save_potential": 8,
+        "comment_potential": 5,
+        "dinkly_brand_fit": 10,
+        "originality": 9,
+        "brand_integration_potential": 6,
+        "nano_banana_execution_ease": 6,
+        "risk_of_character_distortion": 4
+      },
+      "directional_total": 7.67,
+      "weakest_criterion": "visual_simplicity",
+      "improvement_recommendation": "Remove secondary props or actions and simplify the camera geometry.",
+      "evaluation_label": "directional creative evaluation, not a performance prediction",
+      "created_at": "2026-08-06T19:48:59+00:00"
+    },
+    "source": "app"
+  },
+  {
+    "format": "x-with-you",
+    "title_pair": {
+      "left": "NO PLANS",
+      "right": "NO PLANS WITH YOU"
+    },
+    "left_scene": "Boy DINKLY Doing nothing becomes enough. Setting: Large negative space, floor cushions, clock on wall, empty bowl next to him. Purposeful props: none. Emotion: Neutral, bored, looking up annoyed",
+    "right_scene": "Boy DINKLY and Girl DINKLY Doing nothing becomes enough. Setting: Large negative space, floor cushions, cuddling on the couch with popcorn having fun. Purposeful props: none. Emotion: Warm and connected because the moment is shared.",
+    "emotional_insight": "Doing nothing becomes enough",
+    "emotional_theme": "home",
+    "category": "Home",
+    "left_character": "boy",
+    "left_character_action": "Doing nothing becomes enough",
+    "left_setting": "Large negative space, floor cushions, clock on wall, empty bowl next to him",
+    "left_props": [],
+    "left_emotion": "Neutral, bored, looking up annoyed",
+    "right_characters": "boy_and_girl",
+    "right_character_actions": "Doing nothing becomes enough",
+    "right_setting": "Large negative space, floor cushions, cuddling on the couch with popcorn having fun",
+    "right_props": [],
+    "right_emotion": "Warm and connected because the moment is shared.",
+    "shared_environment": "Large negative space, floor cushions",
+    "environmental_contrast": "The left remains quiet and sparse; the right adds warmth and gentle activity without changing the core location.",
+    "recommended_background_color": "warm cream",
+    "recommended_accent_color": "muted mustard",
+    "recommended_camera_angle": "medium straight-on",
+    "brand_friendly": false,
+    "potential_product_category": null,
+    "notes": "Story Library seed: No plans.",
+    "why_someone_would_share": "It turns doing nothing becomes enough into a recognizable “that reminds me of us” moment.",
+    "props": [],
+    "execution_risks": [
+      "Keep both characters grounded and unobscured by props.",
+      "Preserve equal body size and every locked character feature."
+    ],
+    "brand_placement_opportunities": [],
+    "brand_categories": [],
+    "natural_product_placement": null,
+    "novel_angle": "The left remains quiet and sparse; the right adds warmth and gentle activity without changing the core location.",
+    "status": "Approved",
+    "migration_version": 2,
+    "id": "concept-741c0040ac98",
+    "created_at": "2026-08-06T22:04:04+00:00",
+    "updated_at": "2026-08-06T22:04:04+00:00",
+    "score": {
+      "score_id": "score-6258dddc17ae",
+      "storyline_id": "concept-741c0040ac98",
+      "title_pair": {
+        "left": "NO PLANS",
+        "right": "NO PLANS WITH YOU"
+      },
+      "format": "x-with-you",
+      "left_scene": "Boy DINKLY Doing nothing becomes enough. Setting: Large negative space, floor cushions, clock on wall, empty bowl next to him. Purposeful props: none. Emotion: Neutral, bored, looking up annoyed",
+      "right_scene": "Boy DINKLY and Girl DINKLY Doing nothing becomes enough. Setting: Large negative space, floor cushions, cuddling on the couch with popcorn having fun. Purposeful props: none. Emotion: Warm and connected because the moment is shared.",
+      "emotional_insight": "Doing nothing becomes enough",
+      "why_someone_would_share": "It turns doing nothing becomes enough into a recognizable “that reminds me of us” moment.",
+      "relevant_social_learnings": [
+        "learning-20260806-low-energy-to-shared-abundance"
+      ],
+      "brand_placement_opportunities": [],
+      "execution_risks": [
+        "Keep both characters grounded and unobscured by props.",
+        "Preserve equal body size and every locked character feature."
+      ],
+      "recommended_background_color": "warm cream",
+      "recommended_accent_color": "muted mustard",
+      "recommended_camera_angle": "medium straight-on",
+      "props": [],
+      "left_character": "boy",
+      "left_character_action": "Doing nothing becomes enough",
+      "left_setting": "Large negative space, floor cushions, clock on wall, empty bowl next to him",
+      "left_props": [],
+      "left_emotion": "Neutral, bored, looking up annoyed",
+      "right_characters": "boy_and_girl",
+      "right_character_actions": "Doing nothing becomes enough",
+      "right_setting": "Large negative space, floor cushions, cuddling on the couch with popcorn having fun",
+      "right_props": [],
+      "right_emotion": "Warm and connected because the moment is shared.",
+      "shared_environment": "Large negative space, floor cushions",
+      "environmental_contrast": "The left remains quiet and sparse; the right adds warmth and gentle activity without changing the core location.",
+      "character_count": 2,
+      "novel_angle": "The left remains quiet and sparse; the right adds warmth and gentle activity without changing the core location.",
+      "scores": {
+        "emotional_clarity": 9,
+        "relatability": 7,
+        "visual_simplicity": 9,
+        "scroll_stopping_potential": 9,
+        "shareability": 9,
+        "save_potential": 8,
+        "comment_potential": 5,
+        "dinkly_brand_fit": 8,
+        "originality": 9,
+        "brand_integration_potential": 3,
+        "nano_banana_execution_ease": 10,
+        "risk_of_character_distortion": 1
+      },
+      "directional_total": 8.0,
+      "weakest_criterion": "brand_integration_potential",
+      "improvement_recommendation": "Identify one natural prop a partner product could replace without changing the story.",
+      "evaluation_label": "directional creative evaluation, not a performance prediction",
+      "created_at": "2026-08-06T22:04:04+00:00"
+    },
+    "source": "app"
+  },
+  {
+    "format": "x-with-you",
+    "title_pair": {
+      "left": "PARTY",
+      "right": "PARTY WITH YOU"
+    },
+    "left_scene": "Boy DINKLY stands alone near the snack table holding one red plastic cup. Setting: a small minimalist indoor party room. Purposeful props: red plastic cup, two deflated balloons, small snack table, plain bowl of chips, two pieces of confetti. Emotion: Nervous, awkward, and unsure where to stand—never happy.",
+    "right_scene": "Boy DINKLY and Girl DINKLY stand close together, each holding one red plastic cup, laughing and dancing while looking at each other. Setting: the same small minimalist indoor party room. Purposeful props: two red plastic cups, floating balloons, same snack table, small assortment of warm-neutral snacks, a few pieces of confetti. Emotion: Lively, playful, and warm because they are together.",
+    "emotional_insight": "Nervous, awkward, and unsure where to stand—never happy. The same moment feels warmer together.",
+    "emotional_theme": "weekends",
+    "category": "Weekends",
+    "left_character": "boy",
+    "left_character_action": "stands alone near the snack table holding one red plastic cup",
+    "left_setting": "a small minimalist indoor party room",
+    "left_props": [
+      "red plastic cup",
+      "two deflated balloons",
+      "small snack table",
+      "plain bowl of chips",
+      "two pieces of confetti"
+    ],
+    "left_emotion": "Nervous, awkward, and unsure where to stand—never happy.",
+    "right_characters": "boy_and_girl",
+    "right_character_actions": "stand close together, each holding one red plastic cup, laughing and dancing while looking at each other",
+    "right_setting": "the same small minimalist indoor party room",
+    "right_props": [
+      "two red plastic cups",
+      "floating balloons",
+      "same snack table",
+      "small assortment of warm-neutral snacks",
+      "a few pieces of confetti"
+    ],
+    "right_emotion": "Lively, playful, and warm because they are together.",
+    "shared_environment": "Same small indoor party room with one snack table, balloons, the same floor, and the same camera view.",
+    "environmental_contrast": "Left has deflated balloons, sparse snacks, and stillness. Right has floating balloons, fuller snacks, confetti, and movement.",
+    "recommended_background_color": "powder blue",
+    "recommended_accent_color": "powder blue",
+    "recommended_camera_angle": "medium-wide straight-on",
+    "brand_friendly": true,
+    "potential_product_category": "drinks",
+    "notes": "Canonical scene-depth example: designed, readable, and lively without becoming crowded.",
+    "why_someone_would_share": "It turns nervous, awkward, and unsure where to stand—never happy. the same moment feels warmer together. into a recognizable “that reminds me of us” moment.",
+    "props": [
+      "red plastic cup",
+      "two deflated balloons",
+      "small snack table",
+      "plain bowl of chips",
+      "two pieces of confetti",
+      "two red plastic cups",
+      "floating balloons",
+      "same snack table",
+      "small assortment of warm-neutral snacks",
+      "a few pieces of confetti"
+    ],
+    "execution_risks": [
+      "No crowds or extra characters",
+      "Keep cups correctly scaled and do not create fingers",
+      "Keep the snack table secondary and both characters on the floor"
+    ],
+    "brand_placement_opportunities": [
+      "Replace one existing drinks prop without changing the story."
+    ],
+    "brand_categories": [
+      "drinks"
+    ],
+    "natural_product_placement": "Replace one existing drinks prop without changing the story.",
+    "novel_angle": "Left has deflated balloons, sparse snacks, and stillness. Right has floating balloons, fuller snacks, confetti, and movement.",
+    "status": "Approved",
+    "migration_version": 2,
+    "id": "concept-1876dd19c382",
+    "created_at": "2026-08-06T22:05:15+00:00",
+    "updated_at": "2026-08-06T22:05:15+00:00",
+    "score": {
+      "score_id": "score-a2659cf6a925",
+      "storyline_id": "concept-1876dd19c382",
+      "title_pair": {
+        "left": "PARTY",
+        "right": "PARTY WITH YOU"
+      },
+      "format": "x-with-you",
+      "left_scene": "Boy DINKLY stands alone near the snack table holding one red plastic cup. Setting: a small minimalist indoor party room. Purposeful props: red plastic cup, two deflated balloons, small snack table, plain bowl of chips, two pieces of confetti. Emotion: Nervous, awkward, and unsure where to stand—never happy.",
+      "right_scene": "Boy DINKLY and Girl DINKLY stand close together, each holding one red plastic cup, laughing and dancing while looking at each other. Setting: the same small minimalist indoor party room. Purposeful props: two red plastic cups, floating balloons, same snack table, small assortment of warm-neutral snacks, a few pieces of confetti. Emotion: Lively, playful, and warm because they are together.",
+      "emotional_insight": "Nervous, awkward, and unsure where to stand—never happy. The same moment feels warmer together.",
+      "why_someone_would_share": "It turns nervous, awkward, and unsure where to stand—never happy. the same moment feels warmer together. into a recognizable “that reminds me of us” moment.",
+      "relevant_social_learnings": [
+        "learning-20260806-low-energy-to-shared-abundance"
+      ],
+      "brand_placement_opportunities": [
+        "Replace one existing drinks prop without changing the story."
+      ],
+      "execution_risks": [
+        "No crowds or extra characters",
+        "Keep cups correctly scaled and do not create fingers",
+        "Keep the snack table secondary and both characters on the floor"
+      ],
+      "recommended_background_color": "powder blue",
+      "recommended_accent_color": "powder blue",
+      "recommended_camera_angle": "medium-wide straight-on",
+      "props": [
+        "red plastic cup",
+        "two deflated balloons",
+        "small snack table",
+        "plain bowl of chips",
+        "two pieces of confetti",
+        "two red plastic cups",
+        "floating balloons",
+        "same snack table",
+        "small assortment of warm-neutral snacks",
+        "a few pieces of confetti"
+      ],
+      "left_character": "boy",
+      "left_character_action": "stands alone near the snack table holding one red plastic cup",
+      "left_setting": "a small minimalist indoor party room",
+      "left_props": [
+        "red plastic cup",
+        "two deflated balloons",
+        "small snack table",
+        "plain bowl of chips",
+        "two pieces of confetti"
+      ],
+      "left_emotion": "Nervous, awkward, and unsure where to stand—never happy.",
+      "right_characters": "boy_and_girl",
+      "right_character_actions": "stand close together, each holding one red plastic cup, laughing and dancing while looking at each other",
+      "right_setting": "the same small minimalist indoor party room",
+      "right_props": [
+        "two red plastic cups",
+        "floating balloons",
+        "same snack table",
+        "small assortment of warm-neutral snacks",
+        "a few pieces of confetti"
+      ],
+      "right_emotion": "Lively, playful, and warm because they are together.",
+      "shared_environment": "Same small indoor party room with one snack table, balloons, the same floor, and the same camera view.",
+      "environmental_contrast": "Left has deflated balloons, sparse snacks, and stillness. Right has floating balloons, fuller snacks, confetti, and movement.",
+      "character_count": 2,
+      "novel_angle": "Left has deflated balloons, sparse snacks, and stillness. Right has floating balloons, fuller snacks, confetti, and movement.",
+      "scores": {
+        "emotional_clarity": 10,
+        "relatability": 9,
+        "visual_simplicity": 2,
+        "scroll_stopping_potential": 7,
+        "shareability": 9,
+        "save_potential": 8,
+        "comment_potential": 5,
+        "dinkly_brand_fit": 10,
+        "originality": 9,
+        "brand_integration_potential": 6,
+        "nano_banana_execution_ease": 4,
+        "risk_of_character_distortion": 6
+      },
+      "directional_total": 7.0,
+      "weakest_criterion": "visual_simplicity",
+      "improvement_recommendation": "Remove secondary props or actions and simplify the camera geometry.",
+      "evaluation_label": "directional creative evaluation, not a performance prediction",
+      "created_at": "2026-08-06T22:05:15+00:00"
+    },
+    "source": "app"
+  },
+  {
+    "format": "x-with-you",
+    "title_pair": {
+      "left": "GETTING READY",
+      "right": "GETTING READY WITH YOU"
+    },
+    "left_scene": "Boy DINKLY Comfortable parallel play. Setting: Profile view, simple closet rail. Purposeful props: gray shirt on the floor. Emotion: Neutral, bored, or gently sad—never happy.",
+    "right_scene": "Boy DINKLY and Girl DINKLY Comfortable parallel play. Setting: Profile view, simple closet rail. Purposeful props: colorful clothing in the closet, drinks in hand. Emotion: Warm and connected because the moment is shared.",
+    "emotional_insight": "Comfortable parallel play",
+    "emotional_theme": "everyday routines",
+    "category": "Everyday routines",
+    "left_character": "boy",
+    "left_character_action": "Comfortable parallel play",
+    "left_setting": "Profile view, simple closet rail",
+    "left_props": [
+      "gray shirt on the floor"
+    ],
+    "left_emotion": "Neutral, bored, or gently sad—never happy.",
+    "right_characters": "boy_and_girl",
+    "right_character_actions": "Comfortable parallel play",
+    "right_setting": "Profile view, simple closet rail",
+    "right_props": [
+      "colorful clothing in the closet",
+      "drinks in hand"
+    ],
+    "right_emotion": "Warm and connected because the moment is shared.",
+    "shared_environment": "Profile view, simple closet rail",
+    "environmental_contrast": "The left remains quiet and sparse; the right adds warmth and gentle activity without changing the core location.",
+    "recommended_background_color": "soft lavender",
+    "recommended_accent_color": "soft plum",
+    "recommended_camera_angle": "medium straight-on",
+    "brand_friendly": false,
+    "potential_product_category": null,
+    "notes": "Story Library seed: Closet.",
+    "why_someone_would_share": "It turns comfortable parallel play into a recognizable “that reminds me of us” moment.",
+    "props": [
+      "gray shirt on the floor",
+      "colorful clothing in the closet",
+      "drinks in hand"
+    ],
+    "execution_risks": [
+      "Keep both characters grounded and unobscured by props.",
+      "Preserve equal body size and every locked character feature."
+    ],
+    "brand_placement_opportunities": [],
+    "brand_categories": [],
+    "natural_product_placement": null,
+    "novel_angle": "The left remains quiet and sparse; the right adds warmth and gentle activity without changing the core location.",
+    "status": "Approved",
+    "migration_version": 2,
+    "id": "concept-2e5aed9850db",
+    "created_at": "2026-08-06T22:10:15+00:00",
+    "updated_at": "2026-08-06T22:10:15+00:00",
+    "score": {
+      "score_id": "score-8dae34ac4664",
+      "storyline_id": "concept-2e5aed9850db",
+      "title_pair": {
+        "left": "GETTING READY",
+        "right": "GETTING READY WITH YOU"
+      },
+      "format": "x-with-you",
+      "left_scene": "Boy DINKLY Comfortable parallel play. Setting: Profile view, simple closet rail. Purposeful props: gray shirt on the floor. Emotion: Neutral, bored, or gently sad—never happy.",
+      "right_scene": "Boy DINKLY and Girl DINKLY Comfortable parallel play. Setting: Profile view, simple closet rail. Purposeful props: colorful clothing in the closet, drinks in hand. Emotion: Warm and connected because the moment is shared.",
+      "emotional_insight": "Comfortable parallel play",
+      "why_someone_would_share": "It turns comfortable parallel play into a recognizable “that reminds me of us” moment.",
+      "relevant_social_learnings": [
+        "learning-20260806-low-energy-to-shared-abundance"
+      ],
+      "brand_placement_opportunities": [],
+      "execution_risks": [
+        "Keep both characters grounded and unobscured by props.",
+        "Preserve equal body size and every locked character feature."
+      ],
+      "recommended_background_color": "soft lavender",
+      "recommended_accent_color": "soft plum",
+      "recommended_camera_angle": "medium straight-on",
+      "props": [
+        "gray shirt on the floor",
+        "colorful clothing in the closet",
+        "drinks in hand"
+      ],
+      "left_character": "boy",
+      "left_character_action": "Comfortable parallel play",
+      "left_setting": "Profile view, simple closet rail",
+      "left_props": [
+        "gray shirt on the floor"
+      ],
+      "left_emotion": "Neutral, bored, or gently sad—never happy.",
+      "right_characters": "boy_and_girl",
+      "right_character_actions": "Comfortable parallel play",
+      "right_setting": "Profile view, simple closet rail",
+      "right_props": [
+        "colorful clothing in the closet",
+        "drinks in hand"
+      ],
+      "right_emotion": "Warm and connected because the moment is shared.",
+      "shared_environment": "Profile view, simple closet rail",
+      "environmental_contrast": "The left remains quiet and sparse; the right adds warmth and gentle activity without changing the core location.",
+      "character_count": 2,
+      "novel_angle": "The left remains quiet and sparse; the right adds warmth and gentle activity without changing the core location.",
+      "scores": {
+        "emotional_clarity": 9,
+        "relatability": 7,
+        "visual_simplicity": 9,
+        "scroll_stopping_potential": 9,
+        "shareability": 9,
+        "save_potential": 8,
+        "comment_potential": 5,
+        "dinkly_brand_fit": 8,
+        "originality": 9,
+        "brand_integration_potential": 3,
+        "nano_banana_execution_ease": 10,
+        "risk_of_character_distortion": 1
+      },
+      "directional_total": 8.0,
+      "weakest_criterion": "brand_integration_potential",
+      "improvement_recommendation": "Identify one natural prop a partner product could replace without changing the story.",
+      "evaluation_label": "directional creative evaluation, not a performance prediction",
+      "created_at": "2026-08-06T22:10:15+00:00"
+    },
+    "source": "app"
+  },
+  {
+    "format": "x-with-you",
+    "title_pair": {
+      "left": "PARTY",
+      "right": "PARTY WITH YOU"
+    },
+    "left_scene": "Boy DINKLY stands alone near the snack table holding one red plastic cup. Setting: a small minimalist indoor party room. Purposeful props: red plastic cup, two deflated balloons, small snack table, plain bowl of chips, two pieces of confetti. Emotion: Nervous, awkward, and unsure where to stand—never happy.",
+    "right_scene": "Boy DINKLY and Girl DINKLY stand close together, each holding one red plastic cup, laughing and dancing while looking at each other. Setting: the same small minimalist indoor party room. Purposeful props: two red plastic cups, floating balloons, same snack table, small assortment of warm-neutral snacks, a few pieces of confetti. Emotion: Lively, playful, and warm because they are together.",
+    "emotional_insight": "Nervous, awkward, and unsure where to stand—never happy. The same moment feels warmer together.",
+    "emotional_theme": "weekends",
+    "category": "Weekends",
+    "left_character": "boy",
+    "left_character_action": "stands alone near the snack table holding one red plastic cup",
+    "left_setting": "a small minimalist indoor party room",
+    "left_props": [
+      "red plastic cup",
+      "two deflated balloons",
+      "small snack table",
+      "plain bowl of chips",
+      "two pieces of confetti"
+    ],
+    "left_emotion": "Nervous, awkward, and unsure where to stand—never happy.",
+    "right_characters": "boy_and_girl",
+    "right_character_actions": "stand close together, each holding one red plastic cup, laughing and dancing while looking at each other",
+    "right_setting": "the same small minimalist indoor party room",
+    "right_props": [
+      "two red plastic cups",
+      "floating balloons",
+      "same snack table",
+      "small assortment of warm-neutral snacks",
+      "a few pieces of confetti"
+    ],
+    "right_emotion": "Lively, playful, and warm because they are together.",
+    "shared_environment": "Same small indoor party room with one snack table, balloons, the same floor, and the same camera view.",
+    "environmental_contrast": "Left has deflated balloons, sparse snacks, and stillness. Right has floating balloons, fuller snacks, confetti, and movement.",
+    "recommended_background_color": "pastel peach",
+    "recommended_accent_color": "muted red",
+    "recommended_camera_angle": "medium-wide straight-on",
+    "brand_friendly": true,
+    "potential_product_category": "drinks",
+    "notes": "Canonical scene-depth example: designed, readable, and lively without becoming crowded.",
+    "why_someone_would_share": "It turns nervous, awkward, and unsure where to stand—never happy. the same moment feels warmer together. into a recognizable “that reminds me of us” moment.",
+    "props": [
+      "red plastic cup",
+      "two deflated balloons",
+      "small snack table",
+      "plain bowl of chips",
+      "two pieces of confetti",
+      "two red plastic cups",
+      "floating balloons",
+      "same snack table",
+      "small assortment of warm-neutral snacks",
+      "a few pieces of confetti"
+    ],
+    "execution_risks": [
+      "No crowds or extra characters",
+      "Keep cups correctly scaled and do not create fingers",
+      "Keep the snack table secondary and both characters on the floor"
+    ],
+    "brand_placement_opportunities": [
+      "Replace one existing drinks prop without changing the story."
+    ],
+    "brand_categories": [
+      "drinks"
+    ],
+    "natural_product_placement": "Replace one existing drinks prop without changing the story.",
+    "novel_angle": "Left has deflated balloons, sparse snacks, and stillness. Right has floating balloons, fuller snacks, confetti, and movement.",
+    "status": "Approved",
+    "migration_version": 2,
+    "id": "concept-4709abf23119",
+    "created_at": "2026-08-06T23:40:25+00:00",
+    "updated_at": "2026-08-06T23:40:25+00:00",
+    "score": {
+      "score_id": "score-b87a667022a8",
+      "storyline_id": "concept-4709abf23119",
+      "title_pair": {
+        "left": "PARTY",
+        "right": "PARTY WITH YOU"
+      },
+      "format": "x-with-you",
+      "left_scene": "Boy DINKLY stands alone near the snack table holding one red plastic cup. Setting: a small minimalist indoor party room. Purposeful props: red plastic cup, two deflated balloons, small snack table, plain bowl of chips, two pieces of confetti. Emotion: Nervous, awkward, and unsure where to stand—never happy.",
+      "right_scene": "Boy DINKLY and Girl DINKLY stand close together, each holding one red plastic cup, laughing and dancing while looking at each other. Setting: the same small minimalist indoor party room. Purposeful props: two red plastic cups, floating balloons, same snack table, small assortment of warm-neutral snacks, a few pieces of confetti. Emotion: Lively, playful, and warm because they are together.",
+      "emotional_insight": "Nervous, awkward, and unsure where to stand—never happy. The same moment feels warmer together.",
+      "why_someone_would_share": "It turns nervous, awkward, and unsure where to stand—never happy. the same moment feels warmer together. into a recognizable “that reminds me of us” moment.",
+      "relevant_social_learnings": [
+        "learning-20260806-low-energy-to-shared-abundance"
+      ],
+      "brand_placement_opportunities": [
+        "Replace one existing drinks prop without changing the story."
+      ],
+      "execution_risks": [
+        "No crowds or extra characters",
+        "Keep cups correctly scaled and do not create fingers",
+        "Keep the snack table secondary and both characters on the floor"
+      ],
+      "recommended_background_color": "pastel peach",
+      "recommended_accent_color": "muted red",
+      "recommended_camera_angle": "medium-wide straight-on",
+      "props": [
+        "red plastic cup",
+        "two deflated balloons",
+        "small snack table",
+        "plain bowl of chips",
+        "two pieces of confetti",
+        "two red plastic cups",
+        "floating balloons",
+        "same snack table",
+        "small assortment of warm-neutral snacks",
+        "a few pieces of confetti"
+      ],
+      "left_character": "boy",
+      "left_character_action": "stands alone near the snack table holding one red plastic cup",
+      "left_setting": "a small minimalist indoor party room",
+      "left_props": [
+        "red plastic cup",
+        "two deflated balloons",
+        "small snack table",
+        "plain bowl of chips",
+        "two pieces of confetti"
+      ],
+      "left_emotion": "Nervous, awkward, and unsure where to stand—never happy.",
+      "right_characters": "boy_and_girl",
+      "right_character_actions": "stand close together, each holding one red plastic cup, laughing and dancing while looking at each other",
+      "right_setting": "the same small minimalist indoor party room",
+      "right_props": [
+        "two red plastic cups",
+        "floating balloons",
+        "same snack table",
+        "small assortment of warm-neutral snacks",
+        "a few pieces of confetti"
+      ],
+      "right_emotion": "Lively, playful, and warm because they are together.",
+      "shared_environment": "Same small indoor party room with one snack table, balloons, the same floor, and the same camera view.",
+      "environmental_contrast": "Left has deflated balloons, sparse snacks, and stillness. Right has floating balloons, fuller snacks, confetti, and movement.",
+      "character_count": 2,
+      "novel_angle": "Left has deflated balloons, sparse snacks, and stillness. Right has floating balloons, fuller snacks, confetti, and movement.",
+      "scores": {
+        "emotional_clarity": 10,
+        "relatability": 9,
+        "visual_simplicity": 2,
+        "scroll_stopping_potential": 7,
+        "shareability": 9,
+        "save_potential": 8,
+        "comment_potential": 5,
+        "dinkly_brand_fit": 10,
+        "originality": 9,
+        "brand_integration_potential": 6,
+        "nano_banana_execution_ease": 4,
+        "risk_of_character_distortion": 6
+      },
+      "directional_total": 7.0,
+      "weakest_criterion": "visual_simplicity",
+      "improvement_recommendation": "Remove secondary props or actions and simplify the camera geometry.",
+      "evaluation_label": "directional creative evaluation, not a performance prediction",
+      "created_at": "2026-08-06T23:40:25+00:00"
+    },
+    "source": "app"
+  }
+]

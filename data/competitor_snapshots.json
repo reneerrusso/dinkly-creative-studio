@@ -1,0 +1,222 @@
+[
+  {
+    "id": "snapshot-e33149e3070a",
+    "post_id": "competitor-post-bb29efa08eb7",
+    "captured_at": "2026-08-06T22:44:31.566414+00:00",
+    "view_count": 5000000,
+    "like_count": 399600,
+    "comment_count": 1002,
+    "share_count": 267900,
+    "follower_count": 17900,
+    "provider": "apify"
+  },
+  {
+    "id": "snapshot-5bb0a7e4b6ab",
+    "post_id": "competitor-post-99ac88760bf2",
+    "captured_at": "2026-08-06T22:44:31.579516+00:00",
+    "view_count": 4800000,
+    "like_count": 297300,
+    "comment_count": 717,
+    "share_count": 315700,
+    "follower_count": 17900,
+    "provider": "apify"
+  },
+  {
+    "id": "snapshot-81099ae61f15",
+    "post_id": "competitor-post-d8f415066a6e",
+    "captured_at": "2026-08-06T22:44:31.588929+00:00",
+    "view_count": 2800000,
+    "like_count": 238700,
+    "comment_count": 548,
+    "share_count": 203400,
+    "follower_count": 17900,
+    "provider": "apify"
+  },
+  {
+    "id": "snapshot-0b99bcce2edf",
+    "post_id": "competitor-post-16a452b909a7",
+    "captured_at": "2026-08-06T22:44:31.596174+00:00",
+    "view_count": 1361,
+    "like_count": 81,
+    "comment_count": 2,
+    "share_count": 80,
+    "follower_count": 17900,
+    "provider": "apify"
+  },
+  {
+    "id": "snapshot-20c4d9aebf9f",
+    "post_id": "competitor-post-ba2a73ff7d87",
+    "captured_at": "2026-08-06T22:44:31.600746+00:00",
+    "view_count": 1619,
+    "like_count": 148,
+    "comment_count": 2,
+    "share_count": 136,
+    "follower_count": 17900,
+    "provider": "apify"
+  },
+  {
+    "id": "snapshot-55624bde29b5",
+    "post_id": "competitor-post-d6caf8a87f4d",
+    "captured_at": "2026-08-06T22:44:31.605891+00:00",
+    "view_count": 1248,
+    "like_count": 98,
+    "comment_count": 2,
+    "share_count": 108,
+    "follower_count": 17900,
+    "provider": "apify"
+  },
+  {
+    "id": "snapshot-2638f420d02e",
+    "post_id": "competitor-post-1e61165906d4",
+    "captured_at": "2026-08-06T22:44:31.609578+00:00",
+    "view_count": 1174,
+    "like_count": 79,
+    "comment_count": 1,
+    "share_count": 59,
+    "follower_count": 17900,
+    "provider": "apify"
+  },
+  {
+    "id": "snapshot-87ec36f86f49",
+    "post_id": "competitor-post-bd130ad043d0",
+    "captured_at": "2026-08-06T22:44:31.614288+00:00",
+    "view_count": 1866,
+    "like_count": 123,
+    "comment_count": 1,
+    "share_count": 121,
+    "follower_count": 17900,
+    "provider": "apify"
+  },
+  {
+    "id": "snapshot-f06c6dee30fb",
+    "post_id": "competitor-post-85b59d85a354",
+    "captured_at": "2026-08-06T22:44:31.620721+00:00",
+    "view_count": 8852,
+    "like_count": 472,
+    "comment_count": 3,
+    "share_count": 428,
+    "follower_count": 17900,
+    "provider": "apify"
+  },
+  {
+    "id": "snapshot-0b77edc15004",
+    "post_id": "competitor-post-e6bbec20141f",
+    "captured_at": "2026-08-06T22:44:31.628317+00:00",
+    "view_count": 6547,
+    "like_count": 292,
+    "comment_count": 1,
+    "share_count": 313,
+    "follower_count": 17900,
+    "provider": "apify"
+  },
+  {
+    "id": "snapshot-4aa2f4e3a7a1",
+    "post_id": "competitor-post-f8df81f5ccf9",
+    "captured_at": "2026-08-06T22:44:31.634924+00:00",
+    "view_count": 3697,
+    "like_count": 214,
+    "comment_count": 0,
+    "share_count": 225,
+    "follower_count": 17900,
+    "provider": "apify"
+  },
+  {
+    "id": "snapshot-e217ac2aeb40",
+    "post_id": "competitor-post-5aa6079be79f",
+    "captured_at": "2026-08-06T22:44:31.641968+00:00",
+    "view_count": 1142,
+    "like_count": 72,
+    "comment_count": 4,
+    "share_count": 61,
+    "follower_count": 17900,
+    "provider": "apify"
+  },
+  {
+    "id": "snapshot-ec37f9d6ad83",
+    "post_id": "competitor-post-d89b88257c93",
+    "captured_at": "2026-08-06T22:44:31.649548+00:00",
+    "view_count": 17400,
+    "like_count": 839,
+    "comment_count": 3,
+    "share_count": 751,
+    "follower_count": 17900,
+    "provider": "apify"
+  },
+  {
+    "id": "snapshot-4b39d133864c",
+    "post_id": "competitor-post-d0d204a547df",
+    "captured_at": "2026-08-06T22:44:31.657284+00:00",
+    "view_count": 215900,
+    "like_count": 7611,
+    "comment_count": 14,
+    "share_count": 9277,
+    "follower_count": 17900,
+    "provider": "apify"
+  },
+  {
+    "id": "snapshot-bc38be608d9b",
+    "post_id": "competitor-post-15c24ac5a4b3",
+    "captured_at": "2026-08-06T22:44:31.667368+00:00",
+    "view_count": 524000,
+    "like_count": 18800,
+    "comment_count": 29,
+    "share_count": 19500,
+    "follower_count": 17900,
+    "provider": "apify"
+  },
+  {
+    "id": "snapshot-db76f0050dcc",
+    "post_id": "competitor-post-39d6ab2b4940",
+    "captured_at": "2026-08-06T22:44:31.675868+00:00",
+    "view_count": 2522,
+    "like_count": 99,
+    "comment_count": 1,
+    "share_count": 56,
+    "follower_count": 17900,
+    "provider": "apify"
+  },
+  {
+    "id": "snapshot-43a4cbaecdc2",
+    "post_id": "competitor-post-c1248a860ccc",
+    "captured_at": "2026-08-06T22:44:31.686395+00:00",
+    "view_count": 12300,
+    "like_count": 590,
+    "comment_count": 8,
+    "share_count": 1019,
+    "follower_count": 17900,
+    "provider": "apify"
+  },
+  {
+    "id": "snapshot-3e5b1514eae6",
+    "post_id": "competitor-post-073b583d4987",
+    "captured_at": "2026-08-06T22:44:31.697537+00:00",
+    "view_count": 8102,
+    "like_count": 430,
+    "comment_count": 3,
+    "share_count": 362,
+    "follower_count": 17900,
+    "provider": "apify"
+  },
+  {
+    "id": "snapshot-8e1d917e80cb",
+    "post_id": "competitor-post-b0f03ca44599",
+    "captured_at": "2026-08-06T22:44:31.705990+00:00",
+    "view_count": 1100000,
+    "like_count": 45100,
+    "comment_count": 184,
+    "share_count": 47200,
+    "follower_count": 17900,
+    "provider": "apify"
+  },
+  {
+    "id": "snapshot-6df619601e3c",
+    "post_id": "competitor-post-9d9890a52599",
+    "captured_at": "2026-08-06T22:44:31.717186+00:00",
+    "view_count": 16800,
+    "like_count": 1029,
+    "comment_count": 3,
+    "share_count": 1353,
+    "follower_count": 17900,
+    "provider": "apify"
+  }
+]

@@ -37,6 +37,19 @@ A strong concept communicates, in order:
 
 If the concept needs explanation, multiple speech bubbles, or a detailed setting before the emotion lands, it is not ready.
 
+## Scene completeness test
+
+Before scoring an X / X WITH YOU concept, confirm:
+
+- A specific setting exists in both panels.
+- The location, floor, main furniture, and camera remain visually connected.
+- Each panel contains two to five purposeful props rather than decoration.
+- The left environment reinforces stillness, awkwardness, boredom, or gentle neutrality.
+- The right environment reinforces shared warmth through modest changes in arrangement, movement, or use.
+- The emotional contrast remains understandable without the caption.
+
+Fewer than two purposeful props across the concept or a missing setting is directionally sparse. More than five props in either panel, multiple competing settings, crowds, or layered secondary actions are directionally detailed and should be simplified.
+
 ## Shareability triggers
 
 Treat these as hypotheses until social data supports them:

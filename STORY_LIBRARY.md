@@ -6,6 +6,22 @@ This library is a set of approved creative territories, not a queue of scripts t
 
 Avoid returning to coffee, couches, beds, shopping carts, or movies unless the new angle materially changes the emotional truth, act of care, camera view, or seasonal context.
 
+## Scene-depth rule
+
+A DINKLY scene should not be empty, but it should never be cluttered. The target is one minimalist setting, two to five purposeful props per panel, one accent color, large negative space, and a visible emotional contrast. Every complete story record describes the left character, both panel actions, both settings, both prop lists, both emotions, the shared environment, and what changes environmentally.
+
+### Canonical example: PARTY / PARTY WITH YOU
+
+**Left:** Boy DINKLY stands alone in a small party room holding one red plastic cup. Two deflated balloons sit on the floor. One snack table holds a plain bowl of chips, and two pieces of confetti rest near his feet. He looks nervous and unsure where to stand.
+
+**Right:** Boy DINKLY and Girl DINKLY stand close in the same room, each holding one red plastic cup. They laugh and dance while looking at each other. Balloons float above them, the same table has a few colorful snacks, and a few pieces of confetti move through the air.
+
+**Shared environment:** Same small indoor party room, snack table, floor, background, and camera view.
+
+**Environmental contrast:** Deflated balloons, sparse snacks, and stillness become floating balloons, fuller snacks, confetti, and movement. Do not add crowds, extra characters, a DJ booth, complex lighting, or more than five major props.
+
+The canonical version-2 JSON record and eleven additional scene-rich seeds live in `data/story_library_v2.json` and are merged with every original Story Library entry at runtime.
+
 ## Everyday routines
 
 | Seed | Title direction | Emotional angle | Visual distinction |

@@ -12,9 +12,7 @@ Create a square two-panel comparison in a {{CAMERA_ANGLE}} view. Both panels use
 
 {{LEFT_SCENE}}
 
-Bottom text:
-
-{{LEFT_TEXT}}
+{{LEFT_CAPTION_INSTRUCTION}}
 
 The character may feel neutral, bored, or gently sad but never devastated.
 
@@ -22,9 +20,7 @@ The character may feel neutral, bored, or gently sad but never devastated.
 
 {{RIGHT_SCENE}}
 
-Bottom text:
-
-{{RIGHT_TEXT}}
+{{RIGHT_CAPTION_INSTRUCTION}}
 
 The warmth comes from togetherness, not a better room, more expensive objects, or an unrealistically perfect life.
 
@@ -38,4 +34,4 @@ Flat 2D DINKLY vector art, matte palette, thick black outlines, one restrained {
 
 ## FINAL QUALITY CHECK
 
-Confirm the setting remains essentially identical and only the emotional feeling changes. Render text without quotation marks or added punctuation. Relevant risks: {{FAILURE_PREVENTION}}
+Confirm the setting remains essentially identical and only the emotional feeling changes. {{TEXT_QUALITY_CHECK}} Relevant risks: {{FAILURE_PREVENTION}}

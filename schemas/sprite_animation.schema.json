@@ -1,0 +1,177 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dinkly.local/schemas/sprite_animation.schema.json",
+  "title": "DINKLY Sprite Animation",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "id",
+    "name",
+    "slug",
+    "character_id",
+    "category",
+    "description",
+    "frame_ids",
+    "frame_rate",
+    "loop",
+    "loop_mode",
+    "hold_first_frame_ms",
+    "hold_last_frame_ms",
+    "default_scale",
+    "approved",
+    "tags",
+    "required_layers",
+    "optional_layers",
+    "status",
+    "created_at",
+    "updated_at"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 2
+    },
+    "slug": {
+      "type": "string"
+    },
+    "character_id": {
+      "type": "string"
+    },
+    "category": {
+      "enum": [
+        "idle",
+        "facial",
+        "movement",
+        "emotion",
+        "interaction",
+        "prop_action",
+        "sleep",
+        "celebration",
+        "shared",
+        "environmental"
+      ]
+    },
+    "description": {
+      "type": "string"
+    },
+    "frame_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "frame_rate": {
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "maximum": 60
+    },
+    "loop": {
+      "type": "boolean"
+    },
+    "loop_mode": {
+      "enum": [
+        "loop",
+        "ping_pong",
+        "play_once",
+        "hold_last"
+      ]
+    },
+    "loop_start_frame": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "loop_end_frame": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "hold_first_frame_ms": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "hold_last_frame_ms": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "default_scale": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "expected_frame_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "approved": {
+      "type": "boolean"
+    },
+    "approval_level": {
+      "enum": [
+        "Draft",
+        "Frame review",
+        "Animation review",
+        "Approved",
+        "Deprecated"
+      ]
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "required_layers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "optional_layers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "thumbnail_path": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "preview_path": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "status": {
+      "enum": [
+        "Frames needed",
+        "Draft",
+        "Needs review",
+        "Approved",
+        "Exported"
+      ]
+    },
+    "validation_status": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "technical_sample": {
+      "type": "boolean"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    }
+  }
+}

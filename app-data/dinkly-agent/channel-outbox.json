@@ -1,0 +1,554 @@
+[
+  {
+    "id": "delivery-ac41028dbaf9",
+    "created_at": "2026-08-07T15:57:52.882974+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "daily-concepts-2026-08-07",
+    "message": "DINKLY Agent · Started\n● Create today's scheduled DINKLY concept batch",
+    "replaces": null
+  },
+  {
+    "id": "delivery-5c9bcef6b478",
+    "created_at": "2026-08-07T15:57:52.906770+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "daily-concepts-2026-08-07",
+    "message": "DINKLY Agent · Complete\nToday's automatic concept run was skipped: No AI provider configured.",
+    "replaces": null
+  },
+  {
+    "id": "delivery-dda8458aa56d",
+    "created_at": "2026-08-07T15:57:52.910818+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "learning-496143",
+    "message": "DINKLY Agent · Started\n● Review new production evidence and update the DINKLY Brain",
+    "replaces": null
+  },
+  {
+    "id": "delivery-5f8f004b86d2",
+    "created_at": "2026-08-07T15:57:52.949055+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "learning-496143",
+    "message": "DINKLY Agent · Complete\nLearning review complete. I proposed 3 Brain update(s).",
+    "replaces": null
+  },
+  {
+    "id": "delivery-48730db26261",
+    "created_at": "2026-08-07T15:58:27.315996+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "web-default",
+    "message": "DINKLY Agent · Started\n● Show me what is waiting for approval.",
+    "replaces": null
+  },
+  {
+    "id": "delivery-c6aa1c59f369",
+    "created_at": "2026-08-07T15:58:27.344844+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "web-default",
+    "message": "DINKLY Agent · Complete\nYou have 0 comic, 0 concept, and 3 Brain decisions waiting.",
+    "replaces": null
+  },
+  {
+    "id": "delivery-0d0f1e2f3e35",
+    "created_at": "2026-08-07T15:58:35.458022+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "web-default",
+    "message": "DINKLY Agent · Started\n● Give me 10 new concepts.",
+    "replaces": null
+  },
+  {
+    "id": "delivery-16c68cfc00b2",
+    "created_at": "2026-08-07T15:58:35.482919+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "web-default",
+    "message": "DINKLY Agent · Needs attention\nNo AI provider configured.",
+    "replaces": null
+  },
+  {
+    "id": "delivery-0c17de81600a",
+    "created_at": "2026-08-07T16:01:29.605618+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "web-default",
+    "message": "DINKLY Agent · Started\n● Give me 10 new concepts.",
+    "replaces": null
+  },
+  {
+    "id": "delivery-69b759cc5aa7",
+    "created_at": "2026-08-07T16:05:00.831101+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "web-default",
+    "message": "DINKLY Agent · Ready for you\nI made 10 concepts. I put them in your review queue.",
+    "replaces": null
+  },
+  {
+    "id": "delivery-3d85699e567a",
+    "created_at": "2026-08-07T16:05:00.835021+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "web-default",
+    "message": "DINKLY Agent · Started\n● Generate PARTY / PARTY WITH YOU.",
+    "replaces": null
+  },
+  {
+    "id": "delivery-39314b46518a",
+    "created_at": "2026-08-07T16:05:00.908759+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "web-default",
+    "message": "DINKLY Agent · Generating\n✓ Story brief\n✓ Prompt compiled\n✓ References loaded\n● Generating candidates\n○ QA\n○ Human review",
+    "replaces": null
+  },
+  {
+    "id": "delivery-ef180cdf5eb6",
+    "created_at": "2026-08-07T16:05:59.424097+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "web-default",
+    "message": "DINKLY Agent · Ready for you\nPARTY / PARTY WITH YOU is ready. Candidate B is my recommendation.",
+    "replaces": null
+  },
+  {
+    "id": "delivery-daa00982b2a9",
+    "created_at": "2026-08-07T16:50:39.819380+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "web-default",
+    "message": "DINKLY Agent · Started\n● approve concept content-9c3da288018b",
+    "replaces": null
+  },
+  {
+    "id": "delivery-d3ff1352131f",
+    "created_at": "2026-08-07T16:50:39.853294+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "web-default",
+    "message": "DINKLY Agent · Complete\nConcept approve recorded.",
+    "replaces": null
+  },
+  {
+    "id": "delivery-6cf3b605518d",
+    "created_at": "2026-08-07T16:51:10.425009+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "web-default",
+    "message": "DINKLY Agent · Started\n● approve concept content-90c873a2f2c3",
+    "replaces": null
+  },
+  {
+    "id": "delivery-a042032a76fe",
+    "created_at": "2026-08-07T16:51:10.472668+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "web-default",
+    "message": "DINKLY Agent · Complete\nConcept approve recorded.",
+    "replaces": null
+  },
+  {
+    "id": "delivery-cdee454c5b38",
+    "created_at": "2026-08-07T16:51:18.623139+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "web-default",
+    "message": "DINKLY Agent · Started\n● approve concept content-906a07771dce",
+    "replaces": null
+  },
+  {
+    "id": "delivery-3a25f23749b4",
+    "created_at": "2026-08-07T16:51:18.654311+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "web-default",
+    "message": "DINKLY Agent · Complete\nConcept approve recorded.",
+    "replaces": null
+  },
+  {
+    "id": "delivery-c94e14031cd0",
+    "created_at": "2026-08-07T16:51:24.762081+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "web-default",
+    "message": "DINKLY Agent · Started\n● more like this concept content-7af5534d5442",
+    "replaces": null
+  },
+  {
+    "id": "delivery-d1174326025e",
+    "created_at": "2026-08-07T16:51:24.836163+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "web-default",
+    "message": "DINKLY Agent · Complete\nGot it. I’ll give more weight to love this concept. give me like this in future generation decisions.",
+    "replaces": null
+  },
+  {
+    "id": "delivery-9275e7b626bf",
+    "created_at": "2026-08-07T16:52:24.012639+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "web-default",
+    "message": "DINKLY Agent · Started\n● approve comic generation-96e3ad209916",
+    "replaces": null
+  },
+  {
+    "id": "delivery-c43e1cb3dc2a",
+    "created_at": "2026-08-07T16:52:24.082769+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "web-default",
+    "message": "DINKLY Agent · Complete\nComic approved. I queued the result for learning.",
+    "replaces": null
+  },
+  {
+    "id": "delivery-13fa3cb4bfa5",
+    "created_at": "2026-08-07T16:52:24.087154+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "approval-generation-96e3ad209916",
+    "message": "DINKLY Agent · Started\n● Learn from approved generation generation-96e3ad209916",
+    "replaces": null
+  },
+  {
+    "id": "delivery-220a5fd9d75e",
+    "created_at": "2026-08-07T16:52:24.157865+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "approval-generation-96e3ad209916",
+    "message": "DINKLY Agent · Complete\nLearning review complete. I proposed 2 Brain update(s).",
+    "replaces": null
+  },
+  {
+    "id": "delivery-5e66b3fb3254",
+    "created_at": "2026-08-07T16:52:36.417969+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "web-default",
+    "message": "DINKLY Agent · Started\n● approve comic generation-96e3ad209916",
+    "replaces": null
+  },
+  {
+    "id": "delivery-381368a042ae",
+    "created_at": "2026-08-07T16:52:36.483464+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "web-default",
+    "message": "DINKLY Agent · Complete\nComic approved. I queued the result for learning.",
+    "replaces": null
+  },
+  {
+    "id": "delivery-f0fda8615543",
+    "created_at": "2026-08-07T16:54:55.163352+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "web-default",
+    "message": "DINKLY Agent · Started\n● pass concept content-e77c0c14a7bc",
+    "replaces": null
+  },
+  {
+    "id": "delivery-91ddb38b15dd",
+    "created_at": "2026-08-07T16:54:55.200134+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "web-default",
+    "message": "DINKLY Agent · Complete\nConcept pass recorded.",
+    "replaces": null
+  },
+  {
+    "id": "delivery-fedeb4210d4b",
+    "created_at": "2026-08-07T17:23:40.499052+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "web-default",
+    "message": "DINKLY Agent · Complete\nConcept approve recorded.",
+    "replaces": null
+  },
+  {
+    "id": "delivery-24898f4ad28e",
+    "created_at": "2026-08-07T17:23:46.055268+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "web-default",
+    "message": "DINKLY Agent · Complete\nConcept approve recorded.",
+    "replaces": null
+  },
+  {
+    "id": "delivery-a2cf4871126c",
+    "created_at": "2026-08-07T17:38:29.790592+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "web-default",
+    "message": "DINKLY Agent · Complete\nConcept pass recorded.",
+    "replaces": null
+  },
+  {
+    "id": "delivery-6c863b0879e0",
+    "created_at": "2026-08-07T17:49:13.474728+00:00",
+    "channel": "slack",
+    "kind": "message",
+    "thread_id": "1786124948.900969",
+    "message": "DINKLY Agent · Queued\n✓ Assignment received\n○ Waiting for the Agent worker",
+    "message_id": "1786124953.426169"
+  },
+  {
+    "id": "delivery-ed1ad7f8a51d",
+    "created_at": "2026-08-07T17:49:13.876927+00:00",
+    "channel": "slack",
+    "kind": "update",
+    "message_id": "1786124953.426169",
+    "message": "DINKLY Agent · Started\n● hi"
+  },
+  {
+    "id": "delivery-996eef3ffe7c",
+    "created_at": "2026-08-07T17:49:14.134177+00:00",
+    "channel": "slack",
+    "kind": "update",
+    "message_id": "1786124953.426169",
+    "message": "DINKLY Agent · Needs attention\nI can generate concepts or comics, review and repair artwork, learn, or report what is waiting."
+  },
+  {
+    "id": "delivery-156a0d3c0e3c",
+    "created_at": "2026-08-07T17:49:35.861557+00:00",
+    "channel": "slack",
+    "kind": "message",
+    "thread_id": "1786124974.274869",
+    "message": "DINKLY Agent · Queued\n✓ Assignment received\n○ Waiting for the Agent worker",
+    "message_id": "1786124975.647079"
+  },
+  {
+    "id": "delivery-9358d5b68fbd",
+    "created_at": "2026-08-07T17:49:36.864683+00:00",
+    "channel": "slack",
+    "kind": "update",
+    "message_id": "1786124975.647079",
+    "message": "DINKLY Agent · Started\n● list the concepts here that need my attention"
+  },
+  {
+    "id": "delivery-bad1f0ac4118",
+    "created_at": "2026-08-07T17:51:32.336076+00:00",
+    "channel": "slack",
+    "kind": "message",
+    "thread_id": "1786125090.858899",
+    "message": "DINKLY Agent · Queued\n✓ Assignment received\n○ Waiting for the Agent worker",
+    "message_id": "1786125092.288949"
+  },
+  {
+    "id": "delivery-87c1cd31a24e",
+    "created_at": "2026-08-07T17:52:59.806233+00:00",
+    "channel": "slack",
+    "kind": "update",
+    "message_id": "1786124975.647079",
+    "message": "DINKLY Agent · Ready for you\nI made 10 concepts. I put them in your review queue."
+  },
+  {
+    "id": "delivery-e72a4b82d551",
+    "created_at": "2026-08-07T17:53:00.051946+00:00",
+    "channel": "slack",
+    "kind": "buttons",
+    "thread_id": "1786124974.274869",
+    "buttons": [
+      {
+        "label": "Approve first",
+        "action_id": "dinkly_approve",
+        "value": "{\"item_type\": \"concept\", \"item_id\": \"content-38d01570e1ab\"}",
+        "style": "primary"
+      },
+      {
+        "label": "Pass first",
+        "action_id": "dinkly_pass",
+        "value": "{\"item_type\": \"concept\", \"item_id\": \"content-38d01570e1ab\"}"
+      },
+      {
+        "label": "More Like This",
+        "action_id": "dinkly_more_like_this",
+        "value": "{\"item_type\": \"concept\", \"item_id\": \"content-38d01570e1ab\"}"
+      },
+      {
+        "label": "Open Batch",
+        "action_id": "dinkly_open_batch",
+        "value": "{\"item_type\": \"concept\", \"item_id\": \"content-38d01570e1ab\"}",
+        "url": "http://127.0.0.1:3000/approvals"
+      }
+    ],
+    "message_id": "1786125179.996419"
+  },
+  {
+    "id": "delivery-e8cbc27f6bbe",
+    "created_at": "2026-08-07T17:53:00.289082+00:00",
+    "channel": "slack",
+    "kind": "update",
+    "message_id": "1786125092.288949",
+    "message": "DINKLY Agent · Started\n● report what is waiting"
+  },
+  {
+    "id": "delivery-14136566db8f",
+    "created_at": "2026-08-07T17:53:00.632498+00:00",
+    "channel": "slack",
+    "kind": "update",
+    "message_id": "1786125092.288949",
+    "message": "DINKLY Agent · Needs attention\nI can generate concepts or comics, review and repair artwork, learn, or report what is waiting."
+  },
+  {
+    "id": "delivery-58c1aa2ffd62",
+    "created_at": "2026-08-07T17:53:00.666103+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "learning-496145",
+    "message": "DINKLY Agent · Started\n● Review new production evidence and update the DINKLY Brain",
+    "replaces": null
+  },
+  {
+    "id": "delivery-b9c3bd76cfd9",
+    "created_at": "2026-08-07T17:53:00.758720+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "learning-496145",
+    "message": "DINKLY Agent · Complete\nLearning review complete. I proposed 0 Brain update(s).",
+    "replaces": null
+  },
+  {
+    "id": "delivery-81c5d551b440",
+    "created_at": "2026-08-07T17:53:00.929121+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "learning-496145",
+    "message": "DINKLY Agent · Needs attention\nSlack API error: not_in_channel",
+    "replaces": null
+  },
+  {
+    "id": "delivery-16651922c268",
+    "created_at": "2026-08-07T17:53:07.206113+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "approval-generation-63d4617c79c3",
+    "message": "DINKLY Agent · Complete\nLearning review complete. I proposed 0 Brain update(s).",
+    "replaces": null
+  },
+  {
+    "id": "delivery-bb165868149a",
+    "created_at": "2026-08-07T17:54:05.488330+00:00",
+    "channel": "slack",
+    "kind": "message",
+    "thread_id": "1786125244.659899",
+    "message": "DINKLY Agent · Queued\n✓ Assignment received\n○ Waiting for the Agent worker",
+    "message_id": "1786125245.440299"
+  },
+  {
+    "id": "delivery-f808a32eb7ac",
+    "created_at": "2026-08-07T17:54:05.698635+00:00",
+    "channel": "slack",
+    "kind": "message",
+    "thread_id": "1786125244.659899",
+    "message": "DINKLY Agent · Started\n● create me a comic of wings and wings with you",
+    "message_id": "1786125245.647389"
+  },
+  {
+    "id": "delivery-4e0c0c241449",
+    "created_at": "2026-08-07T17:54:05.954752+00:00",
+    "channel": "slack",
+    "kind": "update",
+    "message_id": "1786125245.440299",
+    "message": "DINKLY Agent · Needs attention\nI can generate concepts or comics, review and repair artwork, learn, or report what is waiting."
+  },
+  {
+    "id": "delivery-d4c669ae4e11",
+    "created_at": "2026-08-07T18:14:10.493312+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "web-default",
+    "message": "DINKLY Agent · Started\n● approve concept content-2b0ff74cafb5",
+    "replaces": null
+  },
+  {
+    "id": "delivery-6eb881fc8c3d",
+    "created_at": "2026-08-07T18:14:10.532993+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "web-default",
+    "message": "DINKLY Agent · Needs attention\nYou already selected 5 from this format. Remove one from Ready to Make before approving another.",
+    "replaces": null
+  },
+  {
+    "id": "delivery-5c3c89ac422c",
+    "created_at": "2026-08-07T18:14:10.542752+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "web-default",
+    "message": "DINKLY Agent · Started\n● approve concept content-2b0ff74cafb5",
+    "replaces": null
+  },
+  {
+    "id": "delivery-6f84b560eaab",
+    "created_at": "2026-08-07T18:14:10.579630+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "web-default",
+    "message": "DINKLY Agent · Needs attention\nYou already selected 5 from this format. Remove one from Ready to Make before approving another.",
+    "replaces": null
+  },
+  {
+    "id": "delivery-c108d431d4c7",
+    "created_at": "2026-08-07T18:14:28.030261+00:00",
+    "channel": "web",
+    "kind": "status",
+    "thread_id": "web-default",
+    "message": "DINKLY Agent · STOPPING\nFinishing the current safe step…",
+    "replaces": null
+  },
+  {
+    "id": "delivery-87bea8fbddcf",
+    "created_at": "2026-08-07T18:25:16.763542+00:00",
+    "channel": "slack",
+    "kind": "message",
+    "thread_id": "1786127116.185339",
+    "message": "DINKLY Agent · Queued\n✓ Assignment received\n○ Waiting for the Agent worker",
+    "message_id": "1786127116.700349"
+  },
+  {
+    "id": "delivery-8c64394ded2d",
+    "created_at": "2026-08-07T18:25:17.776365+00:00",
+    "channel": "slack",
+    "kind": "update",
+    "message_id": "1786127116.700349",
+    "message": "DINKLY Agent · Started\n● create me a comic of eating wings and eating wings with you"
+  },
+  {
+    "id": "delivery-1497ff8d4daf",
+    "created_at": "2026-08-07T18:25:18.019135+00:00",
+    "channel": "slack",
+    "kind": "update",
+    "message_id": "1786127116.700349",
+    "message": "DINKLY Agent · Needs attention\nI can generate concepts or comics, review and repair artwork, learn, or report what is waiting."
+  },
+  {
+    "id": "delivery-1a02907c8be3",
+    "created_at": "2026-08-07T18:26:53.153999+00:00",
+    "channel": "slack",
+    "kind": "message",
+    "thread_id": "1786127116.185339",
+    "message": "DINKLY Agent · Queued\n✓ Assignment received\n○ Waiting for the Agent worker",
+    "message_id": "1786127213.087469"
+  },
+  {
+    "id": "delivery-125a2b22e9d7",
+    "created_at": "2026-08-07T18:26:54.417544+00:00",
+    "channel": "slack",
+    "kind": "update",
+    "message_id": "1786127213.087469",
+    "message": "DINKLY Agent · Started\n● create me a comic of eating wings and eating wings with you"
+  },
+  {
+    "id": "delivery-5397d4705c50",
+    "created_at": "2026-08-07T18:26:54.688523+00:00",
+    "channel": "slack",
+    "kind": "update",
+    "message_id": "1786127213.087469",
+    "message": "DINKLY Agent · Needs attention\nI can generate concepts or comics, review and repair artwork, learn, or report what is waiting."
+  }
+]

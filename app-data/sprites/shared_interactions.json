@@ -1,0 +1,23 @@
+[
+  {
+    "id": "shared-interaction-hug-draft",
+    "name": "Shared Hug",
+    "dinko_animation_id": "sprite-animation-dinko-hug",
+    "dinka_animation_id": "sprite-animation-dinka-hug",
+    "shared_frame_rate": 8,
+    "shared_duration": 1000,
+    "dinko_offset": {
+      "x": -0.14,
+      "y": 0
+    },
+    "dinka_offset": {
+      "x": 0.14,
+      "y": 0
+    },
+    "loop_mode": "hold_last",
+    "approved": false,
+    "notes": "Coordinated interaction definition only. Frames needed for both characters before review or approval.",
+    "created_at": "2026-08-06T20:00:00Z",
+    "updated_at": "2026-08-06T20:00:00Z"
+  }
+]

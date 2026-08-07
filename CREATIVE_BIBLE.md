@@ -71,6 +71,14 @@ The activity changes very little. The emotional meaning changes because it is sh
 
 The left side may feel neutral, bored, or gently sad, but never devastated. The right side may feel warm and joyful, but never unrealistically perfect.
 
+## Scene-depth standard
+
+A DINKLY scene should not be empty, but it should never be cluttered. Every X / X WITH YOU concept needs four visible layers: character action, setting, storytelling props, and emotional contrast.
+
+Use one clear environment, two to five purposeful props per panel, one accent color, and generous negative space. The left and right should remain recognizably connected. The right is the warmer emotional version of the same moment—not a separate, more luxurious world.
+
+The image should communicate where they are, what they are doing, how the left side feels, and how the right side feels different before the viewer reads the captions.
+
 ## Dinko and Dinka
 
 ### Dinko

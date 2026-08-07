@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dinkly.local/schemas/sprite_sheet.schema.json",
+  "title": "DINKLY Sprite Sheet Export",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "id",
+    "animation_id",
+    "export_format",
+    "path",
+    "metadata_path",
+    "frame_width",
+    "frame_height",
+    "frame_count",
+    "frame_rate",
+    "loop_mode",
+    "padding",
+    "created_at"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "animation_id": {
+      "type": "string"
+    },
+    "export_format": {
+      "type": "string"
+    },
+    "path": {
+      "type": "string"
+    },
+    "metadata_path": {
+      "type": "string"
+    },
+    "frame_width": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "frame_height": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "sheet_width": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "sheet_height": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "frame_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "frame_rate": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "loop_mode": {
+      "type": "string"
+    },
+    "padding": {
+      "type": "integer",
+      "enum": [
+        0,
+        2,
+        4,
+        8
+      ]
+    },
+    "anchor": {
+      "type": "object"
+    },
+    "frame_durations": {
+      "type": "array",
+      "items": {
+        "type": "integer"
+      }
+    },
+    "cells": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "sha256": {
+      "type": "string"
+    },
+    "asset_url": {
+      "type": "string"
+    },
+    "metadata_url": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    }
+  }
+}

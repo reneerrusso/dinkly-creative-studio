@@ -1,0 +1,3 @@
+import type { LucideIcon } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+export function MetricCard({ label, value, note, icon: Icon }: { label: string; value: string | number; note?: string; icon: LucideIcon }) { return <Card><CardContent className="flex items-start justify-between p-5"><div><p className="text-xs font-semibold uppercase tracking-wide text-muted">{label}</p><p className="mt-2 text-3xl font-semibold tracking-tight">{value}</p>{note && <p className="mt-1 text-xs text-muted">{note}</p>}</div><div className="rounded-xl bg-mustard/20 p-2.5"><Icon className="size-4 text-mustard-dark"/></div></CardContent></Card>; }

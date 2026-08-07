@@ -8,11 +8,12 @@ import json
 import os
 import tempfile
 import uuid
+from collections.abc import Iterable
+from contextlib import suppress
 from dataclasses import asdict, dataclass
 from datetime import date
 from pathlib import Path
-from typing import Any, Iterable
-
+from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_DATA_PATH = ROOT / "data" / "social_posts.json"
@@ -54,7 +55,7 @@ class SocialPost:
     notes: str | None = None
 
     @classmethod
-    def from_mapping(cls, payload: dict[str, Any]) -> "SocialPost":
+    def from_mapping(cls, payload: dict[str, Any]) -> SocialPost:
         allowed = set(cls.__dataclass_fields__)
         unknown = sorted(set(payload) - allowed)
         if unknown:
@@ -213,10 +214,8 @@ def atomic_write_json(path: Path, payload: Any) -> None:
             os.fsync(handle.fileno())
         os.replace(temporary_name, path)
     except Exception:
-        try:
+        with suppress(FileNotFoundError):
             os.unlink(temporary_name)
-        except FileNotFoundError:
-            pass
         raise
 
 

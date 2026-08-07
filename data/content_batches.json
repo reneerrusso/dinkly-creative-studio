@@ -1,0 +1,36 @@
+[
+  {
+    "id": "batch-2026-08-07-51cc4bd9",
+    "date": "2026-08-07",
+    "created_at": "2026-08-07T16:01:29.636858Z",
+    "status": "waiting_for_review",
+    "source_summary": "Structured output from openai; used 1 owned posts, 0 strong learnings, 4 used storylines, and 0 verified current trends.",
+    "with_you_count": 10,
+    "before_after_count": 10,
+    "five_story_count": 10,
+    "approved_count": 5,
+    "used_count": 0,
+    "agent_run_id": "run-5f59fcced10c",
+    "primary": true,
+    "development_fixture": false,
+    "generation_source": "manual",
+    "scheduled_for": null
+  },
+  {
+    "id": "batch-2026-08-07-01faa321",
+    "date": "2026-08-07",
+    "created_at": "2026-08-07T17:49:36.914786Z",
+    "status": "supplemental",
+    "source_summary": "Structured output from openai; used 1 owned posts, 0 strong learnings, 5 used storylines, and 0 verified current trends.",
+    "with_you_count": 10,
+    "before_after_count": 10,
+    "five_story_count": 10,
+    "approved_count": 0,
+    "used_count": 0,
+    "agent_run_id": "run-43d0179094b5",
+    "primary": false,
+    "development_fixture": false,
+    "generation_source": "manual",
+    "scheduled_for": null
+  }
+]

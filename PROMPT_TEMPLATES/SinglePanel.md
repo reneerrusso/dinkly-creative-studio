@@ -22,9 +22,7 @@ Use one uninterrupted {{BACKGROUND_COLOR}} flat background with a restrained {{A
 
 ## TEXT
 
-Render only this supplied text, exactly as written and without added quotation marks or punctuation:
-
-{{TEXT}}
+{{TEXT_INSTRUCTION}}
 
 ## STYLE
 

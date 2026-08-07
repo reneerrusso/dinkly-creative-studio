@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["provider", "platform", "actor_id", "actor_name", "actor_owner", "is_default", "enabled", "pricing_type", "pricing_summary", "separate_usage_charges", "compute_charges_apply", "supports_profile_lookup", "supports_recent_posts", "supports_public_metrics", "last_verified_at", "verification_status", "notes"],
+  "properties": {
+    "provider": {"const": "apify"},
+    "platform": {"enum": ["instagram", "tiktok"]},
+    "actor_id": {"type": "string", "minLength": 3},
+    "actor_name": {"type": "string", "minLength": 1},
+    "actor_owner": {"type": "string", "minLength": 1},
+    "is_default": {"type": "boolean"},
+    "enabled": {"type": "boolean"},
+    "pricing_type": {"type": "string"},
+    "pricing_summary": {"type": "string"},
+    "separate_usage_charges": {"type": ["boolean", "null"]},
+    "compute_charges_apply": {"type": ["boolean", "null"]},
+    "supports_profile_lookup": {"type": "boolean"},
+    "supports_recent_posts": {"type": "boolean"},
+    "supports_public_metrics": {"type": "boolean"},
+    "last_verified_at": {"type": ["string", "null"]},
+    "verification_status": {"type": "string"},
+    "notes": {"type": "string"}
+  },
+  "additionalProperties": false
+}

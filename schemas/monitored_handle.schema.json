@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dinkly.local/schemas/monitored_handle.schema.json",
+  "title": "Monitored Social Handle",
+  "type": "object",
+  "required": ["id", "platform", "username", "canonical_url", "category", "enabled", "provider", "posts_per_refresh", "refresh_frequency", "created_at", "updated_at"],
+  "properties": {
+    "id": {"type": "string", "minLength": 1},
+    "platform": {"enum": ["instagram", "tiktok"]},
+    "username": {"type": "string", "pattern": "^[a-z0-9._]{1,80}$"},
+    "canonical_url": {"type": "string"},
+    "display_name": {"type": ["string", "null"]},
+    "category": {"type": "string"},
+    "enabled": {"type": "boolean"},
+    "provider": {"type": "string"},
+    "posts_per_refresh": {"type": "integer", "minimum": 1},
+    "refresh_frequency": {"enum": ["Off", "Daily", "Every 3 days", "Weekly"]},
+    "last_checked_at": {"type": ["string", "null"]},
+    "last_success_at": {"type": ["string", "null"]},
+    "last_error": {"type": ["string", "null"]},
+    "profile_id": {"type": ["string", "null"]},
+    "profile_image_url": {"type": ["string", "null"]},
+    "follower_count": {"type": ["integer", "null"], "minimum": 0},
+    "following_count": {"type": ["integer", "null"], "minimum": 0},
+    "post_count": {"type": ["integer", "null"], "minimum": 0},
+    "notes": {"type": "string"},
+    "created_at": {"type": "string"},
+    "updated_at": {"type": "string"}
+  },
+  "additionalProperties": false
+}

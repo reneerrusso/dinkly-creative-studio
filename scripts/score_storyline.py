@@ -9,10 +9,10 @@ import os
 import re
 import tempfile
 import uuid
+from contextlib import suppress
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
-
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_LEARNINGS = ROOT / "data" / "social_learnings.json"
@@ -59,10 +59,8 @@ def _atomic_write(path: Path, payload: Any) -> None:
             os.fsync(handle.fileno())
         os.replace(temporary_name, path)
     except Exception:
-        try:
+        with suppress(FileNotFoundError):
             os.unlink(temporary_name)
-        except FileNotFoundError:
-            pass
         raise
 
 
@@ -195,6 +193,18 @@ def score_storyline(
         "recommended_accent_color": str(payload.get("recommended_accent_color") or "muted sage"),
         "recommended_camera_angle": str(payload.get("recommended_camera_angle") or "medium straight-on"),
         "props": props,
+        "left_character": str(payload.get("left_character") or "boy"),
+        "left_character_action": str(payload.get("left_character_action") or ""),
+        "left_setting": str(payload.get("left_setting") or ""),
+        "left_props": [str(item) for item in (payload.get("left_props") or [])],
+        "left_emotion": str(payload.get("left_emotion") or ""),
+        "right_characters": "boy_and_girl",
+        "right_character_actions": str(payload.get("right_character_actions") or ""),
+        "right_setting": str(payload.get("right_setting") or ""),
+        "right_props": [str(item) for item in (payload.get("right_props") or [])],
+        "right_emotion": str(payload.get("right_emotion") or ""),
+        "shared_environment": str(payload.get("shared_environment") or ""),
+        "environmental_contrast": str(payload.get("environmental_contrast") or ""),
         "character_count": character_count,
         "novel_angle": novel_angle,
         "scores": scores,

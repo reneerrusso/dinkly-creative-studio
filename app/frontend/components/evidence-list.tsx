@@ -1,0 +1,1 @@
+export function EvidenceList({ ids }: { ids: string[] }) { return <div className="flex flex-wrap gap-2">{ids.length ? ids.map(id => <span key={id} className="rounded-lg bg-wash px-2 py-1 font-mono text-[11px] text-muted">{id}</span>) : <span className="text-xs text-muted">No linked posts yet.</span>}</div>; }

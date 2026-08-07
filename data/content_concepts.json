@@ -1,0 +1,5197 @@
+[
+  {
+    "id": "content-9c3da288018b",
+    "batch_id": "batch-2026-08-07-51cc4bd9",
+    "format": "with_you",
+    "status": "approved",
+    "slot": 1,
+    "title_left": "Kite on the Ground",
+    "title_right": "Kite in the Air",
+    "story_title": null,
+    "left_character": "boy",
+    "left_action": "Sits beside a fallen kite and holds its loose string.",
+    "left_setting": "Pastel community meadow",
+    "left_props": [
+      "fallen diamond kite",
+      "loose string",
+      "small grass patch"
+    ],
+    "left_emotion": "Bored and disappointed",
+    "right_action": "Joins him and steadies the kite while he lifts the string.",
+    "right_characters": [
+      "girl",
+      "boy"
+    ],
+    "right_setting": "Same pastel community meadow",
+    "right_props": [
+      "diamond kite",
+      "taut string",
+      "short wooden spool"
+    ],
+    "right_emotion": "Warm and encouraging",
+    "shared_environment": "One continuous pastel meadow with a low hill, pale path, and soft clouds.",
+    "environmental_contrast": "The empty kite space becomes a shared launch spot.",
+    "background_color": "#F7DDE8",
+    "accent_color": "#78B9B0",
+    "camera_angle": "Eye-level three-quarter view",
+    "emotional_insight": "Ordinary setbacks feel lighter when someone joins the attempt.",
+    "emotional_premise": null,
+    "why_it_may_work": "A small shared repair turns a lonely pause into teamwork.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep the broken kite string readable without adding extra actions.",
+      "Show both characters equal in scale."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": "2026-08-07T16:50:39.827764Z",
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T16:02:22.312810Z",
+    "updated_at": "2026-08-07T16:50:39.827764Z"
+  },
+  {
+    "id": "content-90c873a2f2c3",
+    "batch_id": "batch-2026-08-07-51cc4bd9",
+    "format": "with_you",
+    "status": "approved",
+    "slot": 2,
+    "title_left": "Cloud in a Puddle",
+    "title_right": "Clouds Together",
+    "story_title": null,
+    "left_character": "girl",
+    "left_action": "Stares into a shallow puddle with one nub foot beside it.",
+    "left_setting": "Pastel park path after rain",
+    "left_props": [
+      "shallow puddle",
+      "yellow rain boot",
+      "fallen leaf"
+    ],
+    "left_emotion": "Neutral and wistful",
+    "right_action": "Sits beside her and points toward their reflected cloud shapes.",
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": "Same pastel park path after rain",
+    "right_props": [
+      "shallow puddle",
+      "two fallen leaves",
+      "tiny paper boat"
+    ],
+    "right_emotion": "Gentle curiosity",
+    "shared_environment": "One continuous pastel park path bordered by wet grass, lavender shrubs, and pale rain clouds.",
+    "environmental_contrast": "A solitary reflection becomes a shared picture.",
+    "background_color": "#DCEBFA",
+    "accent_color": "#F1A65A",
+    "camera_angle": "Eye-level side view",
+    "emotional_insight": "Companionship can make an ordinary puddle feel worth noticing.",
+    "emotional_premise": null,
+    "why_it_may_work": "A quiet puddle reflection becomes a shared discovery.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep the puddle shallow and prop scale believable.",
+      "Avoid making the left character look cheerful."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": "2026-08-07T16:51:10.437444Z",
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T16:02:22.312810Z",
+    "updated_at": "2026-08-07T16:51:10.437444Z"
+  },
+  {
+    "id": "content-906a07771dce",
+    "batch_id": "batch-2026-08-07-51cc4bd9",
+    "format": "with_you",
+    "status": "approved",
+    "slot": 3,
+    "title_left": "Waiting Alone",
+    "title_right": "Waiting Together",
+    "story_title": null,
+    "left_character": "boy",
+    "left_action": "Sits under the bus shelter and watches the empty road.",
+    "left_setting": "Pastel village bus stop",
+    "left_props": [
+      "wooden bench",
+      "bus-stop sign",
+      "small paper timetable"
+    ],
+    "left_emotion": "Bored and restless",
+    "right_action": "Sits beside him and taps a gentle rhythm on the bench.",
+    "right_characters": [
+      "girl",
+      "boy"
+    ],
+    "right_setting": "Same pastel village bus stop",
+    "right_props": [
+      "wooden bench",
+      "bus-stop sign",
+      "paper timetable"
+    ],
+    "right_emotion": "Playful and supportive",
+    "shared_environment": "One continuous pastel roadside with a peach shelter, mint grass, and distant rounded hills.",
+    "environmental_contrast": "The silent wait gains a shared rhythm.",
+    "background_color": "#FFF0C7",
+    "accent_color": "#8F9EDB",
+    "camera_angle": "Eye-level front view",
+    "emotional_insight": "Company can give shape to time that otherwise drags.",
+    "emotional_premise": null,
+    "why_it_may_work": "Waiting becomes playful when a friend turns it into a tiny shared ritual.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep the bench, sign, and shelter proportionate.",
+      "Make the bus absence readable without showing a vehicle."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": "2026-08-07T16:51:18.626549Z",
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T16:02:22.312810Z",
+    "updated_at": "2026-08-07T16:51:18.626549Z"
+  },
+  {
+    "id": "content-e77c0c14a7bc",
+    "batch_id": "batch-2026-08-07-51cc4bd9",
+    "format": "with_you",
+    "status": "passed",
+    "slot": 4,
+    "title_left": "Drooping Sprout",
+    "title_right": "Shared Water",
+    "story_title": null,
+    "left_character": "girl",
+    "left_action": "Holds a small watering can beside a drooping sprout.",
+    "left_setting": "Pastel rooftop garden",
+    "left_props": [
+      "drooping potted sprout",
+      "small watering can",
+      "wooden plant marker"
+    ],
+    "left_emotion": "Worried and subdued",
+    "right_action": "Tilts the can with her so water reaches the dry soil.",
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": "Same pastel rooftop garden",
+    "right_props": [
+      "drooping potted sprout",
+      "small watering can",
+      "wooden plant marker"
+    ],
+    "right_emotion": "Caring and focused",
+    "shared_environment": "One continuous rooftop garden with peach planters, a low mint wall, and a lavender skyline.",
+    "environmental_contrast": "The neglected pot becomes a joint place of care.",
+    "background_color": "#E9DDF5",
+    "accent_color": "#F2A38B",
+    "camera_angle": "Eye-level three-quarter view",
+    "emotional_insight": "Shared attention can make a small responsibility feel hopeful.",
+    "emotional_premise": null,
+    "why_it_may_work": "A simple plant-care task creates a clear, tender connection.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Use only one watering action per character.",
+      "Keep the watering can small enough for a round character."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T16:02:22.312810Z",
+    "updated_at": "2026-08-07T16:54:55.170369Z"
+  },
+  {
+    "id": "content-7af5534d5442",
+    "batch_id": "batch-2026-08-07-51cc4bd9",
+    "format": "with_you",
+    "status": "approved",
+    "slot": 5,
+    "title_left": "Missing Piece",
+    "title_right": "Found Together",
+    "story_title": null,
+    "left_character": "boy",
+    "left_action": "Looks down at an unfinished floor puzzle and holds one loose piece.",
+    "left_setting": "Pastel library reading nook",
+    "left_props": [
+      "unfinished floor puzzle",
+      "loose puzzle piece",
+      "round floor cushion"
+    ],
+    "left_emotion": "Frustrated and quiet",
+    "right_action": "Crawls beside him and checks beneath the cushion for the missing piece.",
+    "right_characters": [
+      "girl",
+      "boy"
+    ],
+    "right_setting": "Same pastel library reading nook",
+    "right_props": [
+      "unfinished floor puzzle",
+      "round floor cushion",
+      "low book basket"
+    ],
+    "right_emotion": "Patient and helpful",
+    "shared_environment": "One continuous library nook with mint walls, peach shelves, a lavender rug, and a sunlit window.",
+    "environmental_contrast": "An incomplete picture becomes a joint search.",
+    "background_color": "#D8F0E7",
+    "accent_color": "#E9899A",
+    "camera_angle": "Eye-level overhead-leaning view",
+    "emotional_insight": "Help does not need to solve everything to make frustration smaller.",
+    "emotional_premise": null,
+    "why_it_may_work": "A missing puzzle piece becomes a reason to search side by side.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Show a clearly incomplete puzzle without clutter.",
+      "Use one readable search action for each character."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": "2026-08-07T17:23:40.463414Z",
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T16:02:22.312810Z",
+    "updated_at": "2026-08-07T17:23:40.463414Z"
+  },
+  {
+    "id": "content-8de0219cb6ad",
+    "batch_id": "batch-2026-08-07-51cc4bd9",
+    "format": "with_you",
+    "status": "approved",
+    "slot": 6,
+    "title_left": "Quiet Shore",
+    "title_right": "Listening Shore",
+    "story_title": null,
+    "left_character": "girl",
+    "left_action": "Holds a seashell to her side and gazes across the still water.",
+    "left_setting": "Pastel lakeshore",
+    "left_props": [
+      "large seashell",
+      "smooth pebble",
+      "small driftwood branch"
+    ],
+    "left_emotion": "Lonely and contemplative",
+    "right_action": "Leans close beside her and listens to the shell with her.",
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": "Same pastel lakeshore",
+    "right_props": [
+      "large seashell",
+      "smooth pebble",
+      "small driftwood branch"
+    ],
+    "right_emotion": "Calm and companionable",
+    "shared_environment": "One continuous peach shoreline with pale blue water, mint reeds, and rounded distant islands.",
+    "environmental_contrast": "The quiet shore changes from solitary listening to shared listening.",
+    "background_color": "#FBE3C2",
+    "accent_color": "#75AFC1",
+    "camera_angle": "Eye-level profile view",
+    "emotional_insight": "Presence can turn silence into something gently shared.",
+    "emotional_premise": null,
+    "why_it_may_work": "Sharing a listening moment makes a quiet place feel welcoming.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Do not add instruments or extra actions.",
+      "Keep the shell and shoreline visually distinct."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": "2026-08-07T17:23:46.016143Z",
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T16:02:22.312810Z",
+    "updated_at": "2026-08-07T17:23:46.016143Z"
+  },
+  {
+    "id": "content-4eb186287abb",
+    "batch_id": "batch-2026-08-07-51cc4bd9",
+    "format": "with_you",
+    "status": "passed",
+    "slot": 7,
+    "title_left": "Folded Wrong",
+    "title_right": "One More Fold",
+    "story_title": null,
+    "left_character": "boy",
+    "left_action": "Holds a crumpled paper plane over a low craft table.",
+    "left_setting": "Pastel after-school craft room",
+    "left_props": [
+      "crumpled paper plane",
+      "low craft table",
+      "stack of pastel paper"
+    ],
+    "left_emotion": "Embarrassed and flat",
+    "right_action": "Places a fresh sheet beside him and begins a matching fold.",
+    "right_characters": [
+      "girl",
+      "boy"
+    ],
+    "right_setting": "Same pastel after-school craft room",
+    "right_props": [
+      "fresh paper sheet",
+      "low craft table",
+      "short paper-folding guide"
+    ],
+    "right_emotion": "Reassuring and upbeat",
+    "shared_environment": "One continuous craft room with lavender walls, peach floor mats, mint shelves, and a sunny window.",
+    "environmental_contrast": "A private mistake becomes a shared second try.",
+    "background_color": "#E4E1F8",
+    "accent_color": "#F0B35F",
+    "camera_angle": "Eye-level front view",
+    "emotional_insight": "Trying again feels safer when someone tries beside you.",
+    "emotional_premise": null,
+    "why_it_may_work": "A failed paper fold becomes a low-stakes moment of encouragement.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Make the paper plane visibly crumpled but not torn.",
+      "Keep both actions limited to folding and presenting."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T16:02:22.312810Z",
+    "updated_at": "2026-08-07T17:38:29.758408Z"
+  },
+  {
+    "id": "content-2b0ff74cafb5",
+    "batch_id": "batch-2026-08-07-51cc4bd9",
+    "format": "with_you",
+    "status": "candidate",
+    "slot": 8,
+    "title_left": "Stuck Backpack",
+    "title_right": "Steady Pull",
+    "story_title": null,
+    "left_character": "girl",
+    "left_action": "Tugs a stuck zipper on a small backpack.",
+    "left_setting": "Pastel schoolyard gate",
+    "left_props": [
+      "small backpack",
+      "stuck zipper",
+      "low gate"
+    ],
+    "left_emotion": "Annoyed and tired",
+    "right_action": "Holds the backpack steady while she pulls the zipper.",
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": "Same pastel schoolyard gate",
+    "right_props": [
+      "small backpack",
+      "stuck zipper",
+      "low gate"
+    ],
+    "right_emotion": "Focused and helpful",
+    "shared_environment": "One continuous schoolyard with mint fencing, peach paving, lavender trees, and a pale gate.",
+    "environmental_contrast": "The stubborn object becomes a shared point of balance.",
+    "background_color": "#DFF3F0",
+    "accent_color": "#E998A7",
+    "camera_angle": "Eye-level three-quarter view",
+    "emotional_insight": "Practical help can communicate care without needing a big gesture.",
+    "emotional_premise": null,
+    "why_it_may_work": "A stuck zipper offers a clear, relatable reason to cooperate.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Use an oversized but plausible backpack zipper.",
+      "Ensure the left character remains neutral rather than cheerful."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T16:02:22.312810Z",
+    "updated_at": "2026-08-07T16:02:22.326254+00:00"
+  },
+  {
+    "id": "content-3afb3f6e74b7",
+    "batch_id": "batch-2026-08-07-51cc4bd9",
+    "format": "with_you",
+    "status": "candidate",
+    "slot": 9,
+    "title_left": "Empty Basket",
+    "title_right": "Garden Search",
+    "story_title": null,
+    "left_character": "boy",
+    "left_action": "Holds an empty basket beside a pumpkin vine.",
+    "left_setting": "Pastel allotment garden",
+    "left_props": [
+      "empty woven basket",
+      "pumpkin vine",
+      "wooden garden marker"
+    ],
+    "left_emotion": "Disappointed and quiet",
+    "right_action": "Lifts a broad leaf beside him to look for a hidden pumpkin.",
+    "right_characters": [
+      "girl",
+      "boy"
+    ],
+    "right_setting": "Same pastel allotment garden",
+    "right_props": [
+      "small woven basket",
+      "pumpkin vine",
+      "broad leaf"
+    ],
+    "right_emotion": "Curious and encouraging",
+    "shared_environment": "One continuous garden plot with peach soil, mint trellises, lavender flowers, and a low wooden fence.",
+    "environmental_contrast": "An empty basket becomes an invitation to explore together.",
+    "background_color": "#F8E0D5",
+    "accent_color": "#79B5A9",
+    "camera_angle": "Eye-level side view",
+    "emotional_insight": "A companion can change disappointment into a shared possibility.",
+    "emotional_premise": null,
+    "why_it_may_work": "A missed harvest becomes a shared search through a familiar garden.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep the basket and pumpkins small and consistent.",
+      "Show only one search direction per character."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T16:02:22.312810Z",
+    "updated_at": "2026-08-07T16:02:22.326257+00:00"
+  },
+  {
+    "id": "content-2e44482f42ce",
+    "batch_id": "batch-2026-08-07-51cc4bd9",
+    "format": "with_you",
+    "status": "candidate",
+    "slot": 10,
+    "title_left": "Closed Storybook",
+    "title_right": "Open Storybook",
+    "story_title": null,
+    "left_character": "girl",
+    "left_action": "Sits on a cushion with a closed storybook resting in front of her.",
+    "left_setting": "Pastel village reading circle",
+    "left_props": [
+      "closed storybook",
+      "round cushion",
+      "low book stand"
+    ],
+    "left_emotion": "Bored and withdrawn",
+    "right_action": "Sits beside her and opens the storybook between them.",
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": "Same pastel village reading circle",
+    "right_props": [
+      "open storybook",
+      "round cushion",
+      "low book stand"
+    ],
+    "right_emotion": "Inviting and cheerful",
+    "shared_environment": "One continuous reading circle with mint grass, peach cushions, lavender bunting, and a low wooden stand.",
+    "environmental_contrast": "The closed book becomes a shared doorway into a story.",
+    "background_color": "#E8F1D6",
+    "accent_color": "#D88E9D",
+    "camera_angle": "Eye-level front view",
+    "emotional_insight": "An ordinary activity becomes inviting when it is offered together.",
+    "emotional_premise": null,
+    "why_it_may_work": "A lonely seat at story time gains warmth through shared listening.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep the book large enough to read visually but not oversized.",
+      "Avoid extra characters or crowding."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T16:02:22.312810Z",
+    "updated_at": "2026-08-07T16:02:22.326259+00:00"
+  },
+  {
+    "id": "content-0f668227a5df",
+    "batch_id": "batch-2026-08-07-51cc4bd9",
+    "format": "before_after",
+    "status": "candidate",
+    "slot": 1,
+    "title_left": "Breakfast for One",
+    "title_right": "Breakfast Together",
+    "story_title": null,
+    "left_character": "boy",
+    "left_action": "Dinko stares at one untouched toast slice.",
+    "left_setting": "pastel mint kitchen nook",
+    "left_props": [
+      "small toast rack",
+      "single plate",
+      "round wall clock"
+    ],
+    "left_emotion": "bored",
+    "right_action": "Dinka places a second toast slice beside Dinko.",
+    "right_characters": [
+      "girl",
+      "boy"
+    ],
+    "right_setting": "same pastel mint kitchen nook",
+    "right_props": [
+      "small toast rack",
+      "two plates",
+      "jam jar"
+    ],
+    "right_emotion": "warm and inviting",
+    "shared_environment": "continuous pastel mint kitchen with a peach counter and soft cream floor",
+    "environmental_contrast": "The empty counter becomes a shared breakfast corner.",
+    "background_color": "pastel mint",
+    "accent_color": "coral",
+    "camera_angle": "eye-level three-quarter view",
+    "emotional_insight": "Ordinary food feels special when someone joins the routine.",
+    "emotional_premise": null,
+    "why_it_may_work": "A small shared ritual turns a dull morning into companionship.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep both characters equal-size and avoid human-like gestures.",
+      "Show the toast rack at believable Dinko scale."
+    ],
+    "transformation": "Lonely plate becomes a two-plate ritual through simple companionship.",
+    "before_state": "Dinko waits alone for breakfast.",
+    "after_state": "Dinko and Dinka share the first meal of the day.",
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T16:03:16.581353Z",
+    "updated_at": "2026-08-07T16:03:16.599243+00:00"
+  },
+  {
+    "id": "content-353087466f2c",
+    "batch_id": "batch-2026-08-07-51cc4bd9",
+    "format": "before_after",
+    "status": "candidate",
+    "slot": 2,
+    "title_left": "Laundry Day",
+    "title_right": "Laundry Together",
+    "story_title": null,
+    "left_character": "girl",
+    "left_action": "Dinka sorts one lonely sock beside an empty basket.",
+    "left_setting": "pastel lavender laundry room",
+    "left_props": [
+      "small laundry basket",
+      "single sock",
+      "wooden peg"
+    ],
+    "left_emotion": "neutral",
+    "right_action": "Dinko drops a matching sock into the basket.",
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": "same pastel lavender laundry room",
+    "right_props": [
+      "small laundry basket",
+      "matching socks",
+      "wooden pegs"
+    ],
+    "right_emotion": "cheerful",
+    "shared_environment": "continuous pastel lavender laundry room with a mint shelf and peach floor mat",
+    "environmental_contrast": "A sparse chore corner gains color and rhythm from a partner.",
+    "background_color": "pastel lavender",
+    "accent_color": "sunny yellow",
+    "camera_angle": "slightly overhead",
+    "emotional_insight": "Shared effort makes repetitive work feel lighter.",
+    "emotional_premise": null,
+    "why_it_may_work": "A quiet chore becomes playful without changing the familiar setting.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Avoid making the laundry basket oversized.",
+      "Keep the action readable as sorting, not folding."
+    ],
+    "transformation": "A tedious task becomes a tiny cooperative game.",
+    "before_state": "Dinka sorts laundry in silence.",
+    "after_state": "Dinka and Dinko sort matching socks side by side.",
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T16:03:16.581353Z",
+    "updated_at": "2026-08-07T16:03:16.599249+00:00"
+  },
+  {
+    "id": "content-983a0b258842",
+    "batch_id": "batch-2026-08-07-51cc4bd9",
+    "format": "before_after",
+    "status": "candidate",
+    "slot": 3,
+    "title_left": "Blank Page",
+    "title_right": "A Shared Drawing",
+    "story_title": null,
+    "left_character": "girl",
+    "left_action": "Dinka faces a blank sheet beside three unused crayons.",
+    "left_setting": "pastel blue art table",
+    "left_props": [
+      "blank paper",
+      "three crayons",
+      "low easel"
+    ],
+    "left_emotion": "stuck",
+    "right_action": "Dinko adds one bright orange circle to the paper.",
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": "same pastel blue art table",
+    "right_props": [
+      "paper with orange circle",
+      "three crayons",
+      "low easel"
+    ],
+    "right_emotion": "encouraging",
+    "shared_environment": "continuous pastel blue studio with a peach tabletop and cream wall",
+    "environmental_contrast": "The blank surface gains a starting point without becoming crowded.",
+    "background_color": "pastel blue",
+    "accent_color": "orange",
+    "camera_angle": "top-down table view",
+    "emotional_insight": "A first mark is easier when someone begins beside you.",
+    "emotional_premise": null,
+    "why_it_may_work": "A small creative block is unlocked by another Dinko’s presence.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep the paper and crayons proportional to the characters.",
+      "Do not imply Dinko is holding tools with fingers."
+    ],
+    "transformation": "Creative hesitation becomes momentum through a simple contribution.",
+    "before_state": "Dinka cannot choose how to start.",
+    "after_state": "Dinka has a shared drawing to continue.",
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T16:03:16.581353Z",
+    "updated_at": "2026-08-07T16:03:16.599250+00:00"
+  },
+  {
+    "id": "content-55c8cd84e262",
+    "batch_id": "batch-2026-08-07-51cc4bd9",
+    "format": "before_after",
+    "status": "candidate",
+    "slot": 4,
+    "title_left": "Quiet Window",
+    "title_right": "Window Company",
+    "story_title": null,
+    "left_character": "boy",
+    "left_action": "Dinko gazes through the dark window.",
+    "left_setting": "pastel cream reading alcove",
+    "left_props": [
+      "round window",
+      "small cushion",
+      "battery lantern"
+    ],
+    "left_emotion": "sad",
+    "right_action": "Dinka sits beside Dinko under the same small blanket.",
+    "right_characters": [
+      "girl",
+      "boy"
+    ],
+    "right_setting": "same pastel cream reading alcove",
+    "right_props": [
+      "round window",
+      "shared blanket",
+      "battery lantern"
+    ],
+    "right_emotion": "comforting",
+    "shared_environment": "continuous pastel cream alcove with a lavender wall and soft blue night outside",
+    "environmental_contrast": "The solitary window becomes a cozy shared lookout.",
+    "background_color": "pastel cream",
+    "accent_color": "plum",
+    "camera_angle": "eye-level side view",
+    "emotional_insight": "Presence can comfort without needing to fix the night.",
+    "emotional_premise": null,
+    "why_it_may_work": "A gentle shared pause gives an ordinary evening emotional warmth.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Use only a safe battery lantern, not a flame.",
+      "Keep the window and blanket clearly separate."
+    ],
+    "transformation": "Sad stillness becomes peaceful connection.",
+    "before_state": "Dinko watches darkness alone.",
+    "after_state": "Dinko and Dinka quietly watch it together.",
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T16:03:16.581353Z",
+    "updated_at": "2026-08-07T16:03:16.599255+00:00"
+  },
+  {
+    "id": "content-8a3d7ee4f6e8",
+    "batch_id": "batch-2026-08-07-51cc4bd9",
+    "format": "before_after",
+    "status": "candidate",
+    "slot": 5,
+    "title_left": "Wrong Turn",
+    "title_right": "Map Partners",
+    "story_title": null,
+    "left_character": "girl",
+    "left_action": "Dinka studies a folded map beside a garden path.",
+    "left_setting": "pastel green community garden",
+    "left_props": [
+      "folded map",
+      "wooden signpost",
+      "small watering can"
+    ],
+    "left_emotion": "uncertain",
+    "right_action": "Dinko points to the matching flower-shaped sign.",
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": "same pastel green community garden",
+    "right_props": [
+      "unfolded map",
+      "flower-shaped sign",
+      "small watering can"
+    ],
+    "right_emotion": "confident",
+    "shared_environment": "continuous pastel green garden with peach paths and lavender planters",
+    "environmental_contrast": "A confusing fork becomes a shared discovery point.",
+    "background_color": "pastel green",
+    "accent_color": "red-orange",
+    "camera_angle": "slightly low eye-level",
+    "emotional_insight": "Problems feel smaller when two perspectives meet.",
+    "emotional_premise": null,
+    "why_it_may_work": "A missed turn becomes a navigable adventure when someone joins in.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Make the map large enough to read but not oversized.",
+      "Avoid depicting a dangerous or confusing environment."
+    ],
+    "transformation": "Uncertainty becomes confidence through cooperative noticing.",
+    "before_state": "Dinka cannot tell which path is correct.",
+    "after_state": "Dinka and Dinko choose the route together.",
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T16:03:16.581353Z",
+    "updated_at": "2026-08-07T16:03:16.599256+00:00"
+  },
+  {
+    "id": "content-04a2db6c6843",
+    "batch_id": "batch-2026-08-07-51cc4bd9",
+    "format": "before_after",
+    "status": "candidate",
+    "slot": 6,
+    "title_left": "Grounded Kite",
+    "title_right": "Kite Lift",
+    "story_title": null,
+    "left_character": "boy",
+    "left_action": "Dinko sits beside a kite with a loose tail.",
+    "left_setting": "pastel lilac hilltop park",
+    "left_props": [
+      "small kite",
+      "coiled string",
+      "paper tail"
+    ],
+    "left_emotion": "disappointed",
+    "right_action": "Dinka presses the paper tail onto the kite.",
+    "right_characters": [
+      "girl",
+      "boy"
+    ],
+    "right_setting": "same pastel lilac hilltop park",
+    "right_props": [
+      "small kite",
+      "coiled string",
+      "paper tail"
+    ],
+    "right_emotion": "focused",
+    "shared_environment": "continuous pastel lilac park with mint grass and a pale peach horizon",
+    "environmental_contrast": "The grounded kite becomes ready for a shared launch.",
+    "background_color": "pastel lilac",
+    "accent_color": "lime",
+    "camera_angle": "eye-level three-quarter view",
+    "emotional_insight": "Encouragement can turn a setback into the next attempt.",
+    "emotional_premise": null,
+    "why_it_may_work": "A tiny repair becomes satisfying when the result is celebrated together.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "The kite string must remain visibly attached and untangled.",
+      "Do not make the kite larger than the characters."
+    ],
+    "transformation": "Disappointment changes into readiness through teamwork.",
+    "before_state": "Dinko has stopped after the kite fails.",
+    "after_state": "Dinko and Dinka prepare to try again.",
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T16:03:16.581353Z",
+    "updated_at": "2026-08-07T16:03:16.599257+00:00"
+  },
+  {
+    "id": "content-023216f77794",
+    "batch_id": "batch-2026-08-07-51cc4bd9",
+    "format": "before_after",
+    "status": "candidate",
+    "slot": 7,
+    "title_left": "Bedtime Bell",
+    "title_right": "Goodnight Together",
+    "story_title": null,
+    "left_character": "girl",
+    "left_action": "Dinka stares at a small bedside clock.",
+    "left_setting": "pastel rose bedroom",
+    "left_props": [
+      "low bed",
+      "small bedside clock",
+      "star cushion"
+    ],
+    "left_emotion": "restless",
+    "right_action": "Dinko turns off the bedside lamp.",
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": "same pastel rose bedroom",
+    "right_props": [
+      "low bed",
+      "bedside lamp",
+      "star cushion"
+    ],
+    "right_emotion": "calm",
+    "shared_environment": "continuous pastel rose bedroom with lavender walls and a cream rug",
+    "environmental_contrast": "A restless room settles into a shared goodnight moment.",
+    "background_color": "pastel rose",
+    "accent_color": "blue-gray",
+    "camera_angle": "eye-level front view",
+    "emotional_insight": "Routines feel safer when they are shared.",
+    "emotional_premise": null,
+    "why_it_may_work": "A familiar bedtime routine becomes gentler through synchronized action.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep the bed low and prop-sized.",
+      "Show only one action per character."
+    ],
+    "transformation": "Restlessness becomes calm through a companion’s steady presence.",
+    "before_state": "Dinka waits for sleep alone.",
+    "after_state": "Dinka and Dinko settle into the same quiet rhythm.",
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T16:03:16.581353Z",
+    "updated_at": "2026-08-07T16:03:16.599259+00:00"
+  },
+  {
+    "id": "content-c8d7f754ecdd",
+    "batch_id": "batch-2026-08-07-51cc4bd9",
+    "format": "before_after",
+    "status": "candidate",
+    "slot": 8,
+    "title_left": "One Sandwich",
+    "title_right": "Picnic Pair",
+    "story_title": null,
+    "left_character": "boy",
+    "left_action": "Dinko sits beside one wrapped sandwich on a blanket.",
+    "left_setting": "pastel turquoise riverside meadow",
+    "left_props": [
+      "small blanket",
+      "wrapped sandwich",
+      "paper cup"
+    ],
+    "left_emotion": "flat",
+    "right_action": "Dinka places a second paper cup on the blanket.",
+    "right_characters": [
+      "girl",
+      "boy"
+    ],
+    "right_setting": "same pastel turquoise riverside meadow",
+    "right_props": [
+      "small blanket",
+      "two paper cups",
+      "wrapped sandwich"
+    ],
+    "right_emotion": "pleased",
+    "shared_environment": "continuous pastel turquoise meadow with a peach riverbank and cream clouds",
+    "environmental_contrast": "A sparse lunch becomes a welcoming picnic spot.",
+    "background_color": "pastel turquoise",
+    "accent_color": "golden orange",
+    "camera_angle": "slightly overhead",
+    "emotional_insight": "Sharing space can make an ordinary meal feel abundant.",
+    "emotional_premise": null,
+    "why_it_may_work": "A small picnic setup makes togetherness visible with very few props.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep the basket compact and easy to read.",
+      "Avoid adding extra food clutter."
+    ],
+    "transformation": "Emptiness becomes welcome through a simple invitation.",
+    "before_state": "Dinko eats beside an empty place.",
+    "after_state": "Dinko and Dinka make room for one another.",
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T16:03:16.581353Z",
+    "updated_at": "2026-08-07T16:03:16.599260+00:00"
+  },
+  {
+    "id": "content-978de9c6f879",
+    "batch_id": "batch-2026-08-07-51cc4bd9",
+    "format": "before_after",
+    "status": "candidate",
+    "slot": 9,
+    "title_left": "Silent Music Box",
+    "title_right": "A Tune Shared",
+    "story_title": null,
+    "left_character": "girl",
+    "left_action": "Dinka rests beside a closed music box.",
+    "left_setting": "pastel yellow apartment hallway",
+    "left_props": [
+      "small music box",
+      "round stool",
+      "potted plant"
+    ],
+    "left_emotion": "bored",
+    "right_action": "Dinko opens the music box lid.",
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": "same pastel yellow apartment hallway",
+    "right_props": [
+      "open music box",
+      "round stool",
+      "potted plant"
+    ],
+    "right_emotion": "delighted",
+    "shared_environment": "continuous pastel yellow hallway with mint doors and a lavender runner",
+    "environmental_contrast": "The quiet hallway gains a small shared melody.",
+    "background_color": "pastel yellow",
+    "accent_color": "violet",
+    "camera_angle": "eye-level side view",
+    "emotional_insight": "Joy often begins when someone chooses to share a familiar thing.",
+    "emotional_premise": null,
+    "why_it_may_work": "A familiar neighborhood sound becomes a shared listening experience.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep the music box closed and clearly non-human-operated.",
+      "Use a simple expression change to show listening."
+    ],
+    "transformation": "Boredom becomes delight through a shared sound.",
+    "before_state": "Dinka waits beside a silent keepsake.",
+    "after_state": "Dinka and Dinko listen to its tune together.",
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T16:03:16.581353Z",
+    "updated_at": "2026-08-07T16:03:16.599261+00:00"
+  },
+  {
+    "id": "content-6dab65691ff4",
+    "batch_id": "batch-2026-08-07-51cc4bd9",
+    "format": "before_after",
+    "status": "candidate",
+    "slot": 10,
+    "title_left": "Library Stack",
+    "title_right": "Two-Way Return",
+    "story_title": null,
+    "left_character": "boy",
+    "left_action": "Dinko sits beside a short stack of library books.",
+    "left_setting": "pastel blue neighborhood library",
+    "left_props": [
+      "short book stack",
+      "return cart",
+      "library card"
+    ],
+    "left_emotion": "weary",
+    "right_action": "Dinka rolls the return cart toward Dinko.",
+    "right_characters": [
+      "girl",
+      "boy"
+    ],
+    "right_setting": "same pastel blue neighborhood library",
+    "right_props": [
+      "return cart",
+      "short book stack",
+      "library card"
+    ],
+    "right_emotion": "helpful",
+    "shared_environment": "continuous pastel blue library with peach shelves and a cream floor",
+    "environmental_contrast": "A tiring errand gains forward motion when shared.",
+    "background_color": "pastel blue",
+    "accent_color": "coral",
+    "camera_angle": "eye-level three-quarter view",
+    "emotional_insight": "Companionship can turn an obligation into a small outing.",
+    "emotional_premise": null,
+    "why_it_may_work": "The concept makes companionship the practical solution to a routine task.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep the book stack stable and small.",
+      "Do not show carrying with human hands."
+    ],
+    "transformation": "Weariness becomes momentum through practical company.",
+    "before_state": "Dinko faces the return task alone.",
+    "after_state": "Dinko and Dinka move through it together.",
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T16:03:16.581353Z",
+    "updated_at": "2026-08-07T16:03:16.599263+00:00"
+  },
+  {
+    "id": "content-837b66769d82",
+    "batch_id": "batch-2026-08-07-51cc4bd9",
+    "format": "five_story",
+    "status": "candidate",
+    "slot": 1,
+    "title_left": null,
+    "title_right": null,
+    "story_title": "The Market Basket",
+    "left_character": "girl",
+    "left_action": null,
+    "left_setting": null,
+    "left_props": [
+      "woven basket",
+      "single carrot",
+      "round apple"
+    ],
+    "left_emotion": null,
+    "right_action": null,
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": null,
+    "right_props": [
+      "woven basket",
+      "small loaf",
+      "paper tag"
+    ],
+    "right_emotion": null,
+    "shared_environment": null,
+    "environmental_contrast": null,
+    "background_color": "pastel mint",
+    "accent_color": "coral",
+    "camera_angle": "front three-quarter",
+    "emotional_insight": null,
+    "emotional_premise": "A bored shopper finds energy when a friend helps carry an ordinary grocery basket.",
+    "why_it_may_work": "A small shared task makes routine feel warmer.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep the basket and vegetables realistically small.",
+      "Show companionship without making the left character cheerful too early."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [
+      {
+        "title": "Quiet Aisle",
+        "scene": "At the pastel village market, Dinka stares neutrally at an empty basket while Dinko points toward a carrot display.",
+        "characters": [
+          "Dinka stares at the basket",
+          "Dinko points toward the carrot display"
+        ],
+        "setting": "pastel village market",
+        "props": [
+          "small woven basket",
+          "carrot display",
+          "striped awning"
+        ],
+        "emotion": "Dinka is bored; Dinko is encouraging.",
+        "camera_angle": "front three-quarter"
+      },
+      {
+        "title": "First Carrot",
+        "scene": "At the pastel village market, Dinka holds the basket open while Dinko places one carrot inside.",
+        "characters": [
+          "Dinka holds the basket open",
+          "Dinko places one carrot inside"
+        ],
+        "setting": "pastel village market",
+        "props": [
+          "small woven basket",
+          "single carrot",
+          "wooden stall"
+        ],
+        "emotion": "Dinka is neutral; Dinko is focused.",
+        "camera_angle": "front three-quarter"
+      },
+      {
+        "title": "Shared Choice",
+        "scene": "At the pastel village market, Dinka selects a round apple while Dinko steadies the basket.",
+        "characters": [
+          "Dinka selects a round apple",
+          "Dinko steadies the basket"
+        ],
+        "setting": "pastel village market",
+        "props": [
+          "woven basket",
+          "round apple",
+          "wooden stall"
+        ],
+        "emotion": "Dinka is curious; Dinko is pleased.",
+        "camera_angle": "front three-quarter"
+      },
+      {
+        "title": "Full Basket",
+        "scene": "At the pastel village market, Dinka nudges the full basket forward while Dinko adds the final loaf.",
+        "characters": [
+          "Dinka nudges the basket forward",
+          "Dinko adds a small loaf"
+        ],
+        "setting": "pastel village market",
+        "props": [
+          "full woven basket",
+          "small loaf",
+          "paper tag"
+        ],
+        "emotion": "Both are quietly happy.",
+        "camera_angle": "front three-quarter"
+      },
+      {
+        "title": "Walk Home",
+        "scene": "On the pastel market lane, Dinka and Dinko carry the basket together toward a mint cottage.",
+        "characters": [
+          "Dinka carries the left handle",
+          "Dinko carries the right handle"
+        ],
+        "setting": "pastel market lane",
+        "props": [
+          "woven basket",
+          "cottage gate",
+          "paper grocery tag"
+        ],
+        "emotion": "Both feel connected and content.",
+        "camera_angle": "front three-quarter"
+      }
+    ],
+    "final_payoff": "The groceries feel lighter because the walk is shared.",
+    "visual_continuity": "Keep the same mint market lane, coral awnings, basket, and growing grocery contents across all five beats.",
+    "background_strategy": "One continuous pastel market environment with the cottage visible in the distance.",
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T16:05:00.791951Z",
+    "updated_at": "2026-08-07T16:05:00.806434+00:00"
+  },
+  {
+    "id": "content-511182fbc362",
+    "batch_id": "batch-2026-08-07-51cc4bd9",
+    "format": "five_story",
+    "status": "candidate",
+    "slot": 2,
+    "title_left": null,
+    "title_right": null,
+    "story_title": "The Platform Bench",
+    "left_character": "boy",
+    "left_action": null,
+    "left_setting": null,
+    "left_props": [
+      "wooden bench",
+      "two pebbles",
+      "ticket stub"
+    ],
+    "left_emotion": null,
+    "right_action": null,
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": null,
+    "right_props": [
+      "station clock",
+      "small train",
+      "train window"
+    ],
+    "right_emotion": null,
+    "shared_environment": null,
+    "environmental_contrast": null,
+    "background_color": "pastel lavender",
+    "accent_color": "sunny yellow",
+    "camera_angle": "side view",
+    "emotional_insight": null,
+    "emotional_premise": "A dull wait becomes interesting when two friends notice the same tiny details.",
+    "why_it_may_work": "A quiet wait becomes a shared moment through simple observation.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep the train distant and toy-sized.",
+      "Avoid making the left character smile before the companionship beat."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [
+      {
+        "title": "Long Wait",
+        "scene": "At the lavender village platform, Dinko sits neutrally on a bench while Dinka looks down the empty track.",
+        "characters": [
+          "Dinko sits on the bench",
+          "Dinka looks down the track"
+        ],
+        "setting": "lavender village platform",
+        "props": [
+          "wooden bench",
+          "single rail track",
+          "station clock"
+        ],
+        "emotion": "Dinko is bored; Dinka is patient.",
+        "camera_angle": "side view"
+      },
+      {
+        "title": "Tiny Beetle",
+        "scene": "At the lavender village platform, Dinko points at a beetle while Dinka leans toward it.",
+        "characters": [
+          "Dinko points at the beetle",
+          "Dinka leans toward the beetle"
+        ],
+        "setting": "lavender village platform",
+        "props": [
+          "wooden bench",
+          "tiny beetle",
+          "station clock"
+        ],
+        "emotion": "Dinko is interested; Dinka is curious.",
+        "camera_angle": "side view"
+      },
+      {
+        "title": "Shared Count",
+        "scene": "At the lavender village platform, Dinko taps two pebbles while Dinka counts them with a raised nub arm.",
+        "characters": [
+          "Dinko taps two pebbles",
+          "Dinka raises one nub arm to count"
+        ],
+        "setting": "lavender village platform",
+        "props": [
+          "two pebbles",
+          "wooden bench",
+          "rail track"
+        ],
+        "emotion": "Both are absorbed.",
+        "camera_angle": "side view"
+      },
+      {
+        "title": "Train Glow",
+        "scene": "At the lavender village platform, Dinko watches the approaching train while Dinka points at its warm window lights.",
+        "characters": [
+          "Dinko watches the train",
+          "Dinka points at the lit windows"
+        ],
+        "setting": "lavender village platform",
+        "props": [
+          "small train",
+          "station clock",
+          "wooden bench"
+        ],
+        "emotion": "Both are delighted.",
+        "camera_angle": "side view"
+      },
+      {
+        "title": "Same Ride",
+        "scene": "Inside the lavender train, Dinko sits beside Dinka as the train begins moving past pastel hills.",
+        "characters": [
+          "Dinko sits beside Dinka",
+          "Dinka watches the passing hills"
+        ],
+        "setting": "lavender train carriage",
+        "props": [
+          "two small seats",
+          "train window",
+          "ticket stub"
+        ],
+        "emotion": "Both are peaceful.",
+        "camera_angle": "side view"
+      }
+    ],
+    "final_payoff": "The wait mattered because they had someone to notice it with.",
+    "visual_continuity": "Retain the lavender platform, wooden bench, clock, and train colors from waiting to departure.",
+    "background_strategy": "One pastel platform environment extending into a softly visible train carriage.",
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T16:05:00.791951Z",
+    "updated_at": "2026-08-07T16:05:00.806437+00:00"
+  },
+  {
+    "id": "content-d024327a749e",
+    "batch_id": "batch-2026-08-07-51cc4bd9",
+    "format": "five_story",
+    "status": "candidate",
+    "slot": 3,
+    "title_left": null,
+    "title_right": null,
+    "story_title": "The Warm Laundry",
+    "left_character": "girl",
+    "left_action": null,
+    "left_setting": null,
+    "left_props": [
+      "blue towel",
+      "striped socks",
+      "wooden basket"
+    ],
+    "left_emotion": null,
+    "right_action": null,
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": null,
+    "right_props": [
+      "wooden basket",
+      "clothespin",
+      "folded laundry"
+    ],
+    "right_emotion": null,
+    "shared_environment": null,
+    "environmental_contrast": null,
+    "background_color": "pastel peach",
+    "accent_color": "teal",
+    "camera_angle": "front view",
+    "emotional_insight": null,
+    "emotional_premise": "A repetitive chore turns cozy when two friends create a shared rhythm.",
+    "why_it_may_work": "Folding laundry becomes a tiny cooperative rhythm.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep all laundry pieces oversized enough to read but smaller than the characters.",
+      "Use clear handoff actions."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [
+      {
+        "title": "Laundry Pile",
+        "scene": "At the peach cottage porch, Dinka sits neutrally beside a laundry pile while Dinko lifts one towel.",
+        "characters": [
+          "Dinka sits beside the pile",
+          "Dinko lifts one towel"
+        ],
+        "setting": "peach cottage porch",
+        "props": [
+          "small laundry pile",
+          "blue towel",
+          "wooden basket"
+        ],
+        "emotion": "Dinka is unenthused; Dinko is upbeat.",
+        "camera_angle": "front view"
+      },
+      {
+        "title": "First Fold",
+        "scene": "At the peach cottage porch, Dinka presses one towel flat while Dinko folds its opposite edge.",
+        "characters": [
+          "Dinka presses the towel flat",
+          "Dinko folds the opposite edge"
+        ],
+        "setting": "peach cottage porch",
+        "props": [
+          "blue towel",
+          "wooden basket",
+          "clothespin"
+        ],
+        "emotion": "Dinka is focused; Dinko is patient.",
+        "camera_angle": "front view"
+      },
+      {
+        "title": "Matching Socks",
+        "scene": "At the peach cottage porch, Dinka pairs two socks while Dinko places the pair into the basket.",
+        "characters": [
+          "Dinka pairs two socks",
+          "Dinko places the pair in the basket"
+        ],
+        "setting": "peach cottage porch",
+        "props": [
+          "two striped socks",
+          "wooden basket",
+          "folded towel"
+        ],
+        "emotion": "Both are engaged.",
+        "camera_angle": "front view"
+      },
+      {
+        "title": "Basket Together",
+        "scene": "At the peach cottage porch, Dinka pushes the basket handle while Dinko pulls it toward the door.",
+        "characters": [
+          "Dinka pushes the basket handle",
+          "Dinko pulls the basket toward the door"
+        ],
+        "setting": "peach cottage porch",
+        "props": [
+          "wooden basket",
+          "folded laundry",
+          "cottage door"
+        ],
+        "emotion": "Both are cheerful.",
+        "camera_angle": "front view"
+      },
+      {
+        "title": "Clean Porch",
+        "scene": "At the peach cottage porch, Dinka rests beside the empty basket while Dinko hangs the final clothespin.",
+        "characters": [
+          "Dinka rests beside the basket",
+          "Dinko hangs the final clothespin"
+        ],
+        "setting": "peach cottage porch",
+        "props": [
+          "empty basket",
+          "final clothespin",
+          "sunlit towel"
+        ],
+        "emotion": "Both are calm and satisfied.",
+        "camera_angle": "front view"
+      }
+    ],
+    "final_payoff": "The chore ends with a clean porch and a shared sense of ease.",
+    "visual_continuity": "Keep the peach porch, blue towel, basket, and striped socks visible as laundry gradually disappears.",
+    "background_strategy": "Single cottage porch with a warm peach wall and one clothesline.",
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T16:05:00.791951Z",
+    "updated_at": "2026-08-07T16:05:00.806439+00:00"
+  },
+  {
+    "id": "content-7fdd3fa311cc",
+    "batch_id": "batch-2026-08-07-51cc4bd9",
+    "format": "five_story",
+    "status": "candidate",
+    "slot": 4,
+    "title_left": null,
+    "title_right": null,
+    "story_title": "The Window Sprout",
+    "left_character": "boy",
+    "left_action": null,
+    "left_setting": null,
+    "left_props": [
+      "clay pot",
+      "small leaf",
+      "healthy sprout"
+    ],
+    "left_emotion": null,
+    "right_action": null,
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": null,
+    "right_props": [
+      "tiny watering can",
+      "window latch",
+      "clay pot"
+    ],
+    "right_emotion": null,
+    "shared_environment": null,
+    "environmental_contrast": null,
+    "background_color": "pastel sky blue",
+    "accent_color": "soft orange",
+    "camera_angle": "high three-quarter",
+    "emotional_insight": null,
+    "emotional_premise": "A lonely-looking sprout becomes a shared project of patience and care.",
+    "why_it_may_work": "Plant care offers a visible, gentle example of mutual support.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Make the watering can small and manageable.",
+      "Show the sprout changing only slightly between beats."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [
+      {
+        "title": "Drooping Leaf",
+        "scene": "At the blue cottage windowsill, Dinko looks neutrally at a drooping sprout while Dinka carries a tiny watering can.",
+        "characters": [
+          "Dinko looks at the sprout",
+          "Dinka carries the watering can"
+        ],
+        "setting": "blue cottage windowsill",
+        "props": [
+          "small clay pot",
+          "drooping sprout",
+          "tiny watering can"
+        ],
+        "emotion": "Dinko is worried; Dinka is attentive.",
+        "camera_angle": "high three-quarter"
+      },
+      {
+        "title": "Careful Pour",
+        "scene": "At the blue cottage windowsill, Dinko steadies the clay pot while Dinka pours a narrow stream of water.",
+        "characters": [
+          "Dinko steadies the pot",
+          "Dinka pours water"
+        ],
+        "setting": "blue cottage windowsill",
+        "props": [
+          "clay pot",
+          "tiny watering can",
+          "window latch"
+        ],
+        "emotion": "Dinko is cautious; Dinka is caring.",
+        "camera_angle": "high three-quarter"
+      },
+      {
+        "title": "Sun Turn",
+        "scene": "At the blue cottage windowsill, Dinko rotates the pot toward the light while Dinka opens the window latch.",
+        "characters": [
+          "Dinko rotates the pot",
+          "Dinka opens the window latch"
+        ],
+        "setting": "blue cottage windowsill",
+        "props": [
+          "clay pot",
+          "window latch",
+          "small leaf"
+        ],
+        "emotion": "Both are hopeful.",
+        "camera_angle": "high three-quarter"
+      },
+      {
+        "title": "New Leaf",
+        "scene": "At the blue cottage windowsill, Dinko points at a new leaf while Dinka leans close to inspect it.",
+        "characters": [
+          "Dinko points at the new leaf",
+          "Dinka leans toward the pot"
+        ],
+        "setting": "blue cottage windowsill",
+        "props": [
+          "clay pot",
+          "new leaf",
+          "tiny watering can"
+        ],
+        "emotion": "Both are delighted.",
+        "camera_angle": "high three-quarter"
+      },
+      {
+        "title": "Daily Ritual",
+        "scene": "At the blue cottage windowsill, Dinko checks the healthy sprout while Dinka places the watering can beside it.",
+        "characters": [
+          "Dinko checks the sprout",
+          "Dinka places down the watering can"
+        ],
+        "setting": "blue cottage windowsill",
+        "props": [
+          "clay pot",
+          "healthy sprout",
+          "tiny watering can"
+        ],
+        "emotion": "Both are quietly proud.",
+        "camera_angle": "high three-quarter"
+      }
+    ],
+    "final_payoff": "The sprout grows because care becomes a shared daily ritual.",
+    "visual_continuity": "Keep the same blue sill, clay pot, window latch, and sprout progression in every beat.",
+    "background_strategy": "One continuous pastel cottage windowsill with soft sky beyond the glass.",
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T16:05:00.791951Z",
+    "updated_at": "2026-08-07T16:05:00.806440+00:00"
+  },
+  {
+    "id": "content-217e5d297c51",
+    "batch_id": "batch-2026-08-07-51cc4bd9",
+    "format": "five_story",
+    "status": "candidate",
+    "slot": 5,
+    "title_left": null,
+    "title_right": null,
+    "story_title": "The Button Box",
+    "left_character": "girl",
+    "left_action": null,
+    "left_setting": null,
+    "left_props": [
+      "button box",
+      "red button",
+      "fabric patch"
+    ],
+    "left_emotion": null,
+    "right_action": null,
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": null,
+    "right_props": [
+      "thread spool",
+      "red thread",
+      "small needle"
+    ],
+    "right_emotion": null,
+    "shared_environment": null,
+    "environmental_contrast": null,
+    "background_color": "pastel buttercream",
+    "accent_color": "berry pink",
+    "camera_angle": "front three-quarter",
+    "emotional_insight": null,
+    "emotional_premise": "A lost button becomes an excuse to slow down and solve a small problem together.",
+    "why_it_may_work": "A tiny repair shows that togetherness can make a broken object useful again.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep the button visibly small but readable.",
+      "Avoid implying human clothing anatomy."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [
+      {
+        "title": "Loose Lid",
+        "scene": "At the buttercream craft table, Dinka stares neutrally at an open button box while Dinko rolls one loose button toward her.",
+        "characters": [
+          "Dinka stares at the box",
+          "Dinko rolls a button"
+        ],
+        "setting": "buttercream craft table",
+        "props": [
+          "small button box",
+          "loose red button",
+          "thread spool"
+        ],
+        "emotion": "Dinka is frustrated; Dinko is helpful.",
+        "camera_angle": "front three-quarter"
+      },
+      {
+        "title": "Find the Thread",
+        "scene": "At the buttercream craft table, Dinka holds the thread spool while Dinko points to the matching red thread.",
+        "characters": [
+          "Dinka holds the spool",
+          "Dinko points to red thread"
+        ],
+        "setting": "buttercream craft table",
+        "props": [
+          "thread spool",
+          "red thread",
+          "button box"
+        ],
+        "emotion": "Dinka is uncertain; Dinko is focused.",
+        "camera_angle": "front three-quarter"
+      },
+      {
+        "title": "Tiny Knot",
+        "scene": "At the buttercream craft table, Dinka holds the button steady while Dinko pulls the thread through it.",
+        "characters": [
+          "Dinka holds the button",
+          "Dinko pulls the thread"
+        ],
+        "setting": "buttercream craft table",
+        "props": [
+          "red button",
+          "red thread",
+          "small needle"
+        ],
+        "emotion": "Both are concentrated.",
+        "camera_angle": "front three-quarter"
+      },
+      {
+        "title": "Secure Button",
+        "scene": "At the buttercream craft table, Dinka presses the repaired fabric patch while Dinko ties the final knot.",
+        "characters": [
+          "Dinka presses the fabric patch",
+          "Dinko ties the knot"
+        ],
+        "setting": "buttercream craft table",
+        "props": [
+          "fabric patch",
+          "red button",
+          "thread spool"
+        ],
+        "emotion": "Both are relieved.",
+        "camera_angle": "front three-quarter"
+      },
+      {
+        "title": "Closed Box",
+        "scene": "At the buttercream craft table, Dinka closes the button box while Dinko places the repaired patch beside it.",
+        "characters": [
+          "Dinka closes the box",
+          "Dinko places the patch beside it"
+        ],
+        "setting": "buttercream craft table",
+        "props": [
+          "closed button box",
+          "repaired patch",
+          "thread spool"
+        ],
+        "emotion": "Both are content.",
+        "camera_angle": "front three-quarter"
+      }
+    ],
+    "final_payoff": "A tiny repair becomes a shared little victory.",
+    "visual_continuity": "Keep the buttercream table, red button, thread spool, and repaired patch consistent throughout.",
+    "background_strategy": "Single craft-table setting with a soft buttercream wall and berry accents.",
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T16:05:00.791951Z",
+    "updated_at": "2026-08-07T16:05:00.806441+00:00"
+  },
+  {
+    "id": "content-1883f47cbf88",
+    "batch_id": "batch-2026-08-07-51cc4bd9",
+    "format": "five_story",
+    "status": "candidate",
+    "slot": 6,
+    "title_left": null,
+    "title_right": null,
+    "story_title": "The Tea Tray",
+    "left_character": "boy",
+    "left_action": null,
+    "left_setting": null,
+    "left_props": [
+      "small cup",
+      "tea tin",
+      "tiny teapot"
+    ],
+    "left_emotion": null,
+    "right_action": null,
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": null,
+    "right_props": [
+      "tiny teapot",
+      "small spoon",
+      "apricot window"
+    ],
+    "right_emotion": null,
+    "shared_environment": null,
+    "environmental_contrast": null,
+    "background_color": "pastel sage",
+    "accent_color": "apricot",
+    "camera_angle": "side view",
+    "emotional_insight": null,
+    "emotional_premise": "A quiet afternoon becomes restorative when friends prepare one warm drink together.",
+    "why_it_may_work": "Making tea transforms an ordinary pause into a caring exchange.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Use a small, stable teapot.",
+      "Avoid steam obscuring facial expressions."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [
+      {
+        "title": "Empty Cup",
+        "scene": "At the sage kitchen counter, Dinko sits bored beside an empty cup while Dinka carries a tiny teapot.",
+        "characters": [
+          "Dinko sits beside the cup",
+          "Dinka carries the teapot"
+        ],
+        "setting": "sage kitchen counter",
+        "props": [
+          "small cup",
+          "tiny teapot",
+          "tea tin"
+        ],
+        "emotion": "Dinko is bored; Dinka is thoughtful.",
+        "camera_angle": "side view"
+      },
+      {
+        "title": "Tea Scoop",
+        "scene": "At the sage kitchen counter, Dinko holds the tea tin open while Dinka scoops one spoonful into the teapot.",
+        "characters": [
+          "Dinko holds the tin",
+          "Dinka scoops tea"
+        ],
+        "setting": "sage kitchen counter",
+        "props": [
+          "tea tin",
+          "small spoon",
+          "tiny teapot"
+        ],
+        "emotion": "Dinko is attentive; Dinka is careful.",
+        "camera_angle": "side view"
+      },
+      {
+        "title": "Warm Pour",
+        "scene": "At the sage kitchen counter, Dinko steadies the cup while Dinka pours warm tea into it.",
+        "characters": [
+          "Dinko steadies the cup",
+          "Dinka pours tea"
+        ],
+        "setting": "sage kitchen counter",
+        "props": [
+          "small cup",
+          "tiny teapot",
+          "tea tin"
+        ],
+        "emotion": "Both are calm.",
+        "camera_angle": "side view"
+      },
+      {
+        "title": "Shared Sip",
+        "scene": "At the sage kitchen counter, Dinko holds the cup while Dinka leans close to smell the tea.",
+        "characters": [
+          "Dinko holds the cup",
+          "Dinka leans toward the tea"
+        ],
+        "setting": "sage kitchen counter",
+        "props": [
+          "small cup",
+          "tiny teapot",
+          "tea tin"
+        ],
+        "emotion": "Both are comforted.",
+        "camera_angle": "side view"
+      },
+      {
+        "title": "Easy Afternoon",
+        "scene": "At the sage kitchen counter, Dinko sets down the cup while Dinka rests beside him beneath the apricot window.",
+        "characters": [
+          "Dinko sets down the cup",
+          "Dinka rests beside Dinko"
+        ],
+        "setting": "sage kitchen counter",
+        "props": [
+          "small cup",
+          "empty teapot",
+          "apricot window"
+        ],
+        "emotion": "Both are peaceful.",
+        "camera_angle": "side view"
+      }
+    ],
+    "final_payoff": "The tea is simple, but the pause is better together.",
+    "visual_continuity": "Keep the sage counter, tiny teapot, cup, and apricot window in every frame.",
+    "background_strategy": "One continuous pastel kitchen counter with a softly lit window.",
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T16:05:00.791951Z",
+    "updated_at": "2026-08-07T16:05:00.806442+00:00"
+  },
+  {
+    "id": "content-a2a7beae3f00",
+    "batch_id": "batch-2026-08-07-51cc4bd9",
+    "format": "five_story",
+    "status": "candidate",
+    "slot": 7,
+    "title_left": null,
+    "title_right": null,
+    "story_title": "The Reading Nook",
+    "left_character": "girl",
+    "left_action": null,
+    "left_setting": null,
+    "left_props": [
+      "round rug",
+      "cream cushion",
+      "blue book"
+    ],
+    "left_emotion": null,
+    "right_action": null,
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": null,
+    "right_props": [
+      "rolled rug",
+      "wooden shelf",
+      "open picture book"
+    ],
+    "right_emotion": null,
+    "shared_environment": null,
+    "environmental_contrast": null,
+    "background_color": "pastel rose",
+    "accent_color": "cream",
+    "camera_angle": "front view",
+    "emotional_insight": null,
+    "emotional_premise": "An unused corner becomes inviting when two friends arrange it side by side.",
+    "why_it_may_work": "A shared tidy-up gives an empty room a welcoming purpose.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep the rug and cushions proportionate to the round characters.",
+      "Make each cleaning action distinct."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [
+      {
+        "title": "Bare Corner",
+        "scene": "At the rose cottage corner, Dinka sits neutrally on the floor while Dinko carries a rolled rug.",
+        "characters": [
+          "Dinka sits on the floor",
+          "Dinko carries the rolled rug"
+        ],
+        "setting": "rose cottage corner",
+        "props": [
+          "rolled rug",
+          "empty shelf",
+          "small window"
+        ],
+        "emotion": "Dinka is uninterested; Dinko is purposeful.",
+        "camera_angle": "front view"
+      },
+      {
+        "title": "Rug Down",
+        "scene": "At the rose cottage corner, Dinka holds one rug edge while Dinko unrolls the rug.",
+        "characters": [
+          "Dinka holds the rug edge",
+          "Dinko unrolls the rug"
+        ],
+        "setting": "rose cottage corner",
+        "props": [
+          "round rug",
+          "empty shelf",
+          "small window"
+        ],
+        "emotion": "Dinka is attentive; Dinko is focused.",
+        "camera_angle": "front view"
+      },
+      {
+        "title": "Book Stack",
+        "scene": "At the rose cottage corner, Dinka places a book on the shelf while Dinko straightens the rug.",
+        "characters": [
+          "Dinka places a book",
+          "Dinko straightens the rug"
+        ],
+        "setting": "rose cottage corner",
+        "props": [
+          "round rug",
+          "blue book",
+          "wooden shelf"
+        ],
+        "emotion": "Both are engaged.",
+        "camera_angle": "front view"
+      },
+      {
+        "title": "Cushion Toss",
+        "scene": "At the rose cottage corner, Dinka nudges a cream cushion onto the rug while Dinko opens a picture book.",
+        "characters": [
+          "Dinka nudges the cushion",
+          "Dinko opens the picture book"
+        ],
+        "setting": "rose cottage corner",
+        "props": [
+          "cream cushion",
+          "picture book",
+          "round rug"
+        ],
+        "emotion": "Both are pleased.",
+        "camera_angle": "front view"
+      },
+      {
+        "title": "First Chapter",
+        "scene": "At the rose cottage corner, Dinka sits on the cushion while Dinko points to the first picture in the open book.",
+        "characters": [
+          "Dinka sits on the cushion",
+          "Dinko points to the picture"
+        ],
+        "setting": "rose cottage reading nook",
+        "props": [
+          "cream cushion",
+          "open picture book",
+          "round rug"
+        ],
+        "emotion": "Both are cozy and happy.",
+        "camera_angle": "front view"
+      }
+    ],
+    "final_payoff": "The nook becomes special because it is occupied together.",
+    "visual_continuity": "Keep the rose wall, cream rug, shelf, and picture book fixed as the corner fills in.",
+    "background_strategy": "One continuous rose cottage corner with a single window and shelf.",
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T16:05:00.791951Z",
+    "updated_at": "2026-08-07T16:05:00.806443+00:00"
+  },
+  {
+    "id": "content-8194f72804e0",
+    "batch_id": "batch-2026-08-07-51cc4bd9",
+    "format": "five_story",
+    "status": "candidate",
+    "slot": 8,
+    "title_left": null,
+    "title_right": null,
+    "story_title": "The Shortcut",
+    "left_character": "boy",
+    "left_action": null,
+    "left_setting": null,
+    "left_props": [
+      "small map",
+      "mossy stone",
+      "yellow flower"
+    ],
+    "left_emotion": null,
+    "right_action": null,
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": null,
+    "right_props": [
+      "orange signpost",
+      "tiny garden gate",
+      "tangerine butterfly"
+    ],
+    "right_emotion": null,
+    "shared_environment": null,
+    "environmental_contrast": null,
+    "background_color": "pastel aqua",
+    "accent_color": "tangerine",
+    "camera_angle": "high three-quarter",
+    "emotional_insight": null,
+    "emotional_premise": "A familiar route feels new when friends search for one nearby surprise.",
+    "why_it_may_work": "A small map turns a routine walk into shared discovery.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep the map legible without text.",
+      "Use a consistent path and landmark."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [
+      {
+        "title": "Same Path",
+        "scene": "At the aqua garden path, Dinko stands neutrally at a fork while Dinka unfolds a small map.",
+        "characters": [
+          "Dinko stands at the fork",
+          "Dinka unfolds the map"
+        ],
+        "setting": "aqua garden path",
+        "props": [
+          "small map",
+          "stone path",
+          "orange signpost"
+        ],
+        "emotion": "Dinko is bored; Dinka is curious.",
+        "camera_angle": "high three-quarter"
+      },
+      {
+        "title": "Map Point",
+        "scene": "At the aqua garden path, Dinko points down the left path while Dinka compares the map to the signpost.",
+        "characters": [
+          "Dinko points down the path",
+          "Dinka compares the map"
+        ],
+        "setting": "aqua garden path",
+        "props": [
+          "small map",
+          "orange signpost",
+          "stone path"
+        ],
+        "emotion": "Dinko is interested; Dinka is thoughtful.",
+        "camera_angle": "high three-quarter"
+      },
+      {
+        "title": "Mossy Stone",
+        "scene": "At the aqua garden path, Dinko inspects a mossy stone while Dinka holds the map beside it.",
+        "characters": [
+          "Dinko inspects the stone",
+          "Dinka holds the map"
+        ],
+        "setting": "aqua garden path",
+        "props": [
+          "mossy stone",
+          "small map",
+          "garden fern"
+        ],
+        "emotion": "Both are intrigued.",
+        "camera_angle": "high three-quarter"
+      },
+      {
+        "title": "Hidden Gate",
+        "scene": "At the aqua garden path, Dinko pushes open a tiny garden gate while Dinka looks through the opening.",
+        "characters": [
+          "Dinko pushes the gate",
+          "Dinka looks through the opening"
+        ],
+        "setting": "aqua garden path",
+        "props": [
+          "tiny garden gate",
+          "mossy stone",
+          "small map"
+        ],
+        "emotion": "Both are excited.",
+        "camera_angle": "high three-quarter"
+      },
+      {
+        "title": "Shared Discovery",
+        "scene": "At the hidden aqua garden, Dinko points at a tangerine butterfly while Dinka watches it hover over a flower.",
+        "characters": [
+          "Dinko points at the butterfly",
+          "Dinka watches the butterfly"
+        ],
+        "setting": "hidden aqua garden",
+        "props": [
+          "tangerine butterfly",
+          "yellow flower",
+          "tiny garden gate"
+        ],
+        "emotion": "Both are delighted.",
+        "camera_angle": "high three-quarter"
+      }
+    ],
+    "final_payoff": "The shortcut matters less than finding it with a friend.",
+    "visual_continuity": "Retain the aqua path, orange signpost, map, and gate as the route advances.",
+    "background_strategy": "One connected pastel garden path leading to a small hidden garden.",
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T16:05:00.791951Z",
+    "updated_at": "2026-08-07T16:05:00.806445+00:00"
+  },
+  {
+    "id": "content-6f1260061f88",
+    "batch_id": "batch-2026-08-07-51cc4bd9",
+    "format": "five_story",
+    "status": "candidate",
+    "slot": 9,
+    "title_left": null,
+    "title_right": null,
+    "story_title": "The Evening Bell",
+    "left_character": "girl",
+    "left_action": null,
+    "left_setting": null,
+    "left_props": [
+      "tiny bell",
+      "wooden step",
+      "porch lantern"
+    ],
+    "left_emotion": null,
+    "right_action": null,
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": null,
+    "right_props": [
+      "leaf-shaped rattle",
+      "porch lantern",
+      "wooden step"
+    ],
+    "right_emotion": null,
+    "shared_environment": null,
+    "environmental_contrast": null,
+    "background_color": "pastel lilac",
+    "accent_color": "leaf green",
+    "camera_angle": "front three-quarter",
+    "emotional_insight": null,
+    "emotional_premise": "A quiet evening becomes playful when one friend invites another into a simple rhythm.",
+    "why_it_may_work": "A gentle sound-making game turns an ordinary evening into connection.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep the bell toy safe and compact.",
+      "Use visual rhythm instead of written musical notation."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [
+      {
+        "title": "Quiet Step",
+        "scene": "At the lilac garden porch, Dinka stands neutrally beside a tiny bell while Dinko holds a leaf-shaped rattle.",
+        "characters": [
+          "Dinka stands beside the bell",
+          "Dinko holds the rattle"
+        ],
+        "setting": "lilac garden porch",
+        "props": [
+          "tiny bell",
+          "leaf-shaped rattle",
+          "wooden step"
+        ],
+        "emotion": "Dinka is neutral; Dinko is inviting.",
+        "camera_angle": "front three-quarter"
+      },
+      {
+        "title": "First Ring",
+        "scene": "At the lilac garden porch, Dinka nudges the bell while Dinko watches the rattle.",
+        "characters": [
+          "Dinka nudges the bell",
+          "Dinko watches the rattle"
+        ],
+        "setting": "lilac garden porch",
+        "props": [
+          "tiny bell",
+          "leaf-shaped rattle",
+          "wooden step"
+        ],
+        "emotion": "Dinka is tentative; Dinko is encouraging.",
+        "camera_angle": "front three-quarter"
+      },
+      {
+        "title": "Reply Sound",
+        "scene": "At the lilac garden porch, Dinka holds still after ringing while Dinko shakes the leaf rattle once.",
+        "characters": [
+          "Dinka holds still",
+          "Dinko shakes the rattle"
+        ],
+        "setting": "lilac garden porch",
+        "props": [
+          "tiny bell",
+          "leaf-shaped rattle",
+          "porch lantern"
+        ],
+        "emotion": "Both are attentive.",
+        "camera_angle": "front three-quarter"
+      },
+      {
+        "title": "Simple Rhythm",
+        "scene": "At the lilac garden porch, Dinka rings twice while Dinko shakes the rattle twice.",
+        "characters": [
+          "Dinka rings the bell twice",
+          "Dinko shakes the rattle twice"
+        ],
+        "setting": "lilac garden porch",
+        "props": [
+          "tiny bell",
+          "leaf-shaped rattle",
+          "porch lantern"
+        ],
+        "emotion": "Both are playful.",
+        "camera_angle": "front three-quarter"
+      },
+      {
+        "title": "Soft Goodnight",
+        "scene": "At the lilac garden porch, Dinka sets down the bell while Dinko rests the rattle beside it.",
+        "characters": [
+          "Dinka sets down the bell",
+          "Dinko rests the rattle"
+        ],
+        "setting": "lilac garden porch",
+        "props": [
+          "tiny bell",
+          "leaf-shaped rattle",
+          "porch lantern"
+        ],
+        "emotion": "Both are peaceful.",
+        "camera_angle": "front three-quarter"
+      }
+    ],
+    "final_payoff": "The evening feels full after two tiny sounds meet.",
+    "visual_continuity": "Keep the lilac porch, leaf rattle, bell, and lantern in fixed positions throughout.",
+    "background_strategy": "One continuous pastel porch and garden with a soft lantern glow.",
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T16:05:00.791951Z",
+    "updated_at": "2026-08-07T16:05:00.806446+00:00"
+  },
+  {
+    "id": "content-f6c00cbf4daf",
+    "batch_id": "batch-2026-08-07-51cc4bd9",
+    "format": "five_story",
+    "status": "candidate",
+    "slot": 10,
+    "title_left": null,
+    "title_right": null,
+    "story_title": "The Bakery Line",
+    "left_character": "boy",
+    "left_action": null,
+    "left_setting": null,
+    "left_props": [
+      "paper bag",
+      "warm bun",
+      "split bun"
+    ],
+    "left_emotion": null,
+    "right_action": null,
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": null,
+    "right_props": [
+      "queue marker",
+      "bakery tray",
+      "plum planter"
+    ],
+    "right_emotion": null,
+    "shared_environment": null,
+    "environmental_contrast": null,
+    "background_color": "pastel mint",
+    "accent_color": "plum",
+    "camera_angle": "side view",
+    "emotional_insight": null,
+    "emotional_premise": "A slow bakery line becomes pleasant when two friends exchange small acts of patience.",
+    "why_it_may_work": "A shared queue makes waiting feel less isolating.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep the bakery queue short and spatially clear.",
+      "Show the left character neutral at the start."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [
+      {
+        "title": "Last Place",
+        "scene": "At the mint bakery doorway, Dinko stands neutrally behind a short queue while Dinka holds an empty paper bag.",
+        "characters": [
+          "Dinko stands in the queue",
+          "Dinka holds the paper bag"
+        ],
+        "setting": "mint bakery doorway",
+        "props": [
+          "empty paper bag",
+          "bakery counter",
+          "queue marker"
+        ],
+        "emotion": "Dinko is bored; Dinka is patient.",
+        "camera_angle": "side view"
+      },
+      {
+        "title": "Door Hold",
+        "scene": "At the mint bakery doorway, Dinko holds the door open while Dinka steps through with the paper bag.",
+        "characters": [
+          "Dinko holds the door",
+          "Dinka steps through"
+        ],
+        "setting": "mint bakery doorway",
+        "props": [
+          "paper bag",
+          "glass door",
+          "queue marker"
+        ],
+        "emotion": "Dinko is considerate; Dinka is appreciative.",
+        "camera_angle": "side view"
+      },
+      {
+        "title": "Shared Smell",
+        "scene": "At the mint bakery counter, Dinko points toward a warm bun while Dinka leans toward the bakery tray.",
+        "characters": [
+          "Dinko points at the bun",
+          "Dinka leans toward the tray"
+        ],
+        "setting": "mint bakery counter",
+        "props": [
+          "warm bun",
+          "bakery tray",
+          "paper bag"
+        ],
+        "emotion": "Both are eager.",
+        "camera_angle": "side view"
+      },
+      {
+        "title": "Bag Carry",
+        "scene": "At the mint bakery counter, Dinka holds the paper bag while Dinko places the bun inside.",
+        "characters": [
+          "Dinka holds the paper bag",
+          "Dinko places the bun inside"
+        ],
+        "setting": "mint bakery counter",
+        "props": [
+          "paper bag",
+          "warm bun",
+          "bakery tray"
+        ],
+        "emotion": "Both are pleased.",
+        "camera_angle": "side view"
+      },
+      {
+        "title": "Outside Bite",
+        "scene": "On the mint bakery stoop, Dinko breaks the bun while Dinka receives half beside the plum planter.",
+        "characters": [
+          "Dinko breaks the bun",
+          "Dinka receives half"
+        ],
+        "setting": "mint bakery stoop",
+        "props": [
+          "split bun",
+          "paper bag",
+          "plum planter"
+        ],
+        "emotion": "Both are warmly happy.",
+        "camera_angle": "side view"
+      }
+    ],
+    "final_payoff": "The best part of the bakery stop is sharing the first bite.",
+    "visual_continuity": "Keep the mint bakery facade, paper bag, bun, and queue marker consistent across the transition outside.",
+    "background_strategy": "One pastel bakery environment extending from doorway to stoop.",
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T16:05:00.791951Z",
+    "updated_at": "2026-08-07T16:05:00.806447+00:00"
+  },
+  {
+    "id": "content-38d01570e1ab",
+    "batch_id": "batch-2026-08-07-01faa321",
+    "format": "with_you",
+    "status": "candidate",
+    "slot": 1,
+    "title_left": "Folded Quiet",
+    "title_right": "Folded Together",
+    "story_title": null,
+    "left_character": "girl",
+    "left_action": "folds one small towel",
+    "left_setting": "pastel laundry nook",
+    "left_props": [
+      "low laundry basket",
+      "small towel",
+      "two clothespins"
+    ],
+    "left_emotion": "neutral",
+    "right_action": "holds the other end of the towel",
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": "same pastel laundry nook",
+    "right_props": [
+      "low laundry basket",
+      "wide towel",
+      "two clothespins"
+    ],
+    "right_emotion": "cooperative",
+    "shared_environment": "powder-blue laundry nook with a butter-yellow wall and mint floor mat",
+    "environmental_contrast": "The lone towel lies flat on the left; the shared towel is lifted between both characters on the right.",
+    "background_color": "powder blue",
+    "accent_color": "butter yellow",
+    "camera_angle": "front-facing wide shot",
+    "emotional_insight": "Chores feel lighter when the effort is shared.",
+    "emotional_premise": null,
+    "why_it_may_work": "A familiar laundry chore becomes playful without changing the setting.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep the laundry basket shallow enough to show both characters.",
+      "Make the socks clearly paired rather than cluttered."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T17:50:28.142124Z",
+    "updated_at": "2026-08-07T17:50:28.162938+00:00"
+  },
+  {
+    "id": "content-1439ba857207",
+    "batch_id": "batch-2026-08-07-01faa321",
+    "format": "with_you",
+    "status": "candidate",
+    "slot": 2,
+    "title_left": "One Little Sprout",
+    "title_right": "A Garden Pair",
+    "story_title": null,
+    "left_character": "boy",
+    "left_action": "holds a watering can over one sprout",
+    "left_setting": "pastel balcony garden",
+    "left_props": [
+      "small watering can",
+      "one terracotta pot",
+      "single sprout"
+    ],
+    "left_emotion": "sad",
+    "right_action": "places a second pot beside him",
+    "right_characters": [
+      "girl",
+      "boy"
+    ],
+    "right_setting": "same pastel balcony garden",
+    "right_props": [
+      "small watering can",
+      "two terracotta pots",
+      "two sprouts"
+    ],
+    "right_emotion": "encouraging",
+    "shared_environment": "pale-peach balcony with mint planters and a soft blue sky beyond the rail",
+    "environmental_contrast": "The left shows one isolated pot; the right shows two pots aligned side by side.",
+    "background_color": "pale peach",
+    "accent_color": "mint green",
+    "camera_angle": "slightly elevated overhead view",
+    "emotional_insight": "Care becomes more hopeful when it is witnessed.",
+    "emotional_premise": null,
+    "why_it_may_work": "A tiny garden task gives companionship a visible place to grow.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Use a small watering can that matches character scale.",
+      "Keep the plant sprout visibly healthy but tiny."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T17:50:28.142124Z",
+    "updated_at": "2026-08-07T17:50:28.162943+00:00"
+  },
+  {
+    "id": "content-9af4266877d1",
+    "batch_id": "batch-2026-08-07-01faa321",
+    "format": "with_you",
+    "status": "candidate",
+    "slot": 3,
+    "title_left": "The Empty Cushion",
+    "title_right": "The Shared Story",
+    "story_title": null,
+    "left_character": "girl",
+    "left_action": "looks down at an open picture book",
+    "left_setting": "pastel reading nook",
+    "left_props": [
+      "open picture book",
+      "round floor cushion",
+      "small leaf bookmark"
+    ],
+    "left_emotion": "bored",
+    "right_action": "settles onto the cushion beside her",
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": "same pastel reading nook",
+    "right_props": [
+      "open picture book",
+      "wide floor cushion",
+      "leaf bookmark"
+    ],
+    "right_emotion": "gentle",
+    "shared_environment": "soft-mint reading nook with a coral rug, peach shelf, and round window",
+    "environmental_contrast": "The left cushion has empty space beside the book; the right cushion holds both characters shoulder to shoulder.",
+    "background_color": "soft mint",
+    "accent_color": "coral",
+    "camera_angle": "eye-level side view",
+    "emotional_insight": "A story feels more alive when someone shares the quiet.",
+    "emotional_premise": null,
+    "why_it_may_work": "A quiet reading moment gains comfort through simple proximity.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep the book large enough to read as a prop but smaller than either character.",
+      "Do not add readable text that distracts from the emotion."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T17:50:28.142124Z",
+    "updated_at": "2026-08-07T17:50:28.162945+00:00"
+  },
+  {
+    "id": "content-ac0f86f1a08d",
+    "batch_id": "batch-2026-08-07-01faa321",
+    "format": "with_you",
+    "status": "candidate",
+    "slot": 4,
+    "title_left": "The Wobbly Tower",
+    "title_right": "The Stronger Tower",
+    "story_title": null,
+    "left_character": "boy",
+    "left_action": "rests one block beside a crooked tower",
+    "left_setting": "pastel playroom",
+    "left_props": [
+      "three chunky blocks",
+      "low toy mat",
+      "one soft ball"
+    ],
+    "left_emotion": "neutral",
+    "right_action": "places one block beside his tower",
+    "right_characters": [
+      "girl",
+      "boy"
+    ],
+    "right_setting": "same pastel playroom",
+    "right_props": [
+      "four chunky blocks",
+      "low toy mat",
+      "one soft ball"
+    ],
+    "right_emotion": "supportive",
+    "shared_environment": "pale-yellow playroom with a dusty-blue mat and coral toy shelf",
+    "environmental_contrast": "The left tower leans alone; the right tower is steadied by a nearby companion and matching block.",
+    "background_color": "pale yellow",
+    "accent_color": "dusty blue",
+    "camera_angle": "three-quarter overhead view",
+    "emotional_insight": "Building together makes imperfect progress feel worthwhile.",
+    "emotional_premise": null,
+    "why_it_may_work": "Building a simple block tower makes cooperation immediately legible.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Use only a few chunky blocks to preserve realistic scale.",
+      "Ensure the tower remains stable and not taller than the characters."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T17:50:28.142124Z",
+    "updated_at": "2026-08-07T17:50:28.162946+00:00"
+  },
+  {
+    "id": "content-98552105361a",
+    "batch_id": "batch-2026-08-07-01faa321",
+    "format": "with_you",
+    "status": "candidate",
+    "slot": 5,
+    "title_left": "Rainy Waiting",
+    "title_right": "Rainy Company",
+    "story_title": null,
+    "left_character": "girl",
+    "left_action": "looks through a foggy window",
+    "left_setting": "pastel window seat",
+    "left_props": [
+      "low window",
+      "small blanket",
+      "three raindrop decals"
+    ],
+    "left_emotion": "sad",
+    "right_action": "holds the blanket edge beside her",
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": "same pastel window seat",
+    "right_props": [
+      "low window",
+      "shared blanket",
+      "three raindrop decals"
+    ],
+    "right_emotion": "comforting",
+    "shared_environment": "pale-rose room with sage cushions and a blue-gray rainy view",
+    "environmental_contrast": "The blanket pools unused on the left; it stretches between both characters on the right.",
+    "background_color": "pale rose",
+    "accent_color": "sage green",
+    "camera_angle": "eye-level frontal view",
+    "emotional_insight": "Waiting is easier when someone stays beside you.",
+    "emotional_premise": null,
+    "why_it_may_work": "A shared window-watching moment turns waiting into connection.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep the window low and wide enough for both characters.",
+      "Use only a few raindrops so the environment stays calm."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T17:50:28.142124Z",
+    "updated_at": "2026-08-07T17:50:28.162947+00:00"
+  },
+  {
+    "id": "content-06af5fdcea3e",
+    "batch_id": "batch-2026-08-07-01faa321",
+    "format": "with_you",
+    "status": "candidate",
+    "slot": 6,
+    "title_left": "The Quiet Picnic",
+    "title_right": "The Welcome Picnic",
+    "story_title": null,
+    "left_character": "boy",
+    "left_action": "sits beside an unopened lunch basket",
+    "left_setting": "pastel meadow picnic spot",
+    "left_props": [
+      "small picnic basket",
+      "rolled napkin",
+      "single apple"
+    ],
+    "left_emotion": "bored",
+    "right_action": "unrolls a second napkin beside him",
+    "right_characters": [
+      "girl",
+      "boy"
+    ],
+    "right_setting": "same pastel meadow picnic spot",
+    "right_props": [
+      "small picnic basket",
+      "two napkins",
+      "two apples"
+    ],
+    "right_emotion": "welcoming",
+    "shared_environment": "powder-blue meadow with peach flowers, mint grass, and a pale cloud bank",
+    "environmental_contrast": "The left picnic has one place setting; the right has two napkins arranged together.",
+    "background_color": "powder blue",
+    "accent_color": "peach",
+    "camera_angle": "low eye-level view",
+    "emotional_insight": "An ordinary meal becomes an invitation when there is room for two.",
+    "emotional_premise": null,
+    "why_it_may_work": "A lost-looking picnic setup becomes inviting through one added place setting.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep the picnic basket compact and proportional.",
+      "Make the food simple and clearly non-human-scale."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T17:50:28.142124Z",
+    "updated_at": "2026-08-07T17:50:28.162948+00:00"
+  },
+  {
+    "id": "content-7ae8ecfb6c22",
+    "batch_id": "batch-2026-08-07-01faa321",
+    "format": "with_you",
+    "status": "candidate",
+    "slot": 7,
+    "title_left": "One Quiet Beat",
+    "title_right": "Two Small Beats",
+    "story_title": null,
+    "left_character": "boy",
+    "left_action": "holds one shaker at his side",
+    "left_setting": "pastel music corner",
+    "left_props": [
+      "one shaker",
+      "small floor drum",
+      "round rug"
+    ],
+    "left_emotion": "neutral",
+    "right_action": "raises a second shaker beside him",
+    "right_characters": [
+      "girl",
+      "boy"
+    ],
+    "right_setting": "same pastel music corner",
+    "right_props": [
+      "two shakers",
+      "small floor drum",
+      "round rug"
+    ],
+    "right_emotion": "playful",
+    "shared_environment": "pale-lilac music corner with sunny-orange wall dots and a mint rug",
+    "environmental_contrast": "One shaker hangs still on the left; two shakers are raised together on the right.",
+    "background_color": "pale lilac",
+    "accent_color": "sunny orange",
+    "camera_angle": "front-facing medium shot",
+    "emotional_insight": "Even a tiny rhythm becomes joyful when it is answered.",
+    "emotional_premise": null,
+    "why_it_may_work": "A simple music-making gesture gives companionship an audible visual rhythm.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Use two small shakers rather than oversized instruments.",
+      "Keep both characters’ actions distinct and easy to read."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T17:50:28.142124Z",
+    "updated_at": "2026-08-07T17:50:28.162950+00:00"
+  },
+  {
+    "id": "content-f53fdee0695d",
+    "batch_id": "batch-2026-08-07-01faa321",
+    "format": "with_you",
+    "status": "candidate",
+    "slot": 8,
+    "title_left": "After the Craft",
+    "title_right": "Clean-Up Companions",
+    "story_title": null,
+    "left_character": "girl",
+    "left_action": "holds a small dustpan over scattered paper scraps",
+    "left_setting": "pastel studio floor",
+    "left_props": [
+      "small dustpan",
+      "three paper scraps",
+      "short broom"
+    ],
+    "left_emotion": "bored",
+    "right_action": "sweeps one paper scrap toward her",
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": "same pastel studio floor",
+    "right_props": [
+      "small dustpan",
+      "three paper scraps",
+      "short broom"
+    ],
+    "right_emotion": "helpful",
+    "shared_environment": "pale-green studio with rose-pink cabinets and a cream floor",
+    "environmental_contrast": "The scraps are spread away from her on the left; one clear sweeping path connects both characters on the right.",
+    "background_color": "pale green",
+    "accent_color": "rose pink",
+    "camera_angle": "eye-level three-quarter view",
+    "emotional_insight": "Even endings feel better when no one handles them alone.",
+    "emotional_premise": null,
+    "why_it_may_work": "A shared cleanup action turns a dull ending into a gentle ritual.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep the broom and dustpan short and rounded.",
+      "Show only a few paper scraps to avoid visual clutter."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T17:50:28.142124Z",
+    "updated_at": "2026-08-07T17:50:28.162957+00:00"
+  },
+  {
+    "id": "content-40dd8c20a7d9",
+    "batch_id": "batch-2026-08-07-01faa321",
+    "format": "with_you",
+    "status": "candidate",
+    "slot": 9,
+    "title_left": "The Long Look",
+    "title_right": "The Next Turn",
+    "story_title": null,
+    "left_character": "boy",
+    "left_action": "studies a folded map on a bench",
+    "left_setting": "pastel park path",
+    "left_props": [
+      "folded map",
+      "low bench",
+      "tiny compass"
+    ],
+    "left_emotion": "sad",
+    "right_action": "points to one path on the map",
+    "right_characters": [
+      "girl",
+      "boy"
+    ],
+    "right_setting": "same pastel park path",
+    "right_props": [
+      "open map",
+      "low bench",
+      "tiny compass"
+    ],
+    "right_emotion": "encouraging",
+    "shared_environment": "soft-peach park with teal path stones, mint shrubs, and lavender hills",
+    "environmental_contrast": "The map is closed around one lone character on the left; it opens between both characters on the right.",
+    "background_color": "soft peach",
+    "accent_color": "teal",
+    "camera_angle": "slightly elevated frontal view",
+    "emotional_insight": "A direction feels clearer when discovered together.",
+    "emotional_premise": null,
+    "why_it_may_work": "A small map-reading pause becomes a shared adventure without changing location.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep the map simple with only a few icons.",
+      "Avoid suggesting dangerous travel or human-scale equipment."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T17:50:28.142124Z",
+    "updated_at": "2026-08-07T17:50:28.162958+00:00"
+  },
+  {
+    "id": "content-c3e7e80a66a0",
+    "batch_id": "batch-2026-08-07-01faa321",
+    "format": "with_you",
+    "status": "candidate",
+    "slot": 10,
+    "title_left": "Shell Search",
+    "title_right": "Shared Shell Search",
+    "story_title": null,
+    "left_character": "girl",
+    "left_action": "looks at one empty patch of sand",
+    "left_setting": "pastel beach shoreline",
+    "left_props": [
+      "small sand pail",
+      "three shells",
+      "flat stone"
+    ],
+    "left_emotion": "bored",
+    "right_action": "places a shell into the pail beside her",
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": "same pastel beach shoreline",
+    "right_props": [
+      "small sand pail",
+      "four shells",
+      "flat stone"
+    ],
+    "right_emotion": "pleased",
+    "shared_environment": "pale-blue beach with warm-yellow sand, mint waves, and coral clouds",
+    "environmental_contrast": "The pail sits empty on the left; one shell and two characters fill the same search area on the right.",
+    "background_color": "pale blue",
+    "accent_color": "warm yellow",
+    "camera_angle": "eye-level side view",
+    "emotional_insight": "Looking closely feels more rewarding with a companion.",
+    "emotional_premise": null,
+    "why_it_may_work": "A quiet beach search becomes reassuring when the search is shared.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Use only a few small shells and one clearly visible stone.",
+      "Keep the shoreline abstract and safe."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T17:50:28.142124Z",
+    "updated_at": "2026-08-07T17:50:28.162959+00:00"
+  },
+  {
+    "id": "content-3318e8d093e8",
+    "batch_id": "batch-2026-08-07-01faa321",
+    "format": "before_after",
+    "status": "candidate",
+    "slot": 1,
+    "title_left": "Folding Alone",
+    "title_right": "Folding Together",
+    "story_title": null,
+    "left_character": "girl",
+    "left_action": "She slowly folds one towel.",
+    "left_setting": "sunny apartment laundry nook",
+    "left_props": [
+      "small wicker basket",
+      "three pastel towels",
+      "wooden stool"
+    ],
+    "left_emotion": "bored and droopy",
+    "right_action": "They tug opposite corners of one large towel and fold it together.",
+    "right_characters": [
+      "girl",
+      "boy"
+    ],
+    "right_setting": "same sunny apartment laundry nook",
+    "right_props": [
+      "small wicker basket",
+      "large pastel towel",
+      "wooden stool",
+      "clothespin jar"
+    ],
+    "right_emotion": "playfully focused",
+    "shared_environment": "Continuous powder-blue laundry nook with rounded coral cabinets and soft peach floor.",
+    "environmental_contrast": "The empty nook gains a gentle sense of teamwork without changing location.",
+    "background_color": "powder blue",
+    "accent_color": "coral",
+    "camera_angle": "front three-quarter view",
+    "emotional_insight": "Shared rhythm can turn a repetitive task into connection.",
+    "emotional_premise": null,
+    "why_it_may_work": "A quiet chore becomes playful when shared.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep the laundry basket realistically sized.",
+      "Avoid making the clothesline visually cluttered."
+    ],
+    "transformation": "Bored folding becomes coordinated play.",
+    "before_state": "Laundry feels endless and solitary.",
+    "after_state": "The finished towel becomes a small shared achievement.",
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T17:51:28.710969Z",
+    "updated_at": "2026-08-07T17:51:28.734145+00:00"
+  },
+  {
+    "id": "content-23c3cd2b1708",
+    "batch_id": "batch-2026-08-07-01faa321",
+    "format": "before_after",
+    "status": "candidate",
+    "slot": 2,
+    "title_left": "Waiting for Sprouts",
+    "title_right": "Growing Side by Side",
+    "story_title": null,
+    "left_character": "boy",
+    "left_action": "He stares at one seedling pot.",
+    "left_setting": "round rooftop greenhouse",
+    "left_props": [
+      "single terracotta pot",
+      "tiny seedling",
+      "small trowel"
+    ],
+    "left_emotion": "neutral and impatient",
+    "right_action": "They water two neighboring pots together.",
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": "same round rooftop greenhouse",
+    "right_props": [
+      "two terracotta pots",
+      "two tiny seedlings",
+      "small watering can",
+      "wooden plant marker"
+    ],
+    "right_emotion": "hopeful and companionable",
+    "shared_environment": "Continuous pale-peach greenhouse with mint shelves, curved glass, and soft yellow sunlight.",
+    "environmental_contrast": "One lonely pot becomes a shared pair of growing plants.",
+    "background_color": "pale peach",
+    "accent_color": "mint",
+    "camera_angle": "slightly overhead",
+    "emotional_insight": "Patience feels easier when someone waits with you.",
+    "emotional_premise": null,
+    "why_it_may_work": "A tiny garden task gains warmth through cooperative care.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep the watering can small enough for a Dinkly to hold.",
+      "Use only a few large, readable seedlings."
+    ],
+    "transformation": "Waiting becomes shared anticipation.",
+    "before_state": "The Dinkly watches time pass alone.",
+    "after_state": "Both friends look forward to returning together.",
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T17:51:28.710969Z",
+    "updated_at": "2026-08-07T17:51:28.734152+00:00"
+  },
+  {
+    "id": "content-56e06040641a",
+    "batch_id": "batch-2026-08-07-01faa321",
+    "format": "before_after",
+    "status": "candidate",
+    "slot": 3,
+    "title_left": "The Messy Corner",
+    "title_right": "The Block Bridge",
+    "story_title": null,
+    "left_character": "boy",
+    "left_action": "He sits beside a fallen block pile.",
+    "left_setting": "pastel playroom",
+    "left_props": [
+      "six large wooden blocks",
+      "low toy shelf",
+      "round floor mat"
+    ],
+    "left_emotion": "overwhelmed and still",
+    "right_action": "They place the final blocks into a bridge.",
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": "same pastel playroom",
+    "right_props": [
+      "six large wooden blocks",
+      "low toy shelf",
+      "round floor mat",
+      "toy animal"
+    ],
+    "right_emotion": "proud and delighted",
+    "shared_environment": "Continuous soft-mint playroom with rose shelves, cream floor mat, and peach window light.",
+    "environmental_contrast": "The scattered pile becomes a shared structure while the room stays calm.",
+    "background_color": "soft mint",
+    "accent_color": "rose",
+    "camera_angle": "front view",
+    "emotional_insight": "A difficult mess can become a creative goal with a friend.",
+    "emotional_premise": null,
+    "why_it_may_work": "Tidying becomes a cooperative visual puzzle.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Use oversized blocks for clear silhouettes.",
+      "Do not scatter props beyond the defined play area."
+    ],
+    "transformation": "Overwhelm becomes constructive pride.",
+    "before_state": "The pile feels too large to begin.",
+    "after_state": "The finished bridge invites another game.",
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T17:51:28.710969Z",
+    "updated_at": "2026-08-07T17:51:28.734154+00:00"
+  },
+  {
+    "id": "content-c9509dc3f356",
+    "batch_id": "batch-2026-08-07-01faa321",
+    "format": "before_after",
+    "status": "candidate",
+    "slot": 4,
+    "title_left": "Long Path Home",
+    "title_right": "Same Way Home",
+    "story_title": null,
+    "left_character": "girl",
+    "left_action": "She pulls a little wagon along the path.",
+    "left_setting": "pastel park footpath",
+    "left_props": [
+      "small red wagon",
+      "fallen leaf",
+      "rounded signpost"
+    ],
+    "left_emotion": "tired and lonely",
+    "right_action": "They pull the wagon together along the path.",
+    "right_characters": [
+      "girl",
+      "boy"
+    ],
+    "right_setting": "same pastel park footpath",
+    "right_props": [
+      "small red wagon",
+      "fallen leaf",
+      "rounded signpost",
+      "two acorns"
+    ],
+    "right_emotion": "easygoing and relieved",
+    "shared_environment": "Continuous buttercream park with sky-blue path, rounded shrubs, and peach evening light.",
+    "environmental_contrast": "The same distance feels shorter with two sets of nub feet moving together.",
+    "background_color": "buttercream",
+    "accent_color": "sky blue",
+    "camera_angle": "slightly low three-quarter view",
+    "emotional_insight": "Companionship can reduce the weight of an ordinary journey.",
+    "emotional_premise": null,
+    "why_it_may_work": "A routine commute feels lighter when matched step for step.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep the wagon compact and stable.",
+      "Show the path as one continuous lane."
+    ],
+    "transformation": "Weariness becomes ease.",
+    "before_state": "The walk home feels long.",
+    "after_state": "The walk becomes a shared ritual.",
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T17:51:28.710969Z",
+    "updated_at": "2026-08-07T17:51:28.734155+00:00"
+  },
+  {
+    "id": "content-7e7d92174c75",
+    "batch_id": "batch-2026-08-07-01faa321",
+    "format": "before_after",
+    "status": "candidate",
+    "slot": 5,
+    "title_left": "One Empty Plate",
+    "title_right": "Pass the Fruit",
+    "story_title": null,
+    "left_character": "boy",
+    "left_action": "He nudges one apple slice around a plate.",
+    "left_setting": "quiet picnic blanket",
+    "left_props": [
+      "small plate",
+      "apple slice",
+      "thermos"
+    ],
+    "left_emotion": "bored and withdrawn",
+    "right_action": "They pass apple slices from a shared basket.",
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": "same quiet picnic blanket",
+    "right_props": [
+      "shared basket",
+      "two plates",
+      "apple slices",
+      "thermos"
+    ],
+    "right_emotion": "warm and engaged",
+    "shared_environment": "Continuous powder-pink meadow with teal blanket, cream clouds, and low rounded trees.",
+    "environmental_contrast": "The empty plate becomes a small shared spread.",
+    "background_color": "powder pink",
+    "accent_color": "teal",
+    "camera_angle": "top-down view",
+    "emotional_insight": "Sharing ordinary food creates an easy opening for conversation.",
+    "emotional_premise": null,
+    "why_it_may_work": "A simple snack becomes an invitation to connect.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep the picnic basket proportional to the characters.",
+      "Limit food shapes to clear, oversized pieces."
+    ],
+    "transformation": "Withdrawal becomes connection.",
+    "before_state": "Snack time has no energy.",
+    "after_state": "The meal becomes a mutual exchange.",
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T17:51:28.710969Z",
+    "updated_at": "2026-08-07T17:51:28.734156+00:00"
+  },
+  {
+    "id": "content-f4ced5ebd753",
+    "batch_id": "batch-2026-08-07-01faa321",
+    "format": "before_after",
+    "status": "candidate",
+    "slot": 6,
+    "title_left": "Waiting Quietly",
+    "title_right": "Domino Time",
+    "story_title": null,
+    "left_character": "boy",
+    "left_action": "He watches the round wall clock.",
+    "left_setting": "friendly neighborhood clinic waiting room",
+    "left_props": [
+      "round wall clock",
+      "single chair",
+      "small side table"
+    ],
+    "left_emotion": "anxious and bored",
+    "right_action": "They line up three dominoes on the side table.",
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": "same friendly neighborhood clinic waiting room",
+    "right_props": [
+      "round wall clock",
+      "two chairs",
+      "small side table",
+      "three dominoes"
+    ],
+    "right_emotion": "calm and curious",
+    "shared_environment": "Continuous soft-lilac waiting room with lime chairs, peach walls, and gentle window light.",
+    "environmental_contrast": "The clock remains, but attention shifts toward a shared activity.",
+    "background_color": "soft lilac",
+    "accent_color": "lime",
+    "camera_angle": "eye-level front view",
+    "emotional_insight": "Simple companionship can soften uncertain waiting.",
+    "emotional_premise": null,
+    "why_it_may_work": "A waiting room becomes less isolating through a tiny shared game.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep the clock legible but unobtrusive.",
+      "Use only a few dominoes."
+    ],
+    "transformation": "Anxiety becomes calm curiosity.",
+    "before_state": "Time feels loud and empty.",
+    "after_state": "Time passes through a small game.",
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T17:51:28.710969Z",
+    "updated_at": "2026-08-07T17:51:28.734158+00:00"
+  },
+  {
+    "id": "content-095275823ce3",
+    "batch_id": "batch-2026-08-07-01faa321",
+    "format": "before_after",
+    "status": "candidate",
+    "slot": 7,
+    "title_left": "Crooked Books",
+    "title_right": "A Shared Shelf",
+    "story_title": null,
+    "left_character": "girl",
+    "left_action": "She pushes one book upright.",
+    "left_setting": "cozy reading alcove",
+    "left_props": [
+      "low bookshelf",
+      "three picture books",
+      "round rug"
+    ],
+    "left_emotion": "neutral and sluggish",
+    "right_action": "They place books spine-to-spine across the shelf.",
+    "right_characters": [
+      "girl",
+      "boy"
+    ],
+    "right_setting": "same cozy reading alcove",
+    "right_props": [
+      "low bookshelf",
+      "six picture books",
+      "round rug",
+      "bookmark"
+    ],
+    "right_emotion": "satisfied and peaceful",
+    "shared_environment": "Continuous cream reading alcove with robin-egg shelves, peach rug, and rounded window.",
+    "environmental_contrast": "The shelf changes from a lonely correction to a shared arrangement.",
+    "background_color": "cream",
+    "accent_color": "robin egg blue",
+    "camera_angle": "slightly overhead",
+    "emotional_insight": "Small acts feel more meaningful when done in parallel.",
+    "emotional_premise": null,
+    "why_it_may_work": "A familiar household task becomes a coordinated pattern.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep the bookshelf low and safe.",
+      "Use large, distinct book colors."
+    ],
+    "transformation": "Sluggishness becomes peaceful satisfaction.",
+    "before_state": "Tidying feels like a dull obligation.",
+    "after_state": "The shelf becomes a joint accomplishment.",
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T17:51:28.710969Z",
+    "updated_at": "2026-08-07T17:51:28.734161+00:00"
+  },
+  {
+    "id": "content-537c673fbb6f",
+    "batch_id": "batch-2026-08-07-01faa321",
+    "format": "before_after",
+    "status": "candidate",
+    "slot": 8,
+    "title_left": "Drip at the Door",
+    "title_right": "Umbrella Team",
+    "story_title": null,
+    "left_character": "boy",
+    "left_action": "He holds a dripping umbrella beside the doorway.",
+    "left_setting": "small pastel bus shelter",
+    "left_props": [
+      "compact umbrella",
+      "puddle",
+      "bench"
+    ],
+    "left_emotion": "gloomy and tired",
+    "right_action": "They angle one umbrella over both of them.",
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": "same small pastel bus shelter",
+    "right_props": [
+      "compact umbrella",
+      "puddle",
+      "bench",
+      "paper timetable"
+    ],
+    "right_emotion": "relieved and companionable",
+    "shared_environment": "Continuous peach bus shelter with aqua trim, rounded bench, and blue-gray rain beyond.",
+    "environmental_contrast": "The shelter feels warmer as the umbrella becomes shared cover.",
+    "background_color": "peach",
+    "accent_color": "aqua",
+    "camera_angle": "front three-quarter view",
+    "emotional_insight": "Protection feels more comforting when offered mutually.",
+    "emotional_premise": null,
+    "why_it_may_work": "A minor rainy-day problem becomes a shared design challenge.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep the umbrella large enough for both characters.",
+      "Show rain only outside the continuous shelter."
+    ],
+    "transformation": "Gloom becomes relief.",
+    "before_state": "Rain makes the wait feel miserable.",
+    "after_state": "The wait becomes a cozy pause together.",
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T17:51:28.710969Z",
+    "updated_at": "2026-08-07T17:51:28.734163+00:00"
+  },
+  {
+    "id": "content-e78179ca8c69",
+    "batch_id": "batch-2026-08-07-01faa321",
+    "format": "before_after",
+    "status": "candidate",
+    "slot": 9,
+    "title_left": "Missing Corner",
+    "title_right": "Puzzle Partners",
+    "story_title": null,
+    "left_character": "girl",
+    "left_action": "She turns one puzzle piece over.",
+    "left_setting": "round craft table",
+    "left_props": [
+      "four-piece puzzle board",
+      "single puzzle piece",
+      "small cup"
+    ],
+    "left_emotion": "frustrated and quiet",
+    "right_action": "They fit the final puzzle piece into place.",
+    "right_characters": [
+      "girl",
+      "boy"
+    ],
+    "right_setting": "same round craft table",
+    "right_props": [
+      "four-piece puzzle board",
+      "four puzzle pieces",
+      "small cup",
+      "yellow pencil"
+    ],
+    "right_emotion": "triumphant and friendly",
+    "shared_environment": "Continuous pale-yellow craft room with plum table legs, aqua wall stripe, and soft coral floor.",
+    "environmental_contrast": "The incomplete board becomes a clear shared finish line.",
+    "background_color": "pale yellow",
+    "accent_color": "plum",
+    "camera_angle": "eye-level side view",
+    "emotional_insight": "Another perspective can make a stuck moment feel solvable.",
+    "emotional_premise": null,
+    "why_it_may_work": "A failed puzzle becomes a collaborative discovery.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Use large puzzle pieces with clear edges.",
+      "Keep the table surface uncluttered."
+    ],
+    "transformation": "Frustration becomes shared triumph.",
+    "before_state": "The puzzle has become a dead end.",
+    "after_state": "The final fit creates mutual delight.",
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T17:51:28.710969Z",
+    "updated_at": "2026-08-07T17:51:28.734164+00:00"
+  },
+  {
+    "id": "content-45b6825e7505",
+    "batch_id": "batch-2026-08-07-01faa321",
+    "format": "before_after",
+    "status": "candidate",
+    "slot": 10,
+    "title_left": "Loose Button",
+    "title_right": "Warm Fix",
+    "story_title": null,
+    "left_character": "boy",
+    "left_action": "He examines a loose button on his scarf.",
+    "left_setting": "warm entryway",
+    "left_props": [
+      "striped scarf",
+      "large button",
+      "low coat hook"
+    ],
+    "left_emotion": "worried and still",
+    "right_action": "They hold the scarf steady while securing the button.",
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": "same warm entryway",
+    "right_props": [
+      "striped scarf",
+      "large button",
+      "low coat hook",
+      "small thread spool"
+    ],
+    "right_emotion": "reassured and caring",
+    "shared_environment": "Continuous powder-blue entryway with tangerine hooks, cream floor, and rounded mirror.",
+    "environmental_contrast": "The same scarf shifts from a problem into evidence of mutual care.",
+    "background_color": "powder blue",
+    "accent_color": "tangerine",
+    "camera_angle": "front view",
+    "emotional_insight": "Help with ordinary repairs communicates dependable friendship.",
+    "emotional_premise": null,
+    "why_it_may_work": "A small act of repair shows care without turning dramatic.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep the scarf proportions believable.",
+      "Use a large, safe-looking button."
+    ],
+    "transformation": "Worry becomes reassurance.",
+    "before_state": "The loose button threatens a favorite scarf.",
+    "after_state": "The repaired scarf feels ready for another day.",
+    "comics": [],
+    "final_payoff": null,
+    "visual_continuity": null,
+    "background_strategy": null,
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T17:51:28.710969Z",
+    "updated_at": "2026-08-07T17:51:28.734165+00:00"
+  },
+  {
+    "id": "content-d7678735c88c",
+    "batch_id": "batch-2026-08-07-01faa321",
+    "format": "five_story",
+    "status": "candidate",
+    "slot": 1,
+    "title_left": null,
+    "title_right": null,
+    "story_title": "Two Toasts, One Morning",
+    "left_character": "boy",
+    "left_action": null,
+    "left_setting": null,
+    "left_props": [
+      "empty plate"
+    ],
+    "left_emotion": null,
+    "right_action": null,
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": null,
+    "right_props": [
+      "small table"
+    ],
+    "right_emotion": null,
+    "shared_environment": null,
+    "environmental_contrast": null,
+    "background_color": "pastel mint",
+    "accent_color": "coral",
+    "camera_angle": "eye-level wide shot",
+    "emotional_insight": null,
+    "emotional_premise": "A dull morning becomes inviting when breakfast is prepared together.",
+    "why_it_may_work": "Turns a routine breakfast into a warm shared ritual.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep both characters equal in size.",
+      "Avoid making the toast oversized."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [
+      {
+        "title": "Quiet Kitchen",
+        "scene": "Dinko stares at an empty plate while Dinka rolls a small table toward him.",
+        "characters": [
+          "Dinko sits bored with lowered eyes.",
+          "Dinka smiles gently while rolling the table."
+        ],
+        "setting": "pastel mint kitchen",
+        "props": [
+          "small table",
+          "empty plate",
+          "toaster"
+        ],
+        "emotion": "Dinko: bored; Dinka: encouraging",
+        "camera_angle": "eye-level wide shot"
+      },
+      {
+        "title": "Bread Share",
+        "scene": "Dinko places bread in the toaster while Dinka holds two plates beside him.",
+        "characters": [
+          "Dinko loads the toaster.",
+          "Dinka steadies two plates."
+        ],
+        "setting": "pastel mint kitchen",
+        "props": [
+          "toaster",
+          "two bread slices",
+          "two plates"
+        ],
+        "emotion": "Dinko: attentive; Dinka: patient",
+        "camera_angle": "three-quarter view"
+      },
+      {
+        "title": "Waiting Together",
+        "scene": "Dinko and Dinka sit side by side watching the toaster lever.",
+        "characters": [
+          "Dinko watches the lever.",
+          "Dinka leans toward Dinko."
+        ],
+        "setting": "pastel mint kitchen",
+        "props": [
+          "toaster",
+          "small bench",
+          "kitchen clock"
+        ],
+        "emotion": "Dinko: curious; Dinka: content",
+        "camera_angle": "eye-level medium shot"
+      },
+      {
+        "title": "Toast Lift",
+        "scene": "Dinka lifts one toast slice while Dinko reaches for the other.",
+        "characters": [
+          "Dinka lifts toast with tongs.",
+          "Dinko reaches toward the second slice."
+        ],
+        "setting": "pastel mint kitchen",
+        "props": [
+          "toaster",
+          "wooden tongs",
+          "two toast slices"
+        ],
+        "emotion": "Dinko: pleased; Dinka: pleased",
+        "camera_angle": "close three-quarter view"
+      },
+      {
+        "title": "Shared Breakfast",
+        "scene": "Dinko and Dinka tap their toast slices together before eating.",
+        "characters": [
+          "Dinko raises his toast.",
+          "Dinka raises her toast."
+        ],
+        "setting": "pastel mint kitchen",
+        "props": [
+          "two toast slices",
+          "two plates",
+          "small jam jar"
+        ],
+        "emotion": "Dinko: happy; Dinka: happy",
+        "camera_angle": "eye-level wide shot"
+      }
+    ],
+    "final_payoff": "The breakfast tastes better because the morning was shared.",
+    "visual_continuity": "One pastel mint kitchen, coral table accents, same plates and toaster throughout.",
+    "background_strategy": "Use a single softly lit mint kitchen with a coral table as the anchor.",
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T17:52:59.543732Z",
+    "updated_at": "2026-08-07T17:52:59.565139+00:00"
+  },
+  {
+    "id": "content-c9343bf28c31",
+    "batch_id": "batch-2026-08-07-01faa321",
+    "format": "five_story",
+    "status": "candidate",
+    "slot": 2,
+    "title_left": null,
+    "title_right": null,
+    "story_title": "The Sock Pair",
+    "left_character": "girl",
+    "left_action": null,
+    "left_setting": null,
+    "left_props": [
+      "sock pile"
+    ],
+    "left_emotion": null,
+    "right_action": null,
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": null,
+    "right_props": [
+      "laundry basket"
+    ],
+    "right_emotion": null,
+    "shared_environment": null,
+    "environmental_contrast": null,
+    "background_color": "pastel blue",
+    "accent_color": "sunny yellow",
+    "camera_angle": "eye-level medium shot",
+    "emotional_insight": null,
+    "emotional_premise": "Sorting laundry feels pointless until two friends make a game of it.",
+    "why_it_may_work": "A familiar chore becomes playful without changing the task.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep bubbles small and readable.",
+      "Do not imply human hands."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [
+      {
+        "title": "Laundry Pile",
+        "scene": "Dinka faces a pile of unmatched socks while Dinko rolls over a basket.",
+        "characters": [
+          "Dinka looks bored at the pile.",
+          "Dinko rolls the basket toward her."
+        ],
+        "setting": "pastel blue laundry nook",
+        "props": [
+          "sock pile",
+          "laundry basket",
+          "folding mat"
+        ],
+        "emotion": "Dinka: bored; Dinko: helpful",
+        "camera_angle": "eye-level wide shot"
+      },
+      {
+        "title": "First Match",
+        "scene": "Dinka nudges a striped sock toward Dinko while he searches the basket.",
+        "characters": [
+          "Dinka nudges the striped sock.",
+          "Dinko searches the basket."
+        ],
+        "setting": "pastel blue laundry nook",
+        "props": [
+          "striped sock",
+          "laundry basket",
+          "three loose socks"
+        ],
+        "emotion": "Dinka: curious; Dinko: focused",
+        "camera_angle": "top-down three-quarter view"
+      },
+      {
+        "title": "Color Challenge",
+        "scene": "Dinko lines up two blue socks while Dinka points her nub arm toward a yellow one.",
+        "characters": [
+          "Dinko lines up the blue socks.",
+          "Dinka points toward the yellow sock."
+        ],
+        "setting": "pastel blue laundry nook",
+        "props": [
+          "two blue socks",
+          "yellow sock",
+          "sorting mat"
+        ],
+        "emotion": "Dinko: proud; Dinka: engaged",
+        "camera_angle": "eye-level medium shot"
+      },
+      {
+        "title": "Basket Fill",
+        "scene": "Dinka drops a matched pair into the basket while Dinko rolls another pair beside her.",
+        "characters": [
+          "Dinka drops matched socks into the basket.",
+          "Dinko rolls another pair beside her."
+        ],
+        "setting": "pastel blue laundry nook",
+        "props": [
+          "laundry basket",
+          "matched sock pair",
+          "sorting mat"
+        ],
+        "emotion": "Dinka: pleased; Dinko: energetic",
+        "camera_angle": "three-quarter view"
+      },
+      {
+        "title": "Tiny Victory",
+        "scene": "Dinko and Dinka sit beside the neatly paired socks and bump their round sides.",
+        "characters": [
+          "Dinko leans into Dinka.",
+          "Dinka leans into Dinko."
+        ],
+        "setting": "pastel blue laundry nook",
+        "props": [
+          "neat sock rows",
+          "laundry basket",
+          "folding mat"
+        ],
+        "emotion": "Dinko: happy; Dinka: happy",
+        "camera_angle": "eye-level wide shot"
+      }
+    ],
+    "final_payoff": "The chore ends with a small shared victory.",
+    "visual_continuity": "The same blue laundry nook, yellow basket, and striped sock recur in every beat.",
+    "background_strategy": "Keep the laundry nook uncluttered and pastel blue across all five scenes.",
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T17:52:59.543732Z",
+    "updated_at": "2026-08-07T17:52:59.565148+00:00"
+  },
+  {
+    "id": "content-b7a92b984cc5",
+    "batch_id": "batch-2026-08-07-01faa321",
+    "format": "five_story",
+    "status": "candidate",
+    "slot": 3,
+    "title_left": null,
+    "title_right": null,
+    "story_title": "The Slow Garden Walk",
+    "left_character": "boy",
+    "left_action": null,
+    "left_setting": null,
+    "left_props": [
+      "garden bench"
+    ],
+    "left_emotion": null,
+    "right_action": null,
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": null,
+    "right_props": [
+      "watering can"
+    ],
+    "right_emotion": null,
+    "shared_environment": null,
+    "environmental_contrast": null,
+    "background_color": "pastel peach",
+    "accent_color": "teal",
+    "camera_angle": "eye-level wide shot",
+    "emotional_insight": null,
+    "emotional_premise": "A lonely pause becomes a gentle adventure when someone walks alongside it.",
+    "why_it_may_work": "Shows companionship making a quiet walk feel meaningful.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep the path wide enough for both round characters.",
+      "Use only attached nub feet."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [
+      {
+        "title": "Bench Pause",
+        "scene": "Dinko sits neutrally on a garden bench while Dinka waits at the path entrance.",
+        "characters": [
+          "Dinko sits still on the bench.",
+          "Dinka waits with an inviting tilt."
+        ],
+        "setting": "pastel peach community garden",
+        "props": [
+          "garden bench",
+          "stone path",
+          "watering can"
+        ],
+        "emotion": "Dinko: neutral; Dinka: inviting",
+        "camera_angle": "eye-level wide shot"
+      },
+      {
+        "title": "Path Invitation",
+        "scene": "Dinka rolls beside the bench while Dinko turns toward the path.",
+        "characters": [
+          "Dinka rolls toward Dinko.",
+          "Dinko turns toward the path."
+        ],
+        "setting": "pastel peach community garden",
+        "props": [
+          "stone path",
+          "bench",
+          "small flower bed"
+        ],
+        "emotion": "Dinka: hopeful; Dinko: curious",
+        "camera_angle": "three-quarter view"
+      },
+      {
+        "title": "Leaf Discovery",
+        "scene": "Dinko pauses beside a large leaf while Dinka points toward its raindrops.",
+        "characters": [
+          "Dinko examines the leaf.",
+          "Dinka points at the raindrops."
+        ],
+        "setting": "pastel peach community garden",
+        "props": [
+          "large leaf",
+          "watering can",
+          "stone path"
+        ],
+        "emotion": "Dinko: interested; Dinka: delighted",
+        "camera_angle": "low eye-level shot"
+      },
+      {
+        "title": "Shared Detour",
+        "scene": "Dinka rolls around a flower bed while Dinko follows the curved path.",
+        "characters": [
+          "Dinka rolls around the bed.",
+          "Dinko follows the curve."
+        ],
+        "setting": "pastel peach community garden",
+        "props": [
+          "flower bed",
+          "curved path",
+          "wooden sign"
+        ],
+        "emotion": "Dinka: playful; Dinko: engaged",
+        "camera_angle": "wide three-quarter shot"
+      },
+      {
+        "title": "Bench Return",
+        "scene": "Dinko and Dinka sit together on the bench facing the flowers.",
+        "characters": [
+          "Dinko rests beside Dinka.",
+          "Dinka rests beside Dinko."
+        ],
+        "setting": "pastel peach community garden",
+        "props": [
+          "garden bench",
+          "flower bed",
+          "fallen leaf"
+        ],
+        "emotion": "Dinko: peaceful; Dinka: peaceful",
+        "camera_angle": "rear three-quarter view"
+      }
+    ],
+    "final_payoff": "The destination matters less when the walk is shared.",
+    "visual_continuity": "The same peach garden, curved stone path, bench, and flower bed connect every scene.",
+    "background_strategy": "Use one continuous garden vista with gentle teal foliage accents.",
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T17:52:59.543732Z",
+    "updated_at": "2026-08-07T17:52:59.565149+00:00"
+  },
+  {
+    "id": "content-6a411bc6f881",
+    "batch_id": "batch-2026-08-07-01faa321",
+    "format": "five_story",
+    "status": "candidate",
+    "slot": 4,
+    "title_left": null,
+    "title_right": null,
+    "story_title": "The Bus Stop Cloud",
+    "left_character": "girl",
+    "left_action": null,
+    "left_setting": null,
+    "left_props": [
+      "bench"
+    ],
+    "left_emotion": null,
+    "right_action": null,
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": null,
+    "right_props": [
+      "paper timetable"
+    ],
+    "right_emotion": null,
+    "shared_environment": null,
+    "environmental_contrast": null,
+    "background_color": "pastel lavender",
+    "accent_color": "orange",
+    "camera_angle": "eye-level medium shot",
+    "emotional_insight": null,
+    "emotional_premise": "Waiting feels shorter when two friends notice small things together.",
+    "why_it_may_work": "Makes waiting at a bus stop feel less empty through shared observation.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep the bus sign simple.",
+      "Avoid realistic human transit details."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [
+      {
+        "title": "Long Wait",
+        "scene": "Dinka sits beneath a bus shelter looking bored while Dinko arrives with a paper timetable.",
+        "characters": [
+          "Dinka stares at the empty road.",
+          "Dinko carries the timetable toward her."
+        ],
+        "setting": "pastel lavender bus shelter",
+        "props": [
+          "bus shelter",
+          "paper timetable",
+          "bench"
+        ],
+        "emotion": "Dinka: bored; Dinko: helpful",
+        "camera_angle": "eye-level wide shot"
+      },
+      {
+        "title": "Timetable Check",
+        "scene": "Dinko studies the timetable while Dinka looks up at a cloud.",
+        "characters": [
+          "Dinko studies the timetable.",
+          "Dinka watches the cloud."
+        ],
+        "setting": "pastel lavender bus shelter",
+        "props": [
+          "paper timetable",
+          "bench",
+          "bus sign"
+        ],
+        "emotion": "Dinko: focused; Dinka: distracted",
+        "camera_angle": "three-quarter view"
+      },
+      {
+        "title": "Cloud Shape",
+        "scene": "Dinka points at a cloud shaped like a slipper while Dinko follows her gaze.",
+        "characters": [
+          "Dinka points upward.",
+          "Dinko looks upward."
+        ],
+        "setting": "pastel lavender bus shelter",
+        "props": [
+          "bus sign",
+          "bench",
+          "paper timetable"
+        ],
+        "emotion": "Dinka: amused; Dinko: curious",
+        "camera_angle": "low upward angle"
+      },
+      {
+        "title": "Shared Sketch",
+        "scene": "Dinko draws the cloud on the timetable back while Dinka watches.",
+        "characters": [
+          "Dinko sketches the cloud.",
+          "Dinka watches closely."
+        ],
+        "setting": "pastel lavender bus shelter",
+        "props": [
+          "paper timetable",
+          "stubby crayon",
+          "bench"
+        ],
+        "emotion": "Dinko: absorbed; Dinka: entertained",
+        "camera_angle": "close three-quarter view"
+      },
+      {
+        "title": "Bus Arrival",
+        "scene": "Dinko and Dinka turn together toward the arriving pastel bus.",
+        "characters": [
+          "Dinko turns toward the bus.",
+          "Dinka turns toward the bus."
+        ],
+        "setting": "pastel lavender bus shelter",
+        "props": [
+          "bus shelter",
+          "bus sign",
+          "paper sketch"
+        ],
+        "emotion": "Dinko: relieved; Dinka: cheerful",
+        "camera_angle": "eye-level wide shot"
+      }
+    ],
+    "final_payoff": "The wait becomes a memory instead of wasted time.",
+    "visual_continuity": "Lavender shelter, orange bench trim, timetable, and cloud motif remain consistent.",
+    "background_strategy": "Keep the shelter and sky as one soft lavender environment.",
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T17:52:59.543732Z",
+    "updated_at": "2026-08-07T17:52:59.565151+00:00"
+  },
+  {
+    "id": "content-30237bb0c59a",
+    "batch_id": "batch-2026-08-07-01faa321",
+    "format": "five_story",
+    "status": "candidate",
+    "slot": 5,
+    "title_left": null,
+    "title_right": null,
+    "story_title": "The Tilted Plant",
+    "left_character": "boy",
+    "left_action": null,
+    "left_setting": null,
+    "left_props": [
+      "tilted plant pot"
+    ],
+    "left_emotion": null,
+    "right_action": null,
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": null,
+    "right_props": [
+      "watering can"
+    ],
+    "right_emotion": null,
+    "shared_environment": null,
+    "environmental_contrast": null,
+    "background_color": "pastel cream",
+    "accent_color": "sky blue",
+    "camera_angle": "eye-level wide shot",
+    "emotional_insight": null,
+    "emotional_premise": "A drooping plant prompts two friends to care for something together.",
+    "why_it_may_work": "A small repair becomes a shared act of care.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep the plant pot proportionate.",
+      "Make the soil spill minimal."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [
+      {
+        "title": "Drooping Corner",
+        "scene": "Dinko looks sadly at a tilted plant while Dinka rolls over a watering can.",
+        "characters": [
+          "Dinko looks at the plant.",
+          "Dinka rolls the watering can."
+        ],
+        "setting": "pastel cream sunroom",
+        "props": [
+          "tilted plant pot",
+          "watering can",
+          "small stool"
+        ],
+        "emotion": "Dinko: sad; Dinka: concerned",
+        "camera_angle": "eye-level wide shot"
+      },
+      {
+        "title": "Pot Support",
+        "scene": "Dinka nudges the stool under the plant while Dinko steadies the pot.",
+        "characters": [
+          "Dinka nudges the stool.",
+          "Dinko steadies the pot."
+        ],
+        "setting": "pastel cream sunroom",
+        "props": [
+          "plant pot",
+          "small stool",
+          "watering can"
+        ],
+        "emotion": "Dinka: determined; Dinko: careful",
+        "camera_angle": "low three-quarter view"
+      },
+      {
+        "title": "Fresh Water",
+        "scene": "Dinko tips the watering can while Dinka watches the soil.",
+        "characters": [
+          "Dinko waters the plant.",
+          "Dinka watches the soil."
+        ],
+        "setting": "pastel cream sunroom",
+        "props": [
+          "watering can",
+          "plant pot",
+          "small tray"
+        ],
+        "emotion": "Dinko: focused; Dinka: hopeful",
+        "camera_angle": "close eye-level view"
+      },
+      {
+        "title": "Sun Turn",
+        "scene": "Dinka rolls the pot toward the window while Dinko clears a leaf from its path.",
+        "characters": [
+          "Dinka rolls the pot.",
+          "Dinko clears the leaf."
+        ],
+        "setting": "pastel cream sunroom",
+        "props": [
+          "plant pot",
+          "window",
+          "fallen leaf"
+        ],
+        "emotion": "Dinka: purposeful; Dinko: helpful",
+        "camera_angle": "side view"
+      },
+      {
+        "title": "New Leaf",
+        "scene": "Dinko and Dinka sit beside the upright plant and look at its new leaf.",
+        "characters": [
+          "Dinko looks at the new leaf.",
+          "Dinka looks at the new leaf."
+        ],
+        "setting": "pastel cream sunroom",
+        "props": [
+          "upright plant",
+          "small stool",
+          "watering can"
+        ],
+        "emotion": "Dinko: relieved; Dinka: joyful",
+        "camera_angle": "eye-level wide shot"
+      }
+    ],
+    "final_payoff": "Care feels lighter when no one has to do it alone.",
+    "visual_continuity": "One cream sunroom, blue window light, same pot and stool in every beat.",
+    "background_strategy": "Use the window, stool, and plant as fixed anchors in a single sunroom.",
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T17:52:59.543732Z",
+    "updated_at": "2026-08-07T17:52:59.565152+00:00"
+  },
+  {
+    "id": "content-717918d83d52",
+    "batch_id": "batch-2026-08-07-01faa321",
+    "format": "five_story",
+    "status": "candidate",
+    "slot": 6,
+    "title_left": null,
+    "title_right": null,
+    "story_title": "The Blank Page",
+    "left_character": "girl",
+    "left_action": null,
+    "left_setting": null,
+    "left_props": [
+      "blank paper"
+    ],
+    "left_emotion": null,
+    "right_action": null,
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": null,
+    "right_props": [
+      "crayon cup"
+    ],
+    "right_emotion": null,
+    "shared_environment": null,
+    "environmental_contrast": null,
+    "background_color": "pastel rose",
+    "accent_color": "sage",
+    "camera_angle": "eye-level medium shot",
+    "emotional_insight": null,
+    "emotional_premise": "A blank page feels intimidating until a friend adds the first mark.",
+    "why_it_may_work": "Shows a quiet creative activity becoming expressive through company.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep paper sheets large enough to read.",
+      "Avoid human-like fingers."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [
+      {
+        "title": "Empty Desk",
+        "scene": "Dinka faces a blank paper on a low desk while Dinko rolls up beside her.",
+        "characters": [
+          "Dinka stares at the blank paper.",
+          "Dinko rolls beside the desk."
+        ],
+        "setting": "pastel rose art nook",
+        "props": [
+          "low desk",
+          "blank paper",
+          "crayon cup"
+        ],
+        "emotion": "Dinka: unsure; Dinko: supportive",
+        "camera_angle": "eye-level wide shot"
+      },
+      {
+        "title": "First Circle",
+        "scene": "Dinko draws a small circle on the paper while Dinka watches.",
+        "characters": [
+          "Dinko draws a circle.",
+          "Dinka watches the mark."
+        ],
+        "setting": "pastel rose art nook",
+        "props": [
+          "low desk",
+          "paper",
+          "blue crayon"
+        ],
+        "emotion": "Dinko: encouraging; Dinka: curious",
+        "camera_angle": "over-desk three-quarter view"
+      },
+      {
+        "title": "Color Choice",
+        "scene": "Dinka nudges a green crayon toward the circle while Dinko holds the paper steady.",
+        "characters": [
+          "Dinka nudges the crayon.",
+          "Dinko steadies the paper."
+        ],
+        "setting": "pastel rose art nook",
+        "props": [
+          "paper",
+          "green crayon",
+          "blue crayon",
+          "low desk"
+        ],
+        "emotion": "Dinka: engaged; Dinko: patient",
+        "camera_angle": "eye-level close shot"
+      },
+      {
+        "title": "Garden Drawing",
+        "scene": "Dinka adds leaves around the circle while Dinko adds a small sun.",
+        "characters": [
+          "Dinka draws leaves.",
+          "Dinko draws a sun."
+        ],
+        "setting": "pastel rose art nook",
+        "props": [
+          "paper",
+          "green crayon",
+          "yellow crayon",
+          "crayon cup"
+        ],
+        "emotion": "Dinka: absorbed; Dinko: delighted",
+        "camera_angle": "top-down view"
+      },
+      {
+        "title": "Finished Page",
+        "scene": "Dinko and Dinka hold the colorful page between them.",
+        "characters": [
+          "Dinko holds one edge.",
+          "Dinka holds the other edge."
+        ],
+        "setting": "pastel rose art nook",
+        "props": [
+          "finished drawing",
+          "low desk",
+          "crayon cup"
+        ],
+        "emotion": "Dinko: proud; Dinka: proud",
+        "camera_angle": "eye-level wide shot"
+      }
+    ],
+    "final_payoff": "The page fills because one friend made starting easier.",
+    "visual_continuity": "Rose art nook, sage desk, and recurring blue-green crayons unify all scenes.",
+    "background_strategy": "Keep the same low desk and soft art wall behind every beat.",
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T17:52:59.543732Z",
+    "updated_at": "2026-08-07T17:52:59.565153+00:00"
+  },
+  {
+    "id": "content-776aca71132f",
+    "batch_id": "batch-2026-08-07-01faa321",
+    "format": "five_story",
+    "status": "candidate",
+    "slot": 7,
+    "title_left": null,
+    "title_right": null,
+    "story_title": "The Blanket Fort",
+    "left_character": "boy",
+    "left_action": null,
+    "left_setting": null,
+    "left_props": [
+      "collapsed blanket"
+    ],
+    "left_emotion": null,
+    "right_action": null,
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": null,
+    "right_props": [
+      "storage basket"
+    ],
+    "right_emotion": null,
+    "shared_environment": null,
+    "environmental_contrast": null,
+    "background_color": "pastel aqua",
+    "accent_color": "plum",
+    "camera_angle": "eye-level wide shot",
+    "emotional_insight": null,
+    "emotional_premise": "Tidying a blanket fort becomes a cozy final scene instead of an ending.",
+    "why_it_may_work": "A simple evening cleanup gains warmth through shared rhythm.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep the blanket basket manageable in scale.",
+      "No human sleeping poses."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [
+      {
+        "title": "Fort Remains",
+        "scene": "Dinko sits bored beside a collapsed blanket fort while Dinka gathers cushions.",
+        "characters": [
+          "Dinko sits beside the fort.",
+          "Dinka gathers a cushion."
+        ],
+        "setting": "pastel aqua playroom",
+        "props": [
+          "collapsed blanket",
+          "two cushions",
+          "storage basket"
+        ],
+        "emotion": "Dinko: bored; Dinka: purposeful",
+        "camera_angle": "eye-level wide shot"
+      },
+      {
+        "title": "Fold Together",
+        "scene": "Dinko pulls one blanket edge while Dinka rolls the opposite edge.",
+        "characters": [
+          "Dinko pulls the blanket edge.",
+          "Dinka rolls the opposite edge."
+        ],
+        "setting": "pastel aqua playroom",
+        "props": [
+          "blanket",
+          "storage basket",
+          "floor mat"
+        ],
+        "emotion": "Dinko: attentive; Dinka: focused",
+        "camera_angle": "side view"
+      },
+      {
+        "title": "Cushion Stack",
+        "scene": "Dinka places cushions in the basket while Dinko flattens the floor mat.",
+        "characters": [
+          "Dinka places cushions in the basket.",
+          "Dinko flattens the mat."
+        ],
+        "setting": "pastel aqua playroom",
+        "props": [
+          "storage basket",
+          "two cushions",
+          "floor mat"
+        ],
+        "emotion": "Dinka: satisfied; Dinko: helpful",
+        "camera_angle": "eye-level medium shot"
+      },
+      {
+        "title": "Lamp Glow",
+        "scene": "Dinko rolls a small lamp toward the cleared mat while Dinka sits beside it.",
+        "characters": [
+          "Dinko rolls the lamp.",
+          "Dinka sits on the mat."
+        ],
+        "setting": "pastel aqua playroom",
+        "props": [
+          "small lamp",
+          "floor mat",
+          "storage basket"
+        ],
+        "emotion": "Dinko: calm; Dinka: content",
+        "camera_angle": "three-quarter view"
+      },
+      {
+        "title": "Cozy Reset",
+        "scene": "Dinko and Dinka sit together under one folded blanket beside the lamp.",
+        "characters": [
+          "Dinko rests under the blanket.",
+          "Dinka rests under the blanket."
+        ],
+        "setting": "pastel aqua playroom",
+        "props": [
+          "folded blanket",
+          "small lamp",
+          "storage basket"
+        ],
+        "emotion": "Dinko: peaceful; Dinka: peaceful",
+        "camera_angle": "eye-level wide shot"
+      }
+    ],
+    "final_payoff": "Cleaning up simply makes room for one more shared quiet moment.",
+    "visual_continuity": "Aqua playroom, plum lamp, same blanket, mat, and basket persist throughout.",
+    "background_strategy": "Use one uncluttered playroom with the lamp as the visual progression marker.",
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T17:52:59.543732Z",
+    "updated_at": "2026-08-07T17:52:59.565154+00:00"
+  },
+  {
+    "id": "content-33c373557ae7",
+    "batch_id": "batch-2026-08-07-01faa321",
+    "format": "five_story",
+    "status": "candidate",
+    "slot": 8,
+    "title_left": null,
+    "title_right": null,
+    "story_title": "The Missing Lemon",
+    "left_character": "girl",
+    "left_action": null,
+    "left_setting": null,
+    "left_props": [
+      "recipe card"
+    ],
+    "left_emotion": null,
+    "right_action": null,
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": null,
+    "right_props": [
+      "small basket"
+    ],
+    "right_emotion": null,
+    "shared_environment": null,
+    "environmental_contrast": null,
+    "background_color": "pastel butter",
+    "accent_color": "teal",
+    "camera_angle": "eye-level wide shot",
+    "emotional_insight": null,
+    "emotional_premise": "A forgotten ingredient turns an errand into a cooperative search.",
+    "why_it_may_work": "A mundane grocery errand becomes a tiny expedition with company.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep the basket small and lightweight.",
+      "Avoid crowded store details."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [
+      {
+        "title": "Empty Counter",
+        "scene": "Dinka looks at a recipe card without a lemon while Dinko rolls in with a basket.",
+        "characters": [
+          "Dinka studies the recipe card.",
+          "Dinko rolls in with the basket."
+        ],
+        "setting": "pastel butter market aisle",
+        "props": [
+          "recipe card",
+          "small basket",
+          "empty counter"
+        ],
+        "emotion": "Dinka: concerned; Dinko: ready",
+        "camera_angle": "eye-level wide shot"
+      },
+      {
+        "title": "Aisle Turn",
+        "scene": "Dinko points the basket toward the produce aisle while Dinka follows the recipe card.",
+        "characters": [
+          "Dinko points toward the aisle.",
+          "Dinka follows with the recipe card."
+        ],
+        "setting": "pastel butter market aisle",
+        "props": [
+          "small basket",
+          "recipe card",
+          "produce sign"
+        ],
+        "emotion": "Dinko: decisive; Dinka: focused",
+        "camera_angle": "three-quarter view"
+      },
+      {
+        "title": "Fruit Search",
+        "scene": "Dinka scans a low fruit shelf while Dinko checks a crate beside her.",
+        "characters": [
+          "Dinka scans the shelf.",
+          "Dinko checks the crate."
+        ],
+        "setting": "pastel butter produce aisle",
+        "props": [
+          "low fruit shelf",
+          "wooden crate",
+          "recipe card"
+        ],
+        "emotion": "Dinka: intent; Dinko: intent",
+        "camera_angle": "eye-level medium shot"
+      },
+      {
+        "title": "Lemon Found",
+        "scene": "Dinko nudges a lemon from the crate while Dinka opens the basket.",
+        "characters": [
+          "Dinko nudges the lemon forward.",
+          "Dinka opens the basket."
+        ],
+        "setting": "pastel butter produce aisle",
+        "props": [
+          "lemon",
+          "wooden crate",
+          "small basket"
+        ],
+        "emotion": "Dinko: pleased; Dinka: relieved",
+        "camera_angle": "close three-quarter view"
+      },
+      {
+        "title": "Recipe Ready",
+        "scene": "Dinka places the lemon in the basket while Dinko rolls beside the recipe card.",
+        "characters": [
+          "Dinka places the lemon in the basket.",
+          "Dinko rolls beside the card."
+        ],
+        "setting": "pastel butter market aisle",
+        "props": [
+          "lemon",
+          "small basket",
+          "recipe card"
+        ],
+        "emotion": "Dinka: happy; Dinko: happy",
+        "camera_angle": "eye-level wide shot"
+      }
+    ],
+    "final_payoff": "The missing piece is found faster when the search belongs to both.",
+    "visual_continuity": "Pastel butter market with teal shelving, one basket, and the same recipe card throughout.",
+    "background_strategy": "Use a single bright market aisle with a clear produce zone.",
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T17:52:59.543732Z",
+    "updated_at": "2026-08-07T17:52:59.565156+00:00"
+  },
+  {
+    "id": "content-869b90abc226",
+    "batch_id": "batch-2026-08-07-01faa321",
+    "format": "five_story",
+    "status": "candidate",
+    "slot": 9,
+    "title_left": null,
+    "title_right": null,
+    "story_title": "Rain on the Window",
+    "left_character": "boy",
+    "left_action": null,
+    "left_setting": null,
+    "left_props": [
+      "floor cushion"
+    ],
+    "left_emotion": null,
+    "right_action": null,
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": null,
+    "right_props": [
+      "closed umbrella"
+    ],
+    "right_emotion": null,
+    "shared_environment": null,
+    "environmental_contrast": null,
+    "background_color": "pastel lilac",
+    "accent_color": "mint",
+    "camera_angle": "eye-level wide shot",
+    "emotional_insight": null,
+    "emotional_premise": "A canceled outing becomes interesting when two friends listen and notice together.",
+    "why_it_may_work": "A gloomy weather delay becomes a shared indoor observation game.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Keep raindrops outside the window only.",
+      "Do not make the umbrella enormous."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [
+      {
+        "title": "Canceled Walk",
+        "scene": "Dinko looks bored at a rain-streaked window while Dinka sets down a closed umbrella.",
+        "characters": [
+          "Dinko watches the rain.",
+          "Dinka sets down the umbrella."
+        ],
+        "setting": "pastel lilac cottage window",
+        "props": [
+          "rain-streaked window",
+          "closed umbrella",
+          "floor cushion"
+        ],
+        "emotion": "Dinko: bored; Dinka: resigned",
+        "camera_angle": "eye-level wide shot"
+      },
+      {
+        "title": "Rain Rhythm",
+        "scene": "Dinka taps a slow rhythm on the windowsill while Dinko listens.",
+        "characters": [
+          "Dinka taps the sill.",
+          "Dinko listens."
+        ],
+        "setting": "pastel lilac cottage window",
+        "props": [
+          "windowsill",
+          "closed umbrella",
+          "small cup"
+        ],
+        "emotion": "Dinka: playful; Dinko: curious",
+        "camera_angle": "side medium shot"
+      },
+      {
+        "title": "Drop Race",
+        "scene": "Dinko follows one raindrop down the glass while Dinka follows another.",
+        "characters": [
+          "Dinko tracks one raindrop.",
+          "Dinka tracks another raindrop."
+        ],
+        "setting": "pastel lilac cottage window",
+        "props": [
+          "rain-streaked window",
+          "two paper markers",
+          "floor cushion"
+        ],
+        "emotion": "Dinko: engaged; Dinka: amused",
+        "camera_angle": "close window-facing shot"
+      },
+      {
+        "title": "Cloud Break",
+        "scene": "Dinka points to a bright gap in the clouds while Dinko turns toward it.",
+        "characters": [
+          "Dinka points at the sky.",
+          "Dinko turns toward the gap."
+        ],
+        "setting": "pastel lilac cottage window",
+        "props": [
+          "window",
+          "closed umbrella",
+          "small cup"
+        ],
+        "emotion": "Dinka: hopeful; Dinko: hopeful",
+        "camera_angle": "rear three-quarter view"
+      },
+      {
+        "title": "Outside Later",
+        "scene": "Dinko and Dinka wait together by the umbrella as sunlight reaches the floor.",
+        "characters": [
+          "Dinko faces the bright floor.",
+          "Dinka leans beside Dinko."
+        ],
+        "setting": "pastel lilac cottage window",
+        "props": [
+          "closed umbrella",
+          "floor cushion",
+          "sunlit window"
+        ],
+        "emotion": "Dinko: content; Dinka: content",
+        "camera_angle": "eye-level wide shot"
+      }
+    ],
+    "final_payoff": "The weather changes eventually, but the company helps immediately.",
+    "visual_continuity": "The same lilac window, mint umbrella, cushion, and rain pattern connect every scene.",
+    "background_strategy": "Maintain one cottage window environment with changing light only.",
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T17:52:59.543732Z",
+    "updated_at": "2026-08-07T17:52:59.565157+00:00"
+  },
+  {
+    "id": "content-921265ffe323",
+    "batch_id": "batch-2026-08-07-01faa321",
+    "format": "five_story",
+    "status": "candidate",
+    "slot": 10,
+    "title_left": null,
+    "title_right": null,
+    "story_title": "The Bottle Bin",
+    "left_character": "girl",
+    "left_action": null,
+    "left_setting": null,
+    "left_props": [
+      "mixed recyclables"
+    ],
+    "left_emotion": null,
+    "right_action": null,
+    "right_characters": [
+      "boy",
+      "girl"
+    ],
+    "right_setting": null,
+    "right_props": [
+      "blue bin"
+    ],
+    "right_emotion": null,
+    "shared_environment": null,
+    "environmental_contrast": null,
+    "background_color": "pastel sage",
+    "accent_color": "rose",
+    "camera_angle": "eye-level medium shot",
+    "emotional_insight": null,
+    "emotional_premise": "A dull sorting task becomes satisfying when friends create a shared rhythm.",
+    "why_it_may_work": "Shows companionship adding momentum to an ordinary recycling task.",
+    "timely_signal": null,
+    "social_learning_ids": [],
+    "preference_matches": [],
+    "execution_risks": [
+      "Use lightweight, clearly labeled bins.",
+      "Keep the action readable with only two categories."
+    ],
+    "transformation": null,
+    "before_state": null,
+    "after_state": null,
+    "comics": [
+      {
+        "title": "Sorting Pause",
+        "scene": "Dinka sits neutrally beside mixed recyclables while Dinko rolls over two bins.",
+        "characters": [
+          "Dinka looks at the mixed pile.",
+          "Dinko rolls the bins forward."
+        ],
+        "setting": "pastel sage community room",
+        "props": [
+          "mixed recyclables",
+          "blue bin",
+          "green bin"
+        ],
+        "emotion": "Dinka: neutral; Dinko: encouraging",
+        "camera_angle": "eye-level wide shot"
+      },
+      {
+        "title": "Label Read",
+        "scene": "Dinko points to the bottle label while Dinka nudges a bottle toward the blue bin.",
+        "characters": [
+          "Dinko points to the label.",
+          "Dinka nudges the bottle."
+        ],
+        "setting": "pastel sage community room",
+        "props": [
+          "blue bin",
+          "green bin",
+          "plastic bottle",
+          "paper label"
+        ],
+        "emotion": "Dinko: instructive; Dinka: attentive",
+        "camera_angle": "close three-quarter view"
+      },
+      {
+        "title": "Quick Sort",
+        "scene": "Dinka rolls a bottle to the blue bin while Dinko rolls a can to the green bin.",
+        "characters": [
+          "Dinka rolls the bottle.",
+          "Dinko rolls the can."
+        ],
+        "setting": "pastel sage community room",
+        "props": [
+          "blue bin",
+          "green bin",
+          "plastic bottle",
+          "metal can"
+        ],
+        "emotion": "Dinka: focused; Dinko: focused",
+        "camera_angle": "eye-level medium shot"
+      },
+      {
+        "title": "Empty Pile",
+        "scene": "Dinko nudges the last can forward while Dinka steadies the nearly full blue bin.",
+        "characters": [
+          "Dinko nudges the last can.",
+          "Dinka steadies the bin."
+        ],
+        "setting": "pastel sage community room",
+        "props": [
+          "blue bin",
+          "green bin",
+          "last can",
+          "sorting mat"
+        ],
+        "emotion": "Dinko: pleased; Dinka: proud",
+        "camera_angle": "three-quarter wide shot"
+      },
+      {
+        "title": "Clean Floor",
+        "scene": "Dinko and Dinka admire the empty sorting mat side by side.",
+        "characters": [
+          "Dinko looks at the clean mat.",
+          "Dinka looks at the clean mat."
+        ],
+        "setting": "pastel sage community room",
+        "props": [
+          "blue bin",
+          "green bin",
+          "clean sorting mat"
+        ],
+        "emotion": "Dinko: satisfied; Dinka: satisfied",
+        "camera_angle": "eye-level wide shot"
+      }
+    ],
+    "final_payoff": "The task feels lighter because their movements match.",
+    "visual_continuity": "Sage community room, rose labels, two fixed bins, and one sorting mat recur throughout.",
+    "background_strategy": "Keep the two bins anchored against one simple sage wall.",
+    "approved_at": null,
+    "used_at": null,
+    "prompt_ids": [],
+    "source_trend": null,
+    "development_fixture": false,
+    "created_at": "2026-08-07T17:52:59.543732Z",
+    "updated_at": "2026-08-07T17:52:59.565158+00:00"
+  }
+]

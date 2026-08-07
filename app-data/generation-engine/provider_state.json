@@ -1,0 +1,12 @@
+{
+  "provider": "google_gemini",
+  "configured": true,
+  "status": "Connected",
+  "masked_token": "••••••••••••eqx4",
+  "source": "local secrets file",
+  "secret_path": "app-data/secrets/.env.local",
+  "connected": true,
+  "model": "Nano Banana 2 Lite",
+  "error": null,
+  "tested_at": "2026-08-07T13:24:02.838131+00:00"
+}

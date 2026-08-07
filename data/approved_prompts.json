@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "title": "COFFEE / COFFEE WITH YOU",
+    "format": "x-with-you",
+    "source_storyline_id": "concept-df85fa7aa95f",
+    "template": "XWithYou.md",
+    "character_reference": "references/dinkly_young.png",
+    "product_references": [],
+    "prompt": "# X With You Template\n\n## REFERENCE PRIORITY\n\nUse references/dinkly_young.png as the absolute production model. Dinka is the girl with the red bow and connected ponytail. Dinko is the boy with exactly two hair tufts.\n\n## LAYOUT\n\nCreate one square 1:1 split comic in a medium straight-on view. Fill the entire canvas with one uninterrupted pastel peach background. Use a thin black vertical divider at the exact center, approximately half the canvas height and vertically centered. Keep the bottom caption zone clear.\n\n## LEFT PANEL\n\nDinko sits alone at a small café table, looking neutral and bored.\n\nShow ordinary life alone. The expression is neutral, bored, or gently sad—never happy, devastated, or dramatic.\n\nBottom caption, exactly:\n\nCOFFEE\n\n## RIGHT PANEL\n\nDinka and Dinko sit together at the same small café table, warmly sharing coffee.\n\nKeep the activity and environment nearly identical. The feeling becomes visibly warmer because Dinka and Dinko are together.\n\nBottom caption, exactly:\n\nCOFFEE WITH YOU\n\n## CHARACTER LOCK\n\nDinka and Dinko keep the exact round proportions, bright-yellow color, orange spots, black oval eyes with white highlights, thick clean black outlines, tiny nub arms, and nub feet from the model sheet. They remain the same body size. Dinko has exactly two hair tufts. Dinka has the bright-red bow and connected ponytail. No visible legs, knees, human arms, hands, fingers, clothing, shoes, human lips, human noses, or altered eye styles.\n\n## STYLE\n\nOfficial DINKLY flat 2D vector artwork. Matte palette, thick clean black outlines, rounded red accent props, one flat fill per prop, large negative space, no gradients, shadows, texture, realism, 3D effects, or decorative filler. Use Bubblebody Neue Regular for both captions on one baseline.\n\n## FINAL QUALITY CHECK\n\nVerify the exact captions contain no quotation marks or added punctuation. Confirm one continuous background, equal character scale, correct model features, correct support surfaces, and a one-second emotional contrast. Scene-specific risks: Name and preserve the visible support surface; bodies stay on the floor or directly on chair, sofa, or bed seats—never on tabletops or counters. Mugs fit close to the round bodies without covering eyes or mouths and do not create hands or fingers. Character references control characters only; product references control products only. Use a placeholder-first pass if packaging harms character accuracy.\n",
+    "status": "approved",
+    "approved_by": "local creative team",
+    "qa_notes": "Generated through DINKLY Creative Studio.",
+    "id": "prompt-dbbfad8159ca",
+    "approved_at": "2026-08-06T18:17:50+00:00",
+    "created_at": "2026-08-06T18:17:50+00:00"
+  },
+  {
+    "title": "BRUSHING TEETH / BRUSHING TEETH WITH YOU",
+    "format": "x-with-you",
+    "source_storyline_id": "concept-1c825b820d63",
+    "template": "XWithYou.md",
+    "character_reference": "references/dinkly_young.png",
+    "product_references": [],
+    "prompt": "# X With You Template\n\n## REFERENCE PRIORITY\n\nUse references/dinkly_young.png as the absolute production model. Dinka is the girl with the red bow and connected ponytail. Dinko is the boy with exactly two hair tufts.\n\n## LAYOUT\n\nCreate one square 1:1 split comic in a medium straight-on view. Fill the entire canvas with one uninterrupted pistachio background. Use a thin black vertical divider at the exact center, approximately half the canvas height and vertically centered. Keep the bottom caption zone clear.\n\n## LEFT PANEL\n\nDinko experiences toothbrush alone in side-by-side sinks, correct relative toothbrush scale, with a neutral, bored, or slightly sad expression—never happy.\n\nShow ordinary life alone. The expression is neutral, bored, or gently sad—never happy, devastated, or dramatic.\n\nBottom caption, exactly:\n\nBRUSHING TEETH\n\n## RIGHT PANEL\n\nDinka and Dinko share the same toothbrush activity in the same setting, warmly connected while the environment remains recognizably consistent. Side-by-side sinks, correct relative toothbrush scale.\n\nKeep the activity and environment nearly identical. The feeling becomes visibly warmer because Dinka and Dinko are together.\n\nBottom caption, exactly:\n\nBRUSHING TEETH WITH YOU\n\n## CHARACTER LOCK\n\nDinka and Dinko keep the exact round proportions, bright-yellow color, orange spots, black oval eyes with white highlights, thick clean black outlines, tiny nub arms, and nub feet from the model sheet. They remain the same body size. Dinko has exactly two hair tufts. Dinka has the bright-red bow and connected ponytail. No visible legs, knees, human arms, hands, fingers, clothing, shoes, human lips, human noses, or altered eye styles.\n\n## STYLE\n\nOfficial DINKLY flat 2D vector artwork. Matte palette, thick clean black outlines, rounded dark green accent props, one flat fill per prop, large negative space, no gradients, shadows, texture, realism, 3D effects, or decorative filler. Use Bubblebody Neue Regular for both captions on one baseline.\n\n## FINAL QUALITY CHECK\n\nVerify the exact captions contain no quotation marks or added punctuation. Confirm one continuous background, equal character scale, correct model features, correct support surfaces, and a one-second emotional contrast. Scene-specific risks: Name and preserve the visible support surface; bodies stay on the floor or directly on chair, sofa, or bed seats—never on tabletops or counters. Each toothbrush is narrower than one eye and shorter than one-third of a character body width. Character references control characters only; product references control products only. Use a placeholder-first pass if packaging harms character accuracy.\n",
+    "status": "approved",
+    "approved_by": "local creative team",
+    "qa_notes": "Generated through DINKLY Creative Studio.",
+    "id": "prompt-3b4bf8f5e17d",
+    "approved_at": "2026-08-06T18:30:42+00:00",
+    "created_at": "2026-08-06T18:30:42+00:00"
+  }
+]

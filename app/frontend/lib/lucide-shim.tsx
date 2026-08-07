@@ -1,0 +1,86 @@
+import * as React from "react";
+
+type IconProps = React.HTMLAttributes<HTMLSpanElement> & { size?: number | string; strokeWidth?: number | string };
+export type LucideIcon = React.ComponentType<IconProps>;
+
+function icon(glyph: string): LucideIcon {
+  const LocalIcon = React.forwardRef<HTMLSpanElement, IconProps>(({ className, size, strokeWidth: _strokeWidth, ...props }, ref) => (
+    <span ref={ref} aria-hidden="true" className={className} style={{ width: size, height: size, display: "inline-flex", alignItems: "center", justifyContent: "center", fontSize: "1em", lineHeight: 1 }} {...props}>{glyph}</span>
+  ));
+  LocalIcon.displayName = "StudioIcon";
+  return LocalIcon;
+}
+
+export const AlertCircle = icon("!");
+export const AlertTriangle = icon("△");
+export const Archive = icon("□");
+export const ArrowLeft = icon("←");
+export const ArrowDown = icon("↓");
+export const ArrowRight = icon("→");
+export const ArrowUp = icon("↑");
+export const ArrowUpDown = icon("↕");
+export const ArrowUpRight = icon("↗");
+export const BarChart3 = icon("▥");
+export const Bell = icon("◔");
+export const Bot = icon("●");
+export const BookHeart = icon("♡");
+export const BookOpenText = icon("▤");
+export const Box = icon("◇");
+export const Boxes = icon("◇");
+export const BrainCircuit = icon("◎");
+export const Brain = icon("◎");
+export const Check = icon("✓");
+export const CheckCircle2 = icon("●");
+export const ChevronLeft = icon("‹");
+export const ChevronRight = icon("›");
+export const Clock3 = icon("◷");
+export const CirclePlus = icon("+");
+export const Copy = icon("▣");
+export const Crosshair = icon("⊕");
+export const Database = icon("▱");
+export const Download = icon("↓");
+export const Eye = icon("◉");
+export const EyeOff = icon("○");
+export const Edit3 = icon("✎");
+export const FileCheck2 = icon("✓");
+export const FileQuestion = icon("?");
+export const FileText = icon("▤");
+export const FileJson = icon("{}");
+export const FileUp = icon("⇧");
+export const Film = icon("▥");
+export const Frame = icon("□");
+export const FolderGit2 = icon("⌘");
+export const GitCompareArrows = icon("⇄");
+export const ImageCheck = icon("▧");
+export const ImageIcon = icon("▧");
+export const ImagePlus = icon("+");
+export const KeyRound = icon("⌑");
+export const LayoutDashboard = icon("▦");
+export const Lightbulb = icon("◉");
+export const Layers3 = icon("▱");
+export const ListFilter = icon("≡");
+export const Link2 = icon("⌁");
+export const Loader2 = icon("◌");
+export const Menu = icon("≡");
+export const MessageCircle = icon("○");
+export const LockKeyhole = icon("⌑");
+export const Pause = icon("Ⅱ");
+export const Play = icon("▶");
+export const Plus = icon("+");
+export const RefreshCw = icon("↻");
+export const RotateCcw = icon("↶");
+export const Save = icon("▣");
+export const ScanSearch = icon("⌕");
+export const Search = icon("⌕");
+export const Server = icon("▱");
+export const Settings = icon("⚙");
+export const ShieldCheck = icon("✓");
+export const Sparkles = icon("✦");
+export const TrendingUp = icon("↗");
+export const TestTube2 = icon("◒");
+export const UploadCloud = icon("⇧");
+export const Trash2 = icon("×");
+export const WandSparkles = icon("✦");
+export const Wrench = icon("⌁");
+export const X = icon("×");
+export const Zap = icon("ϟ");

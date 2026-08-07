@@ -1,0 +1,2 @@
+import { cn } from "@/lib/utils";
+export function ScoreBadge({ score }: { score?: number | null }) { const tone = !score ? "bg-wash text-muted" : score >= 8 ? "bg-emerald-50 text-emerald-700" : score >= 6 ? "bg-mustard/20 text-mustard-dark" : "bg-orange-50 text-orange-700"; return <span data-testid="score-badge" className={cn("rounded-full px-2.5 py-1 text-xs font-bold", tone)}>{score ? `${score.toFixed(1)}/10` : "Not scored"}</span>; }

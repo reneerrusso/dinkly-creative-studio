@@ -8,11 +8,13 @@ Write concise, scene-specific prompts that prioritize locked character accuracy 
 
 1. REFERENCE PRIORITY
 2. LAYOUT
-3. LEFT PANEL
-4. RIGHT PANEL
-5. CHARACTER LOCK
-6. STYLE
-7. FINAL QUALITY CHECK
+3. SHARED ENVIRONMENT
+4. LEFT PANEL
+5. RIGHT PANEL
+6. ENVIRONMENTAL CONTRAST
+7. CHARACTER LOCK
+8. STYLE
+9. FINAL QUALITY CHECK
 
 Add PROP DIRECTION, BACKGROUND, TEXT, or BRAND REFERENCE sections only when the scene requires them.
 
@@ -43,8 +45,10 @@ Use references/dinkly_young.png only for Dinka and Dinko's identity, proportions
 - State the correct support surface when furniture is involved.
 - Keep characters on the floor unless explicitly seated on a visible chair, sofa, or bed surface.
 - Explicitly prohibit standing or sitting on tables, counters, carts, shelves, vanities, and kitchen islands when those objects appear.
-- Use three to five relevant prop types, not decorative filler.
+- Use two to five purposeful props per panel, not decorative filler.
 - Repeat the environment across split panels so the emotional contrast—not a better setting—creates warmth.
+
+For each panel, specify the title, character or characters, one visible action, setting, props, and emotion. Name the shared environment separately so the image model understands which floor, furniture, camera, and background elements must connect both halves.
 
 ## Relative scale language
 
@@ -72,6 +76,8 @@ Always protect:
 - Black oval eyes with white highlights
 - Tiny nub arms and feet
 - No visible legs, hands, fingers, clothing, shoes, or human anatomy
+
+For split comics, inject left-panel rules according to `left_character`. If Boy DINKLY is alone, emphasize exactly two hair tufts. If Girl DINKLY is alone, emphasize the exact bright-red bow and connected ponytail. State the full two-character lock once for the right panel; do not paste the complete Character Bible twice.
 
 ## Background and text
 

@@ -1,0 +1,21 @@
+[
+  {
+    "id": "profile-76d92cc73043",
+    "handle_id": "handle-dfc366e1fe2f",
+    "platform_profile_id": "7362678857944646699",
+    "username": "dinklygame",
+    "display_name": "dinklygame",
+    "bio": "The cutest couple on the internet 💛\nShop DINKLY ⬇️",
+    "profile_image_url": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-avt-0068-tx/7557c570e4547ff2db94486a8a055e00~tplv-tiktokx-cropcenter:720:720.jpeg?dr=9640&refresh_token=58ed61c4&x-expires=1786226400&x-signature=ug6tqZXBjPPUNb%2B73FcdCXfVOVU%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8",
+    "followers": 17900,
+    "following": 0,
+    "post_count": null,
+    "verified": false,
+    "profile_url": "https://www.tiktok.com/@dinklygame",
+    "retrieved_at": "2026-08-06T22:44:31.729349+00:00",
+    "provider": "apify",
+    "raw_metadata": {
+      "source": "normalized provider profile"
+    }
+  }
+]

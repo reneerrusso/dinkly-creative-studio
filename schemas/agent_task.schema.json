@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dinkly.local/schemas/agent_task.schema.json",
+  "title": "DINKLY Agent Task",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["id", "source_channel", "source_thread_id", "user_instruction", "task_type", "status", "priority", "context", "run_ids", "artifact_ids", "approval_required", "created_at"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^task-" },
+    "source_channel": { "enum": ["web", "slack", "scheduled", "learning"] },
+    "source_thread_id": { "type": "string", "minLength": 1 },
+    "source_user_id": { "type": ["string", "null"] },
+    "source_message_id": { "type": ["string", "null"] },
+    "user_instruction": { "type": "string", "minLength": 2 },
+    "task_type": { "enum": ["generate_concepts", "generate_comic", "repair_comic", "review_comic", "learn", "brain_query", "feedback", "approval", "custom"] },
+    "status": { "enum": ["queued", "running", "waiting_for_human", "completed", "failed", "cancelled"] },
+    "priority": { "type": "integer", "minimum": 1, "maximum": 6 },
+    "context": { "type": "object" },
+    "run_ids": { "type": "array", "items": { "type": "string" } },
+    "artifact_ids": { "type": "array", "items": { "type": "string" } },
+    "approval_required": { "type": "boolean" },
+    "result": { "type": "object" },
+    "error": { "type": ["string", "null"] },
+    "created_at": { "type": "string", "format": "date-time" },
+    "started_at": { "type": ["string", "null"], "format": "date-time" },
+    "completed_at": { "type": ["string", "null"], "format": "date-time" }
+  }
+}

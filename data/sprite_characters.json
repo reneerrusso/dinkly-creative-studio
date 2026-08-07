@@ -1,0 +1,93 @@
+[
+  {
+    "id": "sprite-character-dinko",
+    "name": "Dinko",
+    "slug": "dinko",
+    "character_type": "dinko",
+    "official_reference_paths": [
+      "references/dinkly_young.png"
+    ],
+    "default_canvas_width": 256,
+    "default_canvas_height": 256,
+    "default_anchor_x": 0.5,
+    "default_anchor_y": 1,
+    "default_frame_rate": 8,
+    "approved": true,
+    "locked": true,
+    "notes": "Locked primary character. Official reference controls every production frame.",
+    "created_at": "2026-08-06T20:00:00Z",
+    "updated_at": "2026-08-06T20:00:00Z"
+  },
+  {
+    "id": "sprite-character-dinka",
+    "name": "Dinka",
+    "slug": "dinka",
+    "character_type": "dinka",
+    "official_reference_paths": [
+      "references/dinkly_young.png"
+    ],
+    "default_canvas_width": 256,
+    "default_canvas_height": 256,
+    "default_anchor_x": 0.5,
+    "default_anchor_y": 1,
+    "default_frame_rate": 8,
+    "approved": true,
+    "locked": true,
+    "notes": "Locked primary character. Official reference controls every production frame.",
+    "created_at": "2026-08-06T20:00:00Z",
+    "updated_at": "2026-08-06T20:00:00Z"
+  },
+  {
+    "id": "sprite-character-shared",
+    "name": "Shared actions",
+    "slug": "shared-actions",
+    "character_type": "shared",
+    "official_reference_paths": [
+      "references/dinkly_young.png"
+    ],
+    "default_canvas_width": 512,
+    "default_canvas_height": 256,
+    "default_anchor_x": 0.5,
+    "default_anchor_y": 1,
+    "default_frame_rate": 8,
+    "approved": true,
+    "locked": true,
+    "notes": "Coordinated Dinko and Dinka timing sets; both character locks apply.",
+    "created_at": "2026-08-06T20:00:00Z",
+    "updated_at": "2026-08-06T20:00:00Z"
+  },
+  {
+    "id": "sprite-character-effects",
+    "name": "Environmental effects",
+    "slug": "environmental-effects",
+    "character_type": "effect",
+    "official_reference_paths": [],
+    "default_canvas_width": 256,
+    "default_canvas_height": 256,
+    "default_anchor_x": 0.5,
+    "default_anchor_y": 1,
+    "default_frame_rate": 8,
+    "approved": true,
+    "locked": false,
+    "notes": "Transparent non-character effects. Character artwork must never be stored here.",
+    "created_at": "2026-08-06T20:00:00Z",
+    "updated_at": "2026-08-06T20:00:00Z"
+  },
+  {
+    "id": "sprite-character-props",
+    "name": "Props",
+    "slug": "props",
+    "character_type": "prop",
+    "official_reference_paths": [],
+    "default_canvas_width": 256,
+    "default_canvas_height": 256,
+    "default_anchor_x": 0.5,
+    "default_anchor_y": 1,
+    "default_frame_rate": 8,
+    "approved": true,
+    "locked": false,
+    "notes": "Reusable prop motion and static prop states at DINKLY-relative scale.",
+    "created_at": "2026-08-06T20:00:00Z",
+    "updated_at": "2026-08-06T20:00:00Z"
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "connected": true,
+  "connection_status": "Connected",
+  "mode": "socket_mode",
+  "workspace_id": "T098G12ETG9",
+  "workspace_name": "RNR",
+  "bot_user_id": "U0BNTJGP7FC",
+  "bot_name": "dinkly_creative_direc",
+  "default_channel": "C0AAKSWTKJ6",
+  "allowed_users": [
+    "U098G12EZ97"
+  ],
+  "notifications": {
+    "daily_concepts_ready": true,
+    "comic_ready_for_approval": true,
+    "generation_failed": true,
+    "meaningful_new_learning": true,
+    "weekly_learning_recap": false,
+    "routine_status": false
+  },
+  "last_event_received": "2026-08-07T18:26:52.896303+00:00",
+  "last_message_sent": "2026-08-07T18:26:54.693123+00:00",
+  "socket_mode_active": true,
+  "socket_mode_status": "Connected",
+  "tls_status": "Connected",
+  "slack_api_status": "Connected",
+  "last_tested_at": "2026-08-07T17:48:48.986129+00:00"
+}

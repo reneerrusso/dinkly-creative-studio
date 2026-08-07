@@ -1,0 +1,22 @@
+[
+  {
+    "id": "preference-4ce3c71458b9",
+    "learning_type": "user_preference",
+    "statement": "User explicitly requested more emphasis on love this concept. give me like this.",
+    "evidence_ids": [
+      "chat-0144377121a185ea"
+    ],
+    "confidence": "high",
+    "status": "active",
+    "created_at": "2026-08-07T16:51:24.792551+00:00",
+    "updated_at": "2026-08-07T16:51:24.792551+00:00",
+    "topic": "love this concept. give me like this",
+    "direction": "more",
+    "source": "dinkly_agent_chat",
+    "linked_task_id": null,
+    "linked_run_ids": [],
+    "linked_artifact_ids": [
+      "content-7af5534d5442"
+    ]
+  }
+]

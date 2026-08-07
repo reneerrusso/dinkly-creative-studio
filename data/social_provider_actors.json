@@ -1,0 +1,40 @@
+[
+  {
+    "provider": "apify",
+    "platform": "instagram",
+    "actor_id": "apify~instagram-scraper",
+    "actor_name": "Instagram Scraper",
+    "actor_owner": "Apify",
+    "is_default": true,
+    "enabled": true,
+    "pricing_type": "pay_per_event",
+    "pricing_summary": "Pay per returned item; current Store pricing starts at about $1.50 per 1,000 results and varies by Apify plan.",
+    "separate_usage_charges": true,
+    "compute_charges_apply": false,
+    "supports_profile_lookup": true,
+    "supports_recent_posts": true,
+    "supports_public_metrics": true,
+    "last_verified_at": "2026-08-06T00:00:00Z",
+    "verification_status": "documentation_verified",
+    "notes": "Official Apify-maintained Actor. Public profile URLs, recent posts and engagement metrics; no social login or user cookies required. Runtime access is checked with the configured token."
+  },
+  {
+    "provider": "apify",
+    "platform": "tiktok",
+    "actor_id": "clockworks~tiktok-profile-scraper",
+    "actor_name": "TikTok Profile Scraper",
+    "actor_owner": "Clockworks",
+    "is_default": true,
+    "enabled": true,
+    "pricing_type": "pay_per_result",
+    "pricing_summary": "Pay per result; current Store pricing starts at about $1.00 per 1,000 results and varies by Apify plan.",
+    "separate_usage_charges": true,
+    "compute_charges_apply": false,
+    "supports_profile_lookup": true,
+    "supports_recent_posts": true,
+    "supports_public_metrics": true,
+    "last_verified_at": "2026-08-06T00:00:00Z",
+    "verification_status": "documentation_verified",
+    "notes": "Reputable high-usage Clockworks Actor marked maintained by Apify. Username input, recent public videos and engagement metrics; no TikTok login or user cookies required. Runtime access is checked with the configured token."
+  }
+]

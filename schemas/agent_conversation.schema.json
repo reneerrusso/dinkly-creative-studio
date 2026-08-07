@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dinkly.local/schemas/agent_conversation.schema.json",
+  "title": "DINKLY Agent Conversation Message",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "channel", "thread_id", "message", "role", "created_at", "linked_run_ids", "linked_artifact_ids", "linked_task_ids"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^message-" },
+    "channel": { "enum": ["web", "slack"] },
+    "thread_id": { "type": "string", "minLength": 1 },
+    "user_id": { "type": ["string", "null"] },
+    "message": { "type": "string", "minLength": 1 },
+    "role": { "enum": ["user", "agent", "system"] },
+    "created_at": { "type": "string", "format": "date-time" },
+    "linked_run_ids": { "type": "array", "items": { "type": "string" } },
+    "linked_artifact_ids": { "type": "array", "items": { "type": "string" } },
+    "linked_task_ids": { "type": "array", "items": { "type": "string" } }
+  }
+}

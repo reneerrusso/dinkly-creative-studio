@@ -1,0 +1,12 @@
+{
+  "last_checked_at": "2026-08-07T14:28:14.931851-04:00",
+  "last_attempted_run": "2026-08-07T08:00:06.996588-04:00",
+  "last_status": "Skipped",
+  "last_error": null,
+  "last_skip_reason": "No AI provider configured.",
+  "last_attempted_date": "2026-08-07",
+  "last_run_id": "run-ebe532be0984",
+  "next_run": "2026-08-08T08:00:00-04:00",
+  "last_skip": "No AI provider configured.",
+  "last_skip_at": "2026-08-07T12:00:07.046727+00:00"
+}
