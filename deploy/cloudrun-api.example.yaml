@@ -1,0 +1,30 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: dinkly-api
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/minScale: "0"
+        autoscaling.knative.dev/maxScale: "3"
+    spec:
+      containerConcurrency: 20
+      timeoutSeconds: 900
+      containers:
+        - image: REGION-docker.pkg.dev/PROJECT/dinkly/backend:VERSION
+          ports:
+            - containerPort: 8000
+          env:
+            - name: APP_MODE
+              value: cloud
+            - name: APP_URL
+              value: FRONTEND_PUBLIC_HTTPS_URL
+            - name: API_URL
+              value: BACKEND_PUBLIC_HTTPS_URL
+            - name: DINKLY_FRONTEND_ORIGIN
+              value: FRONTEND_PUBLIC_HTTPS_URL
+          resources:
+            limits:
+              cpu: "1"
+              memory: 1Gi

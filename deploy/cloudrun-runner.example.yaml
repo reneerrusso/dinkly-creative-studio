@@ -1,0 +1,30 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: dinkly-task-runner
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/minScale: "0"
+        autoscaling.knative.dev/maxScale: "1"
+    spec:
+      containerConcurrency: 1
+      timeoutSeconds: 3600
+      containers:
+        - image: REGION-docker.pkg.dev/PROJECT/dinkly/backend:VERSION
+          ports:
+            - containerPort: 8000
+          env:
+            - name: APP_MODE
+              value: cloud
+            - name: APP_URL
+              value: FRONTEND_PUBLIC_HTTPS_URL
+            - name: API_URL
+              value: RUNNER_PUBLIC_HTTPS_URL
+            - name: DINKLY_FRONTEND_ORIGIN
+              value: FRONTEND_PUBLIC_HTTPS_URL
+          resources:
+            limits:
+              cpu: "2"
+              memory: 2Gi

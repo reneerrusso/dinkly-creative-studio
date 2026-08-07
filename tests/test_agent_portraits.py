@@ -73,9 +73,10 @@ class AgentPortraitTests(unittest.TestCase):
     def test_focused_navigation_and_brain_links_are_preserved(self) -> None:
         sidebar = (ROOT / "app/frontend/components/app-sidebar.tsx").read_text(encoding="utf-8")
         agent_registry = (ROOT / "app/frontend/lib/agents.ts").read_text(encoding="utf-8")
-        for label in ("DINKLY Agent", "Approvals", "Comics", "Activity"):
+        for label in ("DINKLY Agent", "Approvals", "History"):
             self.assertIn(f'label: "{label}"', sidebar)
         for label in (
+            "Memory",
             "Story Library",
             "Used Storylines",
             "Examples",

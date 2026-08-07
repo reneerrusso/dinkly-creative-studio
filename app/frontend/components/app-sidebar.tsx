@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Bot, CheckCircle2, ChevronLeft, ChevronRight, Clock3, ImageIcon, Menu, Settings } from "lucide-react";
+import { Bot, CheckCircle2, ChevronLeft, ChevronRight, Clock3, Menu, Settings } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
@@ -13,8 +13,7 @@ import { cn } from "@/lib/utils";
 const primary = [
   { label: "DINKLY Agent", href: "/agent", icon: Bot },
   { label: "Approvals", href: "/approvals", icon: CheckCircle2 },
-  { label: "Comics", href: "/comics", icon: ImageIcon },
-  { label: "Activity", href: "/history", icon: Clock3 },
+  { label: "History", href: "/history", icon: Clock3 },
 ];
 
 function Brand({ collapsed = false }: { collapsed?: boolean }) {

@@ -29,6 +29,7 @@ from app.backend.services.agent_visual_state_service import AgentVisualStateServ
 from app.backend.services.art_review_service import ArtReviewService
 from app.backend.services.generation_export_service import ExportArtifact, GenerationExportService
 from app.backend.services.image_model_registry import ImageModelRegistry
+from app.backend.services.memory_service import AgentContextBuilder
 from app.backend.services.prompt_service import PromptService
 from app.backend.services.repository_service import RepositoryError, RepositoryService
 from app.backend.services.secrets_service import SecretsService
@@ -120,6 +121,13 @@ class GenerationEngineService:
             "final_asset_url": None,
             "prompt_id": prompt_record["prompt_id"],
             "prompt_record": prompt_record,
+            "prompt_template_version": prompt_record["template_version"],
+            "character_rule_version": prompt_record["character_rule_version"],
+            "failure_rule_version": prompt_record["failure_rule_version"],
+            "brain_refs_used": prompt_record["brain_refs_used"],
+            "memory_refs_used": prompt_record["memory_refs_used"],
+            "image_model": key,
+            "image_model_tier": self.registry.get(key)["power_label"],
             "dinko_reference_version": references["dinko_reference_version"],
             "dinka_reference_version": references["dinka_reference_version"],
             "reference_paths": references["relative_paths"],
@@ -1014,7 +1022,12 @@ class GenerationEngineService:
         return self.get(run_id)
 
     def history(self) -> list[dict[str, Any]]:
-        records = [self.get(path.parent.name) for path in self.runs_dir.glob("*/metadata.json")]
+        records = [
+            self.get(Path(relative).parent.name)
+            for relative in self.repository.list_json(
+                "app-data/generation-engine/runs", suffix="/metadata.json"
+            )
+        ]
         return sorted(records, key=lambda item: item.get("started_at") or "", reverse=True)
 
     def compare_models(self, request: ModelCompareRequest) -> dict[str, Any]:
@@ -1052,6 +1065,13 @@ class GenerationEngineService:
             "final_asset_url": None,
             "prompt_id": prompt_record["prompt_id"],
             "prompt_record": prompt_record,
+            "prompt_template_version": prompt_record["template_version"],
+            "character_rule_version": prompt_record["character_rule_version"],
+            "failure_rule_version": prompt_record["failure_rule_version"],
+            "brain_refs_used": prompt_record["brain_refs_used"],
+            "memory_refs_used": prompt_record["memory_refs_used"],
+            "image_model": models,
+            "image_model_tier": "comparison",
             "dinko_reference_version": references["dinko_reference_version"],
             "dinka_reference_version": references["dinka_reference_version"],
             "reference_paths": references["relative_paths"],
@@ -1279,6 +1299,28 @@ class GenerationEngineService:
             execution_risks=brief.execution_risks,
         )
         compiled = self.prompt_service.generate(request)
+        context_query = " ".join(
+            part
+            for part in (
+                brief.title_left,
+                brief.title_right,
+                brief.emotional_insight,
+                brief.left_setting,
+                brief.right_setting,
+            )
+            if part
+        )
+        agent_context = AgentContextBuilder(self.repository).build(context_query)
+        if agent_context["memories"]:
+            memory_lines = "\n".join(
+                f"- {memory['summary']}"
+                for memory in agent_context["memories"][:6]
+            )
+            compiled["prompt"] += (
+                "\n\n## RELEVANT DINKLY MEMORY\n\n"
+                "Apply only these evidence-linked constraints when they are relevant to this scene:\n"
+                f"{memory_lines}\n"
+            )
         if brief.comics:
             beats = "\n".join(
                 f"{index}. {beat.get('title', f'Comic {index}')}: {beat.get('scene', '')} "
@@ -1304,6 +1346,8 @@ class GenerationEngineService:
             "created_at": now,
             "prompt": compiled["prompt"],
             "rules_included": compiled["rules_included"],
+            "brain_refs_used": agent_context["brain_refs_used"],
+            "memory_refs_used": agent_context["memory_refs_used"],
         }
         with self._lock:
             records = self.repository.read_json(PROMPTS_PATH, [])
@@ -1430,8 +1474,10 @@ class GenerationEngineService:
         month_start = day_start.replace(day=1)
         daily = 0.0
         monthly = 0.0
-        for path in self.runs_dir.glob("*/metadata.json"):
-            run = self.repository.read_json(self.repository.relative(path), {})
+        for relative in self.repository.list_json(
+            "app-data/generation-engine/runs", suffix="/metadata.json"
+        ):
+            run = self.repository.read_json(relative, {})
             try:
                 started = datetime.fromisoformat(str(run.get("started_at", "")).replace("Z", "+00:00"))
             except ValueError:
@@ -1619,13 +1665,16 @@ class GenerationEngineService:
 
     def _load_run(self, run_id: str) -> dict[str, Any]:
         path = self._run_dir(run_id) / "metadata.json"
-        if not path.is_file():
+        relative = self.repository.relative(path)
+        if not self.repository.json_exists(relative):
             raise RepositoryError("Generation run not found")
-        return self.repository.read_json(self.repository.relative(path), {})
+        return self.repository.read_json(relative, {})
 
     def _find_candidate(self, candidate_id: str) -> tuple[dict[str, Any], dict[str, Any]]:
-        for path in self.runs_dir.glob("*/metadata.json"):
-            run = self.repository.read_json(self.repository.relative(path), {})
+        for relative in self.repository.list_json(
+            "app-data/generation-engine/runs", suffix="/metadata.json"
+        ):
+            run = self.repository.read_json(relative, {})
             for candidate in run.get("candidates", []):
                 if candidate.get("id") == candidate_id:
                     return run, candidate
@@ -1637,8 +1686,7 @@ class GenerationEngineService:
         return self.runs_dir / run_id
 
     def _asset_url(self, path: Path) -> str:
-        relative = path.resolve().relative_to(self.repository.settings.generation_engine_dir.resolve()).as_posix()
-        return f"/generation-assets/{relative}"
+        return self.repository.asset_url(self.repository.relative(path))
 
     def _emit(
         self,

@@ -11,6 +11,7 @@ from contextlib import suppress
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
+from urllib.parse import quote
 
 from jsonschema import Draft202012Validator
 
@@ -47,7 +48,20 @@ class RepositoryService:
 
     def path(self, relative: str | Path) -> Path:
         try:
-            return self.settings.safe_path(relative)
+            path = self.settings.safe_path(relative)
+            relative_value = Path(relative).as_posix()
+            if (
+                self.settings.app_mode == "cloud"
+                and not path.exists()
+                and relative_value.startswith("app-data/")
+                and path.suffix.lower() in ALLOWED_IMAGE_EXTENSIONS
+            ):
+                from app.backend.services.cloud_persistence import cloud_storage
+
+                with suppress(RepositoryError):
+                    path.parent.mkdir(parents=True, exist_ok=True)
+                    path.write_bytes(cloud_storage(self.settings).download(relative_value))
+            return path
         except ValueError as exc:
             raise RepositoryError(str(exc)) from exc
 
@@ -58,9 +72,22 @@ class RepositoryService:
             raise RepositoryError("Path is outside the repository") from exc
 
     def read_json(self, relative: str, default: Any | None = None) -> Any:
+        fallback = [] if default is None else default
+        if self.settings.app_mode == "cloud" and self._cloud_json(relative):
+            from app.backend.services.cloud_persistence import cloud_documents
+
+            documents = cloud_documents(self.settings)
+            if documents.exists(relative):
+                return documents.read(relative, fallback)
+            seed = self._read_local_json(relative, fallback)
+            documents.write(relative, seed)
+            return seed
+        return self._read_local_json(relative, fallback)
+
+    def _read_local_json(self, relative: str, default: Any) -> Any:
         path = self.path(relative)
         if not path.exists():
-            return [] if default is None else default
+            return default
         try:
             return json.loads(path.read_text(encoding="utf-8"))
         except json.JSONDecodeError as exc:
@@ -106,6 +133,25 @@ class RepositoryService:
             with suppress(FileNotFoundError):
                 os.unlink(temporary_name)
             raise
+        if self.settings.app_mode == "cloud":
+            relative = self.relative(path)
+            if relative.startswith("app-data/") and path.suffix.lower() in ALLOWED_IMAGE_EXTENSIONS:
+                from app.backend.services.cloud_persistence import cloud_database, cloud_storage
+
+                stored = cloud_storage(self.settings).upload(relative, content)
+                cloud_database(self.settings).upsert(
+                    "assets",
+                    {
+                        "id": f"asset-{hashlib.sha256(relative.encode()).hexdigest()[:16]}",
+                        "asset_type": self._asset_type(relative),
+                        "storage_bucket": stored["bucket"],
+                        "storage_path": stored["path"],
+                        "content_type": stored["content_type"],
+                        "sha256": stored["sha256"],
+                        "size_bytes": stored["size_bytes"],
+                        "metadata_json": {"source_path": relative},
+                    },
+                )
         return backup_path
 
     def write_json(
@@ -124,8 +170,55 @@ class RepositoryService:
                 self.validate_records(payload, schema_relative)
             else:
                 self.validate_json(payload, schema_relative)
+        if self.settings.app_mode == "cloud" and self._cloud_json(relative):
+            from app.backend.services.cloud_persistence import cloud_documents
+
+            cloud_documents(self.settings).write(relative, payload)
+            return None
         encoded = (json.dumps(payload, indent=2, ensure_ascii=False) + "\n").encode()
         return self.atomic_write_bytes(self.path(relative), encoded, create_backup=create_backup)
+
+    def json_exists(self, relative: str) -> bool:
+        if self.settings.app_mode == "cloud" and self._cloud_json(relative):
+            from app.backend.services.cloud_persistence import cloud_documents
+
+            return cloud_documents(self.settings).exists(relative)
+        return self.path(relative).is_file()
+
+    def list_json(self, prefix: str, *, suffix: str | None = None) -> list[str]:
+        if self.settings.app_mode == "cloud":
+            from app.backend.services.cloud_persistence import cloud_documents
+
+            return cloud_documents(self.settings).keys(prefix, suffix=suffix)
+        root = self.path(prefix)
+        candidates = [root] if root.is_file() else sorted(root.rglob("*.json")) if root.exists() else []
+        values = [self.relative(path) for path in candidates]
+        return [value for value in values if not suffix or value.endswith(suffix)]
+
+    def asset_url(self, relative: str | Path) -> str:
+        value = Path(relative).as_posix().lstrip("/")
+        if self.settings.app_mode == "cloud":
+            return f"/api/assets/{quote(value, safe='/')}"
+        if value.startswith("app-data/generation-engine/"):
+            return f"/generation-assets/{value.split('app-data/generation-engine/', 1)[1]}"
+        if value.startswith("app-data/sprites/"):
+            return f"/sprite-assets/{value.split('app-data/sprites/', 1)[1]}"
+        return f"/{value}"
+
+    @staticmethod
+    def _cloud_json(relative: str) -> bool:
+        value = Path(relative).as_posix()
+        return value.endswith(".json") and not value.startswith("schemas/")
+
+    @staticmethod
+    def _asset_type(relative: str) -> str:
+        if "/candidates/" in relative:
+            return "generation_candidate"
+        if "final" in Path(relative).stem:
+            return "final_composition"
+        if relative.startswith("app-data/uploads/"):
+            return "upload"
+        return "asset"
 
     def append_unique(
         self,

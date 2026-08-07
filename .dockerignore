@@ -1,0 +1,14 @@
+.git
+.github
+.venv
+node_modules
+**/node_modules
+.next
+**/.next
+.env
+.env.*
+!.env.example
+app-data/backups
+app-data/logs
+app-data/secrets
+app-data/generation-engine/runs

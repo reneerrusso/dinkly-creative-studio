@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import re
 import threading
+import uuid
 from contextlib import suppress
 from datetime import UTC, datetime
 from typing import Any
@@ -29,6 +30,8 @@ from app.backend.services.generation_engine_service import (
     GenerationCancellationRequested,
     GenerationEngineService,
 )
+from app.backend.services.learning_engine import BrainProposalService
+from app.backend.services.memory_service import MemoryService
 from app.backend.services.prompt_service import PromptService
 from app.backend.services.repository_service import RepositoryError, RepositoryService
 
@@ -62,6 +65,8 @@ class DinklyAgent:
         self.visual = visual or AgentVisualStateService(repository)
         self.learning = learning or DinklyLearningLoop(repository, self.visual)
         self.concepts = concepts or ConceptGeneratorService(repository)
+        self.memory = MemoryService(repository)
+        self.brain_proposals = BrainProposalService(repository)
         self.generation = generation or GenerationEngineService(
             repository,
             PromptService(repository, ConceptService(repository)),
@@ -409,11 +414,26 @@ class DinklyAgent:
             linked_artifact_ids=context.get("recent_artifact_ids", []),
         )
         self._persist_preference_links(preference)
+        durable_memory = self.memory.extract_and_store(
+            task["user_instruction"],
+            source_type=str(task.get("source_channel") or "agent_chat"),
+            source_id=task.get("id"),
+            evidence_ids=list(
+                dict.fromkeys(
+                    [
+                        task["id"],
+                        *context.get("recent_run_ids", []),
+                        *context.get("recent_artifact_ids", []),
+                    ]
+                )
+            ),
+        )
         result = {
             "message": feedback["reply"],
             "preference": preference,
             "linked_run_ids": context.get("recent_run_ids", []),
             "linked_artifact_ids": context.get("recent_artifact_ids", []),
+            "memory_record": durable_memory,
         }
         return self.complete_task(task, result)
 
@@ -427,6 +447,30 @@ class DinklyAgent:
                     self.repository.write_json(path, records)
                     return record
         raise RepositoryError("Brain update not found")
+
+    def _record_approval_decision(
+        self,
+        task: dict[str, Any],
+        *,
+        item_type: str,
+        item_id: str,
+        decision: str,
+        notes: str | None = None,
+    ) -> None:
+        records = self.repository.read_json("app-data/dinkly-agent/approvals.json", [])
+        records.append(
+            {
+                "id": f"approval-{uuid.uuid4().hex[:12]}",
+                "item_type": item_type,
+                "item_id": item_id,
+                "decision": decision,
+                "notes": notes,
+                "channel": task.get("source_channel") or "web",
+                "user_id": task.get("source_user_id"),
+                "created_at": datetime.now(UTC).isoformat(),
+            }
+        )
+        self.repository.write_json("app-data/dinkly-agent/approvals.json", records[-5000:])
 
     def complete_task(
         self,
@@ -449,6 +493,16 @@ class DinklyAgent:
         concepts = [item for item in self.concepts.list_concepts() if item.get("status") == "candidate"]
         comics = [item for item in self.generation.history() if item.get("status") == "awaiting_human"]
         brain = [item for item in self.learning.recent_learnings(100) if item.get("status") == "proposed"]
+        brain.extend(
+            {
+                **proposal,
+                "statement": proposal.get("edited_rule") or proposal.get("proposed_rule"),
+                "learning_type": "permanent_brain_rule",
+                "status": "proposed",
+                "is_brain_proposal": True,
+            }
+            for proposal in self.brain_proposals.list(status="pending")
+        )
         return {"concepts": concepts, "comics": comics, "brain_updates": brain}
 
     def task_events(self, task_id: str, after: str | None = None) -> list[dict[str, Any]]:
@@ -644,6 +698,32 @@ class DinklyAgent:
         self._checkpoint(task["id"], "Before learning")
         self.emit_event(task, "learning", "Reviewing new production evidence.")
         learned = self.learning.run()
+        for learning in learned.get("learnings", []):
+            learning_type = str(learning.get("learning_type") or "generation_learning")
+            memory_type = {
+                "prompt": "prompt_learning",
+                "qa": "qa_learning",
+                "layout": "layout_learning",
+                "model": "model_learning",
+                "failure": "failure_pattern",
+            }.get(learning_type, "generation_learning")
+            now = datetime.now(UTC).isoformat()
+            self.memory.upsert(
+                {
+                    "id": f"memory-{learning['id']}",
+                    "memory_type": memory_type,
+                    "key": str(learning["id"]),
+                    "summary": str(learning.get("statement") or "Production learning"),
+                    "value_json": {"learning_type": learning_type, "source_record": learning},
+                    "confidence": learning.get("confidence", "low"),
+                    "source_type": "production_learning_loop",
+                    "source_id": learning.get("id"),
+                    "evidence_ids": learning.get("evidence_ids", []),
+                    "active": learning.get("status") != "rejected",
+                    "created_at": learning.get("created_at") or now,
+                    "updated_at": learning.get("updated_at") or now,
+                }
+            )
         self._checkpoint(task["id"], "After learning")
         if learned.get("ran"):
             message = f"Learning review complete. I proposed {len(learned.get('learnings', []))} Brain update(s)."
@@ -663,9 +743,9 @@ class DinklyAgent:
             message = f"I am working on {len(running)} assignment(s), with {len(queued)} queued."
             result = {"message": message, "running": running, "queued": queued}
         else:
-            learnings = self.learning.recent_learnings(8)
-            message = "Here are my latest evidence-linked Brain updates." if learnings else "I do not have a new evidence-backed learning yet."
-            result = {"message": message, "learnings": learnings}
+            memory_answer = self.memory.answer(task["user_instruction"])
+            message = memory_answer["answer"]
+            result = {"message": message, **memory_answer}
         return self.complete_task(task, result)
 
     def _handle_approval(self, task: dict[str, Any]) -> dict[str, Any]:
@@ -683,6 +763,9 @@ class DinklyAgent:
                 if not context.get("notes"):
                     raise RepositoryError("Describe the concept edit before saving it")
                 record = self.concepts.edit(item_id, {"why_it_may_work": context["notes"]})
+                self._record_approval_decision(
+                    task, item_type=item_type, item_id=item_id, decision=action, notes=context.get("notes")
+                )
                 return self.complete_task(task, {"message": "Concept edit saved for review.", "concept": record})
             if action == "more_like_this":
                 task["context"] = {**context, "recent_artifact_ids": [item_id]}
@@ -693,8 +776,25 @@ class DinklyAgent:
                 if action == "approve"
                 else self.concepts.pass_concept(item_id, context.get("notes"))
             )
+            self._record_approval_decision(
+                task, item_type=item_type, item_id=item_id, decision=action, notes=context.get("notes")
+            )
             return self.complete_task(task, {"message": f"Concept {action.replace('_', ' ')} recorded.", "concept": record})
         if item_type == "brain_update":
+            if str(item_id).startswith("brain-proposal-"):
+                record = self.brain_proposals.decide(
+                    item_id,
+                    decision="reject" if action == "pass" else action,
+                    edited_rule=context.get("notes"),
+                    reviewed_by=task.get("source_user_id") or "Human reviewer",
+                )
+                self._record_approval_decision(
+                    task, item_type=item_type, item_id=item_id, decision=action, notes=context.get("notes")
+                )
+                return self.complete_task(
+                    task,
+                    {"message": f"Brain proposal {action} recorded.", "learning": record},
+                )
             if action == "edit":
                 if not context.get("notes"):
                     raise RepositoryError("Enter the revised Brain learning before saving it")
@@ -705,8 +805,14 @@ class DinklyAgent:
                     if any(item.get("id") == item_id for item in records):
                         self.repository.write_json(path, [record if item.get("id") == item_id else item for item in records])
                         break
+                self._record_approval_decision(
+                    task, item_type=item_type, item_id=item_id, decision=action, notes=context.get("notes")
+                )
                 return self.complete_task(task, {"message": "Brain update revision saved for review.", "learning": record})
             record = self.update_memory(item_id, "active" if action == "approve" else "rejected")
+            self._record_approval_decision(
+                task, item_type=item_type, item_id=item_id, decision=action, notes=context.get("notes")
+            )
             return self.complete_task(task, {"message": f"Brain update {action} recorded.", "learning": record})
         if item_type == "comic":
             run = self.generation.get(item_id)
@@ -725,6 +831,9 @@ class DinklyAgent:
                     task_type="learn",
                     dedupe_key=f"learning:approval:{item_id}",
                 )
+                self._record_approval_decision(
+                    task, item_type=item_type, item_id=item_id, decision=action, notes=context.get("notes")
+                )
                 # Learning stays in the same persisted queue. Running it inline
                 # made Slack approval requests block and could orphan the
                 # approval task if the HTTP/Socket request ended first.
@@ -732,6 +841,9 @@ class DinklyAgent:
             if action in {"pass", "reject"}:
                 rejected = self.generation.reject(item_id, context.get("notes"))
                 self._complete_source_generation_task(item_id, rejected, decision="passed")
+                self._record_approval_decision(
+                    task, item_type=item_type, item_id=item_id, decision=action, notes=context.get("notes")
+                )
                 return self.complete_task(task, {"message": "Comic passed. The candidates remain in History.", "run": rejected}, run_ids=[item_id])
             if action == "more_like_this":
                 return self.handle_feedback({**task, "user_instruction": "I love this. Give me more concepts like this."})

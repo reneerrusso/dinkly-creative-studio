@@ -100,6 +100,21 @@ export interface DinklyAgentLearning {
   updated_at: string;
 }
 
+export interface AgentMemory {
+  id: string;
+  memory_type: string;
+  key: string;
+  summary: string;
+  value_json: Record<string, unknown>;
+  confidence: Confidence;
+  source_type: string;
+  source_id: string | null;
+  evidence_ids: string[];
+  active: boolean;
+  created_at: string;
+  updated_at: string;
+}
+
 export interface DashboardData {
   metrics: Record<string, number>;
   continue_working: Record<string, unknown[]>;

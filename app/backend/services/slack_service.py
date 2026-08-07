@@ -77,7 +77,11 @@ class SlackService:
 
     def settings(self) -> dict[str, Any]:
         stored = self.repository.read_json(SLACK_SETTINGS_PATH, {})
-        return {**self._defaults(), **stored, "notifications": {**DEFAULT_NOTIFICATIONS, **stored.get("notifications", {})}}
+        resolved = {**self._defaults(), **stored, "notifications": {**DEFAULT_NOTIFICATIONS, **stored.get("notifications", {})}}
+        if settings.app_mode == "cloud":
+            resolved["mode"] = "events_api"
+            resolved["socket_mode_active"] = False
+        return resolved
 
     def status(self) -> dict[str, Any]:
         settings = self.settings()
@@ -111,9 +115,16 @@ class SlackService:
         }
 
     def connect(self, payload: SlackConnectRequest) -> dict[str, Any]:
+        if self.repository.settings.app_mode == "cloud" and payload.mode != "events_api":
+            raise RepositoryError("Cloud mode uses Slack Events API. Socket Mode is available in local mode only")
         if not payload.allowed_users:
             raise RepositoryError("Add at least one allowed Slack user before connecting")
-        self.secrets.configure_slack(payload.bot_token, payload.signing_secret, payload.app_token)
+        if self.repository.settings.app_mode == "local":
+            self.secrets.configure_slack(payload.bot_token, payload.signing_secret, payload.app_token)
+        elif not self.secrets.get_slack_secret_status()["configured"]:
+            raise RepositoryError(
+                "Cloud Slack credentials must be configured in the hosting provider's secret store"
+            )
         settings = {
             **self.settings(),
             "mode": payload.mode,
@@ -125,6 +136,8 @@ class SlackService:
         return self.test_connection()
 
     def update_settings(self, payload: SlackSettingsUpdate) -> dict[str, Any]:
+        if self.repository.settings.app_mode == "cloud" and payload.mode != "events_api":
+            raise RepositoryError("Cloud mode uses Slack Events API. Socket Mode is available in local mode only")
         if not payload.allowed_users:
             raise RepositoryError("At least one authorized Slack user is required")
         settings = {
@@ -283,7 +296,8 @@ class SlackService:
         return self.status()
 
     def disconnect(self) -> dict[str, Any]:
-        self.secrets.remove_slack()
+        if self.repository.settings.app_mode == "local":
+            self.secrets.remove_slack()
         settings = {**self._defaults(), "connection_status": "Not connected"}
         self.repository.write_json(SLACK_SETTINGS_PATH, settings)
         return self.status()

@@ -13,7 +13,7 @@ from app.backend.models.dinkly_agent import (
     AgentTask,
     AgentTaskType,
 )
-from app.backend.services.agent_storage import AgentStorage, LocalAgentStorage
+from app.backend.services.agent_storage import AgentStorage, build_agent_storage
 from app.backend.services.repository_service import RepositoryError, RepositoryService
 
 TASKS_PATH = "app-data/dinkly-agent/tasks.json"
@@ -39,7 +39,7 @@ class AgentTaskService:
 
     def __init__(self, repository: RepositoryService, storage: AgentStorage | None = None) -> None:
         self.repository = repository
-        self.storage = storage or LocalAgentStorage(repository)
+        self.storage = storage or build_agent_storage(repository)
         self._ensure_files()
 
     def create_task(
@@ -99,6 +99,9 @@ class AgentTaskService:
         return task
 
     def claim_next(self) -> dict[str, Any] | None:
+        cloud_claim = getattr(self.storage, "claim_next", None)
+        if callable(cloud_claim):
+            return cloud_claim()
         with self._storage_lock():
             tasks = self.storage.read(TASKS_PATH, [])
             pending = [
@@ -375,13 +378,8 @@ class AgentTaskService:
         return record
 
     def mark_external_event(self, event_id: str) -> bool:
-        with self._lock:
-            records = self.storage.read(PROCESSED_EVENTS_PATH, [])
-            if any(item.get("id") == event_id for item in records):
-                return False
-            records.append({"id": event_id, "processed_at": datetime.now(UTC).isoformat()})
-            self.storage.write(PROCESSED_EVENTS_PATH, records[-5000:])
-            return True
+        with self._storage_lock():
+            return self.storage.mark_external_event(event_id)
 
     @staticmethod
     def priority_for(source_channel: str, task_type: str) -> int:
@@ -409,12 +407,17 @@ class AgentTaskService:
 
     def _ensure_files(self) -> None:
         for path in (TASKS_PATH, CONVERSATIONS_PATH, PROCESSED_EVENTS_PATH, OUTBOX_PATH):
-            if not self.repository.path(path).exists():
+            if not self.storage.read(path, None):
                 self.storage.write(path, [])
 
     @contextmanager
     def _storage_lock(self):
         """Serialize queue mutations across the API and the persistent worker."""
+        storage_lock = getattr(self.storage, "lock", None)
+        if callable(storage_lock):
+            with self._lock, storage_lock("dinkly-agent-task-inbox"):
+                yield
+            return
         lock_path = self.repository.path("app-data/dinkly-agent/task-inbox.lock")
         lock_path.parent.mkdir(parents=True, exist_ok=True)
         with self._lock, lock_path.open("a+", encoding="utf-8") as handle:

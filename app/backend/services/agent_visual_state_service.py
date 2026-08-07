@@ -404,9 +404,10 @@ class DinklyLearningLoop:
 
     def _collect_evidence(self) -> list[dict[str, Any]]:
         evidence: list[dict[str, Any]] = []
-        runs_dir = self.repository.settings.generation_engine_dir / "runs"
-        for path in sorted(runs_dir.glob("generation-*/metadata.json")):
-            run = self.repository.read_json(self.repository.relative(path), {})
+        for relative in self.repository.list_json(
+            "app-data/generation-engine/runs", suffix="/metadata.json"
+        ):
+            run = self.repository.read_json(relative, {})
             run_id = str(run.get("id"))
             if run.get("status") == "approved":
                 evidence.append({"id": f"approval:{run_id}:{run.get('approved_at')}", "kind": "approval", "run": run})

@@ -12,7 +12,9 @@ from fastapi.staticfiles import StaticFiles
 from app.backend.config import settings
 from app.backend.routers import (
     art_reviews,
+    assets,
     brand_integrations,
+    cloud_runtime,
     concept_generator,
     concepts,
     dashboard,
@@ -22,6 +24,7 @@ from app.backend.routers import (
     generation_engine,
     health,
     knowledge,
+    memory,
     prompt_templates,
     prompts,
     slack,
@@ -44,6 +47,11 @@ logger = logging.getLogger(__name__)
 
 @asynccontextmanager
 async def lifespan(application: FastAPI):
+    if settings.app_mode == "cloud":
+        # Cloud scheduling is event-driven. A platform scheduler calls the
+        # authenticated enqueue endpoints; no laptop-style polling loop runs.
+        yield
+        return
     social_scheduler = SocialIntelligenceScheduler(social_intelligence.service)
 
     async def social_schedule_loop() -> None:
@@ -69,7 +77,11 @@ app = FastAPI(
 )
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=sorted({settings.frontend_origin, "http://127.0.0.1:3000", "http://localhost:3000"}),
+    allow_origins=(
+        list(settings.allowed_origins)
+        if settings.app_mode == "cloud"
+        else sorted({*settings.allowed_origins, "http://127.0.0.1:3000", "http://localhost:3000"})
+    ),
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -77,6 +89,9 @@ app.add_middleware(
 
 for router in (
     health.router,
+    cloud_runtime.router,
+    assets.router,
+    memory.router,
     dashboard.router,
     dinkly_agent.router,
     slack.router,
