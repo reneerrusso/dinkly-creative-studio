@@ -216,6 +216,36 @@ def test_slack_dm_and_mention_share_threaded_agent_inbox(repository: RepositoryS
     assert tasks.get(dm["task"]["id"])["context"]["slack_status_ts"]
 
 
+def test_conversational_comic_message_is_acknowledged_and_handed_to_shared_story_brief(repository: RepositoryService) -> None:
+    service, _tasks, receiver, transport = configured_slack(repository)
+
+    result = service.receive_event(
+        {
+            "event_id": "Ev-WINGS",
+            "event": {
+                "type": "message",
+                "channel_type": "im",
+                "channel": "D1",
+                "user": "UOWNER",
+                "ts": "777.1",
+                "text": "create me a comic of eating wings and eating wings with you",
+            },
+        }
+    )
+
+    assert result["ok"] is True
+    assert receiver.instructions[0]["extra_context"]["left_title"] == "EATING WINGS."
+    assert receiver.instructions[0]["extra_context"]["right_title"] == "EATING WINGS WITH YOU."
+    assert receiver.instructions[0]["extra_context"]["story_brief"]["left_emotion"].endswith("never happy.")
+    assert receiver.instructions[0]["extra_context"]["slack_ack_pending"] is True
+    assert result["task"]["context"]["slack_ack_pending"] is False
+    messages = [payload for method, payload in transport.calls if method == "chat.postMessage"]
+    assert messages[-1]["text"] == "Task received! On it."
+    open_button = messages[-1]["blocks"][1]["elements"][0]
+    assert open_button["text"]["text"] == "See task running"
+    assert open_button["url"].endswith(f"/agent/tasks/{result['task']['id']}")
+
+
 def test_slack_cancel_current_task_updates_shared_web_state(repository: RepositoryService) -> None:
     service, tasks, _receiver, transport = configured_slack(repository)
     task, _ = tasks.create_task(
@@ -262,6 +292,63 @@ def test_duplicate_and_unauthorized_slack_events_do_not_create_paid_work(reposit
     assert any("isn't available" in payload.get("text", "") for method, payload in transport.calls if method == "chat.postMessage")
 
 
+def test_message_timestamp_is_idempotency_key_when_slack_event_id_is_missing(repository: RepositoryService) -> None:
+    service, tasks, _receiver, _transport = configured_slack(repository)
+    event = {
+        "event": {
+            "type": "message",
+            "channel_type": "im",
+            "channel": "D1",
+            "user": "UOWNER",
+            "ts": "999.1",
+            "text": "make coffee and coffee with you",
+        }
+    }
+
+    service.receive_event(event)
+    assert service.receive_event(event) == {"ok": True, "duplicate": True}
+    assert len(tasks.list_tasks()) == 1
+
+
+def test_comic_button_rejects_candidate_not_linked_to_slack_task(repository: RepositoryService) -> None:
+    service, tasks, _receiver, _transport = configured_slack(repository)
+    task, _ = tasks.create_task(
+        source_channel="slack",
+        source_thread_id="500.1",
+        source_user_id="UOWNER",
+        user_instruction="Generate PARTY / PARTY WITH YOU.",
+        task_type="generate_comic",
+        context={"slack_channel_id": "C1"},
+    )
+    tasks.complete(
+        task["id"],
+        {"recommended_candidate_id": "candidate-b"},
+        run_ids=["generation-1"],
+        waiting_for_human=True,
+    )
+
+    with pytest.raises(RepositoryError, match="recommended candidate"):
+        service.receive_interaction(
+            {
+                "trigger_id": "secure-trigger",
+                "team": {"id": "T1"},
+                "user": {"id": "UOWNER"},
+                "channel": {"id": "C1"},
+                "message": {"ts": "600.1", "thread_ts": "500.1"},
+                "actions": [{
+                    "action_id": "dinkly_approve",
+                    "value": json.dumps({
+                        "item_type": "comic",
+                        "item_id": "generation-1",
+                        "task_id": task["id"],
+                        "candidate_id": "candidate-a",
+                        "workspace_id": "T1",
+                    }),
+                }],
+            }
+        )
+
+
 def test_slack_approval_pass_and_feedback_buttons_use_same_action_receiver(repository: RepositoryService) -> None:
     service, _tasks, receiver, _transport = configured_slack(repository)
     for index, action_id in enumerate(("dinkly_approve", "dinkly_pass", "dinkly_more_like_this"), start=1):
@@ -300,3 +387,18 @@ def test_slack_status_updates_and_https_images_stay_in_one_thread(repository: Re
     )
     buttons = [payload for method, payload in transport.calls if method == "chat.postMessage" and payload.get("blocks")][-1]
     assert buttons["blocks"][1]["elements"][0]["url"] == "https://dinkly.example/approvals"
+
+
+def test_slack_status_button_update_preserves_exact_live_task_link(repository: RepositoryService) -> None:
+    _service, tasks, _receiver, transport = configured_slack(repository)
+    channel = SlackAgentChannel(transport, tasks, default_channel="C1")
+    channel.update_buttons(
+        "status.1",
+        "DINKLY Agent · Working",
+        [{"label": "See task running", "action_id": "dinkly_open_task", "value": "task-1", "url": "http://127.0.0.1:3000/agent/tasks/task-1"}],
+        channel_id="C1",
+    )
+
+    update = next(payload for method, payload in transport.calls if method == "chat.update")
+    assert update["ts"] == "status.1"
+    assert update["blocks"][1]["elements"][0]["url"].endswith("/agent/tasks/task-1")

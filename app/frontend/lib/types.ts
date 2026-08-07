@@ -213,6 +213,10 @@ export interface GenerationRun {
   story_brief: GenerationStoryBrief;
   story_format: string;
   status: "draft" | "compiling" | "generating" | "reviewing" | "repairing" | "awaiting_human" | "approved" | "rejected" | "failed" | "cancelled";
+  source_channel?: "web" | "slack" | "scheduled" | "learning" | null;
+  source_task_id?: string | null;
+  slack_delivery_status?: "image_sent" | "link_sent" | "failed" | null;
+  slack_delivery_issue?: string | null;
   model_selection_mode: string;
   selected_model: string | null;
   selected_model_info?: ImageModelInfo | null;

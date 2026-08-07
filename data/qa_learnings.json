@@ -4,12 +4,13 @@
     "learning_type": "failure_pattern",
     "statement": "1 recent generation produced official orange spots.",
     "evidence_ids": [
-      "qa:candidate-2bdc88f01a34:5f89dd27314d264d"
+      "qa:candidate-2bdc88f01a34:5f89dd27314d264d",
+      "qa:candidate-cf4ff5fba166:94bca363b911b836"
     ],
     "confidence": "low",
     "status": "proposed",
     "created_at": "2026-08-07T15:57:52.914583+00:00",
-    "updated_at": "2026-08-07T15:57:52.914583+00:00"
+    "updated_at": "2026-08-07T19:56:22.529228+00:00"
   },
   {
     "id": "dinkly-learning-e360cf84d071",
@@ -58,5 +59,65 @@
     "status": "proposed",
     "created_at": "2026-08-07T16:52:24.097525+00:00",
     "updated_at": "2026-08-07T16:52:24.097525+00:00"
+  },
+  {
+    "id": "dinkly-learning-feefcbb4b3b6",
+    "learning_type": "failure_pattern",
+    "statement": "1 recent generation produced dinko exactly two hair tufts.",
+    "evidence_ids": [
+      "qa:candidate-c09d3d0fcb0d:c0c39d8aecd462e7"
+    ],
+    "confidence": "low",
+    "status": "proposed",
+    "created_at": "2026-08-07T18:56:21.682135+00:00",
+    "updated_at": "2026-08-07T18:56:21.682135+00:00"
+  },
+  {
+    "id": "dinkly-learning-7a3934d2fa6e",
+    "learning_type": "failure_pattern",
+    "statement": "1 recent generation produced eating wings with you exact text.",
+    "evidence_ids": [
+      "qa:candidate-c09d3d0fcb0d:0015b52bb26263b3"
+    ],
+    "confidence": "low",
+    "status": "proposed",
+    "created_at": "2026-08-07T18:56:21.682135+00:00",
+    "updated_at": "2026-08-07T18:56:21.682135+00:00"
+  },
+  {
+    "id": "dinkly-learning-e3a8b03173ec",
+    "learning_type": "failure_pattern",
+    "statement": "1 recent generation produced no additional descriptive text or watermarks.",
+    "evidence_ids": [
+      "qa:candidate-2e61574582db:37fb1b1e2c0a267b"
+    ],
+    "confidence": "low",
+    "status": "proposed",
+    "created_at": "2026-08-07T18:56:21.682135+00:00",
+    "updated_at": "2026-08-07T18:56:21.682135+00:00"
+  },
+  {
+    "id": "dinkly-learning-a3e21b4d1c46",
+    "learning_type": "failure_pattern",
+    "statement": "1 recent generation produced panel 1 text walking the dog.",
+    "evidence_ids": [
+      "qa:candidate-39dd5789625b:51fe7e6187b5f54c"
+    ],
+    "confidence": "low",
+    "status": "proposed",
+    "created_at": "2026-08-07T19:56:22.529228+00:00",
+    "updated_at": "2026-08-07T19:56:22.529228+00:00"
+  },
+  {
+    "id": "dinkly-learning-998809204a5c",
+    "learning_type": "failure_pattern",
+    "statement": "1 recent generation produced panel 2 text walking the dog with you.",
+    "evidence_ids": [
+      "qa:candidate-39dd5789625b:6ae2a7a03e048b80"
+    ],
+    "confidence": "low",
+    "status": "proposed",
+    "created_at": "2026-08-07T19:56:22.529228+00:00",
+    "updated_at": "2026-08-07T19:56:22.529228+00:00"
   }
 ]

@@ -101,7 +101,11 @@ class AgentTaskService:
     def claim_next(self) -> dict[str, Any] | None:
         with self._storage_lock():
             tasks = self.storage.read(TASKS_PATH, [])
-            pending = [item for item in tasks if item.get("status") == "queued"]
+            pending = [
+                item for item in tasks
+                if item.get("status") == "queued"
+                and not (item.get("context") or {}).get("slack_ack_pending")
+            ]
             if not pending:
                 return None
             selected = min(pending, key=lambda item: (int(item.get("priority", 6)), item.get("created_at", "")))
@@ -118,8 +122,20 @@ class AgentTaskService:
         ]
         return min(active, key=lambda item: item.get("started_at") or item.get("created_at", "")) if active else None
 
+    def latest_for_thread(self, thread_id: str, *, statuses: set[str] | None = None) -> dict[str, Any] | None:
+        matches = [
+            item for item in self.storage.read(TASKS_PATH, [])
+            if item.get("source_thread_id") == thread_id
+            and (not statuses or item.get("status") in statuses)
+        ]
+        return max(matches, key=lambda item: item.get("created_at", "")) if matches else None
+
     def peek_next(self) -> dict[str, Any] | None:
-        queued = [item for item in self.storage.read(TASKS_PATH, []) if item.get("status") == "queued"]
+        queued = [
+            item for item in self.storage.read(TASKS_PATH, [])
+            if item.get("status") == "queued"
+            and not (item.get("context") or {}).get("slack_ack_pending")
+        ]
         return min(queued, key=lambda item: (int(item.get("priority", 6)), item.get("created_at", ""))) if queued else None
 
     def request_cancellation(self, task_id: str, *, reason: str = "Cancelled by user", skip: bool = False) -> tuple[dict[str, Any], str]:
@@ -176,8 +192,8 @@ class AgentTaskService:
 
     def restart(self, task_id: str) -> dict[str, Any]:
         original = self.get(task_id)
-        if original.get("status") != "cancelled":
-            raise RepositoryError("Only a cancelled task can be restarted")
+        if original.get("status") not in {"cancelled", "failed"}:
+            raise RepositoryError("Only a cancelled or failed task can be restarted")
         restarted, _ = self.create_task(
             source_channel=original["source_channel"],
             source_thread_id=original["source_thread_id"],

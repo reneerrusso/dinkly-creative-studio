@@ -74,6 +74,11 @@ def candidates(run_id: str) -> list[dict]:
     return service.list_candidates(run_id)
 
 
+@router.get("/api/generation-engine/runs/{run_id}/events")
+def run_events(run_id: str) -> list[dict]:
+    return service.events(run_id)
+
+
 @router.post("/api/generation-engine/candidates/{candidate_id}/select")
 def select_candidate(candidate_id: str, payload: CandidateSelectRequest) -> dict:
     if not payload.selected:

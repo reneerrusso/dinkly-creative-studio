@@ -51,6 +51,12 @@ def diagnostics() -> dict:
     return service.diagnostics()
 
 
+@router.post("/test/end-to-end")
+def end_to_end_test() -> dict:
+    logger.info("Slack request path=/api/slack/test/end-to-end mode=%s", service.settings()["mode"])
+    return service.run_end_to_end_test()
+
+
 @router.delete("/disconnect")
 def disconnect() -> dict:
     return service.disconnect()

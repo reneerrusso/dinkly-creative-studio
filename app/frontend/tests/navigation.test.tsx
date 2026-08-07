@@ -7,7 +7,7 @@ import { agents } from "@/lib/agents";
 describe("navigation", () => {
   it("leads with the single DINKLY Agent employee workflow", () => {
     render(<AppSidebar />);
-    for (const label of ["DINKLY Agent", "Approvals", "History", "Settings"]) {
+    for (const label of ["DINKLY Agent", "Approvals", "Comics", "Activity", "Settings"]) {
       expect(screen.getAllByText(label).length).toBeGreaterThan(0);
     }
     for (const label of agents.map(agent => agent.displayName)) expect(screen.queryByText(label)).not.toBeInTheDocument();
@@ -40,7 +40,8 @@ describe("navigation", () => {
     await user.click(screen.getByRole("button", { name: "Collapse sidebar" }));
     expect(screen.getByTitle("DINKLY Agent")).toBeInTheDocument();
     expect(screen.getByTitle("Approvals")).toBeInTheDocument();
-    expect(screen.getByTitle("History")).toBeInTheDocument();
+    expect(screen.getByTitle("Comics")).toBeInTheDocument();
+    expect(screen.getByTitle("Activity")).toBeInTheDocument();
     expect(screen.getByRole("button", { name: "Expand sidebar" })).toBeInTheDocument();
   });
 });

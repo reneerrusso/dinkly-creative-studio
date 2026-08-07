@@ -107,6 +107,8 @@ class GenerationEngineService:
             "story_format": request.story_brief.format,
             "status": "compiling",
             "provider": "google_gemini",
+            "source_channel": "web",
+            "source_task_id": None,
             "model_selection_mode": request.model_selection_mode,
             "selected_model": key,
             "selection_reason": reason,
@@ -176,7 +178,13 @@ class GenerationEngineService:
         )
         return self.get(run_id)
 
-    def execute(self, run_id: str, *, should_cancel: Callable[[], bool] | None = None) -> None:
+    def execute(
+        self,
+        run_id: str,
+        *,
+        should_cancel: Callable[[], bool] | None = None,
+        on_progress: Callable[[dict[str, Any]], None] | None = None,
+    ) -> None:
         run = self._load_run(run_id)
         cancelled = should_cancel or (lambda: False)
         started = datetime.now(UTC)
@@ -251,6 +259,8 @@ class GenerationEngineService:
                     total=run["candidate_count"],
                     model=self._model_presentation(run["selected_model"], expose_id=False),
                 )
+                if on_progress:
+                    on_progress({"stage": "generate", "completed": index + 1, "total": run["candidate_count"], "candidate": label})
             except ImageProviderError as exc:
                 if cancelled():
                     self._cancel_run(run_id, f"During Candidate {label}")
@@ -298,6 +308,8 @@ class GenerationEngineService:
             total=run["candidate_count"],
         )
         self._emit_stage(run_id, "layout", "active", "Applying the final DINKLY 80/20 composition.")
+        if on_progress:
+            on_progress({"stage": "layout", "completed": successful, "total": run["candidate_count"]})
         try:
             for candidate in run["candidates"]:
                 if cancelled():
@@ -332,6 +344,8 @@ class GenerationEngineService:
             total=qa_total,
         )
         self._emit(run_id, "qa", "Starting QA.")
+        if on_progress:
+            on_progress({"stage": "qa", "completed": 0, "total": qa_total})
         qa_completed = 0
         for candidate in run["candidates"]:
             if candidate.get("image_path"):
@@ -347,6 +361,8 @@ class GenerationEngineService:
                     completed=qa_completed,
                     total=qa_total,
                 )
+                if on_progress:
+                    on_progress({"stage": "qa", "completed": qa_completed, "total": qa_total, "candidate": candidate["label"]})
                 self._qa_candidate(run, candidate, provider)
                 if cancelled():
                     self._cancel_run(run_id, f"During QA Candidate {candidate['label']}")
@@ -385,6 +401,8 @@ class GenerationEngineService:
         )
         self._emit_stage(run_id, "repair", "skipped", "No repair requested.")
         self._emit_stage(run_id, "human_review", "active", "Ready for your approval.")
+        if on_progress:
+            on_progress({"stage": "approval", "completed": qa_completed, "total": qa_total})
         self._emit(run_id, "checkpoint", "Candidates ready for the human checkpoint.")
 
     def get(self, run_id: str) -> dict[str, Any]:
@@ -433,6 +451,27 @@ class GenerationEngineService:
                 "Generation recipe ready",
             ]
         return run
+
+    def record_source(self, run_id: str, *, source_channel: str, source_task_id: str | None) -> dict[str, Any]:
+        """Attach origin metadata without creating a second generation history."""
+        run = self._load_run(run_id)
+        run["source_channel"] = source_channel
+        run["source_task_id"] = source_task_id
+        self._save_run(run)
+        return self.get(run_id)
+
+    def record_slack_delivery(self, run_id: str, *, status: str, issue: str | None = None) -> dict[str, Any]:
+        """Persist sanitized Slack delivery metadata on the canonical generation run."""
+        if status not in {"image_sent", "link_sent", "failed"}:
+            raise RepositoryError("Unknown Slack delivery status")
+        run = self._load_run(run_id)
+        run["slack_delivery_status"] = status
+        if issue:
+            run["slack_delivery_issue"] = issue
+        else:
+            run.pop("slack_delivery_issue", None)
+        self._save_run(run)
+        return self.get(run_id)
 
     def download_final(
         self,
@@ -1000,6 +1039,8 @@ class GenerationEngineService:
             "story_format": request.story_brief.format,
             "status": "generating",
             "provider": "google_gemini",
+            "source_channel": "web",
+            "source_task_id": None,
             "model_selection_mode": "comparison",
             "selected_model": None,
             "selection_reason": "Same story recipe across selected models.",

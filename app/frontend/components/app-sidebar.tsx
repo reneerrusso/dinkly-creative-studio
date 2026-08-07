@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Bot, CheckCircle2, ChevronLeft, ChevronRight, Clock3, Menu, Settings } from "lucide-react";
+import { Bot, CheckCircle2, ChevronLeft, ChevronRight, Clock3, ImageIcon, Menu, Settings } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
@@ -13,7 +13,8 @@ import { cn } from "@/lib/utils";
 const primary = [
   { label: "DINKLY Agent", href: "/agent", icon: Bot },
   { label: "Approvals", href: "/approvals", icon: CheckCircle2 },
-  { label: "History", href: "/history", icon: Clock3 },
+  { label: "Comics", href: "/comics", icon: ImageIcon },
+  { label: "Activity", href: "/history", icon: Clock3 },
 ];
 
 function Brand({ collapsed = false }: { collapsed?: boolean }) {
@@ -29,7 +30,7 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 
 function Navigation({ onNavigate, collapsed = false }: { onNavigate?: () => void; collapsed?: boolean }) {
   const pathname = usePathname();
-  const [brainOpen, setBrainOpen] = useState(!["/", "/agent", "/approvals", "/history", "/settings"].includes(pathname));
+  const [brainOpen, setBrainOpen] = useState(!["/", "/agent", "/approvals", "/comics", "/history", "/settings"].some(path => pathname === path || (path !== "/" && pathname.startsWith(`${path}/`))));
   return <div className="flex min-h-0 flex-1 flex-col">
     <nav aria-label="DINKLY Agent" className="mt-8 space-y-1">
       {primary.map(item => { const Icon = item.icon; const active = pathname.startsWith(item.href); return <Link key={item.href} href={item.href} onClick={onNavigate} title={collapsed ? item.label : undefined} className={cn("flex min-h-11 items-center rounded-xl py-2 text-[13px] font-semibold transition-colors", collapsed ? "justify-center px-1" : "gap-3 px-3", active ? "bg-[#f2df9d] text-ink" : "text-[#5f5b54] hover:bg-black/[0.035]")}><Icon className="size-4" />{!collapsed && item.label}</Link>; })}

@@ -81,6 +81,22 @@ def test_idle_inbox_claim_makes_no_work(repository: RepositoryService) -> None:
     assert AgentTaskService(repository).claim_next() is None
 
 
+def test_slack_task_waits_until_acknowledgement_metadata_is_saved(repository: RepositoryService) -> None:
+    service = AgentTaskService(repository)
+    task, _ = service.create_task(
+        source_channel="slack",
+        source_thread_id="500.1",
+        user_instruction="Generate WINGS / WINGS WITH YOU",
+        task_type="generate_comic",
+        context={"slack_ack_pending": True},
+    )
+
+    assert service.peek_next() is None
+    assert service.claim_next() is None
+    service.update(task["id"], context={"slack_ack_pending": False, "slack_status_ts": "1000.1"})
+    assert service.claim_next()["id"] == task["id"]  # type: ignore[index]
+
+
 def test_cancel_queued_running_double_cancel_and_restart(repository: RepositoryService) -> None:
     service = AgentTaskService(repository)
     queued, _ = create_task(service, instruction="Cancel before start")

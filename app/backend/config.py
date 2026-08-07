@@ -14,6 +14,7 @@ class Settings:
     repository_root: Path
     frontend_origin: str
     max_upload_bytes: int
+    app_url: str | None = None
     app_mode: str = "local"
     public_base_url: str = "http://127.0.0.1:8000"
     database_url: str | None = None
@@ -66,11 +67,14 @@ class Settings:
 def get_settings() -> Settings:
     root = Path(os.getenv("DINKLY_REPOSITORY_ROOT", DEFAULT_ROOT)).expanduser().resolve()
     max_mb = int(os.getenv("DINKLY_MAX_UPLOAD_MB", "15"))
+    frontend_origin = os.getenv("DINKLY_FRONTEND_ORIGIN", "http://127.0.0.1:3000").rstrip("/")
+    app_mode = os.getenv("APP_MODE", "local").strip().lower()
     settings = Settings(
         repository_root=root,
-        frontend_origin=os.getenv("DINKLY_FRONTEND_ORIGIN", "http://127.0.0.1:3000"),
+        frontend_origin=frontend_origin,
         max_upload_bytes=max_mb * 1024 * 1024,
-        app_mode=os.getenv("APP_MODE", "local").strip().lower(),
+        app_url=(os.getenv("APP_URL") or (frontend_origin if app_mode == "local" else None)),
+        app_mode=app_mode,
         public_base_url=os.getenv("DINKLY_PUBLIC_BASE_URL", "http://127.0.0.1:8000").rstrip("/"),
         database_url=os.getenv("DATABASE_URL") or None,
         object_storage_url=os.getenv("DINKLY_OBJECT_STORAGE_URL") or None,
