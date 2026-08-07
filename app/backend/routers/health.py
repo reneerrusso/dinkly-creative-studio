@@ -10,6 +10,7 @@ from fastapi import APIRouter
 from app.backend.config import settings
 from app.backend.services.agent_task_service import AgentTaskService
 from app.backend.services.agent_visual_state_service import AgentVisualStateService
+from app.backend.services.cloud_persistence import cloud_database, cloud_storage
 from app.backend.services.repository_service import RepositoryService
 from app.backend.services.secrets_service import SecretsService
 
@@ -17,16 +18,65 @@ router = APIRouter(tags=["health"])
 
 
 @router.get("/health")
-def health() -> dict[str, str]:
-    return {"status": "healthy", "service": "DINKLY Creative Studio API"}
+def health() -> dict:
+    database = database_health()
+    storage = storage_health()
+    gemini = gemini_health()
+    required = [database, storage]
+    return {
+        "status": "healthy" if all(item["status"] == "healthy" for item in required) else "degraded",
+        "service": "DINKLY Creative Studio API",
+        "mode": settings.app_mode,
+        "database": database,
+        "storage": storage,
+        "gemini": gemini,
+    }
+
+
+@router.get("/health/database")
+def database_health() -> dict:
+    if settings.app_mode == "local":
+        return {"status": "healthy", "provider": "local_json"}
+    try:
+        return cloud_database(settings).health()
+    except Exception as exc:
+        return {"status": "unavailable", "provider": "supabase_postgres", "reason": str(exc)}
+
+
+@router.get("/health/storage")
+def storage_health() -> dict:
+    if settings.app_mode == "local":
+        return {"status": "healthy", "provider": "local_filesystem"}
+    try:
+        return cloud_storage(settings).health()
+    except Exception as exc:
+        return {"status": "unavailable", "provider": "supabase_storage", "reason": str(exc)}
+
+
+@router.get("/health/gemini")
+def gemini_health() -> dict:
+    configured = SecretsService(RepositoryService()).get_gemini_status()["configured"]
+    return {
+        "status": "configured" if configured else "not_configured",
+        "provider": "google_gemini",
+        "live_api_call_performed": False,
+    }
 
 
 @router.get("/health/agent")
 def agent_health() -> dict:
     repository = RepositoryService()
     tasks = AgentTaskService(repository)
+    dependencies = [database_health(), storage_health()]
+    executor_ready = settings.app_mode == "local" or bool(
+        settings.cloud_task_runner_url and settings.cloud_task_token
+    )
+    healthy = all(item["status"] == "healthy" for item in dependencies) and executor_ready
     return {
-        "status": "healthy",
+        "status": "healthy" if healthy else "degraded",
+        "mode": settings.app_mode,
+        "executor_configured": executor_ready,
+        "dependencies": dependencies,
         "agent": AgentVisualStateService(repository).status(),
         "queued": len(tasks.list_tasks(status="queued", limit=500)),
         "running": len(tasks.list_tasks(status="running", limit=500)),

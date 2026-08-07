@@ -100,6 +100,21 @@ export interface DinklyAgentLearning {
   updated_at: string;
 }
 
+export interface AgentMemory {
+  id: string;
+  memory_type: string;
+  key: string;
+  summary: string;
+  value_json: Record<string, unknown>;
+  confidence: Confidence;
+  source_type: string;
+  source_id: string | null;
+  evidence_ids: string[];
+  active: boolean;
+  created_at: string;
+  updated_at: string;
+}
+
 export interface DashboardData {
   metrics: Record<string, number>;
   continue_working: Record<string, unknown[]>;
@@ -213,6 +228,10 @@ export interface GenerationRun {
   story_brief: GenerationStoryBrief;
   story_format: string;
   status: "draft" | "compiling" | "generating" | "reviewing" | "repairing" | "awaiting_human" | "approved" | "rejected" | "failed" | "cancelled";
+  source_channel?: "web" | "slack" | "scheduled" | "learning" | null;
+  source_task_id?: string | null;
+  slack_delivery_status?: "image_sent" | "link_sent" | "failed" | null;
+  slack_delivery_issue?: string | null;
   model_selection_mode: string;
   selected_model: string | null;
   selected_model_info?: ImageModelInfo | null;

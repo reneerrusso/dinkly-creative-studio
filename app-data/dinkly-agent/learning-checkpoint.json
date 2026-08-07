@@ -1,6 +1,10 @@
 {
-  "last_checked_at": "2026-08-07T17:53:07.087709+00:00",
+  "last_checked_at": "2026-08-07T19:56:22.529228+00:00",
   "seen_evidence_ids": [
+    "approval:generation-0b0f51cd64ba:2026-08-07T18:56:27.425084+00:00",
+    "qa:candidate-c09d3d0fcb0d:c0c39d8aecd462e7",
+    "qa:candidate-c09d3d0fcb0d:0015b52bb26263b3",
+    "qa:candidate-2e61574582db:37fb1b1e2c0a267b",
     "approval:generation-2538f3dfc7ac:2026-08-07T13:29:30.492125+00:00",
     "qa:candidate-1d7c1a2679f2:1ddd1eb6b50dbca7",
     "qa:candidate-1d7c1a2679f2:938bd2d80bef62df",
@@ -20,6 +24,17 @@
     "approval:generation-96e3ad209916:2026-08-07T17:20:02.673991+00:00",
     "qa:candidate-d5eba7b68256:06d044ba96943143",
     "qa:candidate-d5eba7b68256:d7a38a670cce5970",
+    "qa:candidate-39dd5789625b:51fe7e6187b5f54c",
+    "qa:candidate-39dd5789625b:6ae2a7a03e048b80",
+    "qa:candidate-cf4ff5fba166:94bca363b911b836",
+    "qa:candidate-cf4ff5fba166:089bd5c8e590b867",
+    "qa:candidate-cf4ff5fba166:427004147b01b584",
+    "qa:candidate-cf4ff5fba166:afbcfe3d235a160b",
+    "qa:candidate-cf4ff5fba166:02d78d0b314dfcfa",
+    "qa:candidate-cf4ff5fba166:3fc1400bc83614d7",
+    "qa:candidate-cf4ff5fba166:8c7df4043d15f77d",
+    "qa:candidate-cf4ff5fba166:0d389f62902f3d9c",
+    "qa:candidate-cf4ff5fba166:91e60c6ce2191ea9",
     "approval:generation-cbd56ebce7aa:2026-08-07T13:26:55.090607+00:00",
     "approval:generation-ee3abbe0e061:2026-08-07T15:01:01.018547+00:00",
     "qa:candidate-2bdc88f01a34:5f89dd27314d264d",
@@ -42,6 +57,6 @@
     "feedback:6:42c8362e871f8258",
     "performance:post-5m-x-with-you-carousel-001:09c3d20360963409"
   ],
-  "evidence_count": 40,
+  "evidence_count": 55,
   "provider_calls": 0
 }

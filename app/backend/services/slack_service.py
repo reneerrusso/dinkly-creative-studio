@@ -10,11 +10,13 @@ from datetime import UTC, datetime
 from typing import Any
 from urllib.parse import urlsplit
 
+from app.backend.config import settings
 from app.backend.models.dinkly_agent import SlackConnectRequest, SlackSettingsUpdate
 from app.backend.services.agent_channels import SlackAgentChannel, SlackTransport, SlackWebApiTransport
 from app.backend.services.agent_task_service import AgentTaskService
 from app.backend.services.repository_service import RepositoryError, RepositoryService
 from app.backend.services.secrets_service import SecretsService
+from app.backend.services.slack_instruction_classifier import SlackInstructionClassifier
 from app.backend.services.tls_service import create_verified_ssl_context, verified_tls_diagnostics
 
 SLACK_SETTINGS_PATH = "app-data/dinkly-agent/slack-settings.json"
@@ -26,6 +28,7 @@ DEFAULT_NOTIFICATIONS = {
     "weekly_learning_recap": False,
     "routine_status": False,
 }
+REQUIRED_BOT_SCOPES = {"chat:write", "app_mentions:read", "im:history", "im:read", "im:write", "files:write"}
 
 
 class SlackSignatureVerifier:
@@ -67,13 +70,18 @@ class SlackService:
         self.instruction_receiver = instruction_receiver
         self.approval_receiver = approval_receiver
         self.cancellation_receiver = cancellation_receiver
+        self.classifier = SlackInstructionClassifier()
         self.transport_factory = transport_factory or (lambda token: SlackWebApiTransport(token))
         if not self.repository.path(SLACK_SETTINGS_PATH).exists():
             self.repository.write_json(SLACK_SETTINGS_PATH, self._defaults(), create_backup=False)
 
     def settings(self) -> dict[str, Any]:
         stored = self.repository.read_json(SLACK_SETTINGS_PATH, {})
-        return {**self._defaults(), **stored, "notifications": {**DEFAULT_NOTIFICATIONS, **stored.get("notifications", {})}}
+        resolved = {**self._defaults(), **stored, "notifications": {**DEFAULT_NOTIFICATIONS, **stored.get("notifications", {})}}
+        if settings.app_mode == "cloud":
+            resolved["mode"] = "events_api"
+            resolved["socket_mode_active"] = False
+        return resolved
 
     def status(self) -> dict[str, Any]:
         settings = self.settings()
@@ -92,6 +100,9 @@ class SlackService:
             "notifications": settings["notifications"],
             "last_event_received": settings.get("last_event_received"),
             "last_message_sent": settings.get("last_message_sent"),
+            "last_interaction_received": settings.get("last_interaction_received"),
+            "last_file_upload_at": settings.get("last_file_upload_at"),
+            "last_end_to_end_test": settings.get("last_end_to_end_test"),
             "configured": secret_status["configured"],
             "socket_mode_configured": secret_status["socket_mode_configured"],
             "socket_mode_active": bool(settings.get("socket_mode_active")),
@@ -99,12 +110,21 @@ class SlackService:
             "tls_status": settings.get("tls_status", "Not tested"),
             "slack_api_status": settings.get("slack_api_status", "Not tested"),
             "masked_bot_token": secret_status["masked_bot_token"],
+            "granted_scopes": settings.get("granted_scopes", []),
+            "missing_scopes": settings.get("missing_scopes", []),
         }
 
     def connect(self, payload: SlackConnectRequest) -> dict[str, Any]:
+        if self.repository.settings.app_mode == "cloud" and payload.mode != "events_api":
+            raise RepositoryError("Cloud mode uses Slack Events API. Socket Mode is available in local mode only")
         if not payload.allowed_users:
             raise RepositoryError("Add at least one allowed Slack user before connecting")
-        self.secrets.configure_slack(payload.bot_token, payload.signing_secret, payload.app_token)
+        if self.repository.settings.app_mode == "local":
+            self.secrets.configure_slack(payload.bot_token, payload.signing_secret, payload.app_token)
+        elif not self.secrets.get_slack_secret_status()["configured"]:
+            raise RepositoryError(
+                "Cloud Slack credentials must be configured in the hosting provider's secret store"
+            )
         settings = {
             **self.settings(),
             "mode": payload.mode,
@@ -116,6 +136,8 @@ class SlackService:
         return self.test_connection()
 
     def update_settings(self, payload: SlackSettingsUpdate) -> dict[str, Any]:
+        if self.repository.settings.app_mode == "cloud" and payload.mode != "events_api":
+            raise RepositoryError("Cloud mode uses Slack Events API. Socket Mode is available in local mode only")
         if not payload.allowed_users:
             raise RepositoryError("At least one authorized Slack user is required")
         settings = {
@@ -178,7 +200,77 @@ class SlackService:
             "tls_verification_status": settings.get("tls_status") or tls["tls_verification_status"],
             "slack_api_reachable": settings.get("slack_api_status") == "Connected",
             "socket_mode_status": settings.get("socket_mode_status") or "Not tested",
+            "workflow": self.workflow_diagnostics(),
         }
+
+    def workflow_diagnostics(self) -> dict[str, Any]:
+        status = self.status()
+        app_url = settings.app_url
+        public_ready = bool(app_url and (settings.app_mode == "local" or app_url.startswith("https://")))
+        missing = status.get("missing_scopes") or []
+        return {
+            "connection": self._diagnostic("Ready" if status["connected"] else "Error", status["connection_status"]),
+            "incoming_events": self._diagnostic("Ready" if status.get("last_event_received") else "Not Ready", "A signed event has been received." if status.get("last_event_received") else "Send the bot a DM or mention to verify inbound delivery."),
+            "outgoing_messages": self._diagnostic("Ready" if status.get("last_message_sent") else "Not Ready", "A Slack message was delivered." if status.get("last_message_sent") else "Run the end-to-end test."),
+            "interactive_buttons": self._diagnostic("Ready" if status["configured"] and status.get("allowed_users") else "Not Ready", "Signatures and the authorized-user allowlist are configured."),
+            "file_upload": self._diagnostic("Error" if "files:write" in missing else "Ready" if status.get("last_file_upload_at") else "Not Ready", "Missing files:write scope." if "files:write" in missing else "Run the end-to-end test to verify files:write."),
+            "public_review_url": self._diagnostic("Ready" if public_ready else "Not Ready", app_url or "Set APP_URL. Production review links require HTTPS."),
+            "required_bot_scopes": sorted(REQUIRED_BOT_SCOPES),
+            "granted_scopes": status.get("granted_scopes", []),
+            "missing_scopes": missing,
+        }
+
+    def run_end_to_end_test(self) -> dict[str, Any]:
+        status = self.test_connection()
+        channel_id = status.get("default_channel")
+        if not channel_id:
+            raise RepositoryError("Add a default Slack channel or DM ID before running the end-to-end test")
+        channel = self.channel()
+        message = channel.send_message("", "DINKLY Slack end-to-end test · message delivery ready.", channel_id=str(channel_id))
+        message_ts = str(message.get("ts") or "")
+        channel.update_message(message_ts, "DINKLY Slack end-to-end test · message update ready.", channel_id=str(channel_id))
+        review_url = f"{settings.app_url.rstrip('/')}/approvals" if settings.app_url else None
+        channel.send_buttons(
+            message_ts,
+            "Interactive Button test",
+            [{
+                "label": "Open in DINKLY",
+                "action_id": "dinkly_open_task",
+                "value": json.dumps({"item_type": "diagnostic", "task_id": "diagnostic", "workspace_id": status.get("workspace_id")}),
+                **({"url": review_url} if review_url else {}),
+            }],
+            channel_id=str(channel_id),
+        )
+        file_uploaded = False
+        reference = self.repository.path("references/dinkly_young.png")
+        if reference.is_file():
+            try:
+                channel.send_file(message_ts, reference, "DINKLY file upload test", channel_id=str(channel_id))
+                file_uploaded = True
+            except RepositoryError:
+                file_uploaded = False
+        granted, missing = self.audit_scopes()
+        self._record_health(
+            last_message_sent=datetime.now(UTC).isoformat(),
+            last_file_upload_at=datetime.now(UTC).isoformat() if file_uploaded else None,
+            last_end_to_end_test=datetime.now(UTC).isoformat(),
+            granted_scopes=granted,
+            missing_scopes=missing,
+        )
+        return {"ok": True, "message_ts": message_ts, "file_uploaded": file_uploaded, "workflow": self.workflow_diagnostics()}
+
+    def audit_scopes(self) -> tuple[list[str], list[str]]:
+        try:
+            response = self._transport().call("apps.permissions.scopes.list", {})
+        except RepositoryError:
+            return [], []
+        scope_data = response.get("scopes") or {}
+        granted = sorted({str(scope) for values in scope_data.values() if isinstance(values, list) for scope in values})
+        return granted, sorted(REQUIRED_BOT_SCOPES - set(granted)) if granted else []
+
+    @staticmethod
+    def _diagnostic(state: str, detail: str) -> dict[str, str]:
+        return {"status": state, "detail": detail}
 
     def test_message(self) -> dict[str, Any]:
         """Verify identity and prove outbound delivery to the configured channel."""
@@ -204,7 +296,8 @@ class SlackService:
         return self.status()
 
     def disconnect(self) -> dict[str, Any]:
-        self.secrets.remove_slack()
+        if self.repository.settings.app_mode == "local":
+            self.secrets.remove_slack()
         settings = {**self._defaults(), "connection_status": "Not connected"}
         self.repository.write_json(SLACK_SETTINGS_PATH, settings)
         return self.status()
@@ -215,10 +308,11 @@ class SlackService:
         return verifier.verify(headers.get("x-slack-request-timestamp"), headers.get("x-slack-signature"), body)
 
     def receive_event(self, payload: dict[str, Any]) -> dict[str, Any]:
-        event_id = str(payload.get("event_id") or "")
-        if event_id and not self.tasks.mark_external_event(f"slack:{event_id}"):
-            return {"ok": True, "duplicate": True}
         event = payload.get("event") or {}
+        event_id = str(payload.get("event_id") or "")
+        event_key = event_id or f"{event.get('channel', '')}:{event.get('ts', '')}"
+        if event_key.strip(":") and not self.tasks.mark_external_event(f"slack:{event_key}"):
+            return {"ok": True, "duplicate": True}
         if event.get("bot_id") or event.get("subtype"):
             return {"ok": True, "ignored": "bot_or_subtype"}
         event_type = event.get("type")
@@ -229,6 +323,10 @@ class SlackService:
         channel_id = str(event.get("channel") or "")
         thread_id = str(event.get("thread_ts") or event.get("ts") or event_id)
         self._record_health(last_event_received=datetime.now(UTC).isoformat())
+        incoming_workspace = str(payload.get("team_id") or payload.get("team", {}).get("id") or "")
+        configured_workspace = str(self.settings().get("workspace_id") or "")
+        if incoming_workspace and configured_workspace and incoming_workspace != configured_workspace:
+            return {"ok": False, "unauthorized_workspace": True}
         if user_id not in set(self.settings().get("allowed_users", [])):
             if channel_id:
                 self.channel().send_message(
@@ -241,8 +339,11 @@ class SlackService:
         text = re.sub(rf"<@{re.escape(bot_user_id)}>", "", str(event.get("text") or ""), flags=re.I).strip()
         if len(text) < 2:
             return {"ok": True, "ignored": "empty_instruction"}
-        if text.lower().strip(" .!") in {"cancel current task", "cancel this task"}:
-            current = self.tasks.current(thread_id=thread_id) or self.tasks.current()
+        classification = self.classifier.classify(text)
+        if classification["task_type"] == "cancel_task":
+            current = self.tasks.current(thread_id=thread_id) or self.tasks.latest_for_thread(
+                thread_id, statuses={"queued", "running", "cancellation_requested"}
+            )
             if not current:
                 self.channel().send_message(thread_id, "There is no active task to cancel.", channel_id=channel_id)
                 return {"ok": True, "message": "There is no active task to cancel."}
@@ -255,23 +356,89 @@ class SlackService:
             self.channel().send_status(thread_id, status_text, channel_id=channel_id)
             self._record_health(last_message_sent=datetime.now(UTC).isoformat())
             return {"ok": True, **result}
+        if classification["task_type"] in {"approve", "pass"}:
+            pending = self.tasks.latest_for_thread(thread_id, statuses={"waiting_for_human"})
+            run_ids = (pending or {}).get("run_ids", []) or self.tasks.resolve_context("slack", thread_id).get("recent_run_ids", [])
+            if not run_ids:
+                clarification = "Which pending comic should I update? I do not see one linked to this thread."
+                self.channel().send_message(thread_id, clarification, channel_id=channel_id)
+                return {"ok": True, "clarification": clarification}
+            result = self.approval_receiver(
+                action="approve" if classification["task_type"] == "approve" else "pass",
+                item_type="comic",
+                item_id=run_ids[0],
+                source_channel="slack",
+                source_thread_id=thread_id,
+                user_id=user_id,
+                channel_id=channel_id,
+                external_event_id=event_key,
+            )
+            self.channel().send_message(
+                thread_id,
+                "APPROVED\nComic approved." if classification["task_type"] == "approve" else "PASSED\nComic passed.",
+                channel_id=channel_id,
+            )
+            return {"ok": True, **result}
+        if classification["task_type"] == "unknown":
+            clarification = str(classification.get("clarification") or "What would you like DINKLY to make?")
+            self.channel().send_message(thread_id, clarification, channel_id=channel_id)
+            return {"ok": True, "clarification": clarification}
         result = self.instruction_receiver(
             channel="slack",
             message=text,
             user_id=user_id,
             thread_id=thread_id,
             source_message_id=str(event.get("ts") or event_id),
-            external_event_id=event_id or str(event.get("ts")),
+            external_event_id=event_key,
             channel_id=channel_id,
-        )
-        status = self.channel().send_status(
-            thread_id,
-            "DINKLY Agent · Queued\n✓ Assignment received\n○ Waiting for the Agent worker",
-            channel_id=channel_id,
+            extra_context={
+                **classification["context"],
+                "classified_task_type": classification["task_type"],
+                "classification_confidence": classification["confidence"],
+                "slack_original_message_ts": str(event.get("ts") or event_id),
+                # Prevent the background worker from claiming the task until
+                # the one canonical Slack status message has been persisted.
+                "slack_ack_pending": True,
+            },
         )
         task = result["task"]
-        context = {**task.get("context", {}), "slack_channel_id": channel_id, "slack_status_ts": status.get("ts")}
-        self.tasks.update(task["id"], context=context)
+        task_url = f"{settings.app_url.rstrip('/')}/agent/tasks/{task['id']}" if settings.app_url else None
+        action_value = json.dumps(
+            {
+                "item_type": "task",
+                "task_id": task["id"],
+                "workspace_id": configured_workspace or None,
+            }
+        )
+        status: dict[str, Any] = {}
+        try:
+            status = (
+                self.channel().send_buttons(
+                    thread_id,
+                    "Task received! On it.",
+                    [{
+                        "label": "See task running",
+                        "action_id": "dinkly_open_task",
+                        "value": action_value,
+                        "url": task_url,
+                    }],
+                    channel_id=channel_id,
+                )
+                if task_url
+                else self.channel().send_status(thread_id, "Task received! On it.", channel_id=channel_id)
+            )
+        finally:
+            context = {
+                **task.get("context", {}),
+                "slack_channel_id": channel_id,
+                "slack_thread_ts": thread_id,
+                "slack_original_message_ts": str(event.get("ts") or event_id),
+                "slack_status_ts": status.get("ts"),
+                "slack_task_url": task_url,
+                "slack_workspace_id": configured_workspace or None,
+                "slack_ack_pending": False,
+            }
+            self.tasks.update(task["id"], context=context)
         self._record_health(last_message_sent=datetime.now(UTC).isoformat())
         return {"ok": True, "task": self.tasks.get(task["id"])}
 
@@ -282,12 +449,36 @@ class SlackService:
         user_id = str((payload.get("user") or {}).get("id") or "")
         if user_id not in set(self.settings().get("allowed_users", [])):
             return {"ok": False, "unauthorized": True}
+        workspace_id = str((payload.get("team") or {}).get("id") or "")
+        configured_workspace = str(self.settings().get("workspace_id") or "")
+        if workspace_id and configured_workspace and workspace_id != configured_workspace:
+            return {"ok": False, "unauthorized_workspace": True}
+        self._record_health(last_interaction_received=datetime.now(UTC).isoformat())
         actions = payload.get("actions") or []
         if not actions:
             raise RepositoryError("Slack interaction did not include an action")
         action = actions[0]
-        if str(action.get("action_id")) in {"dinkly_open_comic", "dinkly_open_batch"}:
-            return {"ok": True, "opened": True}
+        action_id = str(action.get("action_id"))
+        if action_id in {"dinkly_retry_task", "dinkly_open_task"}:
+            try:
+                value = json.loads(str(action.get("value") or "{}"))
+            except json.JSONDecodeError as exc:
+                raise RepositoryError("Slack action payload is invalid") from exc
+            supplied_workspace = str(value.get("workspace_id") or "")
+            if configured_workspace and supplied_workspace != configured_workspace:
+                raise RepositoryError("Slack action workspace does not match the configured workspace")
+            if action_id == "dinkly_open_task":
+                return {"ok": True, "opened": True}
+            task = self.tasks.get(str(value.get("task_id") or ""))
+            if task.get("source_channel") != "slack":
+                raise RepositoryError("Slack action is not linked to a Slack task")
+            restarted = self.tasks.restart(task["id"])
+            self.channel().update_message(
+                str((payload.get("message") or {}).get("ts") or ""),
+                "Task received! On it.",
+                channel_id=str((payload.get("channel") or {}).get("id") or ""),
+            )
+            return {"ok": True, "task": restarted}
         action_map = {
             "dinkly_approve": "approve",
             "dinkly_pass": "pass",
@@ -295,14 +486,36 @@ class SlackService:
             "dinkly_try_another": "try_another",
             "dinkly_more_like_this": "more_like_this",
         }
-        requested = action_map.get(str(action.get("action_id")))
-        if not requested:
+        open_action = action_id in {"dinkly_open_comic", "dinkly_open_batch"}
+        requested = action_map.get(action_id)
+        if not requested and not open_action:
             raise RepositoryError("Unknown DINKLY Slack action")
-        value = json.loads(str(action.get("value") or "{}"))
+        try:
+            value = json.loads(str(action.get("value") or "{}"))
+        except json.JSONDecodeError as exc:
+            raise RepositoryError("Slack action payload is invalid") from exc
         channel_id = str((payload.get("channel") or {}).get("id") or "")
         message = payload.get("message") or {}
         thread_id = str(message.get("thread_ts") or message.get("ts") or event_id)
-        return self.approval_receiver(
+        if value.get("item_type") == "comic":
+            task_id = str(value.get("task_id") or "")
+            task = self.tasks.get(task_id) if task_id else None
+            if not task or task.get("source_channel") != "slack" or task.get("source_thread_id") != thread_id:
+                raise RepositoryError("Slack action is not linked to this task thread")
+            if channel_id and (task.get("context") or {}).get("slack_channel_id") not in {None, channel_id}:
+                raise RepositoryError("Slack action channel does not match the task")
+            if str(value.get("item_id") or "") not in set(task.get("run_ids", [])):
+                raise RepositoryError("Slack action does not match the generated comic")
+            expected_candidate = str((task.get("result") or {}).get("recommended_candidate_id") or "")
+            supplied_candidate = str(value.get("candidate_id") or "")
+            if expected_candidate and supplied_candidate != expected_candidate:
+                raise RepositoryError("Slack action candidate does not match the recommended candidate")
+            supplied_workspace = str(value.get("workspace_id") or "")
+            if configured_workspace and supplied_workspace != configured_workspace:
+                raise RepositoryError("Slack action workspace does not match the configured workspace")
+        if open_action:
+            return {"ok": True, "opened": True}
+        result = self.approval_receiver(
             action=requested,
             item_type=value["item_type"],
             item_id=value["item_id"],
@@ -313,6 +526,19 @@ class SlackService:
             channel_id=channel_id,
             external_event_id=event_id,
         )
+        if requested in {"approve", "pass"}:
+            self.channel().update_message(
+                str(message.get("ts") or ""),
+                "APPROVED\nComic approved." if requested == "approve" else "PASSED\nComic passed.",
+                channel_id=channel_id,
+            )
+        elif requested == "fix":
+            self.channel().update_message(
+                str(message.get("ts") or ""),
+                "DINKLY Agent · Repair queued\nFix Issues received. I’ll update this thread.",
+                channel_id=channel_id,
+            )
+        return result
 
     def channel(self) -> SlackAgentChannel:
         return SlackAgentChannel(

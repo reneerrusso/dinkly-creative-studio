@@ -76,6 +76,7 @@ class AgentPortraitTests(unittest.TestCase):
         for label in ("DINKLY Agent", "Approvals", "History"):
             self.assertIn(f'label: "{label}"', sidebar)
         for label in (
+            "Memory",
             "Story Library",
             "Used Storylines",
             "Examples",

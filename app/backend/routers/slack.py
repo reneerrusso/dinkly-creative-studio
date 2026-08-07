@@ -4,10 +4,11 @@ import json
 import logging
 from urllib.parse import parse_qs
 
-from fastapi import APIRouter, Request, status
+from fastapi import APIRouter, BackgroundTasks, Request, status
 
 from app.backend.models.dinkly_agent import SlackConnectRequest, SlackSettingsUpdate
 from app.backend.routers.dinkly_agent import agent, repository, task_service
+from app.backend.services.cloud_task_dispatcher import CloudTaskDispatcher
 from app.backend.services.repository_service import RepositoryError
 from app.backend.services.slack_service import SlackService
 
@@ -20,6 +21,7 @@ service = SlackService(
     cancellation_receiver=agent.request_cancellation,
 )
 logger = logging.getLogger(__name__)
+dispatcher = CloudTaskDispatcher(repository.settings)
 
 
 @router.get("/status")
@@ -51,13 +53,19 @@ def diagnostics() -> dict:
     return service.diagnostics()
 
 
+@router.post("/test/end-to-end")
+def end_to_end_test() -> dict:
+    logger.info("Slack request path=/api/slack/test/end-to-end mode=%s", service.settings()["mode"])
+    return service.run_end_to_end_test()
+
+
 @router.delete("/disconnect")
 def disconnect() -> dict:
     return service.disconnect()
 
 
 @router.post("/events", status_code=status.HTTP_200_OK)
-async def events(request: Request) -> dict:
+async def events(request: Request, background_tasks: BackgroundTasks) -> dict:
     body = await request.body()
     headers = {key.lower(): value for key, value in request.headers.items()}
     if not service.verify_request(headers, body):
@@ -65,11 +73,13 @@ async def events(request: Request) -> dict:
     payload = json.loads(body.decode("utf-8"))
     if payload.get("type") == "url_verification":
         return {"challenge": payload.get("challenge")}
-    return service.receive_event(payload)
+    result = service.receive_event(payload)
+    background_tasks.add_task(dispatcher.dispatch)
+    return result
 
 
 @router.post("/interactions", status_code=status.HTTP_200_OK)
-async def interactions(request: Request) -> dict:
+async def interactions(request: Request, background_tasks: BackgroundTasks) -> dict:
     body = await request.body()
     headers = {key.lower(): value for key, value in request.headers.items()}
     if not service.verify_request(headers, body):
@@ -77,4 +87,6 @@ async def interactions(request: Request) -> dict:
     values = parse_qs(body.decode("utf-8"), keep_blank_values=True)
     if not values.get("payload"):
         raise RepositoryError("Slack interaction payload is missing")
-    return service.receive_interaction(json.loads(values["payload"][0]))
+    result = service.receive_interaction(json.loads(values["payload"][0]))
+    background_tasks.add_task(dispatcher.dispatch)
+    return result

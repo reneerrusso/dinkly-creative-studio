@@ -18,7 +18,7 @@ describe("navigation", () => {
     render(<AppSidebar />);
     expect(screen.queryByText("Story Library")).not.toBeInTheDocument();
     await user.click(screen.getByRole("button", { name: /brain/i }));
-    for (const label of ["Story Library", "Used Storylines", "Examples", "Knowledge Base", "Failure Library"]) {
+    for (const label of ["Memory", "Story Library", "Used Storylines", "Examples", "Knowledge Base", "Failure Library"]) {
       expect(screen.getByText(label)).toBeInTheDocument();
     }
     for (const label of ["Character Bible", "Style Guide", "Prompt Templates"]) expect(screen.queryByText(label)).not.toBeInTheDocument();

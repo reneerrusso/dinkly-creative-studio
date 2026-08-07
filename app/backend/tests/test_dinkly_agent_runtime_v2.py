@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import time
 
+from app.backend.services.agent_channels import SlackAgentChannel
 from app.backend.services.agent_task_service import AgentTaskService
 from app.backend.services.dinkly_agent_runtime import DinklyAgent
 from app.backend.services.repository_service import RepositoryError, RepositoryService
@@ -94,6 +95,30 @@ def test_task_timeout_uses_safe_cancellation(repository: RepositoryService) -> N
     assert result and result["id"] == task["id"]
     assert result["status"] == "cancelled"
     assert "Maximum runtime" in result["cancellation_reason"]
+
+
+def test_cancellation_watchdog_closes_active_persisted_generation(repository: RepositoryService) -> None:
+    tasks = AgentTaskService(repository)
+    agent = DinklyAgent(repository, tasks=tasks)
+    task, _ = tasks.create_task(
+        source_channel="web",
+        source_thread_id="web-default",
+        user_instruction="Generate WINGS / WINGS WITH YOU.",
+        task_type="generate_comic",
+    )
+    tasks.claim_next()
+    tasks.update(task["id"], run_ids=["generation-active"])
+    tasks.request_cancellation(task["id"])
+    tasks.update(task["id"], cancellation_requested_at="2000-01-01T00:00:00+00:00")
+    cancelled_runs: list[str] = []
+    agent.generation.get = lambda _run_id: {"status": "generating"}  # type: ignore[method-assign]
+    agent.generation.cancel = lambda run_id: cancelled_runs.append(run_id) or {"status": "cancelled"}  # type: ignore[method-assign]
+
+    agent._cancellation_watchdog(task["id"])
+
+    assert cancelled_runs == ["generation-active"]
+    assert tasks.get(task["id"])["status"] == "cancelled"
+    assert tasks.get(task["id"])["result"]["watchdog_finalized"] is True
 
 
 def test_completed_source_task_is_removed_after_comic_approval(repository: RepositoryService) -> None:
@@ -239,6 +264,144 @@ def test_slack_provider_and_budget_failures_remain_saved_in_shared_history(repos
         assert failed["status"] == "failed"
         assert error in failed["error"]
         assert any(error in item["message"] for item in tasks.conversation(thread_id=f"slack-failure-{index}"))
+
+
+def test_slack_result_uploads_final_8020_image_and_records_delivery(repository: RepositoryService) -> None:
+    class UploadTransport:
+        def __init__(self) -> None:
+            self.calls: list[tuple[str, dict]] = []
+            self.uploads: list[dict] = []
+
+        def call(self, method: str, payload: dict) -> dict:
+            self.calls.append((method, payload))
+            return {"ok": True, "ts": f"1000.{len(self.calls)}"}
+
+        def upload_file(self, path, **kwargs):
+            self.uploads.append({"path": path, **kwargs})
+            return {"ok": True, "ts": "1000.file"}
+
+    tasks = AgentTaskService(repository)
+    agent = DinklyAgent(repository, tasks=tasks)
+    final_path = repository.path("app-data/generation-engine/final-8020.png")
+    final_path.parent.mkdir(parents=True, exist_ok=True)
+    final_path.write_bytes(b"final-8020")
+    task, _ = tasks.create_task(
+        source_channel="slack",
+        source_thread_id="500.1",
+        source_user_id="UOWNER",
+        user_instruction="Generate PARTY / PARTY WITH YOU.",
+        task_type="generate_comic",
+        context={
+            "slack_channel_id": "C1",
+            "slack_status_ts": "status.1",
+            "slack_task_url": "http://127.0.0.1:3000/agent/tasks/task-1",
+        },
+    )
+    waiting = tasks.complete(
+        task["id"],
+        {
+            "run_id": "generation-1",
+            "concept_title": "PARTY / PARTY WITH YOU",
+            "recommended_candidate_id": "candidate-b",
+            "recommended_candidate": {
+                "id": "candidate-b",
+                "label": "B",
+                "final_image_path": "app-data/generation-engine/final-8020.png",
+                "model_display_name": "Nano Banana 2",
+                "model_power_label": "BALANCED",
+                "qa_status": "Pass",
+                "qa_summary": "All character locks passed.",
+            },
+            "model": "Nano Banana 2",
+            "qa_summary": "All character locks passed.",
+        },
+        run_ids=["generation-1"],
+        waiting_for_human=True,
+    )
+    transport = UploadTransport()
+    channel = SlackAgentChannel(transport, tasks, default_channel="C1")
+    agent._channel = lambda _task: channel  # type: ignore[method-assign]
+    agent._slack_workspace_id = lambda: "T1"  # type: ignore[method-assign]
+
+    agent._deliver_result(waiting)
+
+    assert transport.uploads[0]["path"] == final_path
+    assert transport.uploads[0]["thread_ts"] == "500.1"
+    assert tasks.get(task["id"])["result"]["slack_delivery_status"] == "image_sent"
+    status_update = next(payload for method, payload in transport.calls if method == "chat.update")
+    assert status_update["blocks"][1]["elements"][0]["url"].endswith("/comics/generation-1")
+    actions = [payload for method, payload in transport.calls if method == "chat.postMessage"][-1]
+    assert [item["text"]["text"] for item in actions["blocks"][1]["elements"]] == ["Approve", "Pass", "Fix Issues", "Open in DINKLY"]
+
+
+def test_slack_result_falls_back_to_public_image_link(repository: RepositoryService, monkeypatch) -> None:
+    class LinkTransport:
+        def __init__(self) -> None:
+            self.calls: list[tuple[str, dict]] = []
+
+        def call(self, method: str, payload: dict) -> dict:
+            self.calls.append((method, payload))
+            return {"ok": True, "ts": f"1000.{len(self.calls)}"}
+
+        def upload_file(self, *_args, **_kwargs):
+            raise RepositoryError("Slack file upload failed")
+
+    tasks = AgentTaskService(repository)
+    agent = DinklyAgent(repository, tasks=tasks)
+    path = repository.path("app-data/generation-engine/final.png")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_bytes(b"final")
+    task, _ = tasks.create_task(source_channel="slack", source_thread_id="500.1", user_instruction="Generate comic", task_type="generate_comic", context={"slack_channel_id": "C1", "slack_status_ts": "status.1", "slack_task_url": "http://127.0.0.1:3000/agent/tasks/task-1"})
+    waiting = tasks.complete(task["id"], {"run_id": "generation-1", "recommended_candidate": {"id": "candidate-a", "label": "A", "final_image_path": "app-data/generation-engine/final.png", "final_asset_url": "/generation-assets/final.png"}}, run_ids=["generation-1"], waiting_for_human=True)
+    transport = LinkTransport()
+    agent._channel = lambda _task: SlackAgentChannel(transport, tasks, default_channel="C1")  # type: ignore[method-assign]
+    agent._slack_workspace_id = lambda: "T1"  # type: ignore[method-assign]
+    monkeypatch.setattr("app.backend.services.dinkly_agent_runtime.public_asset_url", lambda *_args: "https://cdn.example/final.png")
+
+    agent._deliver_result(waiting)
+
+    assert tasks.get(task["id"])["result"]["slack_delivery_status"] == "link_sent"
+    image = next(payload for method, payload in transport.calls if method == "chat.postMessage" and len(payload.get("blocks", [])) == 2 and payload["blocks"][1].get("type") == "image")
+    assert image["blocks"][1]["image_url"] == "https://cdn.example/final.png"
+
+
+def test_slack_result_delivery_failure_never_loses_waiting_task(repository: RepositoryService) -> None:
+    class FailingUploadTransport:
+        def call(self, method: str, payload: dict) -> dict:
+            if method == "chat.update":
+                return {"ok": True, "ts": "status.1"}
+            if method == "chat.postMessage":
+                raise RepositoryError("Slack API unavailable")
+            return {"ok": True}
+
+        def upload_file(self, *_args, **_kwargs):
+            raise RepositoryError("Slack file upload failed")
+
+    tasks = AgentTaskService(repository)
+    agent = DinklyAgent(repository, tasks=tasks)
+    path = repository.path("app-data/generation-engine/final.png")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_bytes(b"final")
+    task, _ = tasks.create_task(source_channel="slack", source_thread_id="500.1", user_instruction="Generate comic", task_type="generate_comic", context={"slack_channel_id": "C1", "slack_status_ts": "status.1", "slack_task_url": "http://127.0.0.1:3000/agent/tasks/task-1"})
+    waiting = tasks.complete(task["id"], {"run_id": "generation-1", "recommended_candidate": {"id": "candidate-a", "label": "A", "final_image_path": "app-data/generation-engine/final.png"}}, run_ids=["generation-1"], waiting_for_human=True)
+    agent._channel = lambda _task: SlackAgentChannel(FailingUploadTransport(), tasks, default_channel="C1")  # type: ignore[method-assign]
+    agent._slack_workspace_id = lambda: "T1"  # type: ignore[method-assign]
+
+    agent._deliver_result(waiting)
+
+    saved = tasks.get(task["id"])
+    assert saved["status"] == "waiting_for_human"
+    assert saved["result"]["slack_delivery_status"] == "failed"
+
+
+def test_slack_delivery_issue_keeps_safe_api_error_code() -> None:
+    issue = DinklyAgent._slack_delivery_issue(
+        "Slack API error: missing_scope token=xoxb-do-not-store https://secret.example"
+    )
+
+    assert issue == "Slack API error: missing_scope"
+    assert "token" not in issue
+    assert "http" not in issue
 
 
 def test_scheduled_concept_work_uses_automatic_budget_source(repository: RepositoryService) -> None:

@@ -18,6 +18,12 @@ export default function ApprovalsPage() {
   const [pending, setPending] = useState(new Set<string>());
   const load = useCallback(() => api<AgentApprovals>("/api/dinkly-agent/approvals").then(setData), []);
   useEffect(() => { load().catch(() => setData({ concepts: [], comics: [], brain_updates: [] })); const poll = window.setInterval(() => load().catch(() => undefined), 3000); return () => window.clearInterval(poll); }, [load]);
+  useEffect(() => {
+    if (!data || selection || typeof window === "undefined") return;
+    const runId = new URLSearchParams(window.location.search).get("run_id");
+    const run = data.comics.find(item => item.id === runId);
+    if (run) setSelection({ kind: "comic", item: run });
+  }, [data, selection]);
 
   async function decide(action: ApprovalDecision, itemType: ApprovalKind, itemId: string, notes?: string) {
     setPending(current => new Set(current).add(itemId));

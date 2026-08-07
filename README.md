@@ -10,7 +10,13 @@ The primary routes are deliberately small:
 - **Approvals** (`/approvals`) contains only concepts, comics, and Brain updates that need human judgment.
 - **History** (`/history`) reads like the Agent's employee work log across web, Slack, scheduled work, and learning.
 
-The DINKLY Brain remains available in the sidebar: Story Library, Used Storylines, Examples, Failure Library, and Knowledge Base. Existing specialist services, social evidence, motion tooling, local data, tests, schemas, prompts, and generated assets remain preserved internal capabilities, not separate visible employees.
+The DINKLY Brain remains available in the sidebar: Memory, Story Library, Used Storylines, Examples, Failure Library, and Knowledge Base. Existing specialist services, social evidence, motion tooling, local data, tests, schemas, prompts, and generated assets remain preserved internal capabilities, not separate visible employees.
+
+## Cloud mode and persistent memory
+
+`APP_MODE=local` preserves the existing JSON/filesystem worker workflow. `APP_MODE=cloud` uses Supabase Postgres for tasks, conversations, generation metadata, checkpoints, preferences, and evidence-linked memory; Supabase Storage holds references and generated assets; a stateless FastAPI API dispatches durable work to a scale-to-zero task runner. Web and Slack therefore use one backend source of truth without treating an LLM or Git checkout as dynamic memory.
+
+Begin with [`docs/CLOUD_DEPLOYMENT.md`](docs/CLOUD_DEPLOYMENT.md), then follow [`docs/SUPABASE_SETUP.md`](docs/SUPABASE_SETUP.md), [`docs/SLACK_CLOUD_SETUP.md`](docs/SLACK_CLOUD_SETUP.md), [`docs/DINKLY_MEMORY.md`](docs/DINKLY_MEMORY.md), and [`docs/DINKLY_LEARNING_ENGINE.md`](docs/DINKLY_LEARNING_ENGINE.md). Deployment is not complete until the laptop-off acceptance in the cloud guide passes.
 
 ## Generation Engine quick start
 
@@ -85,7 +91,7 @@ The underlying production loop remains complete:
 4. **Review:** classify artwork failures and generate a targeted edit or regeneration recommendation.
 5. **Integrate:** build story-first branded, placeholder, second-pass, and evergreen prompts.
 
-It also provides repository search, a failure library, approved examples, a Markdown knowledge editor, system health, and local preferences. It does not add authentication, analytics tracking, cloud storage, or an external database.
+It also provides repository search, a failure library, approved examples, a Markdown knowledge editor, system health, and local preferences. Cloud mode adds backend-only Supabase persistence and object storage; authentication and analytics remain outside version one.
 
 ### Social Intelligence Agent
 

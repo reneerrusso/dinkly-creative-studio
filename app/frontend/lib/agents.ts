@@ -1,5 +1,5 @@
 import type { LucideIcon } from "lucide-react";
-import { AlertTriangle, BookHeart, BookOpenText, Download, FileCheck2, FileText, Settings, Sparkles } from "lucide-react";
+import { AlertTriangle, BookHeart, BookOpenText, BrainCircuit, Download, FileCheck2, FileText, Settings, Sparkles } from "lucide-react";
 
 export interface AgentAction {
   label: string;
@@ -189,6 +189,7 @@ export interface SecondaryNavigationItem {
 }
 
 export const brainNavigation: SecondaryNavigationItem[] = [
+  { label: "Memory", href: "/memory", icon: BrainCircuit },
   { label: "Story Library", href: "/story-library", icon: BookHeart },
   { label: "Used Storylines", href: "/used-storylines", icon: BookHeart },
   { label: "Examples", href: "/examples", icon: FileText },

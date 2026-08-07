@@ -144,6 +144,19 @@ def test_model_registry_and_selection_rules() -> None:
     assert registry.select(coffee_brief(), "pro", reference_count=2, allow_pro=True)[0] == "nano_banana_pro"
 
 
+def test_generation_history_keeps_source_and_slack_delivery_on_canonical_run(engine) -> None:
+    service, _ = engine
+    run = service.start(GenerationRequest(story_brief=coffee_brief(), candidate_count=1))
+
+    service.record_source(run["id"], source_channel="slack", source_task_id="task-123")
+    service.record_slack_delivery(run["id"], status="image_sent")
+
+    saved = next(item for item in service.history() if item["id"] == run["id"])
+    assert saved["source_channel"] == "slack"
+    assert saved["source_task_id"] == "task-123"
+    assert saved["slack_delivery_status"] == "image_sent"
+
+
 def test_four_candidates_qa_ranking_approval_history_and_prompt_hiding(engine) -> None:
     service, _ = engine
     service.repository.write_json("data/existing-content.json", {"preserve": True})

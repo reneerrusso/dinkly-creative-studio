@@ -59,6 +59,46 @@ class SlackWebApiTransport:
             raise RepositoryError(f"Slack API error: {result.get('error', 'unknown_error')}")
         return result
 
+    def upload_file(
+        self,
+        path: Path,
+        *,
+        channel_id: str,
+        thread_ts: str,
+        title: str,
+        initial_comment: str | None = None,
+    ) -> dict[str, Any]:
+        try:
+            content = path.read_bytes()
+        except OSError as exc:
+            raise RepositoryError("Slack image file is unavailable") from exc
+        prepared = self.call("files.getUploadURLExternal", {"filename": path.name, "length": len(content)})
+        upload_url = str(prepared.get("upload_url") or "")
+        file_id = str(prepared.get("file_id") or "")
+        if not upload_url or not file_id:
+            raise RepositoryError("Slack file upload did not return an upload destination")
+        request = urllib.request.Request(
+            upload_url,
+            data=content,
+            headers={"Content-Type": media_type_for(path.name)},
+            method="POST",
+        )
+        try:
+            with urllib.request.urlopen(request, timeout=self.timeout, context=self.ssl_context) as response:
+                if response.status >= 300:
+                    raise RepositoryError(f"Slack file upload failed with HTTP {response.status}")
+        except (urllib.error.URLError, OSError) as exc:
+            raise RepositoryError("Slack file upload failed") from exc
+        return self.call(
+            "files.completeUploadExternal",
+            {
+                "files": [{"id": file_id, "title": title[:255]}],
+                "channel_id": channel_id,
+                "thread_ts": thread_ts,
+                **({"initial_comment": initial_comment} if initial_comment else {}),
+            },
+        )
+
 
 class AgentChannel(ABC):
     @abstractmethod
@@ -239,6 +279,25 @@ class SlackAgentChannel(AgentChannel):
         self.tasks.record_outbox({"channel": "slack", "kind": "image", "thread_id": thread_id, "image_url": image_url, "message_id": result.get("ts")})
         return result
 
+    def send_file(
+        self,
+        thread_id: str,
+        path: Path,
+        title: str,
+        *,
+        channel_id: str | None = None,
+        details: str | None = None,
+    ) -> dict[str, Any]:
+        channel = self._channel(channel_id)
+        uploader = getattr(self.transport, "upload_file", None)
+        if not callable(uploader):
+            raise RepositoryError("Slack file upload is unavailable for the configured transport")
+        result = uploader(path, channel_id=channel, thread_ts=thread_id, title=title, initial_comment=details)
+        self.tasks.record_outbox(
+            {"channel": "slack", "kind": "file", "thread_id": thread_id, "path": str(path), "message_id": result.get("ts")}
+        )
+        return result
+
     def send_buttons(
         self,
         thread_id: str,
@@ -248,30 +307,46 @@ class SlackAgentChannel(AgentChannel):
         channel_id: str | None = None,
     ) -> dict[str, Any]:
         channel = self._channel(channel_id)
-        elements = [
-            {
-                "type": "button",
-                "text": {"type": "plain_text", "text": item["label"][:75]},
-                "action_id": item["action_id"],
-                "value": item["value"][:2000],
-                **({"url": item["url"]} if item.get("url") else {}),
-                **({"style": item["style"]} if item.get("style") else {}),
-            }
-            for item in buttons
-        ]
         result = self.transport.call(
             "chat.postMessage",
             {
                 "channel": channel,
                 "thread_ts": thread_id,
                 "text": message,
-                "blocks": [
-                    {"type": "section", "text": {"type": "mrkdwn", "text": message}},
-                    {"type": "actions", "elements": elements},
-                ],
+                "blocks": self._button_blocks(message, buttons),
             },
         )
         self.tasks.record_outbox({"channel": "slack", "kind": "buttons", "thread_id": thread_id, "buttons": buttons, "message_id": result.get("ts")})
+        return result
+
+    def update_buttons(
+        self,
+        message_id: str,
+        message: str,
+        buttons: list[dict[str, str]],
+        *,
+        channel_id: str | None = None,
+    ) -> dict[str, Any]:
+        """Update one working message while preserving its deep-link action."""
+        channel = self._channel(channel_id)
+        result = self.transport.call(
+            "chat.update",
+            {
+                "channel": channel,
+                "ts": message_id,
+                "text": message,
+                "blocks": self._button_blocks(message, buttons),
+            },
+        )
+        self.tasks.record_outbox(
+            {
+                "channel": "slack",
+                "kind": "update_buttons",
+                "message_id": message_id,
+                "message": message,
+                "buttons": buttons,
+            }
+        )
         return result
 
     def update_message(self, message_id: str, message: str, *, channel_id: str | None = None) -> dict[str, Any]:
@@ -288,6 +363,24 @@ class SlackAgentChannel(AgentChannel):
         if not channel:
             raise RepositoryError("A Slack channel is required")
         return channel
+
+    @staticmethod
+    def _button_blocks(message: str, buttons: list[dict[str, str]]) -> list[dict[str, Any]]:
+        elements = [
+            {
+                "type": "button",
+                "text": {"type": "plain_text", "text": item["label"][:75]},
+                "action_id": item["action_id"],
+                "value": item["value"][:2000],
+                **({"url": item["url"]} if item.get("url") else {}),
+                **({"style": item["style"]} if item.get("style") else {}),
+            }
+            for item in buttons
+        ]
+        return [
+            {"type": "section", "text": {"type": "mrkdwn", "text": message}},
+            {"type": "actions", "elements": elements},
+        ]
 
 
 def public_asset_url(public_base_url: str, asset_url: str) -> str | None:

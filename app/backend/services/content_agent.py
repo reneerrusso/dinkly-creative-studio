@@ -2,31 +2,18 @@ from __future__ import annotations
 
 import json
 import os
-from abc import ABC, abstractmethod
 from typing import Any
 
 import httpx
 
 from app.backend.models.content_agent import ContentFormat
+from app.backend.providers.reasoning_model import ReasoningModelProvider
 from app.backend.services.repository_service import RepositoryError
 from app.backend.services.secrets_service import SecretsService
 
 
-class ContentModelProvider(ABC):
-    name = "unavailable"
-    development_fixture = False
-    real_provider = False
-    estimated_batch_cost = 1.0
-
-    @property
-    @abstractmethod
-    def configured(self) -> bool: ...
-
-    @abstractmethod
-    def generate_candidates(self, content_format: ContentFormat, brief: dict[str, Any], count: int) -> list[dict[str, Any]]: ...
-
-    def health(self) -> dict[str, Any]:
-        return {"configured": self.configured, "provider": self.name, "real_provider": self.real_provider}
+class ContentModelProvider(ReasoningModelProvider):
+    """Backward-compatible name for the canonical reasoning-provider boundary."""
 
 
 class UnavailableContentModelProvider(ContentModelProvider):

@@ -3,6 +3,8 @@ from __future__ import annotations
 import json
 import re
 import threading
+import uuid
+from contextlib import suppress
 from datetime import UTC, datetime
 from typing import Any
 
@@ -14,7 +16,12 @@ from app.backend.models.generation_engine import (
     StoryBrief,
     StoryBriefRequest,
 )
-from app.backend.services.agent_channels import AgentChannel, WebAgentChannel, public_asset_url
+from app.backend.services.agent_channels import (
+    AgentChannel,
+    SlackAgentChannel,
+    WebAgentChannel,
+    public_asset_url,
+)
 from app.backend.services.agent_task_service import AgentTaskService
 from app.backend.services.agent_visual_state_service import AgentVisualStateService, DinklyLearningLoop
 from app.backend.services.concept_service import ConceptService
@@ -23,6 +30,8 @@ from app.backend.services.generation_engine_service import (
     GenerationCancellationRequested,
     GenerationEngineService,
 )
+from app.backend.services.learning_engine import BrainProposalService
+from app.backend.services.memory_service import MemoryService
 from app.backend.services.prompt_service import PromptService
 from app.backend.services.repository_service import RepositoryError, RepositoryService
 
@@ -56,6 +65,8 @@ class DinklyAgent:
         self.visual = visual or AgentVisualStateService(repository)
         self.learning = learning or DinklyLearningLoop(repository, self.visual)
         self.concepts = concepts or ConceptGeneratorService(repository)
+        self.memory = MemoryService(repository)
+        self.brain_proposals = BrainProposalService(repository)
         self.generation = generation or GenerationEngineService(
             repository,
             PromptService(repository, ConceptService(repository)),
@@ -74,6 +85,11 @@ class DinklyAgent:
         extra_context: dict[str, Any] | None = None,
     ) -> dict[str, Any]:
         plan = self.plan_task(message)
+        classified_type = (extra_context or {}).get("classified_task_type")
+        if classified_type in {
+            "generate_comic", "generate_concepts", "repair_comic", "brain_query", "feedback"
+        }:
+            plan["task_type"] = classified_type
         prior = self.tasks.resolve_context(channel, thread_id)
         if not prior.get("recent_task_id"):
             prior = self._global_recent_context()
@@ -154,7 +170,7 @@ class DinklyAgent:
             },
             dedupe_key=f"approval:{source_channel}:{external_event_id}" if external_event_id else None,
         )
-        if created:
+        if created and action not in {"fix", "try_another", "more_like_this"}:
             task = self.tasks.update(task["id"], status="running", started_at=datetime.now(UTC).isoformat())
             task = self.invoke_tool(task)
         return {"task": task, "created": created, "reply": "Your decision is recorded."}
@@ -190,7 +206,11 @@ class DinklyAgent:
             task_type = "learn"
         elif any(word in lower for word in ("concept", "concepts", "idea", "ideas")):
             task_type = "generate_concepts"
-        elif "/" in text or any(phrase in lower for phrase in ("generate the", "generate comic", "make a comic", "create a comic")):
+        elif (
+            "/" in text
+            or re.search(r"\b(?:and|vs\.?|versus|compared to)\b.+\bwith you\b", lower)
+            or any(phrase in lower for phrase in ("generate the", "generate comic", "make a comic", "create a comic", "make me a comic", "create me a comic"))
+        ):
             task_type = "generate_comic"
         elif re.search(r"\b(approve|pass)\b", lower):
             task_type = "approval"
@@ -238,7 +258,8 @@ class DinklyAgent:
             failed = self.tasks.update(failed["id"], result={"message": f"Assignment failed: {message}"})
             self.visual.transition("error", message, source_run_id=task["id"], details={"task_id": task["id"]})
             self._append_agent_message(failed, f"I couldn't finish that: {message}")
-            self._notify_status(failed, f"DINKLY Agent · Needs attention\n{message}")
+            self._notify_status(failed, f"DINKLY hit an issue while generating this comic.\n\n{self._slack_failure_reason(message)}")
+            self._deliver_failure(failed)
             self._deliver_proactive(failed)
             return failed
         finally:
@@ -280,13 +301,15 @@ class DinklyAgent:
             task = self.tasks.get(task_id)
             if task.get("status") != "cancellation_requested":
                 return
-            # A linked run in an active provider/layout/QA state still owns the
-            # task. Its real safe checkpoint must finalize cancellation; the
-            # watchdog is only for orphaned request-owned tasks.
+            # Stop every linked persisted run after the short grace period.
+            # A provider request may still return because Gemini does not
+            # expose remote cancellation, but should_cancel() will discard it.
+            # Keeping the persisted task in STOPPING until that network call
+            # returns made cancellation appear hung indefinitely.
             for run_id in task.get("run_ids", []):
                 try:
                     if self.generation.get(run_id).get("status") in {"compiling", "generating", "reviewing", "repairing"}:
-                        return
+                        self.generation.cancel(run_id)
                 except RepositoryError:
                     continue
             finalized = self.tasks.finalize_stale_cancellations(task_id=task_id)
@@ -391,11 +414,26 @@ class DinklyAgent:
             linked_artifact_ids=context.get("recent_artifact_ids", []),
         )
         self._persist_preference_links(preference)
+        durable_memory = self.memory.extract_and_store(
+            task["user_instruction"],
+            source_type=str(task.get("source_channel") or "agent_chat"),
+            source_id=task.get("id"),
+            evidence_ids=list(
+                dict.fromkeys(
+                    [
+                        task["id"],
+                        *context.get("recent_run_ids", []),
+                        *context.get("recent_artifact_ids", []),
+                    ]
+                )
+            ),
+        )
         result = {
             "message": feedback["reply"],
             "preference": preference,
             "linked_run_ids": context.get("recent_run_ids", []),
             "linked_artifact_ids": context.get("recent_artifact_ids", []),
+            "memory_record": durable_memory,
         }
         return self.complete_task(task, result)
 
@@ -409,6 +447,30 @@ class DinklyAgent:
                     self.repository.write_json(path, records)
                     return record
         raise RepositoryError("Brain update not found")
+
+    def _record_approval_decision(
+        self,
+        task: dict[str, Any],
+        *,
+        item_type: str,
+        item_id: str,
+        decision: str,
+        notes: str | None = None,
+    ) -> None:
+        records = self.repository.read_json("app-data/dinkly-agent/approvals.json", [])
+        records.append(
+            {
+                "id": f"approval-{uuid.uuid4().hex[:12]}",
+                "item_type": item_type,
+                "item_id": item_id,
+                "decision": decision,
+                "notes": notes,
+                "channel": task.get("source_channel") or "web",
+                "user_id": task.get("source_user_id"),
+                "created_at": datetime.now(UTC).isoformat(),
+            }
+        )
+        self.repository.write_json("app-data/dinkly-agent/approvals.json", records[-5000:])
 
     def complete_task(
         self,
@@ -431,6 +493,16 @@ class DinklyAgent:
         concepts = [item for item in self.concepts.list_concepts() if item.get("status") == "candidate"]
         comics = [item for item in self.generation.history() if item.get("status") == "awaiting_human"]
         brain = [item for item in self.learning.recent_learnings(100) if item.get("status") == "proposed"]
+        brain.extend(
+            {
+                **proposal,
+                "statement": proposal.get("edited_rule") or proposal.get("proposed_rule"),
+                "learning_type": "permanent_brain_rule",
+                "status": "proposed",
+                "is_brain_proposal": True,
+            }
+            for proposal in self.brain_proposals.list(status="pending")
+        )
         return {"concepts": concepts, "comics": comics, "brain_updates": brain}
 
     def task_events(self, task_id: str, after: str | None = None) -> list[dict[str, Any]]:
@@ -548,11 +620,17 @@ class DinklyAgent:
             )
         )
         task = self.tasks.update(task["id"], run_ids=[run["id"]])
+        self.generation.record_source(
+            run["id"],
+            source_channel=str(task["source_channel"]),
+            source_task_id=str(task["id"]),
+        )
         self._checkpoint(task["id"], "After prompt compilation and reference loading")
         self._notify_status(task, self._status_message(task, "generating"))
         self.generation.execute(
             run["id"],
             should_cancel=lambda: self.tasks.get(task["id"]).get("status") in {"cancellation_requested", "cancelled"},
+            on_progress=lambda progress: self._slack_generation_progress(task, progress),
         )
         self._checkpoint(task["id"], "Before approval preparation")
         run = self.generation.get(run["id"])
@@ -620,6 +698,32 @@ class DinklyAgent:
         self._checkpoint(task["id"], "Before learning")
         self.emit_event(task, "learning", "Reviewing new production evidence.")
         learned = self.learning.run()
+        for learning in learned.get("learnings", []):
+            learning_type = str(learning.get("learning_type") or "generation_learning")
+            memory_type = {
+                "prompt": "prompt_learning",
+                "qa": "qa_learning",
+                "layout": "layout_learning",
+                "model": "model_learning",
+                "failure": "failure_pattern",
+            }.get(learning_type, "generation_learning")
+            now = datetime.now(UTC).isoformat()
+            self.memory.upsert(
+                {
+                    "id": f"memory-{learning['id']}",
+                    "memory_type": memory_type,
+                    "key": str(learning["id"]),
+                    "summary": str(learning.get("statement") or "Production learning"),
+                    "value_json": {"learning_type": learning_type, "source_record": learning},
+                    "confidence": learning.get("confidence", "low"),
+                    "source_type": "production_learning_loop",
+                    "source_id": learning.get("id"),
+                    "evidence_ids": learning.get("evidence_ids", []),
+                    "active": learning.get("status") != "rejected",
+                    "created_at": learning.get("created_at") or now,
+                    "updated_at": learning.get("updated_at") or now,
+                }
+            )
         self._checkpoint(task["id"], "After learning")
         if learned.get("ran"):
             message = f"Learning review complete. I proposed {len(learned.get('learnings', []))} Brain update(s)."
@@ -639,9 +743,9 @@ class DinklyAgent:
             message = f"I am working on {len(running)} assignment(s), with {len(queued)} queued."
             result = {"message": message, "running": running, "queued": queued}
         else:
-            learnings = self.learning.recent_learnings(8)
-            message = "Here are my latest evidence-linked Brain updates." if learnings else "I do not have a new evidence-backed learning yet."
-            result = {"message": message, "learnings": learnings}
+            memory_answer = self.memory.answer(task["user_instruction"])
+            message = memory_answer["answer"]
+            result = {"message": message, **memory_answer}
         return self.complete_task(task, result)
 
     def _handle_approval(self, task: dict[str, Any]) -> dict[str, Any]:
@@ -659,6 +763,9 @@ class DinklyAgent:
                 if not context.get("notes"):
                     raise RepositoryError("Describe the concept edit before saving it")
                 record = self.concepts.edit(item_id, {"why_it_may_work": context["notes"]})
+                self._record_approval_decision(
+                    task, item_type=item_type, item_id=item_id, decision=action, notes=context.get("notes")
+                )
                 return self.complete_task(task, {"message": "Concept edit saved for review.", "concept": record})
             if action == "more_like_this":
                 task["context"] = {**context, "recent_artifact_ids": [item_id]}
@@ -669,8 +776,25 @@ class DinklyAgent:
                 if action == "approve"
                 else self.concepts.pass_concept(item_id, context.get("notes"))
             )
+            self._record_approval_decision(
+                task, item_type=item_type, item_id=item_id, decision=action, notes=context.get("notes")
+            )
             return self.complete_task(task, {"message": f"Concept {action.replace('_', ' ')} recorded.", "concept": record})
         if item_type == "brain_update":
+            if str(item_id).startswith("brain-proposal-"):
+                record = self.brain_proposals.decide(
+                    item_id,
+                    decision="reject" if action == "pass" else action,
+                    edited_rule=context.get("notes"),
+                    reviewed_by=task.get("source_user_id") or "Human reviewer",
+                )
+                self._record_approval_decision(
+                    task, item_type=item_type, item_id=item_id, decision=action, notes=context.get("notes")
+                )
+                return self.complete_task(
+                    task,
+                    {"message": f"Brain proposal {action} recorded.", "learning": record},
+                )
             if action == "edit":
                 if not context.get("notes"):
                     raise RepositoryError("Enter the revised Brain learning before saving it")
@@ -681,8 +805,14 @@ class DinklyAgent:
                     if any(item.get("id") == item_id for item in records):
                         self.repository.write_json(path, [record if item.get("id") == item_id else item for item in records])
                         break
+                self._record_approval_decision(
+                    task, item_type=item_type, item_id=item_id, decision=action, notes=context.get("notes")
+                )
                 return self.complete_task(task, {"message": "Brain update revision saved for review.", "learning": record})
             record = self.update_memory(item_id, "active" if action == "approve" else "rejected")
+            self._record_approval_decision(
+                task, item_type=item_type, item_id=item_id, decision=action, notes=context.get("notes")
+            )
             return self.complete_task(task, {"message": f"Brain update {action} recorded.", "learning": record})
         if item_type == "comic":
             run = self.generation.get(item_id)
@@ -694,21 +824,26 @@ class DinklyAgent:
                     self.generation.select_candidate(candidate["id"])
                 approved = self.generation.approve(item_id, task.get("source_user_id") or "Human reviewer")
                 self._complete_source_generation_task(item_id, approved)
-                learning_task, learning_created = self.tasks.create_task(
+                self.tasks.create_task(
                     source_channel="learning",
                     source_thread_id=f"approval-{item_id}",
                     user_instruction=f"Learn from approved generation {item_id}",
                     task_type="learn",
                     dedupe_key=f"learning:approval:{item_id}",
                 )
-                if learning_created:
-                    learning_task = self.tasks.update(
-                        learning_task["id"], status="running", started_at=datetime.now(UTC).isoformat()
-                    )
-                    self.invoke_tool(learning_task)
+                self._record_approval_decision(
+                    task, item_type=item_type, item_id=item_id, decision=action, notes=context.get("notes")
+                )
+                # Learning stays in the same persisted queue. Running it inline
+                # made Slack approval requests block and could orphan the
+                # approval task if the HTTP/Socket request ended first.
                 return self.complete_task(task, {"message": "Comic approved and saved to History.", "run": approved}, run_ids=[item_id])
             if action in {"pass", "reject"}:
                 rejected = self.generation.reject(item_id, context.get("notes"))
+                self._complete_source_generation_task(item_id, rejected, decision="passed")
+                self._record_approval_decision(
+                    task, item_type=item_type, item_id=item_id, decision=action, notes=context.get("notes")
+                )
                 return self.complete_task(task, {"message": "Comic passed. The candidates remain in History.", "run": rejected}, run_ids=[item_id])
             if action == "more_like_this":
                 return self.handle_feedback({**task, "user_instruction": "I love this. Give me more concepts like this."})
@@ -716,7 +851,13 @@ class DinklyAgent:
             return self._repair_comic(task)
         raise RepositoryError("Unknown approval item type")
 
-    def _complete_source_generation_task(self, run_id: str, approved: dict[str, Any]) -> None:
+    def _complete_source_generation_task(
+        self,
+        run_id: str,
+        approved: dict[str, Any],
+        *,
+        decision: str = "approved",
+    ) -> None:
         """Close the persisted generation task that owns an approved run."""
         source = next(
             (
@@ -730,18 +871,19 @@ class DinklyAgent:
         if not source:
             return
         prior = source.get("result") or {}
-        message = "Comic approved and saved to History."
+        message = "Comic approved and saved to History." if decision == "approved" else "Comic passed. The candidates remain in History."
         completed = self.tasks.complete(
             source["id"],
             {**prior, "message": message, "run": approved},
             run_ids=[run_id],
             artifact_ids=source.get("artifact_ids", []),
         )
+        event_type = "comic_approved" if decision == "approved" else "comic_passed"
         self.visual.transition(
             "success",
             message,
             source_run_id=source["id"],
-            details={"event_type": "comic_approved", "task_id": source["id"], "run_id": run_id},
+            details={"event_type": event_type, "task_id": source["id"], "run_id": run_id},
         )
         self.visual.record_activity(
             "Generation task completed after comic approval.",
@@ -753,6 +895,21 @@ class DinklyAgent:
                 "status": completed["status"],
             },
         )
+        if source.get("source_channel") == "slack":
+            context = source.get("context") or {}
+            message_id = context.get("slack_actions_ts") or context.get("slack_status_ts")
+            if message_id:
+                try:
+                    self._channel(source).update_message(
+                        str(message_id),
+                        "APPROVED\nComic approved." if decision == "approved" else "PASSED\nComic passed.",
+                        channel_id=context.get("slack_channel_id"),
+                    )
+                except RepositoryError:
+                    self.visual.record_activity(
+                        "Slack decision update failed; the web decision remains saved.",
+                        details={"task_id": source["id"], "run_id": run_id},
+                    )
 
     def _custom(self, task: dict[str, Any]) -> dict[str, Any]:
         raise RepositoryError("I can generate concepts or comics, review and repair artwork, learn, or report what is waiting.")
@@ -819,12 +976,26 @@ class DinklyAgent:
     def _notify_status(self, task: dict[str, Any], message: str) -> None:
         context = task.get("context") or {}
         try:
-            self._channel(task).send_status(
-                task["source_thread_id"],
-                message,
-                channel_id=context.get("slack_channel_id"),
-                message_id=context.get("slack_status_ts"),
-            )
+            channel = self._channel(task)
+            if (
+                task["source_channel"] == "slack"
+                and isinstance(channel, SlackAgentChannel)
+                and context.get("slack_status_ts")
+                and context.get("slack_task_url")
+            ):
+                channel.update_buttons(
+                    str(context["slack_status_ts"]),
+                    message,
+                    [self._slack_link_button(task, "See task running", str(context["slack_task_url"]))],
+                    channel_id=context.get("slack_channel_id"),
+                )
+            else:
+                channel.send_status(
+                    task["source_thread_id"],
+                    message,
+                    channel_id=context.get("slack_channel_id"),
+                    message_id=context.get("slack_status_ts"),
+                )
             if task["source_channel"] == "slack":
                 from app.backend.services.slack_service import SlackService
 
@@ -838,67 +1009,284 @@ class DinklyAgent:
             if task["source_channel"] == "slack":
                 self.visual.record_activity("Slack delivery failed; the assignment remains saved.", details={"task_id": task["id"]})
 
+    def _slack_generation_progress(self, task: dict[str, Any], progress: dict[str, Any]) -> None:
+        if task.get("source_channel") != "slack":
+            return
+        stage = str(progress.get("stage") or "generate")
+        completed = int(progress.get("completed") or 0)
+        total = int(progress.get("total") or 4)
+        active = {
+            "generate": f"● Generating {completed} / {total}\n○ DINKLY layout\n○ QA\n○ Approval",
+            "layout": f"✓ Generating {completed} / {total}\n● DINKLY layout\n○ QA\n○ Approval",
+            "qa": f"✓ Generating {total} / {total}\n✓ DINKLY layout\n● QA {completed} / {total}\n○ Approval",
+            "approval": f"✓ Generating {total} / {total}\n✓ DINKLY layout\n✓ QA {total} / {total}\n● Approval",
+        }.get(stage, f"● {stage.replace('_', ' ').title()}")
+        self._notify_status(
+            self.tasks.get(task["id"]),
+            "DINKLY Agent · Working\n\n✓ Story brief\n✓ Prompt compiled\n✓ DINKLY references\n" + active,
+        )
+
     def _deliver_result(self, task: dict[str, Any]) -> None:
         result = task.get("result") or {}
-        self._notify_status(task, self._status_message(task, "finished"))
         if task["source_channel"] != "slack":
+            self._notify_status(task, self._status_message(task, "finished"))
             self._deliver_proactive(task)
             return
         if task.get("status") != "waiting_for_human":
+            self._notify_status(task, self._status_message(task, "finished"))
             return
         channel = self._channel(task)
         context = task.get("context") or {}
         thread_id = task["source_thread_id"]
         channel_id = context.get("slack_channel_id")
         candidate = result.get("recommended_candidate") or {}
-        image_url = public_asset_url(settings.public_base_url, str(candidate.get("asset_url") or ""))
-        if image_url:
-            image_details = " · ".join(
-                value for value in (str(result.get("model") or ""), str(result.get("qa_summary") or "")) if value
+        run_id = str(result.get("run_id") or "")
+        review_url = self._review_url(run_id) if run_id else None
+        ready_message = self._slack_ready_message(result)
+        if (
+            isinstance(channel, SlackAgentChannel)
+            and context.get("slack_status_ts")
+            and review_url
+        ):
+            with suppress(RepositoryError):
+                channel.update_buttons(
+                    str(context["slack_status_ts"]),
+                    ready_message,
+                    [self._slack_link_button(task, "View comic", review_url, item_type="comic", item_id=run_id)],
+                    channel_id=channel_id,
+                )
+        else:
+            self._notify_status(task, ready_message)
+        image_details = " · ".join(
+            value for value in (str(result.get("model") or ""), str(result.get("qa_summary") or "")) if value
+        )
+        delivery_status = "failed"
+        delivery_error: str | None = None
+        final_path = candidate.get("final_image_path") or candidate.get("image_path")
+        if isinstance(channel, SlackAgentChannel) and final_path:
+            try:
+                channel.send_file(
+                    thread_id,
+                    self.repository.path(str(final_path)),
+                    result.get("concept_title") or "DINKLY comic",
+                    channel_id=channel_id,
+                    details=image_details or None,
+                )
+                delivery_status = "image_sent"
+            except (RepositoryError, OSError) as exc:
+                delivery_error = self._slack_delivery_issue(str(exc))
+        if delivery_status == "failed":
+            image_url = public_asset_url(
+                settings.public_base_url,
+                str(candidate.get("final_asset_url") or candidate.get("asset_url") or ""),
             )
-            channel.send_image(
-                thread_id,
-                image_url,
-                result.get("concept_title") or "DINKLY candidate",
-                channel_id=channel_id,
-                details=image_details or None,
+            if image_url:
+                try:
+                    channel.send_image(
+                        thread_id,
+                        image_url,
+                        result.get("concept_title") or "DINKLY candidate",
+                        channel_id=channel_id,
+                        details=image_details or None,
+                    )
+                    delivery_status = "link_sent"
+                    delivery_error = None
+                except RepositoryError as exc:
+                    delivery_error = self._slack_delivery_issue(str(exc))
+        self.tasks.update(
+            task["id"],
+            result={
+                **result,
+                "slack_delivery_status": delivery_status,
+                **({"slack_delivery_issue": delivery_error} if delivery_error else {}),
+            },
+        )
+        if run_id:
+            with suppress(RepositoryError):
+                self.generation.record_slack_delivery(run_id, status=delivery_status, issue=delivery_error)
+        if delivery_status == "failed":
+            self.visual.record_activity(
+                "Slack image delivery failed; the comic remains ready in DINKLY.",
+                source_run_id=task["id"],
+                details={"task_id": task["id"], "run_id": run_id, "slack_delivery_status": "failed"},
             )
         if result.get("run_id"):
-            value = json.dumps({"item_type": "comic", "item_id": result["run_id"]})
-            channel.send_buttons(
-                thread_id,
-                result["message"],
-                [
-                    {"label": "Approve", "action_id": "dinkly_approve", "value": value, "style": "primary"},
-                    {"label": "Fix Issues", "action_id": "dinkly_fix", "value": value},
-                    {"label": "Try Another", "action_id": "dinkly_try_another", "value": value},
-                    {
-                        "label": "Open in DINKLY",
-                        "action_id": "dinkly_open_comic",
-                        "value": value,
-                        "url": f"{settings.frontend_origin.rstrip('/')}/approvals",
-                    },
-                ],
-                channel_id=channel_id,
+            value = json.dumps(
+                {
+                    "item_type": "comic",
+                    "item_id": result["run_id"],
+                    "task_id": task["id"],
+                    "candidate_id": result.get("recommended_candidate_id"),
+                    "workspace_id": self._slack_workspace_id(),
+                }
             )
+            try:
+                delivered = channel.send_buttons(
+                    thread_id,
+                    ("Comic is ready.\n\n" if delivery_status == "failed" else "") + self._slack_result_summary({**result, "slack_delivery_status": delivery_status}),
+                    [
+                        {"label": "Approve", "action_id": "dinkly_approve", "value": value, "style": "primary"},
+                        {"label": "Pass", "action_id": "dinkly_pass", "value": value},
+                        {"label": "Fix Issues", "action_id": "dinkly_fix", "value": value},
+                        {
+                            "label": "Open in DINKLY",
+                            "action_id": "dinkly_open_comic",
+                            "value": value,
+                            **({"url": review_url} if review_url else {}),
+                        },
+                    ],
+                    channel_id=channel_id,
+                )
+                if delivered.get("ts"):
+                    self.tasks.update(task["id"], context={**context, "slack_actions_ts": delivered["ts"]})
+            except RepositoryError as exc:
+                current = self.tasks.get(task["id"])
+                current_result = current.get("result") or {}
+                self.tasks.update(
+                    task["id"],
+                    result={
+                        **current_result,
+                        "slack_delivery_status": "failed",
+                        "slack_delivery_issue": self._slack_delivery_issue(str(exc)),
+                    },
+                )
         elif result.get("concept_ids"):
             first = result["concept_ids"][0]
+            concept_value = json.dumps({"item_type": "concept", "item_id": first})
             channel.send_buttons(
                 thread_id,
                 result["message"],
                 [
-                    {"label": "Approve first", "action_id": "dinkly_approve", "value": json.dumps({"item_type": "concept", "item_id": first}), "style": "primary"},
-                    {"label": "Pass first", "action_id": "dinkly_pass", "value": json.dumps({"item_type": "concept", "item_id": first})},
-                    {"label": "More Like This", "action_id": "dinkly_more_like_this", "value": json.dumps({"item_type": "concept", "item_id": first})},
+                    {"label": "Approve first", "action_id": "dinkly_approve", "value": concept_value, "style": "primary"},
+                    {"label": "Pass first", "action_id": "dinkly_pass", "value": concept_value},
+                    {"label": "More Like This", "action_id": "dinkly_more_like_this", "value": concept_value},
                     {
                         "label": "Open Batch",
                         "action_id": "dinkly_open_batch",
-                        "value": json.dumps({"item_type": "concept", "item_id": first}),
-                        "url": f"{settings.frontend_origin.rstrip('/')}/approvals",
+                        "value": concept_value,
+                        **({"url": f"{settings.app_url.rstrip('/')}/approvals?concept_id={first}"} if settings.app_url else {}),
                     },
                 ],
                 channel_id=channel_id,
             )
+
+    def _deliver_failure(self, task: dict[str, Any]) -> None:
+        if task.get("source_channel") != "slack":
+            return
+        context = task.get("context") or {}
+        value = json.dumps({"item_type": "task", "task_id": task["id"], "workspace_id": self._slack_workspace_id()})
+        buttons = [{"label": "Retry", "action_id": "dinkly_retry_task", "value": value, "style": "primary"}]
+        review_url = self._review_url(str(task.get("run_ids", [""])[0])) if task.get("run_ids") else (
+            f"{settings.app_url.rstrip('/')}/history" if settings.app_url else None
+        )
+        if review_url:
+            buttons.append({"label": "Open in DINKLY", "action_id": "dinkly_open_task", "value": value, "url": review_url})
+        try:
+            self._channel(task).send_buttons(
+                task["source_thread_id"],
+                f"DINKLY hit an issue while generating this comic.\n\n{self._slack_failure_reason(str(task.get('error') or 'generation failed'))}",
+                buttons,
+                channel_id=context.get("slack_channel_id"),
+            )
+        except RepositoryError:
+            return
+
+    @staticmethod
+    def _slack_failure_reason(message: str) -> str:
+        lower = message.lower()
+        if "quota" in lower or "rate limit" in lower:
+            return "Gemini quota reached"
+        if "timeout" in lower or "timed out" in lower:
+            return "Nano Banana timeout"
+        if "gemini_api_key" in lower or "api key" in lower:
+            return "API key unavailable"
+        if "layout" in lower:
+            return "Layout failed"
+        if "qa" in lower:
+            return "QA failed"
+        if "cancel" in lower:
+            return "Task cancelled"
+        return "Generation failed"
+
+    @staticmethod
+    def _slack_delivery_issue(message: str) -> str:
+        """Return an actionable Slack delivery reason without exposing secrets or URLs."""
+        lower = message.lower()
+        api_error = re.search(r"slack api error:\s*([a-z0-9_]+)", lower)
+        if api_error:
+            return f"Slack API error: {api_error.group(1)}"
+        http_error = re.search(r"slack api http error:\s*(\d{3})", lower)
+        if http_error:
+            return f"Slack API HTTP error: {http_error.group(1)}"
+        if "image file is unavailable" in lower or "file is unavailable" in lower:
+            return "Final image file unavailable"
+        if "certificate" in lower or "tls" in lower:
+            return "Slack TLS verification failed"
+        if "dns" in lower:
+            return "Slack API DNS lookup failed"
+        if "timeout" in lower or "timed out" in lower:
+            return "Slack image upload timed out"
+        if "upload destination" in lower:
+            return "Slack did not provide an image upload destination"
+        if "backend" in lower or "unavailable" in lower:
+            return "Slack API unavailable"
+        return "Slack image upload failed"
+
+    @staticmethod
+    def _review_url(run_id: str) -> str | None:
+        return f"{settings.app_url.rstrip('/')}/comics/{run_id}" if settings.app_url else None
+
+    def _slack_link_button(
+        self,
+        task: dict[str, Any],
+        label: str,
+        url: str,
+        *,
+        item_type: str = "task",
+        item_id: str | None = None,
+    ) -> dict[str, str]:
+        return {
+            "label": label,
+            "action_id": "dinkly_open_comic" if item_type == "comic" else "dinkly_open_task",
+            "value": json.dumps(
+                {
+                    "item_type": item_type,
+                    "item_id": item_id,
+                    "task_id": task["id"],
+                    "workspace_id": self._slack_workspace_id(),
+                }
+            ),
+            "url": url,
+        }
+
+    @staticmethod
+    def _slack_ready_message(result: dict[str, Any]) -> str:
+        candidate = result.get("recommended_candidate") or {}
+        label = str(candidate.get("label") or "").removeprefix("Candidate ")
+        recommended = f"\nRecommended: Candidate {label}" if label else ""
+        return (
+            "DINKLY Agent · Ready for you\n\n"
+            "✓ Story\n✓ Generation\n✓ DINKLY layout\n✓ QA"
+            f"{recommended}"
+        )
+
+    @staticmethod
+    def _slack_result_summary(result: dict[str, Any]) -> str:
+        candidate = result.get("recommended_candidate") or {}
+        model = str(result.get("model") or candidate.get("model_display_name") or "Nano Banana")
+        power = str(candidate.get("model_power_label") or "BALANCED")
+        qa = str(candidate.get("qa_status") or result.get("qa_summary") or "Completed")
+        label = str(candidate.get("label") or "")
+        summary = (
+            f"*{result.get('concept_title') or 'DINKLY comic'}*\n\n"
+            f"{power} · {model}\n\nQA: {qa}"
+        )
+        return f"{summary}\nDINKLY recommends Candidate {label}." if label else summary
+
+    def _slack_workspace_id(self) -> str | None:
+        from app.backend.services.slack_service import SlackService
+
+        return SlackService(self.repository, self.tasks, self.receive_instruction, self.receive_approval).status().get("workspace_id")
 
     def _deliver_proactive(self, task: dict[str, Any]) -> None:
         context = task.get("context") or {}

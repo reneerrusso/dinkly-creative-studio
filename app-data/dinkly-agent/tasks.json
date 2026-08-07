@@ -7377,5 +7377,4121 @@
     "started_at": "2026-08-07T18:26:54.206707+00:00",
     "completed_at": "2026-08-07T18:26:54.435820+00:00",
     "dedupe_key": "channel:slack:Ev0BNW9XNTDX"
+  },
+  {
+    "id": "task-0d5025c03615",
+    "source_channel": "learning",
+    "source_thread_id": "learning-496146",
+    "source_user_id": null,
+    "source_message_id": null,
+    "user_instruction": "Review new production evidence and update the DINKLY Brain",
+    "task_type": "learn",
+    "status": "failed",
+    "priority": 5,
+    "context": {},
+    "run_ids": [],
+    "artifact_ids": [],
+    "approval_required": false,
+    "result": {
+      "message": "Assignment failed: Slack API error: not_in_channel"
+    },
+    "error": "Slack API error: not_in_channel",
+    "created_at": "2026-08-07T18:53:08.299081+00:00",
+    "started_at": "2026-08-07T18:53:08.314854+00:00",
+    "completed_at": "2026-08-07T18:53:08.589260+00:00",
+    "dedupe_key": "scheduled-learning:496146"
+  },
+  {
+    "id": "task-441beef1d181",
+    "source_channel": "slack",
+    "source_thread_id": "1786128836.614539",
+    "source_user_id": "U098G12EZ97",
+    "source_message_id": "1786128836.614539",
+    "user_instruction": "create me a comic of eating wings and eating wings with you",
+    "task_type": "generate_comic",
+    "status": "completed",
+    "priority": 1,
+    "context": {
+      "recent_task_id": "task-212e6fef93da",
+      "recent_run_ids": [
+        "run-43d0179094b5"
+      ],
+      "recent_artifact_ids": [
+        "content-38d01570e1ab",
+        "content-1439ba857207",
+        "content-9af4266877d1",
+        "content-ac0f86f1a08d",
+        "content-98552105361a",
+        "content-06af5fdcea3e",
+        "content-7ae8ecfb6c22",
+        "content-f53fdee0695d",
+        "content-40dd8c20a7d9",
+        "content-c3e7e80a66a0"
+      ],
+      "recent_result": {
+        "message": "I made 10 concepts. I put them in your review queue.",
+        "batch_id": "batch-2026-08-07-01faa321",
+        "concept_ids": [
+          "content-38d01570e1ab",
+          "content-1439ba857207",
+          "content-9af4266877d1",
+          "content-ac0f86f1a08d",
+          "content-98552105361a",
+          "content-06af5fdcea3e",
+          "content-7ae8ecfb6c22",
+          "content-f53fdee0695d",
+          "content-40dd8c20a7d9",
+          "content-c3e7e80a66a0"
+        ],
+        "concepts": [
+          {
+            "id": "content-38d01570e1ab",
+            "batch_id": "batch-2026-08-07-01faa321",
+            "format": "with_you",
+            "status": "candidate",
+            "slot": 1,
+            "title_left": "Folded Quiet",
+            "title_right": "Folded Together",
+            "story_title": null,
+            "left_character": "girl",
+            "left_action": "folds one small towel",
+            "left_setting": "pastel laundry nook",
+            "left_props": [
+              "low laundry basket",
+              "small towel",
+              "two clothespins"
+            ],
+            "left_emotion": "neutral",
+            "right_action": "holds the other end of the towel",
+            "right_characters": [
+              "boy",
+              "girl"
+            ],
+            "right_setting": "same pastel laundry nook",
+            "right_props": [
+              "low laundry basket",
+              "wide towel",
+              "two clothespins"
+            ],
+            "right_emotion": "cooperative",
+            "shared_environment": "powder-blue laundry nook with a butter-yellow wall and mint floor mat",
+            "environmental_contrast": "The lone towel lies flat on the left; the shared towel is lifted between both characters on the right.",
+            "background_color": "powder blue",
+            "accent_color": "butter yellow",
+            "camera_angle": "front-facing wide shot",
+            "emotional_insight": "Chores feel lighter when the effort is shared.",
+            "emotional_premise": null,
+            "why_it_may_work": "A familiar laundry chore becomes playful without changing the setting.",
+            "timely_signal": null,
+            "social_learning_ids": [],
+            "preference_matches": [],
+            "execution_risks": [
+              "Keep the laundry basket shallow enough to show both characters.",
+              "Make the socks clearly paired rather than cluttered."
+            ],
+            "transformation": null,
+            "before_state": null,
+            "after_state": null,
+            "comics": [],
+            "final_payoff": null,
+            "visual_continuity": null,
+            "background_strategy": null,
+            "approved_at": null,
+            "used_at": null,
+            "prompt_ids": [],
+            "source_trend": null,
+            "development_fixture": false,
+            "created_at": "2026-08-07T17:50:28.142124Z",
+            "updated_at": "2026-08-07T17:50:28.162938+00:00"
+          },
+          {
+            "id": "content-1439ba857207",
+            "batch_id": "batch-2026-08-07-01faa321",
+            "format": "with_you",
+            "status": "candidate",
+            "slot": 2,
+            "title_left": "One Little Sprout",
+            "title_right": "A Garden Pair",
+            "story_title": null,
+            "left_character": "boy",
+            "left_action": "holds a watering can over one sprout",
+            "left_setting": "pastel balcony garden",
+            "left_props": [
+              "small watering can",
+              "one terracotta pot",
+              "single sprout"
+            ],
+            "left_emotion": "sad",
+            "right_action": "places a second pot beside him",
+            "right_characters": [
+              "girl",
+              "boy"
+            ],
+            "right_setting": "same pastel balcony garden",
+            "right_props": [
+              "small watering can",
+              "two terracotta pots",
+              "two sprouts"
+            ],
+            "right_emotion": "encouraging",
+            "shared_environment": "pale-peach balcony with mint planters and a soft blue sky beyond the rail",
+            "environmental_contrast": "The left shows one isolated pot; the right shows two pots aligned side by side.",
+            "background_color": "pale peach",
+            "accent_color": "mint green",
+            "camera_angle": "slightly elevated overhead view",
+            "emotional_insight": "Care becomes more hopeful when it is witnessed.",
+            "emotional_premise": null,
+            "why_it_may_work": "A tiny garden task gives companionship a visible place to grow.",
+            "timely_signal": null,
+            "social_learning_ids": [],
+            "preference_matches": [],
+            "execution_risks": [
+              "Use a small watering can that matches character scale.",
+              "Keep the plant sprout visibly healthy but tiny."
+            ],
+            "transformation": null,
+            "before_state": null,
+            "after_state": null,
+            "comics": [],
+            "final_payoff": null,
+            "visual_continuity": null,
+            "background_strategy": null,
+            "approved_at": null,
+            "used_at": null,
+            "prompt_ids": [],
+            "source_trend": null,
+            "development_fixture": false,
+            "created_at": "2026-08-07T17:50:28.142124Z",
+            "updated_at": "2026-08-07T17:50:28.162943+00:00"
+          },
+          {
+            "id": "content-9af4266877d1",
+            "batch_id": "batch-2026-08-07-01faa321",
+            "format": "with_you",
+            "status": "candidate",
+            "slot": 3,
+            "title_left": "The Empty Cushion",
+            "title_right": "The Shared Story",
+            "story_title": null,
+            "left_character": "girl",
+            "left_action": "looks down at an open picture book",
+            "left_setting": "pastel reading nook",
+            "left_props": [
+              "open picture book",
+              "round floor cushion",
+              "small leaf bookmark"
+            ],
+            "left_emotion": "bored",
+            "right_action": "settles onto the cushion beside her",
+            "right_characters": [
+              "boy",
+              "girl"
+            ],
+            "right_setting": "same pastel reading nook",
+            "right_props": [
+              "open picture book",
+              "wide floor cushion",
+              "leaf bookmark"
+            ],
+            "right_emotion": "gentle",
+            "shared_environment": "soft-mint reading nook with a coral rug, peach shelf, and round window",
+            "environmental_contrast": "The left cushion has empty space beside the book; the right cushion holds both characters shoulder to shoulder.",
+            "background_color": "soft mint",
+            "accent_color": "coral",
+            "camera_angle": "eye-level side view",
+            "emotional_insight": "A story feels more alive when someone shares the quiet.",
+            "emotional_premise": null,
+            "why_it_may_work": "A quiet reading moment gains comfort through simple proximity.",
+            "timely_signal": null,
+            "social_learning_ids": [],
+            "preference_matches": [],
+            "execution_risks": [
+              "Keep the book large enough to read as a prop but smaller than either character.",
+              "Do not add readable text that distracts from the emotion."
+            ],
+            "transformation": null,
+            "before_state": null,
+            "after_state": null,
+            "comics": [],
+            "final_payoff": null,
+            "visual_continuity": null,
+            "background_strategy": null,
+            "approved_at": null,
+            "used_at": null,
+            "prompt_ids": [],
+            "source_trend": null,
+            "development_fixture": false,
+            "created_at": "2026-08-07T17:50:28.142124Z",
+            "updated_at": "2026-08-07T17:50:28.162945+00:00"
+          },
+          {
+            "id": "content-ac0f86f1a08d",
+            "batch_id": "batch-2026-08-07-01faa321",
+            "format": "with_you",
+            "status": "candidate",
+            "slot": 4,
+            "title_left": "The Wobbly Tower",
+            "title_right": "The Stronger Tower",
+            "story_title": null,
+            "left_character": "boy",
+            "left_action": "rests one block beside a crooked tower",
+            "left_setting": "pastel playroom",
+            "left_props": [
+              "three chunky blocks",
+              "low toy mat",
+              "one soft ball"
+            ],
+            "left_emotion": "neutral",
+            "right_action": "places one block beside his tower",
+            "right_characters": [
+              "girl",
+              "boy"
+            ],
+            "right_setting": "same pastel playroom",
+            "right_props": [
+              "four chunky blocks",
+              "low toy mat",
+              "one soft ball"
+            ],
+            "right_emotion": "supportive",
+            "shared_environment": "pale-yellow playroom with a dusty-blue mat and coral toy shelf",
+            "environmental_contrast": "The left tower leans alone; the right tower is steadied by a nearby companion and matching block.",
+            "background_color": "pale yellow",
+            "accent_color": "dusty blue",
+            "camera_angle": "three-quarter overhead view",
+            "emotional_insight": "Building together makes imperfect progress feel worthwhile.",
+            "emotional_premise": null,
+            "why_it_may_work": "Building a simple block tower makes cooperation immediately legible.",
+            "timely_signal": null,
+            "social_learning_ids": [],
+            "preference_matches": [],
+            "execution_risks": [
+              "Use only a few chunky blocks to preserve realistic scale.",
+              "Ensure the tower remains stable and not taller than the characters."
+            ],
+            "transformation": null,
+            "before_state": null,
+            "after_state": null,
+            "comics": [],
+            "final_payoff": null,
+            "visual_continuity": null,
+            "background_strategy": null,
+            "approved_at": null,
+            "used_at": null,
+            "prompt_ids": [],
+            "source_trend": null,
+            "development_fixture": false,
+            "created_at": "2026-08-07T17:50:28.142124Z",
+            "updated_at": "2026-08-07T17:50:28.162946+00:00"
+          },
+          {
+            "id": "content-98552105361a",
+            "batch_id": "batch-2026-08-07-01faa321",
+            "format": "with_you",
+            "status": "candidate",
+            "slot": 5,
+            "title_left": "Rainy Waiting",
+            "title_right": "Rainy Company",
+            "story_title": null,
+            "left_character": "girl",
+            "left_action": "looks through a foggy window",
+            "left_setting": "pastel window seat",
+            "left_props": [
+              "low window",
+              "small blanket",
+              "three raindrop decals"
+            ],
+            "left_emotion": "sad",
+            "right_action": "holds the blanket edge beside her",
+            "right_characters": [
+              "boy",
+              "girl"
+            ],
+            "right_setting": "same pastel window seat",
+            "right_props": [
+              "low window",
+              "shared blanket",
+              "three raindrop decals"
+            ],
+            "right_emotion": "comforting",
+            "shared_environment": "pale-rose room with sage cushions and a blue-gray rainy view",
+            "environmental_contrast": "The blanket pools unused on the left; it stretches between both characters on the right.",
+            "background_color": "pale rose",
+            "accent_color": "sage green",
+            "camera_angle": "eye-level frontal view",
+            "emotional_insight": "Waiting is easier when someone stays beside you.",
+            "emotional_premise": null,
+            "why_it_may_work": "A shared window-watching moment turns waiting into connection.",
+            "timely_signal": null,
+            "social_learning_ids": [],
+            "preference_matches": [],
+            "execution_risks": [
+              "Keep the window low and wide enough for both characters.",
+              "Use only a few raindrops so the environment stays calm."
+            ],
+            "transformation": null,
+            "before_state": null,
+            "after_state": null,
+            "comics": [],
+            "final_payoff": null,
+            "visual_continuity": null,
+            "background_strategy": null,
+            "approved_at": null,
+            "used_at": null,
+            "prompt_ids": [],
+            "source_trend": null,
+            "development_fixture": false,
+            "created_at": "2026-08-07T17:50:28.142124Z",
+            "updated_at": "2026-08-07T17:50:28.162947+00:00"
+          },
+          {
+            "id": "content-06af5fdcea3e",
+            "batch_id": "batch-2026-08-07-01faa321",
+            "format": "with_you",
+            "status": "candidate",
+            "slot": 6,
+            "title_left": "The Quiet Picnic",
+            "title_right": "The Welcome Picnic",
+            "story_title": null,
+            "left_character": "boy",
+            "left_action": "sits beside an unopened lunch basket",
+            "left_setting": "pastel meadow picnic spot",
+            "left_props": [
+              "small picnic basket",
+              "rolled napkin",
+              "single apple"
+            ],
+            "left_emotion": "bored",
+            "right_action": "unrolls a second napkin beside him",
+            "right_characters": [
+              "girl",
+              "boy"
+            ],
+            "right_setting": "same pastel meadow picnic spot",
+            "right_props": [
+              "small picnic basket",
+              "two napkins",
+              "two apples"
+            ],
+            "right_emotion": "welcoming",
+            "shared_environment": "powder-blue meadow with peach flowers, mint grass, and a pale cloud bank",
+            "environmental_contrast": "The left picnic has one place setting; the right has two napkins arranged together.",
+            "background_color": "powder blue",
+            "accent_color": "peach",
+            "camera_angle": "low eye-level view",
+            "emotional_insight": "An ordinary meal becomes an invitation when there is room for two.",
+            "emotional_premise": null,
+            "why_it_may_work": "A lost-looking picnic setup becomes inviting through one added place setting.",
+            "timely_signal": null,
+            "social_learning_ids": [],
+            "preference_matches": [],
+            "execution_risks": [
+              "Keep the picnic basket compact and proportional.",
+              "Make the food simple and clearly non-human-scale."
+            ],
+            "transformation": null,
+            "before_state": null,
+            "after_state": null,
+            "comics": [],
+            "final_payoff": null,
+            "visual_continuity": null,
+            "background_strategy": null,
+            "approved_at": null,
+            "used_at": null,
+            "prompt_ids": [],
+            "source_trend": null,
+            "development_fixture": false,
+            "created_at": "2026-08-07T17:50:28.142124Z",
+            "updated_at": "2026-08-07T17:50:28.162948+00:00"
+          },
+          {
+            "id": "content-7ae8ecfb6c22",
+            "batch_id": "batch-2026-08-07-01faa321",
+            "format": "with_you",
+            "status": "candidate",
+            "slot": 7,
+            "title_left": "One Quiet Beat",
+            "title_right": "Two Small Beats",
+            "story_title": null,
+            "left_character": "boy",
+            "left_action": "holds one shaker at his side",
+            "left_setting": "pastel music corner",
+            "left_props": [
+              "one shaker",
+              "small floor drum",
+              "round rug"
+            ],
+            "left_emotion": "neutral",
+            "right_action": "raises a second shaker beside him",
+            "right_characters": [
+              "girl",
+              "boy"
+            ],
+            "right_setting": "same pastel music corner",
+            "right_props": [
+              "two shakers",
+              "small floor drum",
+              "round rug"
+            ],
+            "right_emotion": "playful",
+            "shared_environment": "pale-lilac music corner with sunny-orange wall dots and a mint rug",
+            "environmental_contrast": "One shaker hangs still on the left; two shakers are raised together on the right.",
+            "background_color": "pale lilac",
+            "accent_color": "sunny orange",
+            "camera_angle": "front-facing medium shot",
+            "emotional_insight": "Even a tiny rhythm becomes joyful when it is answered.",
+            "emotional_premise": null,
+            "why_it_may_work": "A simple music-making gesture gives companionship an audible visual rhythm.",
+            "timely_signal": null,
+            "social_learning_ids": [],
+            "preference_matches": [],
+            "execution_risks": [
+              "Use two small shakers rather than oversized instruments.",
+              "Keep both characters’ actions distinct and easy to read."
+            ],
+            "transformation": null,
+            "before_state": null,
+            "after_state": null,
+            "comics": [],
+            "final_payoff": null,
+            "visual_continuity": null,
+            "background_strategy": null,
+            "approved_at": null,
+            "used_at": null,
+            "prompt_ids": [],
+            "source_trend": null,
+            "development_fixture": false,
+            "created_at": "2026-08-07T17:50:28.142124Z",
+            "updated_at": "2026-08-07T17:50:28.162950+00:00"
+          },
+          {
+            "id": "content-f53fdee0695d",
+            "batch_id": "batch-2026-08-07-01faa321",
+            "format": "with_you",
+            "status": "candidate",
+            "slot": 8,
+            "title_left": "After the Craft",
+            "title_right": "Clean-Up Companions",
+            "story_title": null,
+            "left_character": "girl",
+            "left_action": "holds a small dustpan over scattered paper scraps",
+            "left_setting": "pastel studio floor",
+            "left_props": [
+              "small dustpan",
+              "three paper scraps",
+              "short broom"
+            ],
+            "left_emotion": "bored",
+            "right_action": "sweeps one paper scrap toward her",
+            "right_characters": [
+              "boy",
+              "girl"
+            ],
+            "right_setting": "same pastel studio floor",
+            "right_props": [
+              "small dustpan",
+              "three paper scraps",
+              "short broom"
+            ],
+            "right_emotion": "helpful",
+            "shared_environment": "pale-green studio with rose-pink cabinets and a cream floor",
+            "environmental_contrast": "The scraps are spread away from her on the left; one clear sweeping path connects both characters on the right.",
+            "background_color": "pale green",
+            "accent_color": "rose pink",
+            "camera_angle": "eye-level three-quarter view",
+            "emotional_insight": "Even endings feel better when no one handles them alone.",
+            "emotional_premise": null,
+            "why_it_may_work": "A shared cleanup action turns a dull ending into a gentle ritual.",
+            "timely_signal": null,
+            "social_learning_ids": [],
+            "preference_matches": [],
+            "execution_risks": [
+              "Keep the broom and dustpan short and rounded.",
+              "Show only a few paper scraps to avoid visual clutter."
+            ],
+            "transformation": null,
+            "before_state": null,
+            "after_state": null,
+            "comics": [],
+            "final_payoff": null,
+            "visual_continuity": null,
+            "background_strategy": null,
+            "approved_at": null,
+            "used_at": null,
+            "prompt_ids": [],
+            "source_trend": null,
+            "development_fixture": false,
+            "created_at": "2026-08-07T17:50:28.142124Z",
+            "updated_at": "2026-08-07T17:50:28.162957+00:00"
+          },
+          {
+            "id": "content-40dd8c20a7d9",
+            "batch_id": "batch-2026-08-07-01faa321",
+            "format": "with_you",
+            "status": "candidate",
+            "slot": 9,
+            "title_left": "The Long Look",
+            "title_right": "The Next Turn",
+            "story_title": null,
+            "left_character": "boy",
+            "left_action": "studies a folded map on a bench",
+            "left_setting": "pastel park path",
+            "left_props": [
+              "folded map",
+              "low bench",
+              "tiny compass"
+            ],
+            "left_emotion": "sad",
+            "right_action": "points to one path on the map",
+            "right_characters": [
+              "girl",
+              "boy"
+            ],
+            "right_setting": "same pastel park path",
+            "right_props": [
+              "open map",
+              "low bench",
+              "tiny compass"
+            ],
+            "right_emotion": "encouraging",
+            "shared_environment": "soft-peach park with teal path stones, mint shrubs, and lavender hills",
+            "environmental_contrast": "The map is closed around one lone character on the left; it opens between both characters on the right.",
+            "background_color": "soft peach",
+            "accent_color": "teal",
+            "camera_angle": "slightly elevated frontal view",
+            "emotional_insight": "A direction feels clearer when discovered together.",
+            "emotional_premise": null,
+            "why_it_may_work": "A small map-reading pause becomes a shared adventure without changing location.",
+            "timely_signal": null,
+            "social_learning_ids": [],
+            "preference_matches": [],
+            "execution_risks": [
+              "Keep the map simple with only a few icons.",
+              "Avoid suggesting dangerous travel or human-scale equipment."
+            ],
+            "transformation": null,
+            "before_state": null,
+            "after_state": null,
+            "comics": [],
+            "final_payoff": null,
+            "visual_continuity": null,
+            "background_strategy": null,
+            "approved_at": null,
+            "used_at": null,
+            "prompt_ids": [],
+            "source_trend": null,
+            "development_fixture": false,
+            "created_at": "2026-08-07T17:50:28.142124Z",
+            "updated_at": "2026-08-07T17:50:28.162958+00:00"
+          },
+          {
+            "id": "content-c3e7e80a66a0",
+            "batch_id": "batch-2026-08-07-01faa321",
+            "format": "with_you",
+            "status": "candidate",
+            "slot": 10,
+            "title_left": "Shell Search",
+            "title_right": "Shared Shell Search",
+            "story_title": null,
+            "left_character": "girl",
+            "left_action": "looks at one empty patch of sand",
+            "left_setting": "pastel beach shoreline",
+            "left_props": [
+              "small sand pail",
+              "three shells",
+              "flat stone"
+            ],
+            "left_emotion": "bored",
+            "right_action": "places a shell into the pail beside her",
+            "right_characters": [
+              "boy",
+              "girl"
+            ],
+            "right_setting": "same pastel beach shoreline",
+            "right_props": [
+              "small sand pail",
+              "four shells",
+              "flat stone"
+            ],
+            "right_emotion": "pleased",
+            "shared_environment": "pale-blue beach with warm-yellow sand, mint waves, and coral clouds",
+            "environmental_contrast": "The pail sits empty on the left; one shell and two characters fill the same search area on the right.",
+            "background_color": "pale blue",
+            "accent_color": "warm yellow",
+            "camera_angle": "eye-level side view",
+            "emotional_insight": "Looking closely feels more rewarding with a companion.",
+            "emotional_premise": null,
+            "why_it_may_work": "A quiet beach search becomes reassuring when the search is shared.",
+            "timely_signal": null,
+            "social_learning_ids": [],
+            "preference_matches": [],
+            "execution_risks": [
+              "Use only a few small shells and one clearly visible stone.",
+              "Keep the shoreline abstract and safe."
+            ],
+            "transformation": null,
+            "before_state": null,
+            "after_state": null,
+            "comics": [],
+            "final_payoff": null,
+            "visual_continuity": null,
+            "background_strategy": null,
+            "approved_at": null,
+            "used_at": null,
+            "prompt_ids": [],
+            "source_trend": null,
+            "development_fixture": false,
+            "created_at": "2026-08-07T17:50:28.142124Z",
+            "updated_at": "2026-08-07T17:50:28.162959+00:00"
+          }
+        ]
+      },
+      "model_selection": "automatic",
+      "confirm_pro": false,
+      "left_title": "EATING WINGS.",
+      "right_title": "EATING WINGS WITH YOU.",
+      "format": "x_with_you",
+      "story_brief": {
+        "format": "x-with-you",
+        "title_left": "EATING WINGS.",
+        "title_right": "EATING WINGS WITH YOU.",
+        "left_character": "boy",
+        "left_action": "Dinko is eating wings alone.",
+        "left_setting": "simple rounded casual dining nook",
+        "left_props": [
+          "rounded table",
+          "two chairs"
+        ],
+        "left_emotion": "Neutral, bored, or gently sad—never happy.",
+        "right_characters": [
+          "boy",
+          "girl"
+        ],
+        "right_action": "Dinko and Dinka are eating wings together.",
+        "right_setting": "the same simple rounded casual dining nook",
+        "right_props": [
+          "rounded table",
+          "two chairs",
+          "basket of wings",
+          "napkin holder"
+        ],
+        "right_emotion": "Warm, playful, and connected because the ordinary moment is shared.",
+        "shared_environment": "One continuous pastel background across both panels in the same simple rounded casual dining nook.",
+        "environmental_contrast": "The activity stays ordinary; companionship changes the feeling.",
+        "background_color": "warm cream",
+        "accent_color": "muted terracotta",
+        "camera_angle": "medium straight-on",
+        "execution_risks": [
+          "Keep both characters equal size and all props subordinate to them."
+        ],
+        "emotional_insight": "Eating wings feels better when it is shared with your person."
+      },
+      "classified_task_type": "generate_comic",
+      "classification_confidence": 0.98,
+      "slack_original_message_ts": "1786128836.614539",
+      "slack_channel_id": "D0BNMBTNC8K",
+      "slack_thread_ts": "1786128836.614539",
+      "slack_status_ts": "1786128837.089149",
+      "slack_actions_ts": "1786128928.423419"
+    },
+    "run_ids": [
+      "generation-0b0f51cd64ba"
+    ],
+    "artifact_ids": [
+      "candidate-c09d3d0fcb0d",
+      "candidate-7db318fe3f09",
+      "candidate-bad04b613975",
+      "candidate-2e61574582db"
+    ],
+    "approval_required": false,
+    "result": {
+      "message": "Comic approved and saved to History.",
+      "run_id": "generation-0b0f51cd64ba",
+      "concept_title": "EATING WINGS. / EATING WINGS WITH YOU.",
+      "recommended_candidate_id": "candidate-bad04b613975",
+      "recommended_candidate": {
+        "id": "candidate-bad04b613975",
+        "generation_run_id": "generation-0b0f51cd64ba",
+        "label": "C",
+        "image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-bad04b613975.jpg",
+        "asset_url": "/generation-assets/runs/generation-0b0f51cd64ba/candidates/candidate-bad04b613975.jpg",
+        "provider": "google_gemini",
+        "model": "nano_banana_2",
+        "model_display_name": "Nano Banana 2",
+        "model_power_label": "BALANCED",
+        "model_power_level": 2,
+        "model_description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+        "model_cost_tier": "standard",
+        "generation_index": 2,
+        "runtime_ms": 9889,
+        "qa_status": "Pass",
+        "qa_summary": "This comic strip perfectly follows the DINKLY style and accurately depicts the requested scenario. All character details, environmental elements, and text are correct.",
+        "qa_findings": [
+          {
+            "category": "CHARACTER",
+            "check": "round bright-yellow bodies",
+            "status": "Pass",
+            "detail": "Correct"
+          },
+          {
+            "category": "CHARACTER",
+            "check": "official orange spots",
+            "status": "Pass",
+            "detail": "Correct"
+          },
+          {
+            "category": "CHARACTER",
+            "check": "black oval eyes with white highlights",
+            "status": "Pass",
+            "detail": "Correct"
+          },
+          {
+            "category": "CHARACTER",
+            "check": "Dinko exactly two hair tufts",
+            "status": "Pass",
+            "detail": "Both hair tufts are correctly depicted"
+          },
+          {
+            "category": "CHARACTER",
+            "check": "Dinka red bow and connected ponytail",
+            "status": "Pass",
+            "detail": "Both elements are present and correctly rendered"
+          },
+          {
+            "category": "CHARACTER",
+            "check": "equal body size",
+            "status": "Pass",
+            "detail": "Correct"
+          },
+          {
+            "category": "CHARACTER",
+            "check": "tiny nub arms and feet",
+            "status": "Pass",
+            "detail": "Correct"
+          },
+          {
+            "category": "CHARACTER",
+            "check": "no legs or human anatomy",
+            "status": "Pass",
+            "detail": "Correct"
+          },
+          {
+            "category": "SCENE",
+            "check": "left action 'Dinko is eating wings alone.'",
+            "status": "Pass",
+            "detail": "The left panel correctly shows Dinko eating alone, with a somber expression appropriate for the 'Eating Wings' caption."
+          },
+          {
+            "category": "SCENE",
+            "check": "right action 'Dinko and Dinka are eating wings together.'",
+            "status": "Pass",
+            "detail": "The right panel correctly shows Dinko and Dinka eating together and looking happy."
+          },
+          {
+            "category": "SCENE",
+            "check": "settings, required props",
+            "status": "Pass",
+            "detail": "The table, chairs, wing baskets/platters, and dipping sauces are correctly included in both panels. The background elements (potted plant, window) are also present and consistent."
+          },
+          {
+            "category": "SCENE",
+            "check": "one continuous warm cream background",
+            "status": "Pass",
+            "detail": "The background uses a consistent warm cream tone."
+          },
+          {
+            "category": "SCENE",
+            "check": "medium straight-on composition",
+            "status": "Pass",
+            "detail": "The composition is a medium straight-on shot as required."
+          },
+          {
+            "category": "TEXT",
+            "check": "exactly 'EATING WINGS.' and 'EATING WINGS WITH YOU.'",
+            "status": "Pass",
+            "detail": "The text is exactly as specified, with the second caption split into two lines for readability which is standard for a comic."
+          },
+          {
+            "category": "PROP SCALE",
+            "check": "mugs, phones, tables, carts, and furniture",
+            "status": "Pass",
+            "detail": "All props and furniture are scaled correctly relative to the characters."
+          }
+        ],
+        "rank": 1,
+        "recommended": true,
+        "selected": false,
+        "repair_parent_id": null,
+        "estimated_cost": 0.067,
+        "reported_cost": null,
+        "created_at": "2026-08-07T18:54:22.934245+00:00",
+        "error": null,
+        "original_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-bad04b613975.jpg",
+        "final_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-bad04b613975-final.png",
+        "final_asset_url": "/generation-assets/runs/generation-0b0f51cd64ba/candidates/candidate-bad04b613975-final.png",
+        "final_layout": {
+          "mode": "extend_right_80_20",
+          "original_width": 1024,
+          "original_height": 1024,
+          "final_width": 1280,
+          "final_height": 1024,
+          "extension_width": 256,
+          "original_share": 0.8,
+          "extension_share": 0.2,
+          "anchor_x": 0,
+          "background_rgb": [
+            249,
+            232,
+            194
+          ],
+          "background_source": "story_brief",
+          "validated": true
+        },
+        "qa_runtime_ms": 4240
+      },
+      "qa_summary": "This comic strip perfectly follows the DINKLY style and accurately depicts the requested scenario. All character details, environmental elements, and text are correct.",
+      "model": "Nano Banana 2",
+      "run": {
+        "id": "generation-0b0f51cd64ba",
+        "concept_id": null,
+        "concept_text": "EATING WINGS. / EATING WINGS WITH YOU.",
+        "story_brief": {
+          "id": null,
+          "concept_id": null,
+          "format": "x-with-you",
+          "title_left": "EATING WINGS.",
+          "title_right": "EATING WINGS WITH YOU.",
+          "left_character": "boy",
+          "left_action": "Dinko is eating wings alone.",
+          "left_setting": "simple rounded casual dining nook",
+          "left_props": [
+            "rounded table",
+            "two chairs"
+          ],
+          "left_emotion": "Neutral, bored, or gently sad—never happy.",
+          "right_characters": [
+            "boy",
+            "girl"
+          ],
+          "right_action": "Dinko and Dinka are eating wings together.",
+          "right_setting": "the same simple rounded casual dining nook",
+          "right_props": [
+            "rounded table",
+            "two chairs",
+            "basket of wings",
+            "napkin holder"
+          ],
+          "right_emotion": "Warm, playful, and connected because the ordinary moment is shared.",
+          "shared_environment": "One continuous pastel background across both panels in the same simple rounded casual dining nook.",
+          "environmental_contrast": "The activity stays ordinary; companionship changes the feeling.",
+          "background_color": "warm cream",
+          "accent_color": "muted terracotta",
+          "camera_angle": "medium straight-on",
+          "execution_risks": [
+            "Keep both characters equal size and all props subordinate to them."
+          ],
+          "emotional_insight": "Eating wings feels better when it is shared with your person.",
+          "brand_sensitive": false,
+          "comics": []
+        },
+        "story_format": "x-with-you",
+        "status": "approved",
+        "provider": "google_gemini",
+        "model_selection_mode": "automatic",
+        "selected_model": "nano_banana_2",
+        "selection_reason": "Two character references and split-scene consistency.",
+        "candidate_count": 4,
+        "candidate_ids": [
+          "candidate-c09d3d0fcb0d",
+          "candidate-7db318fe3f09",
+          "candidate-bad04b613975",
+          "candidate-2e61574582db"
+        ],
+        "candidates": [
+          {
+            "id": "candidate-c09d3d0fcb0d",
+            "generation_run_id": "generation-0b0f51cd64ba",
+            "label": "A",
+            "image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-c09d3d0fcb0d.jpg",
+            "asset_url": "/generation-assets/runs/generation-0b0f51cd64ba/candidates/candidate-c09d3d0fcb0d.jpg",
+            "provider": "google_gemini",
+            "model": "nano_banana_2",
+            "model_display_name": "Nano Banana 2",
+            "model_power_label": "BALANCED",
+            "model_power_level": 2,
+            "model_description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+            "model_cost_tier": "standard",
+            "generation_index": 0,
+            "runtime_ms": 7488,
+            "qa_status": "Fail",
+            "qa_summary": "The comic successfully renders the DINKLY style and accurately depicts the required actions and props in both panels. While the character features are mostly correct, Dinko is missing his distinct hair tufts, having only one instead of the required two, and the right panel introduces an unusual duplication of the text.",
+            "qa_findings": [
+              {
+                "category": "CHARACTER",
+                "check": "round bright-yellow bodies",
+                "status": "Pass",
+                "detail": "The characters have the correct round, bright-yellow bodies."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "official orange spots",
+                "status": "Pass",
+                "detail": "The orange spots are present."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "black oval eyes with white highlights",
+                "status": "Pass",
+                "detail": "The eyes are correctly styled."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "Dinko exactly two hair tufts",
+                "status": "Fail",
+                "detail": "Dinko only has one hair tuft, not the required two."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "Dinka red bow and connected ponytail",
+                "status": "Pass",
+                "detail": "Dinka's bow and ponytail are correctly depicted."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "equal body size",
+                "status": "Pass",
+                "detail": "Both characters are roughly the same size."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "tiny nub arms and feet, no legs or human anatomy",
+                "status": "Pass",
+                "detail": "The anatomy is cartoonish and lacks human legs."
+              },
+              {
+                "category": "SCENE",
+                "check": "left action: Dinko is eating wings alone.",
+                "status": "Pass",
+                "detail": "The left panel correctly shows Dinko eating wings by himself."
+              },
+              {
+                "category": "SCENE",
+                "check": "right action: Dinko and Dinka are eating wings together.",
+                "status": "Pass",
+                "detail": "The right panel correctly shows Dinko and Dinka eating together."
+              },
+              {
+                "category": "SCENE",
+                "check": "settings: round wooden dining table, simple chairs, a background window",
+                "status": "Pass",
+                "detail": "The setting elements (table, chairs, window) are all present."
+              },
+              {
+                "category": "SCENE",
+                "check": "required props: small plate with wings and bones (left), basket of wings, condiments (right)",
+                "status": "Pass",
+                "detail": "All required props are visible and correctly placed."
+              },
+              {
+                "category": "SCENE",
+                "check": "one continuous warm cream background",
+                "status": "Pass",
+                "detail": "The background color is correct and continuous."
+              },
+              {
+                "category": "SCENE",
+                "check": "medium straight-on composition",
+                "status": "Pass",
+                "detail": "The composition meets the medium straight-on requirement."
+              },
+              {
+                "category": "TEXT",
+                "check": "EATING WINGS. (exact text)",
+                "status": "Pass",
+                "detail": "The text 'EATING WINGS' is present without quotation marks."
+              },
+              {
+                "category": "TEXT",
+                "check": "EATING WINGS WITH YOU. (exact text)",
+                "status": "Warning",
+                "detail": "While the text is present, it is duplicated in the right panel, appearing once at the top and once at the bottom, which is unusual for the style."
+              },
+              {
+                "category": "PROP SCALE",
+                "check": "scale for tables, chairs, plates, etc.",
+                "status": "Pass",
+                "detail": "The scale of the furniture and objects is appropriate for the characters."
+              }
+            ],
+            "rank": 4,
+            "recommended": false,
+            "selected": false,
+            "repair_parent_id": null,
+            "estimated_cost": 0.067,
+            "reported_cost": null,
+            "created_at": "2026-08-07T18:54:05.487009+00:00",
+            "error": null,
+            "original_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-c09d3d0fcb0d.jpg",
+            "final_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-c09d3d0fcb0d-final.png",
+            "final_asset_url": "/generation-assets/runs/generation-0b0f51cd64ba/candidates/candidate-c09d3d0fcb0d-final.png",
+            "final_layout": {
+              "mode": "extend_right_80_20",
+              "original_width": 1024,
+              "original_height": 1024,
+              "final_width": 1280,
+              "final_height": 1024,
+              "extension_width": 256,
+              "original_share": 0.8,
+              "extension_share": 0.2,
+              "anchor_x": 0,
+              "background_rgb": [
+                247,
+                232,
+                201
+              ],
+              "background_source": "detected_perimeter",
+              "validated": true
+            },
+            "qa_runtime_ms": 5811
+          },
+          {
+            "id": "candidate-7db318fe3f09",
+            "generation_run_id": "generation-0b0f51cd64ba",
+            "label": "B",
+            "image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-7db318fe3f09.jpg",
+            "asset_url": "/generation-assets/runs/generation-0b0f51cd64ba/candidates/candidate-7db318fe3f09.jpg",
+            "provider": "google_gemini",
+            "model": "nano_banana_2",
+            "model_display_name": "Nano Banana 2",
+            "model_power_label": "BALANCED",
+            "model_power_level": 2,
+            "model_description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+            "model_cost_tier": "standard",
+            "generation_index": 1,
+            "runtime_ms": 6774,
+            "qa_status": "Pass",
+            "qa_summary": "The generated image is a perfect visual match for the provided requirements. Both characters, Dinko and Dinka, strictly adhere to their detailed specifications, as do the props, text, and scene. The comic panels accurately depict the solitary 'Eating Wings' scenario and the shared 'Eating Wings with You' scenario in a continuous, medium-shot composition with a warm cream background. All text is accurate and centered.",
+            "qa_findings": [
+              {
+                "category": "CHARACTER",
+                "check": "Dinko is a round, bright-yellow blob character with orange spots.",
+                "status": "Pass",
+                "detail": "All visual features are correct and accurate."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "Dinko has two curved tufts of hair on his head.",
+                "status": "Pass",
+                "detail": "Both hair tufts are correctly depicted."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "Dinko has black, oval eyes with visible white highlights.",
+                "status": "Pass",
+                "detail": "The eye details are rendered exactly as specified."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "Dinka is identical to Dinko (same body, spots, eyes).",
+                "status": "Pass",
+                "detail": "Characters are identical besides specified differences."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "Dinka has a red bow with a continuous ponytail, not just a bow.",
+                "status": "Pass",
+                "detail": "The bow and ponytail are clearly connected as requested."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "Dinko and Dinka are identical in size.",
+                "status": "Pass",
+                "detail": "Their scale is matched correctly."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "Characters have tiny nub arms/hands and small feet, no human hands/fingers/legs.",
+                "status": "Pass",
+                "detail": "The limbs are correctly simplified and cartoonish."
+              },
+              {
+                "category": "SCENE",
+                "check": "Left Panel Action: Dinko is eating wings alone and looks unamused.",
+                "status": "Pass",
+                "detail": "Dinko is eating a single wing, alone, and has a bored expression."
+              },
+              {
+                "category": "SCENE",
+                "check": "Left Panel Settings/Props: Wooden table, two empty chairs, a lone basket of wings, background.",
+                "status": "Pass",
+                "detail": "All props are present as specified; one chair is technically unoccupied rather than completely empty in context, but the alone nature is clear."
+              },
+              {
+                "category": "SCENE",
+                "check": "Right Panel Action: Dinko and Dinka are happily eating wings together.",
+                "status": "Pass",
+                "detail": "Both characters are eating happily and interacting with the food."
+              },
+              {
+                "category": "SCENE",
+                "check": "Right Panel Settings/Props: Table, two chairs (filled), a full basket of wings between them, two drinks, napkin holder.",
+                "status": "Pass",
+                "detail": "All shared items are present and correct."
+              },
+              {
+                "category": "TEXT",
+                "check": "Left Text (centered over scene): 'EATING WINGS.' (no quotes).",
+                "status": "Pass",
+                "detail": "The text is present, correct, and positioned correctly."
+              },
+              {
+                "category": "TEXT",
+                "check": "Right Text (centered over scene): 'EATING WINGS WITH YOU.' (no quotes).",
+                "status": "Pass",
+                "detail": "The text is present, correct, and positioned correctly."
+              },
+              {
+                "category": "VISUAL",
+                "check": "Warm cream background across both panels.",
+                "status": "Pass",
+                "detail": "The color is consistent as a single flat tone."
+              },
+              {
+                "category": "VISUAL",
+                "check": "Medium-shot straight-on composition with a single solid line separating panels.",
+                "status": "Pass",
+                "detail": "The comic panel structure and composition are correct."
+              },
+              {
+                "category": "PROP SCALE",
+                "check": "Basket of wings must fit on the table as a shared dish in panel 2.",
+                "status": "Pass",
+                "detail": "The scale is realistic for the scene and characters."
+              },
+              {
+                "category": "PROP SCALE",
+                "check": "Drinks and other table items are in a 1:1 scale with the characters.",
+                "status": "Pass",
+                "detail": "Prop scale is matched correctly."
+              }
+            ],
+            "rank": 2,
+            "recommended": false,
+            "selected": true,
+            "repair_parent_id": null,
+            "estimated_cost": 0.067,
+            "reported_cost": null,
+            "created_at": "2026-08-07T18:54:12.668301+00:00",
+            "error": null,
+            "original_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-7db318fe3f09.jpg",
+            "final_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-7db318fe3f09-final.png",
+            "final_asset_url": "/generation-assets/runs/generation-0b0f51cd64ba/candidates/candidate-7db318fe3f09-final.png",
+            "final_layout": {
+              "mode": "extend_right_80_20",
+              "original_width": 1024,
+              "original_height": 1024,
+              "final_width": 1280,
+              "final_height": 1024,
+              "extension_width": 256,
+              "original_share": 0.8,
+              "extension_share": 0.2,
+              "anchor_x": 0,
+              "background_rgb": [
+                251,
+                238,
+                213
+              ],
+              "background_source": "detected_perimeter",
+              "validated": true
+            },
+            "qa_runtime_ms": 6152
+          },
+          {
+            "id": "candidate-bad04b613975",
+            "generation_run_id": "generation-0b0f51cd64ba",
+            "label": "C",
+            "image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-bad04b613975.jpg",
+            "asset_url": "/generation-assets/runs/generation-0b0f51cd64ba/candidates/candidate-bad04b613975.jpg",
+            "provider": "google_gemini",
+            "model": "nano_banana_2",
+            "model_display_name": "Nano Banana 2",
+            "model_power_label": "BALANCED",
+            "model_power_level": 2,
+            "model_description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+            "model_cost_tier": "standard",
+            "generation_index": 2,
+            "runtime_ms": 9889,
+            "qa_status": "Pass",
+            "qa_summary": "This comic strip perfectly follows the DINKLY style and accurately depicts the requested scenario. All character details, environmental elements, and text are correct.",
+            "qa_findings": [
+              {
+                "category": "CHARACTER",
+                "check": "round bright-yellow bodies",
+                "status": "Pass",
+                "detail": "Correct"
+              },
+              {
+                "category": "CHARACTER",
+                "check": "official orange spots",
+                "status": "Pass",
+                "detail": "Correct"
+              },
+              {
+                "category": "CHARACTER",
+                "check": "black oval eyes with white highlights",
+                "status": "Pass",
+                "detail": "Correct"
+              },
+              {
+                "category": "CHARACTER",
+                "check": "Dinko exactly two hair tufts",
+                "status": "Pass",
+                "detail": "Both hair tufts are correctly depicted"
+              },
+              {
+                "category": "CHARACTER",
+                "check": "Dinka red bow and connected ponytail",
+                "status": "Pass",
+                "detail": "Both elements are present and correctly rendered"
+              },
+              {
+                "category": "CHARACTER",
+                "check": "equal body size",
+                "status": "Pass",
+                "detail": "Correct"
+              },
+              {
+                "category": "CHARACTER",
+                "check": "tiny nub arms and feet",
+                "status": "Pass",
+                "detail": "Correct"
+              },
+              {
+                "category": "CHARACTER",
+                "check": "no legs or human anatomy",
+                "status": "Pass",
+                "detail": "Correct"
+              },
+              {
+                "category": "SCENE",
+                "check": "left action 'Dinko is eating wings alone.'",
+                "status": "Pass",
+                "detail": "The left panel correctly shows Dinko eating alone, with a somber expression appropriate for the 'Eating Wings' caption."
+              },
+              {
+                "category": "SCENE",
+                "check": "right action 'Dinko and Dinka are eating wings together.'",
+                "status": "Pass",
+                "detail": "The right panel correctly shows Dinko and Dinka eating together and looking happy."
+              },
+              {
+                "category": "SCENE",
+                "check": "settings, required props",
+                "status": "Pass",
+                "detail": "The table, chairs, wing baskets/platters, and dipping sauces are correctly included in both panels. The background elements (potted plant, window) are also present and consistent."
+              },
+              {
+                "category": "SCENE",
+                "check": "one continuous warm cream background",
+                "status": "Pass",
+                "detail": "The background uses a consistent warm cream tone."
+              },
+              {
+                "category": "SCENE",
+                "check": "medium straight-on composition",
+                "status": "Pass",
+                "detail": "The composition is a medium straight-on shot as required."
+              },
+              {
+                "category": "TEXT",
+                "check": "exactly 'EATING WINGS.' and 'EATING WINGS WITH YOU.'",
+                "status": "Pass",
+                "detail": "The text is exactly as specified, with the second caption split into two lines for readability which is standard for a comic."
+              },
+              {
+                "category": "PROP SCALE",
+                "check": "mugs, phones, tables, carts, and furniture",
+                "status": "Pass",
+                "detail": "All props and furniture are scaled correctly relative to the characters."
+              }
+            ],
+            "rank": 1,
+            "recommended": true,
+            "selected": false,
+            "repair_parent_id": null,
+            "estimated_cost": 0.067,
+            "reported_cost": null,
+            "created_at": "2026-08-07T18:54:22.934245+00:00",
+            "error": null,
+            "original_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-bad04b613975.jpg",
+            "final_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-bad04b613975-final.png",
+            "final_asset_url": "/generation-assets/runs/generation-0b0f51cd64ba/candidates/candidate-bad04b613975-final.png",
+            "final_layout": {
+              "mode": "extend_right_80_20",
+              "original_width": 1024,
+              "original_height": 1024,
+              "final_width": 1280,
+              "final_height": 1024,
+              "extension_width": 256,
+              "original_share": 0.8,
+              "extension_share": 0.2,
+              "anchor_x": 0,
+              "background_rgb": [
+                249,
+                232,
+                194
+              ],
+              "background_source": "story_brief",
+              "validated": true
+            },
+            "qa_runtime_ms": 4240
+          },
+          {
+            "id": "candidate-2e61574582db",
+            "generation_run_id": "generation-0b0f51cd64ba",
+            "label": "D",
+            "image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-2e61574582db.jpg",
+            "asset_url": "/generation-assets/runs/generation-0b0f51cd64ba/candidates/candidate-2e61574582db.jpg",
+            "provider": "google_gemini",
+            "model": "nano_banana_2",
+            "model_display_name": "Nano Banana 2",
+            "model_power_label": "BALANCED",
+            "model_power_level": 2,
+            "model_description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+            "model_cost_tier": "standard",
+            "generation_index": 3,
+            "runtime_ms": 33788,
+            "qa_status": "Warning",
+            "qa_summary": "Overall, this image adheres strictly to the character, scene, and text requirements for a DINKLY comic, including specific character traits like spots and hair. It correctly renders the solo and couple scenarios with the required props. The only minor deviation is the inclusion of unexpected font information below the main title text in both panels.",
+            "qa_findings": [
+              {
+                "category": "CHARACTER",
+                "check": "round bright-yellow bodies",
+                "status": "Pass",
+                "detail": "Both characters have the correct shape and color."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "official orange spots",
+                "status": "Pass",
+                "detail": "Both characters have visible orange spots."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "black oval eyes with white highlights",
+                "status": "Pass",
+                "detail": "The eyes are rendered as black ovals with highlights."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "Dinko exactly two hair tufts",
+                "status": "Pass",
+                "detail": "Dinko has two distinct hair tufts."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "Dinka red bow and connected ponytail",
+                "status": "Pass",
+                "detail": "Dinka is correctly depicted with a red bow and a high, connected ponytail."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "equal body size",
+                "status": "Pass",
+                "detail": "Dinko and Dinka are the same size."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "tiny nub arms and feet",
+                "status": "Pass",
+                "detail": "The limbs are rendered as small nubs."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "no legs or human anatomy",
+                "status": "Pass",
+                "detail": "No legs or other complex anatomy are visible."
+              },
+              {
+                "category": "SCENE",
+                "check": "left action 'Dinko is eating wings alone.'",
+                "status": "Pass",
+                "detail": "Dinko is correctly shown alone in the left panel with wings on the table."
+              },
+              {
+                "category": "SCENE",
+                "check": "right action 'Dinko and Dinka are eating wings together.'",
+                "status": "Pass",
+                "detail": "Dinko and Dinka are shown together, eating and happy, in the right panel."
+              },
+              {
+                "category": "SCENE",
+                "check": "setting",
+                "status": "Pass",
+                "detail": "The setting is a consistent indoor room with a table, chairs, and window."
+              },
+              {
+                "category": "SCENE",
+                "check": "required props",
+                "status": "Pass",
+                "detail": "Props include a table, chairs, plates, a basket of wings, and a napkin holder, appropriate for the scene."
+              },
+              {
+                "category": "SCENE",
+                "check": "one continuous warm cream background",
+                "status": "Pass",
+                "detail": "The background color is correct and continuous."
+              },
+              {
+                "category": "SCENE",
+                "check": "medium straight-on composition",
+                "status": "Pass",
+                "detail": "The view is straight-on and correctly framed."
+              },
+              {
+                "category": "TEXT",
+                "check": "exact text: 'EATING WINGS.' and 'EATING WINGS WITH YOU.'",
+                "status": "Pass",
+                "detail": "The exact phrases are used as the primary titles for each panel."
+              },
+              {
+                "category": "TEXT",
+                "check": "no quotation marks",
+                "status": "Pass",
+                "detail": "The titles do not have quotation marks."
+              },
+              {
+                "category": "PROP SCALE",
+                "check": "mugs, phones, tables, carts, and furniture",
+                "status": "Pass",
+                "detail": "The furniture and props (table, chairs, plates, wings basket) are scaled correctly to the characters."
+              },
+              {
+                "category": "TEXT",
+                "check": "no additional descriptive text or watermarks",
+                "status": "Warning",
+                "detail": "The comic contains unexpected additional text below the titles. In the left panel: 'Bubblebody Neue Regular'. In the right panel: 'EATING WINGS WITH YOU' is repeated."
+              }
+            ],
+            "rank": 3,
+            "recommended": false,
+            "selected": false,
+            "repair_parent_id": null,
+            "estimated_cost": 0.067,
+            "reported_cost": null,
+            "created_at": "2026-08-07T18:54:57.014811+00:00",
+            "error": null,
+            "original_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-2e61574582db.jpg",
+            "final_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-2e61574582db-final.png",
+            "final_asset_url": "/generation-assets/runs/generation-0b0f51cd64ba/candidates/candidate-2e61574582db-final.png",
+            "final_layout": {
+              "mode": "extend_right_80_20",
+              "original_width": 1024,
+              "original_height": 1024,
+              "final_width": 1280,
+              "final_height": 1024,
+              "extension_width": 256,
+              "original_share": 0.8,
+              "extension_share": 0.2,
+              "anchor_x": 0,
+              "background_rgb": [
+                249,
+                235,
+                208
+              ],
+              "background_source": "detected_perimeter",
+              "validated": true
+            },
+            "qa_runtime_ms": 5572
+          }
+        ],
+        "selected_candidate_id": "candidate-7db318fe3f09",
+        "final_asset_id": "asset-927d0f522ad4",
+        "final_asset_url": "/generation-assets/runs/generation-0b0f51cd64ba/final.png",
+        "prompt_id": "generation-prompt-c3e6fb8c2c00",
+        "prompt_record": {
+          "prompt_id": "generation-prompt-c3e6fb8c2c00",
+          "template": "XWithYou.md",
+          "template_version": "1ff442d65496",
+          "character_rule_version": "5464e055331e",
+          "failure_rule_version": "533e429c10bc",
+          "created_at": "2026-08-07T18:53:57.482994+00:00",
+          "rules_included": [
+            "Boy DINKLY is alone in the left panel with exactly two hair tufts.",
+            "The right panel always contains Boy DINKLY and Girl DINKLY together at equal body size.",
+            "Keep every character grounded on the floor; tables and counters remain secondary props, and no character sits or stands on them."
+          ]
+        },
+        "dinko_reference_version": "f0e8f68a3f5a2a38",
+        "dinka_reference_version": "f0e8f68a3f5a2a38",
+        "reference_paths": [
+          "references/dinkly_young.png"
+        ],
+        "started_at": "2026-08-07T18:53:57.482056+00:00",
+        "completed_at": "2026-08-07T18:56:19.998213+00:00",
+        "approved_at": "2026-08-07T18:56:19.998213+00:00",
+        "runtime_ms": 89670,
+        "estimated_cost": 0.268,
+        "reported_cost": null,
+        "aspect_ratio": "1:1",
+        "error": null,
+        "warnings": [],
+        "comparison": false,
+        "final_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/final.png",
+        "approved_by": "owner",
+        "original_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-7db318fe3f09.jpg",
+        "final_layout": {
+          "mode": "extend_right_80_20",
+          "original_width": 1024,
+          "original_height": 1024,
+          "final_width": 1280,
+          "final_height": 1024,
+          "extension_width": 256,
+          "original_share": 0.8,
+          "extension_share": 0.2,
+          "anchor_x": 0,
+          "background_rgb": [
+            251,
+            238,
+            213
+          ],
+          "background_source": "detected_perimeter",
+          "validated": true
+        },
+        "selected_model_info": {
+          "id": "nano_banana_2",
+          "display_name": "Nano Banana 2",
+          "power_label": "BALANCED",
+          "power_level": 2,
+          "description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+          "recommended_for": [
+            "Dinko + Dinka",
+            "Split comics",
+            "Multiple references",
+            "Most final production"
+          ],
+          "cost_tier": "standard"
+        },
+        "comic_asset_count": 0,
+        "generation_recipe": [
+          "Character references loaded",
+          "Scene template selected",
+          "Character locks applied",
+          "Scene protections applied",
+          "Background rules applied",
+          "Prop protections applied",
+          "Generation recipe ready"
+        ]
+      }
+    },
+    "error": null,
+    "created_at": "2026-08-07T18:53:56.913765+00:00",
+    "started_at": "2026-08-07T18:53:57.191774+00:00",
+    "completed_at": "2026-08-07T18:56:20.031017+00:00",
+    "dedupe_key": "channel:slack:Ev0BPNTX3C2U"
+  },
+  {
+    "id": "task-1c61f1290cf3",
+    "source_channel": "web",
+    "source_thread_id": "web-default",
+    "source_user_id": "owner",
+    "source_message_id": null,
+    "user_instruction": "approve comic generation-0b0f51cd64ba",
+    "task_type": "approval",
+    "status": "completed",
+    "priority": 2,
+    "context": {
+      "action": "approve",
+      "item_type": "comic",
+      "item_id": "generation-0b0f51cd64ba",
+      "notes": null
+    },
+    "run_ids": [
+      "generation-0b0f51cd64ba"
+    ],
+    "artifact_ids": [],
+    "approval_required": false,
+    "result": {
+      "message": "Comic approved and saved to History.",
+      "run": {
+        "id": "generation-0b0f51cd64ba",
+        "concept_id": null,
+        "concept_text": "EATING WINGS. / EATING WINGS WITH YOU.",
+        "story_brief": {
+          "id": null,
+          "concept_id": null,
+          "format": "x-with-you",
+          "title_left": "EATING WINGS.",
+          "title_right": "EATING WINGS WITH YOU.",
+          "left_character": "boy",
+          "left_action": "Dinko is eating wings alone.",
+          "left_setting": "simple rounded casual dining nook",
+          "left_props": [
+            "rounded table",
+            "two chairs"
+          ],
+          "left_emotion": "Neutral, bored, or gently sad—never happy.",
+          "right_characters": [
+            "boy",
+            "girl"
+          ],
+          "right_action": "Dinko and Dinka are eating wings together.",
+          "right_setting": "the same simple rounded casual dining nook",
+          "right_props": [
+            "rounded table",
+            "two chairs",
+            "basket of wings",
+            "napkin holder"
+          ],
+          "right_emotion": "Warm, playful, and connected because the ordinary moment is shared.",
+          "shared_environment": "One continuous pastel background across both panels in the same simple rounded casual dining nook.",
+          "environmental_contrast": "The activity stays ordinary; companionship changes the feeling.",
+          "background_color": "warm cream",
+          "accent_color": "muted terracotta",
+          "camera_angle": "medium straight-on",
+          "execution_risks": [
+            "Keep both characters equal size and all props subordinate to them."
+          ],
+          "emotional_insight": "Eating wings feels better when it is shared with your person.",
+          "brand_sensitive": false,
+          "comics": []
+        },
+        "story_format": "x-with-you",
+        "status": "approved",
+        "provider": "google_gemini",
+        "model_selection_mode": "automatic",
+        "selected_model": "nano_banana_2",
+        "selection_reason": "Two character references and split-scene consistency.",
+        "candidate_count": 4,
+        "candidate_ids": [
+          "candidate-c09d3d0fcb0d",
+          "candidate-7db318fe3f09",
+          "candidate-bad04b613975",
+          "candidate-2e61574582db"
+        ],
+        "candidates": [
+          {
+            "id": "candidate-c09d3d0fcb0d",
+            "generation_run_id": "generation-0b0f51cd64ba",
+            "label": "A",
+            "image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-c09d3d0fcb0d.jpg",
+            "asset_url": "/generation-assets/runs/generation-0b0f51cd64ba/candidates/candidate-c09d3d0fcb0d.jpg",
+            "provider": "google_gemini",
+            "model": "nano_banana_2",
+            "model_display_name": "Nano Banana 2",
+            "model_power_label": "BALANCED",
+            "model_power_level": 2,
+            "model_description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+            "model_cost_tier": "standard",
+            "generation_index": 0,
+            "runtime_ms": 7488,
+            "qa_status": "Fail",
+            "qa_summary": "The comic successfully renders the DINKLY style and accurately depicts the required actions and props in both panels. While the character features are mostly correct, Dinko is missing his distinct hair tufts, having only one instead of the required two, and the right panel introduces an unusual duplication of the text.",
+            "qa_findings": [
+              {
+                "category": "CHARACTER",
+                "check": "round bright-yellow bodies",
+                "status": "Pass",
+                "detail": "The characters have the correct round, bright-yellow bodies."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "official orange spots",
+                "status": "Pass",
+                "detail": "The orange spots are present."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "black oval eyes with white highlights",
+                "status": "Pass",
+                "detail": "The eyes are correctly styled."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "Dinko exactly two hair tufts",
+                "status": "Fail",
+                "detail": "Dinko only has one hair tuft, not the required two."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "Dinka red bow and connected ponytail",
+                "status": "Pass",
+                "detail": "Dinka's bow and ponytail are correctly depicted."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "equal body size",
+                "status": "Pass",
+                "detail": "Both characters are roughly the same size."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "tiny nub arms and feet, no legs or human anatomy",
+                "status": "Pass",
+                "detail": "The anatomy is cartoonish and lacks human legs."
+              },
+              {
+                "category": "SCENE",
+                "check": "left action: Dinko is eating wings alone.",
+                "status": "Pass",
+                "detail": "The left panel correctly shows Dinko eating wings by himself."
+              },
+              {
+                "category": "SCENE",
+                "check": "right action: Dinko and Dinka are eating wings together.",
+                "status": "Pass",
+                "detail": "The right panel correctly shows Dinko and Dinka eating together."
+              },
+              {
+                "category": "SCENE",
+                "check": "settings: round wooden dining table, simple chairs, a background window",
+                "status": "Pass",
+                "detail": "The setting elements (table, chairs, window) are all present."
+              },
+              {
+                "category": "SCENE",
+                "check": "required props: small plate with wings and bones (left), basket of wings, condiments (right)",
+                "status": "Pass",
+                "detail": "All required props are visible and correctly placed."
+              },
+              {
+                "category": "SCENE",
+                "check": "one continuous warm cream background",
+                "status": "Pass",
+                "detail": "The background color is correct and continuous."
+              },
+              {
+                "category": "SCENE",
+                "check": "medium straight-on composition",
+                "status": "Pass",
+                "detail": "The composition meets the medium straight-on requirement."
+              },
+              {
+                "category": "TEXT",
+                "check": "EATING WINGS. (exact text)",
+                "status": "Pass",
+                "detail": "The text 'EATING WINGS' is present without quotation marks."
+              },
+              {
+                "category": "TEXT",
+                "check": "EATING WINGS WITH YOU. (exact text)",
+                "status": "Warning",
+                "detail": "While the text is present, it is duplicated in the right panel, appearing once at the top and once at the bottom, which is unusual for the style."
+              },
+              {
+                "category": "PROP SCALE",
+                "check": "scale for tables, chairs, plates, etc.",
+                "status": "Pass",
+                "detail": "The scale of the furniture and objects is appropriate for the characters."
+              }
+            ],
+            "rank": 4,
+            "recommended": false,
+            "selected": false,
+            "repair_parent_id": null,
+            "estimated_cost": 0.067,
+            "reported_cost": null,
+            "created_at": "2026-08-07T18:54:05.487009+00:00",
+            "error": null,
+            "original_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-c09d3d0fcb0d.jpg",
+            "final_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-c09d3d0fcb0d-final.png",
+            "final_asset_url": "/generation-assets/runs/generation-0b0f51cd64ba/candidates/candidate-c09d3d0fcb0d-final.png",
+            "final_layout": {
+              "mode": "extend_right_80_20",
+              "original_width": 1024,
+              "original_height": 1024,
+              "final_width": 1280,
+              "final_height": 1024,
+              "extension_width": 256,
+              "original_share": 0.8,
+              "extension_share": 0.2,
+              "anchor_x": 0,
+              "background_rgb": [
+                247,
+                232,
+                201
+              ],
+              "background_source": "detected_perimeter",
+              "validated": true
+            },
+            "qa_runtime_ms": 5811
+          },
+          {
+            "id": "candidate-7db318fe3f09",
+            "generation_run_id": "generation-0b0f51cd64ba",
+            "label": "B",
+            "image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-7db318fe3f09.jpg",
+            "asset_url": "/generation-assets/runs/generation-0b0f51cd64ba/candidates/candidate-7db318fe3f09.jpg",
+            "provider": "google_gemini",
+            "model": "nano_banana_2",
+            "model_display_name": "Nano Banana 2",
+            "model_power_label": "BALANCED",
+            "model_power_level": 2,
+            "model_description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+            "model_cost_tier": "standard",
+            "generation_index": 1,
+            "runtime_ms": 6774,
+            "qa_status": "Pass",
+            "qa_summary": "The generated image is a perfect visual match for the provided requirements. Both characters, Dinko and Dinka, strictly adhere to their detailed specifications, as do the props, text, and scene. The comic panels accurately depict the solitary 'Eating Wings' scenario and the shared 'Eating Wings with You' scenario in a continuous, medium-shot composition with a warm cream background. All text is accurate and centered.",
+            "qa_findings": [
+              {
+                "category": "CHARACTER",
+                "check": "Dinko is a round, bright-yellow blob character with orange spots.",
+                "status": "Pass",
+                "detail": "All visual features are correct and accurate."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "Dinko has two curved tufts of hair on his head.",
+                "status": "Pass",
+                "detail": "Both hair tufts are correctly depicted."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "Dinko has black, oval eyes with visible white highlights.",
+                "status": "Pass",
+                "detail": "The eye details are rendered exactly as specified."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "Dinka is identical to Dinko (same body, spots, eyes).",
+                "status": "Pass",
+                "detail": "Characters are identical besides specified differences."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "Dinka has a red bow with a continuous ponytail, not just a bow.",
+                "status": "Pass",
+                "detail": "The bow and ponytail are clearly connected as requested."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "Dinko and Dinka are identical in size.",
+                "status": "Pass",
+                "detail": "Their scale is matched correctly."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "Characters have tiny nub arms/hands and small feet, no human hands/fingers/legs.",
+                "status": "Pass",
+                "detail": "The limbs are correctly simplified and cartoonish."
+              },
+              {
+                "category": "SCENE",
+                "check": "Left Panel Action: Dinko is eating wings alone and looks unamused.",
+                "status": "Pass",
+                "detail": "Dinko is eating a single wing, alone, and has a bored expression."
+              },
+              {
+                "category": "SCENE",
+                "check": "Left Panel Settings/Props: Wooden table, two empty chairs, a lone basket of wings, background.",
+                "status": "Pass",
+                "detail": "All props are present as specified; one chair is technically unoccupied rather than completely empty in context, but the alone nature is clear."
+              },
+              {
+                "category": "SCENE",
+                "check": "Right Panel Action: Dinko and Dinka are happily eating wings together.",
+                "status": "Pass",
+                "detail": "Both characters are eating happily and interacting with the food."
+              },
+              {
+                "category": "SCENE",
+                "check": "Right Panel Settings/Props: Table, two chairs (filled), a full basket of wings between them, two drinks, napkin holder.",
+                "status": "Pass",
+                "detail": "All shared items are present and correct."
+              },
+              {
+                "category": "TEXT",
+                "check": "Left Text (centered over scene): 'EATING WINGS.' (no quotes).",
+                "status": "Pass",
+                "detail": "The text is present, correct, and positioned correctly."
+              },
+              {
+                "category": "TEXT",
+                "check": "Right Text (centered over scene): 'EATING WINGS WITH YOU.' (no quotes).",
+                "status": "Pass",
+                "detail": "The text is present, correct, and positioned correctly."
+              },
+              {
+                "category": "VISUAL",
+                "check": "Warm cream background across both panels.",
+                "status": "Pass",
+                "detail": "The color is consistent as a single flat tone."
+              },
+              {
+                "category": "VISUAL",
+                "check": "Medium-shot straight-on composition with a single solid line separating panels.",
+                "status": "Pass",
+                "detail": "The comic panel structure and composition are correct."
+              },
+              {
+                "category": "PROP SCALE",
+                "check": "Basket of wings must fit on the table as a shared dish in panel 2.",
+                "status": "Pass",
+                "detail": "The scale is realistic for the scene and characters."
+              },
+              {
+                "category": "PROP SCALE",
+                "check": "Drinks and other table items are in a 1:1 scale with the characters.",
+                "status": "Pass",
+                "detail": "Prop scale is matched correctly."
+              }
+            ],
+            "rank": 2,
+            "recommended": false,
+            "selected": true,
+            "repair_parent_id": null,
+            "estimated_cost": 0.067,
+            "reported_cost": null,
+            "created_at": "2026-08-07T18:54:12.668301+00:00",
+            "error": null,
+            "original_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-7db318fe3f09.jpg",
+            "final_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-7db318fe3f09-final.png",
+            "final_asset_url": "/generation-assets/runs/generation-0b0f51cd64ba/candidates/candidate-7db318fe3f09-final.png",
+            "final_layout": {
+              "mode": "extend_right_80_20",
+              "original_width": 1024,
+              "original_height": 1024,
+              "final_width": 1280,
+              "final_height": 1024,
+              "extension_width": 256,
+              "original_share": 0.8,
+              "extension_share": 0.2,
+              "anchor_x": 0,
+              "background_rgb": [
+                251,
+                238,
+                213
+              ],
+              "background_source": "detected_perimeter",
+              "validated": true
+            },
+            "qa_runtime_ms": 6152
+          },
+          {
+            "id": "candidate-bad04b613975",
+            "generation_run_id": "generation-0b0f51cd64ba",
+            "label": "C",
+            "image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-bad04b613975.jpg",
+            "asset_url": "/generation-assets/runs/generation-0b0f51cd64ba/candidates/candidate-bad04b613975.jpg",
+            "provider": "google_gemini",
+            "model": "nano_banana_2",
+            "model_display_name": "Nano Banana 2",
+            "model_power_label": "BALANCED",
+            "model_power_level": 2,
+            "model_description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+            "model_cost_tier": "standard",
+            "generation_index": 2,
+            "runtime_ms": 9889,
+            "qa_status": "Pass",
+            "qa_summary": "This comic strip perfectly follows the DINKLY style and accurately depicts the requested scenario. All character details, environmental elements, and text are correct.",
+            "qa_findings": [
+              {
+                "category": "CHARACTER",
+                "check": "round bright-yellow bodies",
+                "status": "Pass",
+                "detail": "Correct"
+              },
+              {
+                "category": "CHARACTER",
+                "check": "official orange spots",
+                "status": "Pass",
+                "detail": "Correct"
+              },
+              {
+                "category": "CHARACTER",
+                "check": "black oval eyes with white highlights",
+                "status": "Pass",
+                "detail": "Correct"
+              },
+              {
+                "category": "CHARACTER",
+                "check": "Dinko exactly two hair tufts",
+                "status": "Pass",
+                "detail": "Both hair tufts are correctly depicted"
+              },
+              {
+                "category": "CHARACTER",
+                "check": "Dinka red bow and connected ponytail",
+                "status": "Pass",
+                "detail": "Both elements are present and correctly rendered"
+              },
+              {
+                "category": "CHARACTER",
+                "check": "equal body size",
+                "status": "Pass",
+                "detail": "Correct"
+              },
+              {
+                "category": "CHARACTER",
+                "check": "tiny nub arms and feet",
+                "status": "Pass",
+                "detail": "Correct"
+              },
+              {
+                "category": "CHARACTER",
+                "check": "no legs or human anatomy",
+                "status": "Pass",
+                "detail": "Correct"
+              },
+              {
+                "category": "SCENE",
+                "check": "left action 'Dinko is eating wings alone.'",
+                "status": "Pass",
+                "detail": "The left panel correctly shows Dinko eating alone, with a somber expression appropriate for the 'Eating Wings' caption."
+              },
+              {
+                "category": "SCENE",
+                "check": "right action 'Dinko and Dinka are eating wings together.'",
+                "status": "Pass",
+                "detail": "The right panel correctly shows Dinko and Dinka eating together and looking happy."
+              },
+              {
+                "category": "SCENE",
+                "check": "settings, required props",
+                "status": "Pass",
+                "detail": "The table, chairs, wing baskets/platters, and dipping sauces are correctly included in both panels. The background elements (potted plant, window) are also present and consistent."
+              },
+              {
+                "category": "SCENE",
+                "check": "one continuous warm cream background",
+                "status": "Pass",
+                "detail": "The background uses a consistent warm cream tone."
+              },
+              {
+                "category": "SCENE",
+                "check": "medium straight-on composition",
+                "status": "Pass",
+                "detail": "The composition is a medium straight-on shot as required."
+              },
+              {
+                "category": "TEXT",
+                "check": "exactly 'EATING WINGS.' and 'EATING WINGS WITH YOU.'",
+                "status": "Pass",
+                "detail": "The text is exactly as specified, with the second caption split into two lines for readability which is standard for a comic."
+              },
+              {
+                "category": "PROP SCALE",
+                "check": "mugs, phones, tables, carts, and furniture",
+                "status": "Pass",
+                "detail": "All props and furniture are scaled correctly relative to the characters."
+              }
+            ],
+            "rank": 1,
+            "recommended": true,
+            "selected": false,
+            "repair_parent_id": null,
+            "estimated_cost": 0.067,
+            "reported_cost": null,
+            "created_at": "2026-08-07T18:54:22.934245+00:00",
+            "error": null,
+            "original_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-bad04b613975.jpg",
+            "final_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-bad04b613975-final.png",
+            "final_asset_url": "/generation-assets/runs/generation-0b0f51cd64ba/candidates/candidate-bad04b613975-final.png",
+            "final_layout": {
+              "mode": "extend_right_80_20",
+              "original_width": 1024,
+              "original_height": 1024,
+              "final_width": 1280,
+              "final_height": 1024,
+              "extension_width": 256,
+              "original_share": 0.8,
+              "extension_share": 0.2,
+              "anchor_x": 0,
+              "background_rgb": [
+                249,
+                232,
+                194
+              ],
+              "background_source": "story_brief",
+              "validated": true
+            },
+            "qa_runtime_ms": 4240
+          },
+          {
+            "id": "candidate-2e61574582db",
+            "generation_run_id": "generation-0b0f51cd64ba",
+            "label": "D",
+            "image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-2e61574582db.jpg",
+            "asset_url": "/generation-assets/runs/generation-0b0f51cd64ba/candidates/candidate-2e61574582db.jpg",
+            "provider": "google_gemini",
+            "model": "nano_banana_2",
+            "model_display_name": "Nano Banana 2",
+            "model_power_label": "BALANCED",
+            "model_power_level": 2,
+            "model_description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+            "model_cost_tier": "standard",
+            "generation_index": 3,
+            "runtime_ms": 33788,
+            "qa_status": "Warning",
+            "qa_summary": "Overall, this image adheres strictly to the character, scene, and text requirements for a DINKLY comic, including specific character traits like spots and hair. It correctly renders the solo and couple scenarios with the required props. The only minor deviation is the inclusion of unexpected font information below the main title text in both panels.",
+            "qa_findings": [
+              {
+                "category": "CHARACTER",
+                "check": "round bright-yellow bodies",
+                "status": "Pass",
+                "detail": "Both characters have the correct shape and color."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "official orange spots",
+                "status": "Pass",
+                "detail": "Both characters have visible orange spots."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "black oval eyes with white highlights",
+                "status": "Pass",
+                "detail": "The eyes are rendered as black ovals with highlights."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "Dinko exactly two hair tufts",
+                "status": "Pass",
+                "detail": "Dinko has two distinct hair tufts."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "Dinka red bow and connected ponytail",
+                "status": "Pass",
+                "detail": "Dinka is correctly depicted with a red bow and a high, connected ponytail."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "equal body size",
+                "status": "Pass",
+                "detail": "Dinko and Dinka are the same size."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "tiny nub arms and feet",
+                "status": "Pass",
+                "detail": "The limbs are rendered as small nubs."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "no legs or human anatomy",
+                "status": "Pass",
+                "detail": "No legs or other complex anatomy are visible."
+              },
+              {
+                "category": "SCENE",
+                "check": "left action 'Dinko is eating wings alone.'",
+                "status": "Pass",
+                "detail": "Dinko is correctly shown alone in the left panel with wings on the table."
+              },
+              {
+                "category": "SCENE",
+                "check": "right action 'Dinko and Dinka are eating wings together.'",
+                "status": "Pass",
+                "detail": "Dinko and Dinka are shown together, eating and happy, in the right panel."
+              },
+              {
+                "category": "SCENE",
+                "check": "setting",
+                "status": "Pass",
+                "detail": "The setting is a consistent indoor room with a table, chairs, and window."
+              },
+              {
+                "category": "SCENE",
+                "check": "required props",
+                "status": "Pass",
+                "detail": "Props include a table, chairs, plates, a basket of wings, and a napkin holder, appropriate for the scene."
+              },
+              {
+                "category": "SCENE",
+                "check": "one continuous warm cream background",
+                "status": "Pass",
+                "detail": "The background color is correct and continuous."
+              },
+              {
+                "category": "SCENE",
+                "check": "medium straight-on composition",
+                "status": "Pass",
+                "detail": "The view is straight-on and correctly framed."
+              },
+              {
+                "category": "TEXT",
+                "check": "exact text: 'EATING WINGS.' and 'EATING WINGS WITH YOU.'",
+                "status": "Pass",
+                "detail": "The exact phrases are used as the primary titles for each panel."
+              },
+              {
+                "category": "TEXT",
+                "check": "no quotation marks",
+                "status": "Pass",
+                "detail": "The titles do not have quotation marks."
+              },
+              {
+                "category": "PROP SCALE",
+                "check": "mugs, phones, tables, carts, and furniture",
+                "status": "Pass",
+                "detail": "The furniture and props (table, chairs, plates, wings basket) are scaled correctly to the characters."
+              },
+              {
+                "category": "TEXT",
+                "check": "no additional descriptive text or watermarks",
+                "status": "Warning",
+                "detail": "The comic contains unexpected additional text below the titles. In the left panel: 'Bubblebody Neue Regular'. In the right panel: 'EATING WINGS WITH YOU' is repeated."
+              }
+            ],
+            "rank": 3,
+            "recommended": false,
+            "selected": false,
+            "repair_parent_id": null,
+            "estimated_cost": 0.067,
+            "reported_cost": null,
+            "created_at": "2026-08-07T18:54:57.014811+00:00",
+            "error": null,
+            "original_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-2e61574582db.jpg",
+            "final_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-2e61574582db-final.png",
+            "final_asset_url": "/generation-assets/runs/generation-0b0f51cd64ba/candidates/candidate-2e61574582db-final.png",
+            "final_layout": {
+              "mode": "extend_right_80_20",
+              "original_width": 1024,
+              "original_height": 1024,
+              "final_width": 1280,
+              "final_height": 1024,
+              "extension_width": 256,
+              "original_share": 0.8,
+              "extension_share": 0.2,
+              "anchor_x": 0,
+              "background_rgb": [
+                249,
+                235,
+                208
+              ],
+              "background_source": "detected_perimeter",
+              "validated": true
+            },
+            "qa_runtime_ms": 5572
+          }
+        ],
+        "selected_candidate_id": "candidate-7db318fe3f09",
+        "final_asset_id": "asset-927d0f522ad4",
+        "final_asset_url": "/generation-assets/runs/generation-0b0f51cd64ba/final.png",
+        "prompt_id": "generation-prompt-c3e6fb8c2c00",
+        "prompt_record": {
+          "prompt_id": "generation-prompt-c3e6fb8c2c00",
+          "template": "XWithYou.md",
+          "template_version": "1ff442d65496",
+          "character_rule_version": "5464e055331e",
+          "failure_rule_version": "533e429c10bc",
+          "created_at": "2026-08-07T18:53:57.482994+00:00",
+          "rules_included": [
+            "Boy DINKLY is alone in the left panel with exactly two hair tufts.",
+            "The right panel always contains Boy DINKLY and Girl DINKLY together at equal body size.",
+            "Keep every character grounded on the floor; tables and counters remain secondary props, and no character sits or stands on them."
+          ]
+        },
+        "dinko_reference_version": "f0e8f68a3f5a2a38",
+        "dinka_reference_version": "f0e8f68a3f5a2a38",
+        "reference_paths": [
+          "references/dinkly_young.png"
+        ],
+        "started_at": "2026-08-07T18:53:57.482056+00:00",
+        "completed_at": "2026-08-07T18:56:19.998213+00:00",
+        "approved_at": "2026-08-07T18:56:19.998213+00:00",
+        "runtime_ms": 89670,
+        "estimated_cost": 0.268,
+        "reported_cost": null,
+        "aspect_ratio": "1:1",
+        "error": null,
+        "warnings": [],
+        "comparison": false,
+        "final_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/final.png",
+        "approved_by": "owner",
+        "original_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-7db318fe3f09.jpg",
+        "final_layout": {
+          "mode": "extend_right_80_20",
+          "original_width": 1024,
+          "original_height": 1024,
+          "final_width": 1280,
+          "final_height": 1024,
+          "extension_width": 256,
+          "original_share": 0.8,
+          "extension_share": 0.2,
+          "anchor_x": 0,
+          "background_rgb": [
+            251,
+            238,
+            213
+          ],
+          "background_source": "detected_perimeter",
+          "validated": true
+        },
+        "selected_model_info": {
+          "id": "nano_banana_2",
+          "display_name": "Nano Banana 2",
+          "power_label": "BALANCED",
+          "power_level": 2,
+          "description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+          "recommended_for": [
+            "Dinko + Dinka",
+            "Split comics",
+            "Multiple references",
+            "Most final production"
+          ],
+          "cost_tier": "standard"
+        },
+        "comic_asset_count": 0,
+        "generation_recipe": [
+          "Character references loaded",
+          "Scene template selected",
+          "Character locks applied",
+          "Scene protections applied",
+          "Background rules applied",
+          "Prop protections applied",
+          "Generation recipe ready"
+        ]
+      }
+    },
+    "error": null,
+    "created_at": "2026-08-07T18:56:18.607006+00:00",
+    "started_at": "2026-08-07T18:56:18.615360+00:00",
+    "completed_at": "2026-08-07T18:56:20.426726+00:00"
+  },
+  {
+    "id": "task-aa276e8d8071",
+    "source_channel": "learning",
+    "source_thread_id": "approval-generation-0b0f51cd64ba",
+    "source_user_id": null,
+    "source_message_id": null,
+    "user_instruction": "Learn from approved generation generation-0b0f51cd64ba",
+    "task_type": "learn",
+    "status": "failed",
+    "priority": 5,
+    "context": {},
+    "run_ids": [],
+    "artifact_ids": [],
+    "approval_required": false,
+    "result": {
+      "message": "Assignment failed: Slack API error: not_in_channel"
+    },
+    "error": "Slack API error: not_in_channel",
+    "created_at": "2026-08-07T18:56:20.383119+00:00",
+    "started_at": "2026-08-07T18:56:21.634190+00:00",
+    "completed_at": "2026-08-07T18:56:21.945533+00:00",
+    "dedupe_key": "learning:approval:generation-0b0f51cd64ba"
+  },
+  {
+    "id": "task-dbad1dd38609",
+    "source_channel": "web",
+    "source_thread_id": "web-default",
+    "source_user_id": "owner",
+    "source_message_id": null,
+    "user_instruction": "approve comic generation-0b0f51cd64ba",
+    "task_type": "approval",
+    "status": "completed",
+    "priority": 2,
+    "context": {
+      "action": "approve",
+      "item_type": "comic",
+      "item_id": "generation-0b0f51cd64ba",
+      "notes": null
+    },
+    "run_ids": [
+      "generation-0b0f51cd64ba"
+    ],
+    "artifact_ids": [],
+    "approval_required": false,
+    "result": {
+      "message": "Comic approved and saved to History.",
+      "run": {
+        "id": "generation-0b0f51cd64ba",
+        "concept_id": null,
+        "concept_text": "EATING WINGS. / EATING WINGS WITH YOU.",
+        "story_brief": {
+          "id": null,
+          "concept_id": null,
+          "format": "x-with-you",
+          "title_left": "EATING WINGS.",
+          "title_right": "EATING WINGS WITH YOU.",
+          "left_character": "boy",
+          "left_action": "Dinko is eating wings alone.",
+          "left_setting": "simple rounded casual dining nook",
+          "left_props": [
+            "rounded table",
+            "two chairs"
+          ],
+          "left_emotion": "Neutral, bored, or gently sad—never happy.",
+          "right_characters": [
+            "boy",
+            "girl"
+          ],
+          "right_action": "Dinko and Dinka are eating wings together.",
+          "right_setting": "the same simple rounded casual dining nook",
+          "right_props": [
+            "rounded table",
+            "two chairs",
+            "basket of wings",
+            "napkin holder"
+          ],
+          "right_emotion": "Warm, playful, and connected because the ordinary moment is shared.",
+          "shared_environment": "One continuous pastel background across both panels in the same simple rounded casual dining nook.",
+          "environmental_contrast": "The activity stays ordinary; companionship changes the feeling.",
+          "background_color": "warm cream",
+          "accent_color": "muted terracotta",
+          "camera_angle": "medium straight-on",
+          "execution_risks": [
+            "Keep both characters equal size and all props subordinate to them."
+          ],
+          "emotional_insight": "Eating wings feels better when it is shared with your person.",
+          "brand_sensitive": false,
+          "comics": []
+        },
+        "story_format": "x-with-you",
+        "status": "approved",
+        "provider": "google_gemini",
+        "model_selection_mode": "automatic",
+        "selected_model": "nano_banana_2",
+        "selection_reason": "Two character references and split-scene consistency.",
+        "candidate_count": 4,
+        "candidate_ids": [
+          "candidate-c09d3d0fcb0d",
+          "candidate-7db318fe3f09",
+          "candidate-bad04b613975",
+          "candidate-2e61574582db"
+        ],
+        "candidates": [
+          {
+            "id": "candidate-c09d3d0fcb0d",
+            "generation_run_id": "generation-0b0f51cd64ba",
+            "label": "A",
+            "image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-c09d3d0fcb0d.jpg",
+            "asset_url": "/generation-assets/runs/generation-0b0f51cd64ba/candidates/candidate-c09d3d0fcb0d.jpg",
+            "provider": "google_gemini",
+            "model": "nano_banana_2",
+            "model_display_name": "Nano Banana 2",
+            "model_power_label": "BALANCED",
+            "model_power_level": 2,
+            "model_description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+            "model_cost_tier": "standard",
+            "generation_index": 0,
+            "runtime_ms": 7488,
+            "qa_status": "Fail",
+            "qa_summary": "The comic successfully renders the DINKLY style and accurately depicts the required actions and props in both panels. While the character features are mostly correct, Dinko is missing his distinct hair tufts, having only one instead of the required two, and the right panel introduces an unusual duplication of the text.",
+            "qa_findings": [
+              {
+                "category": "CHARACTER",
+                "check": "round bright-yellow bodies",
+                "status": "Pass",
+                "detail": "The characters have the correct round, bright-yellow bodies."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "official orange spots",
+                "status": "Pass",
+                "detail": "The orange spots are present."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "black oval eyes with white highlights",
+                "status": "Pass",
+                "detail": "The eyes are correctly styled."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "Dinko exactly two hair tufts",
+                "status": "Fail",
+                "detail": "Dinko only has one hair tuft, not the required two."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "Dinka red bow and connected ponytail",
+                "status": "Pass",
+                "detail": "Dinka's bow and ponytail are correctly depicted."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "equal body size",
+                "status": "Pass",
+                "detail": "Both characters are roughly the same size."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "tiny nub arms and feet, no legs or human anatomy",
+                "status": "Pass",
+                "detail": "The anatomy is cartoonish and lacks human legs."
+              },
+              {
+                "category": "SCENE",
+                "check": "left action: Dinko is eating wings alone.",
+                "status": "Pass",
+                "detail": "The left panel correctly shows Dinko eating wings by himself."
+              },
+              {
+                "category": "SCENE",
+                "check": "right action: Dinko and Dinka are eating wings together.",
+                "status": "Pass",
+                "detail": "The right panel correctly shows Dinko and Dinka eating together."
+              },
+              {
+                "category": "SCENE",
+                "check": "settings: round wooden dining table, simple chairs, a background window",
+                "status": "Pass",
+                "detail": "The setting elements (table, chairs, window) are all present."
+              },
+              {
+                "category": "SCENE",
+                "check": "required props: small plate with wings and bones (left), basket of wings, condiments (right)",
+                "status": "Pass",
+                "detail": "All required props are visible and correctly placed."
+              },
+              {
+                "category": "SCENE",
+                "check": "one continuous warm cream background",
+                "status": "Pass",
+                "detail": "The background color is correct and continuous."
+              },
+              {
+                "category": "SCENE",
+                "check": "medium straight-on composition",
+                "status": "Pass",
+                "detail": "The composition meets the medium straight-on requirement."
+              },
+              {
+                "category": "TEXT",
+                "check": "EATING WINGS. (exact text)",
+                "status": "Pass",
+                "detail": "The text 'EATING WINGS' is present without quotation marks."
+              },
+              {
+                "category": "TEXT",
+                "check": "EATING WINGS WITH YOU. (exact text)",
+                "status": "Warning",
+                "detail": "While the text is present, it is duplicated in the right panel, appearing once at the top and once at the bottom, which is unusual for the style."
+              },
+              {
+                "category": "PROP SCALE",
+                "check": "scale for tables, chairs, plates, etc.",
+                "status": "Pass",
+                "detail": "The scale of the furniture and objects is appropriate for the characters."
+              }
+            ],
+            "rank": 4,
+            "recommended": false,
+            "selected": false,
+            "repair_parent_id": null,
+            "estimated_cost": 0.067,
+            "reported_cost": null,
+            "created_at": "2026-08-07T18:54:05.487009+00:00",
+            "error": null,
+            "original_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-c09d3d0fcb0d.jpg",
+            "final_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-c09d3d0fcb0d-final.png",
+            "final_asset_url": "/generation-assets/runs/generation-0b0f51cd64ba/candidates/candidate-c09d3d0fcb0d-final.png",
+            "final_layout": {
+              "mode": "extend_right_80_20",
+              "original_width": 1024,
+              "original_height": 1024,
+              "final_width": 1280,
+              "final_height": 1024,
+              "extension_width": 256,
+              "original_share": 0.8,
+              "extension_share": 0.2,
+              "anchor_x": 0,
+              "background_rgb": [
+                247,
+                232,
+                201
+              ],
+              "background_source": "detected_perimeter",
+              "validated": true
+            },
+            "qa_runtime_ms": 5811
+          },
+          {
+            "id": "candidate-7db318fe3f09",
+            "generation_run_id": "generation-0b0f51cd64ba",
+            "label": "B",
+            "image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-7db318fe3f09.jpg",
+            "asset_url": "/generation-assets/runs/generation-0b0f51cd64ba/candidates/candidate-7db318fe3f09.jpg",
+            "provider": "google_gemini",
+            "model": "nano_banana_2",
+            "model_display_name": "Nano Banana 2",
+            "model_power_label": "BALANCED",
+            "model_power_level": 2,
+            "model_description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+            "model_cost_tier": "standard",
+            "generation_index": 1,
+            "runtime_ms": 6774,
+            "qa_status": "Pass",
+            "qa_summary": "The generated image is a perfect visual match for the provided requirements. Both characters, Dinko and Dinka, strictly adhere to their detailed specifications, as do the props, text, and scene. The comic panels accurately depict the solitary 'Eating Wings' scenario and the shared 'Eating Wings with You' scenario in a continuous, medium-shot composition with a warm cream background. All text is accurate and centered.",
+            "qa_findings": [
+              {
+                "category": "CHARACTER",
+                "check": "Dinko is a round, bright-yellow blob character with orange spots.",
+                "status": "Pass",
+                "detail": "All visual features are correct and accurate."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "Dinko has two curved tufts of hair on his head.",
+                "status": "Pass",
+                "detail": "Both hair tufts are correctly depicted."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "Dinko has black, oval eyes with visible white highlights.",
+                "status": "Pass",
+                "detail": "The eye details are rendered exactly as specified."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "Dinka is identical to Dinko (same body, spots, eyes).",
+                "status": "Pass",
+                "detail": "Characters are identical besides specified differences."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "Dinka has a red bow with a continuous ponytail, not just a bow.",
+                "status": "Pass",
+                "detail": "The bow and ponytail are clearly connected as requested."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "Dinko and Dinka are identical in size.",
+                "status": "Pass",
+                "detail": "Their scale is matched correctly."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "Characters have tiny nub arms/hands and small feet, no human hands/fingers/legs.",
+                "status": "Pass",
+                "detail": "The limbs are correctly simplified and cartoonish."
+              },
+              {
+                "category": "SCENE",
+                "check": "Left Panel Action: Dinko is eating wings alone and looks unamused.",
+                "status": "Pass",
+                "detail": "Dinko is eating a single wing, alone, and has a bored expression."
+              },
+              {
+                "category": "SCENE",
+                "check": "Left Panel Settings/Props: Wooden table, two empty chairs, a lone basket of wings, background.",
+                "status": "Pass",
+                "detail": "All props are present as specified; one chair is technically unoccupied rather than completely empty in context, but the alone nature is clear."
+              },
+              {
+                "category": "SCENE",
+                "check": "Right Panel Action: Dinko and Dinka are happily eating wings together.",
+                "status": "Pass",
+                "detail": "Both characters are eating happily and interacting with the food."
+              },
+              {
+                "category": "SCENE",
+                "check": "Right Panel Settings/Props: Table, two chairs (filled), a full basket of wings between them, two drinks, napkin holder.",
+                "status": "Pass",
+                "detail": "All shared items are present and correct."
+              },
+              {
+                "category": "TEXT",
+                "check": "Left Text (centered over scene): 'EATING WINGS.' (no quotes).",
+                "status": "Pass",
+                "detail": "The text is present, correct, and positioned correctly."
+              },
+              {
+                "category": "TEXT",
+                "check": "Right Text (centered over scene): 'EATING WINGS WITH YOU.' (no quotes).",
+                "status": "Pass",
+                "detail": "The text is present, correct, and positioned correctly."
+              },
+              {
+                "category": "VISUAL",
+                "check": "Warm cream background across both panels.",
+                "status": "Pass",
+                "detail": "The color is consistent as a single flat tone."
+              },
+              {
+                "category": "VISUAL",
+                "check": "Medium-shot straight-on composition with a single solid line separating panels.",
+                "status": "Pass",
+                "detail": "The comic panel structure and composition are correct."
+              },
+              {
+                "category": "PROP SCALE",
+                "check": "Basket of wings must fit on the table as a shared dish in panel 2.",
+                "status": "Pass",
+                "detail": "The scale is realistic for the scene and characters."
+              },
+              {
+                "category": "PROP SCALE",
+                "check": "Drinks and other table items are in a 1:1 scale with the characters.",
+                "status": "Pass",
+                "detail": "Prop scale is matched correctly."
+              }
+            ],
+            "rank": 2,
+            "recommended": false,
+            "selected": true,
+            "repair_parent_id": null,
+            "estimated_cost": 0.067,
+            "reported_cost": null,
+            "created_at": "2026-08-07T18:54:12.668301+00:00",
+            "error": null,
+            "original_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-7db318fe3f09.jpg",
+            "final_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-7db318fe3f09-final.png",
+            "final_asset_url": "/generation-assets/runs/generation-0b0f51cd64ba/candidates/candidate-7db318fe3f09-final.png",
+            "final_layout": {
+              "mode": "extend_right_80_20",
+              "original_width": 1024,
+              "original_height": 1024,
+              "final_width": 1280,
+              "final_height": 1024,
+              "extension_width": 256,
+              "original_share": 0.8,
+              "extension_share": 0.2,
+              "anchor_x": 0,
+              "background_rgb": [
+                251,
+                238,
+                213
+              ],
+              "background_source": "detected_perimeter",
+              "validated": true
+            },
+            "qa_runtime_ms": 6152
+          },
+          {
+            "id": "candidate-bad04b613975",
+            "generation_run_id": "generation-0b0f51cd64ba",
+            "label": "C",
+            "image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-bad04b613975.jpg",
+            "asset_url": "/generation-assets/runs/generation-0b0f51cd64ba/candidates/candidate-bad04b613975.jpg",
+            "provider": "google_gemini",
+            "model": "nano_banana_2",
+            "model_display_name": "Nano Banana 2",
+            "model_power_label": "BALANCED",
+            "model_power_level": 2,
+            "model_description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+            "model_cost_tier": "standard",
+            "generation_index": 2,
+            "runtime_ms": 9889,
+            "qa_status": "Pass",
+            "qa_summary": "This comic strip perfectly follows the DINKLY style and accurately depicts the requested scenario. All character details, environmental elements, and text are correct.",
+            "qa_findings": [
+              {
+                "category": "CHARACTER",
+                "check": "round bright-yellow bodies",
+                "status": "Pass",
+                "detail": "Correct"
+              },
+              {
+                "category": "CHARACTER",
+                "check": "official orange spots",
+                "status": "Pass",
+                "detail": "Correct"
+              },
+              {
+                "category": "CHARACTER",
+                "check": "black oval eyes with white highlights",
+                "status": "Pass",
+                "detail": "Correct"
+              },
+              {
+                "category": "CHARACTER",
+                "check": "Dinko exactly two hair tufts",
+                "status": "Pass",
+                "detail": "Both hair tufts are correctly depicted"
+              },
+              {
+                "category": "CHARACTER",
+                "check": "Dinka red bow and connected ponytail",
+                "status": "Pass",
+                "detail": "Both elements are present and correctly rendered"
+              },
+              {
+                "category": "CHARACTER",
+                "check": "equal body size",
+                "status": "Pass",
+                "detail": "Correct"
+              },
+              {
+                "category": "CHARACTER",
+                "check": "tiny nub arms and feet",
+                "status": "Pass",
+                "detail": "Correct"
+              },
+              {
+                "category": "CHARACTER",
+                "check": "no legs or human anatomy",
+                "status": "Pass",
+                "detail": "Correct"
+              },
+              {
+                "category": "SCENE",
+                "check": "left action 'Dinko is eating wings alone.'",
+                "status": "Pass",
+                "detail": "The left panel correctly shows Dinko eating alone, with a somber expression appropriate for the 'Eating Wings' caption."
+              },
+              {
+                "category": "SCENE",
+                "check": "right action 'Dinko and Dinka are eating wings together.'",
+                "status": "Pass",
+                "detail": "The right panel correctly shows Dinko and Dinka eating together and looking happy."
+              },
+              {
+                "category": "SCENE",
+                "check": "settings, required props",
+                "status": "Pass",
+                "detail": "The table, chairs, wing baskets/platters, and dipping sauces are correctly included in both panels. The background elements (potted plant, window) are also present and consistent."
+              },
+              {
+                "category": "SCENE",
+                "check": "one continuous warm cream background",
+                "status": "Pass",
+                "detail": "The background uses a consistent warm cream tone."
+              },
+              {
+                "category": "SCENE",
+                "check": "medium straight-on composition",
+                "status": "Pass",
+                "detail": "The composition is a medium straight-on shot as required."
+              },
+              {
+                "category": "TEXT",
+                "check": "exactly 'EATING WINGS.' and 'EATING WINGS WITH YOU.'",
+                "status": "Pass",
+                "detail": "The text is exactly as specified, with the second caption split into two lines for readability which is standard for a comic."
+              },
+              {
+                "category": "PROP SCALE",
+                "check": "mugs, phones, tables, carts, and furniture",
+                "status": "Pass",
+                "detail": "All props and furniture are scaled correctly relative to the characters."
+              }
+            ],
+            "rank": 1,
+            "recommended": true,
+            "selected": false,
+            "repair_parent_id": null,
+            "estimated_cost": 0.067,
+            "reported_cost": null,
+            "created_at": "2026-08-07T18:54:22.934245+00:00",
+            "error": null,
+            "original_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-bad04b613975.jpg",
+            "final_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-bad04b613975-final.png",
+            "final_asset_url": "/generation-assets/runs/generation-0b0f51cd64ba/candidates/candidate-bad04b613975-final.png",
+            "final_layout": {
+              "mode": "extend_right_80_20",
+              "original_width": 1024,
+              "original_height": 1024,
+              "final_width": 1280,
+              "final_height": 1024,
+              "extension_width": 256,
+              "original_share": 0.8,
+              "extension_share": 0.2,
+              "anchor_x": 0,
+              "background_rgb": [
+                249,
+                232,
+                194
+              ],
+              "background_source": "story_brief",
+              "validated": true
+            },
+            "qa_runtime_ms": 4240
+          },
+          {
+            "id": "candidate-2e61574582db",
+            "generation_run_id": "generation-0b0f51cd64ba",
+            "label": "D",
+            "image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-2e61574582db.jpg",
+            "asset_url": "/generation-assets/runs/generation-0b0f51cd64ba/candidates/candidate-2e61574582db.jpg",
+            "provider": "google_gemini",
+            "model": "nano_banana_2",
+            "model_display_name": "Nano Banana 2",
+            "model_power_label": "BALANCED",
+            "model_power_level": 2,
+            "model_description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+            "model_cost_tier": "standard",
+            "generation_index": 3,
+            "runtime_ms": 33788,
+            "qa_status": "Warning",
+            "qa_summary": "Overall, this image adheres strictly to the character, scene, and text requirements for a DINKLY comic, including specific character traits like spots and hair. It correctly renders the solo and couple scenarios with the required props. The only minor deviation is the inclusion of unexpected font information below the main title text in both panels.",
+            "qa_findings": [
+              {
+                "category": "CHARACTER",
+                "check": "round bright-yellow bodies",
+                "status": "Pass",
+                "detail": "Both characters have the correct shape and color."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "official orange spots",
+                "status": "Pass",
+                "detail": "Both characters have visible orange spots."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "black oval eyes with white highlights",
+                "status": "Pass",
+                "detail": "The eyes are rendered as black ovals with highlights."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "Dinko exactly two hair tufts",
+                "status": "Pass",
+                "detail": "Dinko has two distinct hair tufts."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "Dinka red bow and connected ponytail",
+                "status": "Pass",
+                "detail": "Dinka is correctly depicted with a red bow and a high, connected ponytail."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "equal body size",
+                "status": "Pass",
+                "detail": "Dinko and Dinka are the same size."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "tiny nub arms and feet",
+                "status": "Pass",
+                "detail": "The limbs are rendered as small nubs."
+              },
+              {
+                "category": "CHARACTER",
+                "check": "no legs or human anatomy",
+                "status": "Pass",
+                "detail": "No legs or other complex anatomy are visible."
+              },
+              {
+                "category": "SCENE",
+                "check": "left action 'Dinko is eating wings alone.'",
+                "status": "Pass",
+                "detail": "Dinko is correctly shown alone in the left panel with wings on the table."
+              },
+              {
+                "category": "SCENE",
+                "check": "right action 'Dinko and Dinka are eating wings together.'",
+                "status": "Pass",
+                "detail": "Dinko and Dinka are shown together, eating and happy, in the right panel."
+              },
+              {
+                "category": "SCENE",
+                "check": "setting",
+                "status": "Pass",
+                "detail": "The setting is a consistent indoor room with a table, chairs, and window."
+              },
+              {
+                "category": "SCENE",
+                "check": "required props",
+                "status": "Pass",
+                "detail": "Props include a table, chairs, plates, a basket of wings, and a napkin holder, appropriate for the scene."
+              },
+              {
+                "category": "SCENE",
+                "check": "one continuous warm cream background",
+                "status": "Pass",
+                "detail": "The background color is correct and continuous."
+              },
+              {
+                "category": "SCENE",
+                "check": "medium straight-on composition",
+                "status": "Pass",
+                "detail": "The view is straight-on and correctly framed."
+              },
+              {
+                "category": "TEXT",
+                "check": "exact text: 'EATING WINGS.' and 'EATING WINGS WITH YOU.'",
+                "status": "Pass",
+                "detail": "The exact phrases are used as the primary titles for each panel."
+              },
+              {
+                "category": "TEXT",
+                "check": "no quotation marks",
+                "status": "Pass",
+                "detail": "The titles do not have quotation marks."
+              },
+              {
+                "category": "PROP SCALE",
+                "check": "mugs, phones, tables, carts, and furniture",
+                "status": "Pass",
+                "detail": "The furniture and props (table, chairs, plates, wings basket) are scaled correctly to the characters."
+              },
+              {
+                "category": "TEXT",
+                "check": "no additional descriptive text or watermarks",
+                "status": "Warning",
+                "detail": "The comic contains unexpected additional text below the titles. In the left panel: 'Bubblebody Neue Regular'. In the right panel: 'EATING WINGS WITH YOU' is repeated."
+              }
+            ],
+            "rank": 3,
+            "recommended": false,
+            "selected": false,
+            "repair_parent_id": null,
+            "estimated_cost": 0.067,
+            "reported_cost": null,
+            "created_at": "2026-08-07T18:54:57.014811+00:00",
+            "error": null,
+            "original_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-2e61574582db.jpg",
+            "final_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-2e61574582db-final.png",
+            "final_asset_url": "/generation-assets/runs/generation-0b0f51cd64ba/candidates/candidate-2e61574582db-final.png",
+            "final_layout": {
+              "mode": "extend_right_80_20",
+              "original_width": 1024,
+              "original_height": 1024,
+              "final_width": 1280,
+              "final_height": 1024,
+              "extension_width": 256,
+              "original_share": 0.8,
+              "extension_share": 0.2,
+              "anchor_x": 0,
+              "background_rgb": [
+                249,
+                235,
+                208
+              ],
+              "background_source": "detected_perimeter",
+              "validated": true
+            },
+            "qa_runtime_ms": 5572
+          }
+        ],
+        "selected_candidate_id": "candidate-7db318fe3f09",
+        "final_asset_id": "asset-1c909cfec04b",
+        "final_asset_url": "/generation-assets/runs/generation-0b0f51cd64ba/final.png",
+        "prompt_id": "generation-prompt-c3e6fb8c2c00",
+        "prompt_record": {
+          "prompt_id": "generation-prompt-c3e6fb8c2c00",
+          "template": "XWithYou.md",
+          "template_version": "1ff442d65496",
+          "character_rule_version": "5464e055331e",
+          "failure_rule_version": "533e429c10bc",
+          "created_at": "2026-08-07T18:53:57.482994+00:00",
+          "rules_included": [
+            "Boy DINKLY is alone in the left panel with exactly two hair tufts.",
+            "The right panel always contains Boy DINKLY and Girl DINKLY together at equal body size.",
+            "Keep every character grounded on the floor; tables and counters remain secondary props, and no character sits or stands on them."
+          ]
+        },
+        "dinko_reference_version": "f0e8f68a3f5a2a38",
+        "dinka_reference_version": "f0e8f68a3f5a2a38",
+        "reference_paths": [
+          "references/dinkly_young.png"
+        ],
+        "started_at": "2026-08-07T18:53:57.482056+00:00",
+        "completed_at": "2026-08-07T18:56:27.425084+00:00",
+        "approved_at": "2026-08-07T18:56:27.425084+00:00",
+        "runtime_ms": 89670,
+        "estimated_cost": 0.268,
+        "reported_cost": null,
+        "aspect_ratio": "1:1",
+        "error": null,
+        "warnings": [],
+        "comparison": false,
+        "final_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/final.png",
+        "approved_by": "owner",
+        "original_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-7db318fe3f09.jpg",
+        "final_layout": {
+          "mode": "extend_right_80_20",
+          "original_width": 1024,
+          "original_height": 1024,
+          "final_width": 1280,
+          "final_height": 1024,
+          "extension_width": 256,
+          "original_share": 0.8,
+          "extension_share": 0.2,
+          "anchor_x": 0,
+          "background_rgb": [
+            251,
+            238,
+            213
+          ],
+          "background_source": "detected_perimeter",
+          "validated": true
+        },
+        "selected_model_info": {
+          "id": "nano_banana_2",
+          "display_name": "Nano Banana 2",
+          "power_label": "BALANCED",
+          "power_level": 2,
+          "description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+          "recommended_for": [
+            "Dinko + Dinka",
+            "Split comics",
+            "Multiple references",
+            "Most final production"
+          ],
+          "cost_tier": "standard"
+        },
+        "comic_asset_count": 0,
+        "generation_recipe": [
+          "Character references loaded",
+          "Scene template selected",
+          "Character locks applied",
+          "Scene protections applied",
+          "Background rules applied",
+          "Prop protections applied",
+          "Generation recipe ready"
+        ]
+      }
+    },
+    "error": null,
+    "created_at": "2026-08-07T18:56:26.089806+00:00",
+    "started_at": "2026-08-07T18:56:26.117154+00:00",
+    "completed_at": "2026-08-07T18:56:27.466516+00:00"
+  },
+  {
+    "id": "task-142c13e37b9c",
+    "source_channel": "slack",
+    "source_thread_id": "1786132091.212759",
+    "source_user_id": "U098G12EZ97",
+    "source_message_id": "1786132091.212759",
+    "user_instruction": "create me a comic of walking the dog and walking the dog with you",
+    "task_type": "generate_comic",
+    "status": "waiting_for_human",
+    "priority": 1,
+    "context": {
+      "recent_task_id": "task-dbad1dd38609",
+      "recent_run_ids": [
+        "generation-0b0f51cd64ba"
+      ],
+      "recent_artifact_ids": [],
+      "recent_result": {
+        "message": "Comic approved and saved to History.",
+        "run": {
+          "id": "generation-0b0f51cd64ba",
+          "concept_id": null,
+          "concept_text": "EATING WINGS. / EATING WINGS WITH YOU.",
+          "story_brief": {
+            "id": null,
+            "concept_id": null,
+            "format": "x-with-you",
+            "title_left": "EATING WINGS.",
+            "title_right": "EATING WINGS WITH YOU.",
+            "left_character": "boy",
+            "left_action": "Dinko is eating wings alone.",
+            "left_setting": "simple rounded casual dining nook",
+            "left_props": [
+              "rounded table",
+              "two chairs"
+            ],
+            "left_emotion": "Neutral, bored, or gently sad—never happy.",
+            "right_characters": [
+              "boy",
+              "girl"
+            ],
+            "right_action": "Dinko and Dinka are eating wings together.",
+            "right_setting": "the same simple rounded casual dining nook",
+            "right_props": [
+              "rounded table",
+              "two chairs",
+              "basket of wings",
+              "napkin holder"
+            ],
+            "right_emotion": "Warm, playful, and connected because the ordinary moment is shared.",
+            "shared_environment": "One continuous pastel background across both panels in the same simple rounded casual dining nook.",
+            "environmental_contrast": "The activity stays ordinary; companionship changes the feeling.",
+            "background_color": "warm cream",
+            "accent_color": "muted terracotta",
+            "camera_angle": "medium straight-on",
+            "execution_risks": [
+              "Keep both characters equal size and all props subordinate to them."
+            ],
+            "emotional_insight": "Eating wings feels better when it is shared with your person.",
+            "brand_sensitive": false,
+            "comics": []
+          },
+          "story_format": "x-with-you",
+          "status": "approved",
+          "provider": "google_gemini",
+          "model_selection_mode": "automatic",
+          "selected_model": "nano_banana_2",
+          "selection_reason": "Two character references and split-scene consistency.",
+          "candidate_count": 4,
+          "candidate_ids": [
+            "candidate-c09d3d0fcb0d",
+            "candidate-7db318fe3f09",
+            "candidate-bad04b613975",
+            "candidate-2e61574582db"
+          ],
+          "candidates": [
+            {
+              "id": "candidate-c09d3d0fcb0d",
+              "generation_run_id": "generation-0b0f51cd64ba",
+              "label": "A",
+              "image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-c09d3d0fcb0d.jpg",
+              "asset_url": "/generation-assets/runs/generation-0b0f51cd64ba/candidates/candidate-c09d3d0fcb0d.jpg",
+              "provider": "google_gemini",
+              "model": "nano_banana_2",
+              "model_display_name": "Nano Banana 2",
+              "model_power_label": "BALANCED",
+              "model_power_level": 2,
+              "model_description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+              "model_cost_tier": "standard",
+              "generation_index": 0,
+              "runtime_ms": 7488,
+              "qa_status": "Fail",
+              "qa_summary": "The comic successfully renders the DINKLY style and accurately depicts the required actions and props in both panels. While the character features are mostly correct, Dinko is missing his distinct hair tufts, having only one instead of the required two, and the right panel introduces an unusual duplication of the text.",
+              "qa_findings": [
+                {
+                  "category": "CHARACTER",
+                  "check": "round bright-yellow bodies",
+                  "status": "Pass",
+                  "detail": "The characters have the correct round, bright-yellow bodies."
+                },
+                {
+                  "category": "CHARACTER",
+                  "check": "official orange spots",
+                  "status": "Pass",
+                  "detail": "The orange spots are present."
+                },
+                {
+                  "category": "CHARACTER",
+                  "check": "black oval eyes with white highlights",
+                  "status": "Pass",
+                  "detail": "The eyes are correctly styled."
+                },
+                {
+                  "category": "CHARACTER",
+                  "check": "Dinko exactly two hair tufts",
+                  "status": "Fail",
+                  "detail": "Dinko only has one hair tuft, not the required two."
+                },
+                {
+                  "category": "CHARACTER",
+                  "check": "Dinka red bow and connected ponytail",
+                  "status": "Pass",
+                  "detail": "Dinka's bow and ponytail are correctly depicted."
+                },
+                {
+                  "category": "CHARACTER",
+                  "check": "equal body size",
+                  "status": "Pass",
+                  "detail": "Both characters are roughly the same size."
+                },
+                {
+                  "category": "CHARACTER",
+                  "check": "tiny nub arms and feet, no legs or human anatomy",
+                  "status": "Pass",
+                  "detail": "The anatomy is cartoonish and lacks human legs."
+                },
+                {
+                  "category": "SCENE",
+                  "check": "left action: Dinko is eating wings alone.",
+                  "status": "Pass",
+                  "detail": "The left panel correctly shows Dinko eating wings by himself."
+                },
+                {
+                  "category": "SCENE",
+                  "check": "right action: Dinko and Dinka are eating wings together.",
+                  "status": "Pass",
+                  "detail": "The right panel correctly shows Dinko and Dinka eating together."
+                },
+                {
+                  "category": "SCENE",
+                  "check": "settings: round wooden dining table, simple chairs, a background window",
+                  "status": "Pass",
+                  "detail": "The setting elements (table, chairs, window) are all present."
+                },
+                {
+                  "category": "SCENE",
+                  "check": "required props: small plate with wings and bones (left), basket of wings, condiments (right)",
+                  "status": "Pass",
+                  "detail": "All required props are visible and correctly placed."
+                },
+                {
+                  "category": "SCENE",
+                  "check": "one continuous warm cream background",
+                  "status": "Pass",
+                  "detail": "The background color is correct and continuous."
+                },
+                {
+                  "category": "SCENE",
+                  "check": "medium straight-on composition",
+                  "status": "Pass",
+                  "detail": "The composition meets the medium straight-on requirement."
+                },
+                {
+                  "category": "TEXT",
+                  "check": "EATING WINGS. (exact text)",
+                  "status": "Pass",
+                  "detail": "The text 'EATING WINGS' is present without quotation marks."
+                },
+                {
+                  "category": "TEXT",
+                  "check": "EATING WINGS WITH YOU. (exact text)",
+                  "status": "Warning",
+                  "detail": "While the text is present, it is duplicated in the right panel, appearing once at the top and once at the bottom, which is unusual for the style."
+                },
+                {
+                  "category": "PROP SCALE",
+                  "check": "scale for tables, chairs, plates, etc.",
+                  "status": "Pass",
+                  "detail": "The scale of the furniture and objects is appropriate for the characters."
+                }
+              ],
+              "rank": 4,
+              "recommended": false,
+              "selected": false,
+              "repair_parent_id": null,
+              "estimated_cost": 0.067,
+              "reported_cost": null,
+              "created_at": "2026-08-07T18:54:05.487009+00:00",
+              "error": null,
+              "original_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-c09d3d0fcb0d.jpg",
+              "final_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-c09d3d0fcb0d-final.png",
+              "final_asset_url": "/generation-assets/runs/generation-0b0f51cd64ba/candidates/candidate-c09d3d0fcb0d-final.png",
+              "final_layout": {
+                "mode": "extend_right_80_20",
+                "original_width": 1024,
+                "original_height": 1024,
+                "final_width": 1280,
+                "final_height": 1024,
+                "extension_width": 256,
+                "original_share": 0.8,
+                "extension_share": 0.2,
+                "anchor_x": 0,
+                "background_rgb": [
+                  247,
+                  232,
+                  201
+                ],
+                "background_source": "detected_perimeter",
+                "validated": true
+              },
+              "qa_runtime_ms": 5811
+            },
+            {
+              "id": "candidate-7db318fe3f09",
+              "generation_run_id": "generation-0b0f51cd64ba",
+              "label": "B",
+              "image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-7db318fe3f09.jpg",
+              "asset_url": "/generation-assets/runs/generation-0b0f51cd64ba/candidates/candidate-7db318fe3f09.jpg",
+              "provider": "google_gemini",
+              "model": "nano_banana_2",
+              "model_display_name": "Nano Banana 2",
+              "model_power_label": "BALANCED",
+              "model_power_level": 2,
+              "model_description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+              "model_cost_tier": "standard",
+              "generation_index": 1,
+              "runtime_ms": 6774,
+              "qa_status": "Pass",
+              "qa_summary": "The generated image is a perfect visual match for the provided requirements. Both characters, Dinko and Dinka, strictly adhere to their detailed specifications, as do the props, text, and scene. The comic panels accurately depict the solitary 'Eating Wings' scenario and the shared 'Eating Wings with You' scenario in a continuous, medium-shot composition with a warm cream background. All text is accurate and centered.",
+              "qa_findings": [
+                {
+                  "category": "CHARACTER",
+                  "check": "Dinko is a round, bright-yellow blob character with orange spots.",
+                  "status": "Pass",
+                  "detail": "All visual features are correct and accurate."
+                },
+                {
+                  "category": "CHARACTER",
+                  "check": "Dinko has two curved tufts of hair on his head.",
+                  "status": "Pass",
+                  "detail": "Both hair tufts are correctly depicted."
+                },
+                {
+                  "category": "CHARACTER",
+                  "check": "Dinko has black, oval eyes with visible white highlights.",
+                  "status": "Pass",
+                  "detail": "The eye details are rendered exactly as specified."
+                },
+                {
+                  "category": "CHARACTER",
+                  "check": "Dinka is identical to Dinko (same body, spots, eyes).",
+                  "status": "Pass",
+                  "detail": "Characters are identical besides specified differences."
+                },
+                {
+                  "category": "CHARACTER",
+                  "check": "Dinka has a red bow with a continuous ponytail, not just a bow.",
+                  "status": "Pass",
+                  "detail": "The bow and ponytail are clearly connected as requested."
+                },
+                {
+                  "category": "CHARACTER",
+                  "check": "Dinko and Dinka are identical in size.",
+                  "status": "Pass",
+                  "detail": "Their scale is matched correctly."
+                },
+                {
+                  "category": "CHARACTER",
+                  "check": "Characters have tiny nub arms/hands and small feet, no human hands/fingers/legs.",
+                  "status": "Pass",
+                  "detail": "The limbs are correctly simplified and cartoonish."
+                },
+                {
+                  "category": "SCENE",
+                  "check": "Left Panel Action: Dinko is eating wings alone and looks unamused.",
+                  "status": "Pass",
+                  "detail": "Dinko is eating a single wing, alone, and has a bored expression."
+                },
+                {
+                  "category": "SCENE",
+                  "check": "Left Panel Settings/Props: Wooden table, two empty chairs, a lone basket of wings, background.",
+                  "status": "Pass",
+                  "detail": "All props are present as specified; one chair is technically unoccupied rather than completely empty in context, but the alone nature is clear."
+                },
+                {
+                  "category": "SCENE",
+                  "check": "Right Panel Action: Dinko and Dinka are happily eating wings together.",
+                  "status": "Pass",
+                  "detail": "Both characters are eating happily and interacting with the food."
+                },
+                {
+                  "category": "SCENE",
+                  "check": "Right Panel Settings/Props: Table, two chairs (filled), a full basket of wings between them, two drinks, napkin holder.",
+                  "status": "Pass",
+                  "detail": "All shared items are present and correct."
+                },
+                {
+                  "category": "TEXT",
+                  "check": "Left Text (centered over scene): 'EATING WINGS.' (no quotes).",
+                  "status": "Pass",
+                  "detail": "The text is present, correct, and positioned correctly."
+                },
+                {
+                  "category": "TEXT",
+                  "check": "Right Text (centered over scene): 'EATING WINGS WITH YOU.' (no quotes).",
+                  "status": "Pass",
+                  "detail": "The text is present, correct, and positioned correctly."
+                },
+                {
+                  "category": "VISUAL",
+                  "check": "Warm cream background across both panels.",
+                  "status": "Pass",
+                  "detail": "The color is consistent as a single flat tone."
+                },
+                {
+                  "category": "VISUAL",
+                  "check": "Medium-shot straight-on composition with a single solid line separating panels.",
+                  "status": "Pass",
+                  "detail": "The comic panel structure and composition are correct."
+                },
+                {
+                  "category": "PROP SCALE",
+                  "check": "Basket of wings must fit on the table as a shared dish in panel 2.",
+                  "status": "Pass",
+                  "detail": "The scale is realistic for the scene and characters."
+                },
+                {
+                  "category": "PROP SCALE",
+                  "check": "Drinks and other table items are in a 1:1 scale with the characters.",
+                  "status": "Pass",
+                  "detail": "Prop scale is matched correctly."
+                }
+              ],
+              "rank": 2,
+              "recommended": false,
+              "selected": true,
+              "repair_parent_id": null,
+              "estimated_cost": 0.067,
+              "reported_cost": null,
+              "created_at": "2026-08-07T18:54:12.668301+00:00",
+              "error": null,
+              "original_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-7db318fe3f09.jpg",
+              "final_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-7db318fe3f09-final.png",
+              "final_asset_url": "/generation-assets/runs/generation-0b0f51cd64ba/candidates/candidate-7db318fe3f09-final.png",
+              "final_layout": {
+                "mode": "extend_right_80_20",
+                "original_width": 1024,
+                "original_height": 1024,
+                "final_width": 1280,
+                "final_height": 1024,
+                "extension_width": 256,
+                "original_share": 0.8,
+                "extension_share": 0.2,
+                "anchor_x": 0,
+                "background_rgb": [
+                  251,
+                  238,
+                  213
+                ],
+                "background_source": "detected_perimeter",
+                "validated": true
+              },
+              "qa_runtime_ms": 6152
+            },
+            {
+              "id": "candidate-bad04b613975",
+              "generation_run_id": "generation-0b0f51cd64ba",
+              "label": "C",
+              "image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-bad04b613975.jpg",
+              "asset_url": "/generation-assets/runs/generation-0b0f51cd64ba/candidates/candidate-bad04b613975.jpg",
+              "provider": "google_gemini",
+              "model": "nano_banana_2",
+              "model_display_name": "Nano Banana 2",
+              "model_power_label": "BALANCED",
+              "model_power_level": 2,
+              "model_description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+              "model_cost_tier": "standard",
+              "generation_index": 2,
+              "runtime_ms": 9889,
+              "qa_status": "Pass",
+              "qa_summary": "This comic strip perfectly follows the DINKLY style and accurately depicts the requested scenario. All character details, environmental elements, and text are correct.",
+              "qa_findings": [
+                {
+                  "category": "CHARACTER",
+                  "check": "round bright-yellow bodies",
+                  "status": "Pass",
+                  "detail": "Correct"
+                },
+                {
+                  "category": "CHARACTER",
+                  "check": "official orange spots",
+                  "status": "Pass",
+                  "detail": "Correct"
+                },
+                {
+                  "category": "CHARACTER",
+                  "check": "black oval eyes with white highlights",
+                  "status": "Pass",
+                  "detail": "Correct"
+                },
+                {
+                  "category": "CHARACTER",
+                  "check": "Dinko exactly two hair tufts",
+                  "status": "Pass",
+                  "detail": "Both hair tufts are correctly depicted"
+                },
+                {
+                  "category": "CHARACTER",
+                  "check": "Dinka red bow and connected ponytail",
+                  "status": "Pass",
+                  "detail": "Both elements are present and correctly rendered"
+                },
+                {
+                  "category": "CHARACTER",
+                  "check": "equal body size",
+                  "status": "Pass",
+                  "detail": "Correct"
+                },
+                {
+                  "category": "CHARACTER",
+                  "check": "tiny nub arms and feet",
+                  "status": "Pass",
+                  "detail": "Correct"
+                },
+                {
+                  "category": "CHARACTER",
+                  "check": "no legs or human anatomy",
+                  "status": "Pass",
+                  "detail": "Correct"
+                },
+                {
+                  "category": "SCENE",
+                  "check": "left action 'Dinko is eating wings alone.'",
+                  "status": "Pass",
+                  "detail": "The left panel correctly shows Dinko eating alone, with a somber expression appropriate for the 'Eating Wings' caption."
+                },
+                {
+                  "category": "SCENE",
+                  "check": "right action 'Dinko and Dinka are eating wings together.'",
+                  "status": "Pass",
+                  "detail": "The right panel correctly shows Dinko and Dinka eating together and looking happy."
+                },
+                {
+                  "category": "SCENE",
+                  "check": "settings, required props",
+                  "status": "Pass",
+                  "detail": "The table, chairs, wing baskets/platters, and dipping sauces are correctly included in both panels. The background elements (potted plant, window) are also present and consistent."
+                },
+                {
+                  "category": "SCENE",
+                  "check": "one continuous warm cream background",
+                  "status": "Pass",
+                  "detail": "The background uses a consistent warm cream tone."
+                },
+                {
+                  "category": "SCENE",
+                  "check": "medium straight-on composition",
+                  "status": "Pass",
+                  "detail": "The composition is a medium straight-on shot as required."
+                },
+                {
+                  "category": "TEXT",
+                  "check": "exactly 'EATING WINGS.' and 'EATING WINGS WITH YOU.'",
+                  "status": "Pass",
+                  "detail": "The text is exactly as specified, with the second caption split into two lines for readability which is standard for a comic."
+                },
+                {
+                  "category": "PROP SCALE",
+                  "check": "mugs, phones, tables, carts, and furniture",
+                  "status": "Pass",
+                  "detail": "All props and furniture are scaled correctly relative to the characters."
+                }
+              ],
+              "rank": 1,
+              "recommended": true,
+              "selected": false,
+              "repair_parent_id": null,
+              "estimated_cost": 0.067,
+              "reported_cost": null,
+              "created_at": "2026-08-07T18:54:22.934245+00:00",
+              "error": null,
+              "original_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-bad04b613975.jpg",
+              "final_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-bad04b613975-final.png",
+              "final_asset_url": "/generation-assets/runs/generation-0b0f51cd64ba/candidates/candidate-bad04b613975-final.png",
+              "final_layout": {
+                "mode": "extend_right_80_20",
+                "original_width": 1024,
+                "original_height": 1024,
+                "final_width": 1280,
+                "final_height": 1024,
+                "extension_width": 256,
+                "original_share": 0.8,
+                "extension_share": 0.2,
+                "anchor_x": 0,
+                "background_rgb": [
+                  249,
+                  232,
+                  194
+                ],
+                "background_source": "story_brief",
+                "validated": true
+              },
+              "qa_runtime_ms": 4240
+            },
+            {
+              "id": "candidate-2e61574582db",
+              "generation_run_id": "generation-0b0f51cd64ba",
+              "label": "D",
+              "image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-2e61574582db.jpg",
+              "asset_url": "/generation-assets/runs/generation-0b0f51cd64ba/candidates/candidate-2e61574582db.jpg",
+              "provider": "google_gemini",
+              "model": "nano_banana_2",
+              "model_display_name": "Nano Banana 2",
+              "model_power_label": "BALANCED",
+              "model_power_level": 2,
+              "model_description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+              "model_cost_tier": "standard",
+              "generation_index": 3,
+              "runtime_ms": 33788,
+              "qa_status": "Warning",
+              "qa_summary": "Overall, this image adheres strictly to the character, scene, and text requirements for a DINKLY comic, including specific character traits like spots and hair. It correctly renders the solo and couple scenarios with the required props. The only minor deviation is the inclusion of unexpected font information below the main title text in both panels.",
+              "qa_findings": [
+                {
+                  "category": "CHARACTER",
+                  "check": "round bright-yellow bodies",
+                  "status": "Pass",
+                  "detail": "Both characters have the correct shape and color."
+                },
+                {
+                  "category": "CHARACTER",
+                  "check": "official orange spots",
+                  "status": "Pass",
+                  "detail": "Both characters have visible orange spots."
+                },
+                {
+                  "category": "CHARACTER",
+                  "check": "black oval eyes with white highlights",
+                  "status": "Pass",
+                  "detail": "The eyes are rendered as black ovals with highlights."
+                },
+                {
+                  "category": "CHARACTER",
+                  "check": "Dinko exactly two hair tufts",
+                  "status": "Pass",
+                  "detail": "Dinko has two distinct hair tufts."
+                },
+                {
+                  "category": "CHARACTER",
+                  "check": "Dinka red bow and connected ponytail",
+                  "status": "Pass",
+                  "detail": "Dinka is correctly depicted with a red bow and a high, connected ponytail."
+                },
+                {
+                  "category": "CHARACTER",
+                  "check": "equal body size",
+                  "status": "Pass",
+                  "detail": "Dinko and Dinka are the same size."
+                },
+                {
+                  "category": "CHARACTER",
+                  "check": "tiny nub arms and feet",
+                  "status": "Pass",
+                  "detail": "The limbs are rendered as small nubs."
+                },
+                {
+                  "category": "CHARACTER",
+                  "check": "no legs or human anatomy",
+                  "status": "Pass",
+                  "detail": "No legs or other complex anatomy are visible."
+                },
+                {
+                  "category": "SCENE",
+                  "check": "left action 'Dinko is eating wings alone.'",
+                  "status": "Pass",
+                  "detail": "Dinko is correctly shown alone in the left panel with wings on the table."
+                },
+                {
+                  "category": "SCENE",
+                  "check": "right action 'Dinko and Dinka are eating wings together.'",
+                  "status": "Pass",
+                  "detail": "Dinko and Dinka are shown together, eating and happy, in the right panel."
+                },
+                {
+                  "category": "SCENE",
+                  "check": "setting",
+                  "status": "Pass",
+                  "detail": "The setting is a consistent indoor room with a table, chairs, and window."
+                },
+                {
+                  "category": "SCENE",
+                  "check": "required props",
+                  "status": "Pass",
+                  "detail": "Props include a table, chairs, plates, a basket of wings, and a napkin holder, appropriate for the scene."
+                },
+                {
+                  "category": "SCENE",
+                  "check": "one continuous warm cream background",
+                  "status": "Pass",
+                  "detail": "The background color is correct and continuous."
+                },
+                {
+                  "category": "SCENE",
+                  "check": "medium straight-on composition",
+                  "status": "Pass",
+                  "detail": "The view is straight-on and correctly framed."
+                },
+                {
+                  "category": "TEXT",
+                  "check": "exact text: 'EATING WINGS.' and 'EATING WINGS WITH YOU.'",
+                  "status": "Pass",
+                  "detail": "The exact phrases are used as the primary titles for each panel."
+                },
+                {
+                  "category": "TEXT",
+                  "check": "no quotation marks",
+                  "status": "Pass",
+                  "detail": "The titles do not have quotation marks."
+                },
+                {
+                  "category": "PROP SCALE",
+                  "check": "mugs, phones, tables, carts, and furniture",
+                  "status": "Pass",
+                  "detail": "The furniture and props (table, chairs, plates, wings basket) are scaled correctly to the characters."
+                },
+                {
+                  "category": "TEXT",
+                  "check": "no additional descriptive text or watermarks",
+                  "status": "Warning",
+                  "detail": "The comic contains unexpected additional text below the titles. In the left panel: 'Bubblebody Neue Regular'. In the right panel: 'EATING WINGS WITH YOU' is repeated."
+                }
+              ],
+              "rank": 3,
+              "recommended": false,
+              "selected": false,
+              "repair_parent_id": null,
+              "estimated_cost": 0.067,
+              "reported_cost": null,
+              "created_at": "2026-08-07T18:54:57.014811+00:00",
+              "error": null,
+              "original_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-2e61574582db.jpg",
+              "final_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-2e61574582db-final.png",
+              "final_asset_url": "/generation-assets/runs/generation-0b0f51cd64ba/candidates/candidate-2e61574582db-final.png",
+              "final_layout": {
+                "mode": "extend_right_80_20",
+                "original_width": 1024,
+                "original_height": 1024,
+                "final_width": 1280,
+                "final_height": 1024,
+                "extension_width": 256,
+                "original_share": 0.8,
+                "extension_share": 0.2,
+                "anchor_x": 0,
+                "background_rgb": [
+                  249,
+                  235,
+                  208
+                ],
+                "background_source": "detected_perimeter",
+                "validated": true
+              },
+              "qa_runtime_ms": 5572
+            }
+          ],
+          "selected_candidate_id": "candidate-7db318fe3f09",
+          "final_asset_id": "asset-1c909cfec04b",
+          "final_asset_url": "/generation-assets/runs/generation-0b0f51cd64ba/final.png",
+          "prompt_id": "generation-prompt-c3e6fb8c2c00",
+          "prompt_record": {
+            "prompt_id": "generation-prompt-c3e6fb8c2c00",
+            "template": "XWithYou.md",
+            "template_version": "1ff442d65496",
+            "character_rule_version": "5464e055331e",
+            "failure_rule_version": "533e429c10bc",
+            "created_at": "2026-08-07T18:53:57.482994+00:00",
+            "rules_included": [
+              "Boy DINKLY is alone in the left panel with exactly two hair tufts.",
+              "The right panel always contains Boy DINKLY and Girl DINKLY together at equal body size.",
+              "Keep every character grounded on the floor; tables and counters remain secondary props, and no character sits or stands on them."
+            ]
+          },
+          "dinko_reference_version": "f0e8f68a3f5a2a38",
+          "dinka_reference_version": "f0e8f68a3f5a2a38",
+          "reference_paths": [
+            "references/dinkly_young.png"
+          ],
+          "started_at": "2026-08-07T18:53:57.482056+00:00",
+          "completed_at": "2026-08-07T18:56:27.425084+00:00",
+          "approved_at": "2026-08-07T18:56:27.425084+00:00",
+          "runtime_ms": 89670,
+          "estimated_cost": 0.268,
+          "reported_cost": null,
+          "aspect_ratio": "1:1",
+          "error": null,
+          "warnings": [],
+          "comparison": false,
+          "final_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/final.png",
+          "approved_by": "owner",
+          "original_image_path": "app-data/generation-engine/runs/generation-0b0f51cd64ba/candidates/candidate-7db318fe3f09.jpg",
+          "final_layout": {
+            "mode": "extend_right_80_20",
+            "original_width": 1024,
+            "original_height": 1024,
+            "final_width": 1280,
+            "final_height": 1024,
+            "extension_width": 256,
+            "original_share": 0.8,
+            "extension_share": 0.2,
+            "anchor_x": 0,
+            "background_rgb": [
+              251,
+              238,
+              213
+            ],
+            "background_source": "detected_perimeter",
+            "validated": true
+          },
+          "selected_model_info": {
+            "id": "nano_banana_2",
+            "display_name": "Nano Banana 2",
+            "power_label": "BALANCED",
+            "power_level": 2,
+            "description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+            "recommended_for": [
+              "Dinko + Dinka",
+              "Split comics",
+              "Multiple references",
+              "Most final production"
+            ],
+            "cost_tier": "standard"
+          },
+          "comic_asset_count": 0,
+          "generation_recipe": [
+            "Character references loaded",
+            "Scene template selected",
+            "Character locks applied",
+            "Scene protections applied",
+            "Background rules applied",
+            "Prop protections applied",
+            "Generation recipe ready"
+          ]
+        }
+      },
+      "model_selection": "automatic",
+      "confirm_pro": false,
+      "left_title": "WALKING THE DOG.",
+      "right_title": "WALKING THE DOG WITH YOU.",
+      "format": "x_with_you",
+      "story_brief": {
+        "format": "x-with-you",
+        "title_left": "WALKING THE DOG.",
+        "title_right": "WALKING THE DOG WITH YOU.",
+        "left_character": "boy",
+        "left_action": "Dinko is walking the dog alone.",
+        "left_setting": "simple rounded everyday setting",
+        "left_props": [
+          "small table",
+          "two chairs"
+        ],
+        "left_emotion": "Neutral, bored, or gently sad—never happy.",
+        "right_characters": [
+          "boy",
+          "girl"
+        ],
+        "right_action": "Dinko and Dinka are walking the dog together.",
+        "right_setting": "the same simple rounded everyday setting",
+        "right_props": [
+          "small table",
+          "two chairs",
+          "one activity-specific prop"
+        ],
+        "right_emotion": "Warm, playful, and connected because the ordinary moment is shared.",
+        "shared_environment": "One continuous pastel background across both panels in the same simple rounded everyday setting.",
+        "environmental_contrast": "The activity stays ordinary; companionship changes the feeling.",
+        "background_color": "warm cream",
+        "accent_color": "muted terracotta",
+        "camera_angle": "medium straight-on",
+        "execution_risks": [
+          "Keep both characters equal size and all props subordinate to them."
+        ],
+        "emotional_insight": "Walking the dog feels better when it is shared with your person."
+      },
+      "classified_task_type": "generate_comic",
+      "classification_confidence": 0.98,
+      "slack_original_message_ts": "1786132091.212759",
+      "slack_channel_id": "D0BNMBTNC8K",
+      "slack_thread_ts": "1786132091.212759",
+      "slack_status_ts": "1786132092.478909",
+      "slack_task_url": "http://127.0.0.1:3000/agent/tasks/task-142c13e37b9c",
+      "slack_workspace_id": "T098G12ETG9",
+      "slack_actions_ts": "1786132155.591339"
+    },
+    "run_ids": [
+      "generation-cb225152c23d"
+    ],
+    "artifact_ids": [
+      "candidate-b857386cd05d",
+      "candidate-39dd5789625b",
+      "candidate-acdbbe572d37",
+      "candidate-cf4ff5fba166"
+    ],
+    "approval_required": true,
+    "result": {
+      "message": "WALKING THE DOG. / WALKING THE DOG WITH YOU. is ready. Candidate C is my recommendation.",
+      "run_id": "generation-cb225152c23d",
+      "concept_title": "WALKING THE DOG. / WALKING THE DOG WITH YOU.",
+      "recommended_candidate_id": "candidate-acdbbe572d37",
+      "recommended_candidate": {
+        "id": "candidate-acdbbe572d37",
+        "generation_run_id": "generation-cb225152c23d",
+        "label": "C",
+        "image_path": "app-data/generation-engine/runs/generation-cb225152c23d/candidates/candidate-acdbbe572d37.jpg",
+        "asset_url": "/generation-assets/runs/generation-cb225152c23d/candidates/candidate-acdbbe572d37.jpg",
+        "provider": "google_gemini",
+        "model": "nano_banana_2",
+        "model_display_name": "Nano Banana 2",
+        "model_power_label": "BALANCED",
+        "model_power_level": 2,
+        "model_description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+        "model_cost_tier": "standard",
+        "generation_index": 2,
+        "runtime_ms": 7508,
+        "qa_status": "Pass",
+        "qa_summary": "This DINKLY comic is a Pass. The character design is highly accurate, the scene correctly depicts the walking scenarios in both panels with the appropriate background details, and the text is rendered flawlessly. The composition and style are consistent.",
+        "qa_findings": [
+          {
+            "category": "CHARACTER",
+            "check": "Dinko details (hair tufts, spots)",
+            "status": "Pass",
+            "detail": "Dinko is rendered correctly in both panels with round bright-yellow bodies, official orange spots, black oval eyes with white highlights, and exactly two hair tufts."
+          },
+          {
+            "category": "CHARACTER",
+            "check": "Dinka details (bow, ponytail, spots)",
+            "status": "Pass",
+            "detail": "Dinka (right panel) is rendered correctly with a round bright-yellow body, official orange spots, black oval eyes with white highlights, a red bow, and a connected ponytail on the right side."
+          },
+          {
+            "category": "CHARACTER",
+            "check": "No legs or human anatomy",
+            "status": "Pass",
+            "detail": "Both characters have tiny nub arms and feet with no legs, maintaining the correct anatomy."
+          },
+          {
+            "category": "CHARACTER",
+            "check": "Body size equal",
+            "status": "Pass",
+            "detail": "Dinko and Dinka appear to have the same body size in the right panel."
+          },
+          {
+            "category": "SCENE",
+            "check": "Left panel action",
+            "status": "Pass",
+            "detail": "The left panel correctly depicts Dinko walking the small grey dog on a blue leash alone."
+          },
+          {
+            "category": "SCENE",
+            "check": "Right panel action",
+            "status": "Pass",
+            "detail": "The right panel correctly depicts Dinko and Dinka walking the small grey dog together."
+          },
+          {
+            "category": "SCENE",
+            "check": "Consistent warm cream background",
+            "status": "Pass",
+            "detail": "The warm cream background is continuous and consistent across both panels, featuring the furniture (table and chairs) correctly and adding the doggy bag in the right panel."
+          },
+          {
+            "category": "SCENE",
+            "check": "Medium straight-on composition",
+            "status": "Pass",
+            "detail": "The composition is a medium straight-on shot, with the two panels clearly separated and text below."
+          },
+          {
+            "category": "TEXT",
+            "check": "Correct text and font",
+            "status": "Pass",
+            "detail": "The text 'WALKING THE DOG.' (left) and 'WALKING THE DOG WITH YOU.' (right) is rendered exactly as specified, with no quotation marks and in a simple, clear font."
+          },
+          {
+            "category": "PROP SCALE",
+            "check": "Scale of small objects",
+            "status": "Pass",
+            "detail": "The props (table, chairs, doggy bag) are correctly scaled relative to the characters."
+          }
+        ],
+        "rank": 1,
+        "recommended": true,
+        "selected": false,
+        "repair_parent_id": null,
+        "estimated_cost": 0.067,
+        "reported_cost": null,
+        "created_at": "2026-08-07T19:48:35.127068+00:00",
+        "error": null,
+        "original_image_path": "app-data/generation-engine/runs/generation-cb225152c23d/candidates/candidate-acdbbe572d37.jpg",
+        "final_image_path": "app-data/generation-engine/runs/generation-cb225152c23d/candidates/candidate-acdbbe572d37-final.png",
+        "final_asset_url": "/generation-assets/runs/generation-cb225152c23d/candidates/candidate-acdbbe572d37-final.png",
+        "final_layout": {
+          "mode": "extend_right_80_20",
+          "original_width": 1024,
+          "original_height": 1024,
+          "final_width": 1280,
+          "final_height": 1024,
+          "extension_width": 256,
+          "original_share": 0.8,
+          "extension_share": 0.2,
+          "anchor_x": 0,
+          "background_rgb": [
+            254,
+            254,
+            254
+          ],
+          "background_source": "detected_perimeter",
+          "validated": true
+        },
+        "qa_runtime_ms": 4434
+      },
+      "qa_summary": "This DINKLY comic is a Pass. The character design is highly accurate, the scene correctly depicts the walking scenarios in both panels with the appropriate background details, and the text is rendered flawlessly. The composition and style are consistent.",
+      "model": "Nano Banana 2",
+      "slack_delivery_status": "failed",
+      "slack_delivery_issue": "Generation failed"
+    },
+    "error": null,
+    "created_at": "2026-08-07T19:48:12.295271+00:00",
+    "started_at": "2026-08-07T19:48:12.501986+00:00",
+    "completed_at": null,
+    "dedupe_key": "channel:slack:Ev0BNYKEJEVA"
+  },
+  {
+    "id": "task-b8fdfa389423",
+    "source_channel": "learning",
+    "source_thread_id": "learning-496147",
+    "source_user_id": null,
+    "source_message_id": null,
+    "user_instruction": "Review new production evidence and update the DINKLY Brain",
+    "task_type": "learn",
+    "status": "failed",
+    "priority": 5,
+    "context": {},
+    "run_ids": [],
+    "artifact_ids": [],
+    "approval_required": false,
+    "result": {
+      "message": "Assignment failed: Slack API error: not_in_channel"
+    },
+    "error": "Slack API error: not_in_channel",
+    "created_at": "2026-08-07T19:56:22.458854+00:00",
+    "started_at": "2026-08-07T19:56:22.489396+00:00",
+    "completed_at": "2026-08-07T19:56:22.806323+00:00",
+    "dedupe_key": "scheduled-learning:496147"
   }
 ]

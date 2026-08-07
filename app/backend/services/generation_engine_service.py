@@ -29,6 +29,7 @@ from app.backend.services.agent_visual_state_service import AgentVisualStateServ
 from app.backend.services.art_review_service import ArtReviewService
 from app.backend.services.generation_export_service import ExportArtifact, GenerationExportService
 from app.backend.services.image_model_registry import ImageModelRegistry
+from app.backend.services.memory_service import AgentContextBuilder
 from app.backend.services.prompt_service import PromptService
 from app.backend.services.repository_service import RepositoryError, RepositoryService
 from app.backend.services.secrets_service import SecretsService
@@ -107,6 +108,8 @@ class GenerationEngineService:
             "story_format": request.story_brief.format,
             "status": "compiling",
             "provider": "google_gemini",
+            "source_channel": "web",
+            "source_task_id": None,
             "model_selection_mode": request.model_selection_mode,
             "selected_model": key,
             "selection_reason": reason,
@@ -118,6 +121,13 @@ class GenerationEngineService:
             "final_asset_url": None,
             "prompt_id": prompt_record["prompt_id"],
             "prompt_record": prompt_record,
+            "prompt_template_version": prompt_record["template_version"],
+            "character_rule_version": prompt_record["character_rule_version"],
+            "failure_rule_version": prompt_record["failure_rule_version"],
+            "brain_refs_used": prompt_record["brain_refs_used"],
+            "memory_refs_used": prompt_record["memory_refs_used"],
+            "image_model": key,
+            "image_model_tier": self.registry.get(key)["power_label"],
             "dinko_reference_version": references["dinko_reference_version"],
             "dinka_reference_version": references["dinka_reference_version"],
             "reference_paths": references["relative_paths"],
@@ -176,7 +186,13 @@ class GenerationEngineService:
         )
         return self.get(run_id)
 
-    def execute(self, run_id: str, *, should_cancel: Callable[[], bool] | None = None) -> None:
+    def execute(
+        self,
+        run_id: str,
+        *,
+        should_cancel: Callable[[], bool] | None = None,
+        on_progress: Callable[[dict[str, Any]], None] | None = None,
+    ) -> None:
         run = self._load_run(run_id)
         cancelled = should_cancel or (lambda: False)
         started = datetime.now(UTC)
@@ -251,6 +267,8 @@ class GenerationEngineService:
                     total=run["candidate_count"],
                     model=self._model_presentation(run["selected_model"], expose_id=False),
                 )
+                if on_progress:
+                    on_progress({"stage": "generate", "completed": index + 1, "total": run["candidate_count"], "candidate": label})
             except ImageProviderError as exc:
                 if cancelled():
                     self._cancel_run(run_id, f"During Candidate {label}")
@@ -298,6 +316,8 @@ class GenerationEngineService:
             total=run["candidate_count"],
         )
         self._emit_stage(run_id, "layout", "active", "Applying the final DINKLY 80/20 composition.")
+        if on_progress:
+            on_progress({"stage": "layout", "completed": successful, "total": run["candidate_count"]})
         try:
             for candidate in run["candidates"]:
                 if cancelled():
@@ -332,6 +352,8 @@ class GenerationEngineService:
             total=qa_total,
         )
         self._emit(run_id, "qa", "Starting QA.")
+        if on_progress:
+            on_progress({"stage": "qa", "completed": 0, "total": qa_total})
         qa_completed = 0
         for candidate in run["candidates"]:
             if candidate.get("image_path"):
@@ -347,6 +369,8 @@ class GenerationEngineService:
                     completed=qa_completed,
                     total=qa_total,
                 )
+                if on_progress:
+                    on_progress({"stage": "qa", "completed": qa_completed, "total": qa_total, "candidate": candidate["label"]})
                 self._qa_candidate(run, candidate, provider)
                 if cancelled():
                     self._cancel_run(run_id, f"During QA Candidate {candidate['label']}")
@@ -385,6 +409,8 @@ class GenerationEngineService:
         )
         self._emit_stage(run_id, "repair", "skipped", "No repair requested.")
         self._emit_stage(run_id, "human_review", "active", "Ready for your approval.")
+        if on_progress:
+            on_progress({"stage": "approval", "completed": qa_completed, "total": qa_total})
         self._emit(run_id, "checkpoint", "Candidates ready for the human checkpoint.")
 
     def get(self, run_id: str) -> dict[str, Any]:
@@ -433,6 +459,27 @@ class GenerationEngineService:
                 "Generation recipe ready",
             ]
         return run
+
+    def record_source(self, run_id: str, *, source_channel: str, source_task_id: str | None) -> dict[str, Any]:
+        """Attach origin metadata without creating a second generation history."""
+        run = self._load_run(run_id)
+        run["source_channel"] = source_channel
+        run["source_task_id"] = source_task_id
+        self._save_run(run)
+        return self.get(run_id)
+
+    def record_slack_delivery(self, run_id: str, *, status: str, issue: str | None = None) -> dict[str, Any]:
+        """Persist sanitized Slack delivery metadata on the canonical generation run."""
+        if status not in {"image_sent", "link_sent", "failed"}:
+            raise RepositoryError("Unknown Slack delivery status")
+        run = self._load_run(run_id)
+        run["slack_delivery_status"] = status
+        if issue:
+            run["slack_delivery_issue"] = issue
+        else:
+            run.pop("slack_delivery_issue", None)
+        self._save_run(run)
+        return self.get(run_id)
 
     def download_final(
         self,
@@ -975,7 +1022,12 @@ class GenerationEngineService:
         return self.get(run_id)
 
     def history(self) -> list[dict[str, Any]]:
-        records = [self.get(path.parent.name) for path in self.runs_dir.glob("*/metadata.json")]
+        records = [
+            self.get(Path(relative).parent.name)
+            for relative in self.repository.list_json(
+                "app-data/generation-engine/runs", suffix="/metadata.json"
+            )
+        ]
         return sorted(records, key=lambda item: item.get("started_at") or "", reverse=True)
 
     def compare_models(self, request: ModelCompareRequest) -> dict[str, Any]:
@@ -1000,6 +1052,8 @@ class GenerationEngineService:
             "story_format": request.story_brief.format,
             "status": "generating",
             "provider": "google_gemini",
+            "source_channel": "web",
+            "source_task_id": None,
             "model_selection_mode": "comparison",
             "selected_model": None,
             "selection_reason": "Same story recipe across selected models.",
@@ -1011,6 +1065,13 @@ class GenerationEngineService:
             "final_asset_url": None,
             "prompt_id": prompt_record["prompt_id"],
             "prompt_record": prompt_record,
+            "prompt_template_version": prompt_record["template_version"],
+            "character_rule_version": prompt_record["character_rule_version"],
+            "failure_rule_version": prompt_record["failure_rule_version"],
+            "brain_refs_used": prompt_record["brain_refs_used"],
+            "memory_refs_used": prompt_record["memory_refs_used"],
+            "image_model": models,
+            "image_model_tier": "comparison",
             "dinko_reference_version": references["dinko_reference_version"],
             "dinka_reference_version": references["dinka_reference_version"],
             "reference_paths": references["relative_paths"],
@@ -1238,6 +1299,28 @@ class GenerationEngineService:
             execution_risks=brief.execution_risks,
         )
         compiled = self.prompt_service.generate(request)
+        context_query = " ".join(
+            part
+            for part in (
+                brief.title_left,
+                brief.title_right,
+                brief.emotional_insight,
+                brief.left_setting,
+                brief.right_setting,
+            )
+            if part
+        )
+        agent_context = AgentContextBuilder(self.repository).build(context_query)
+        if agent_context["memories"]:
+            memory_lines = "\n".join(
+                f"- {memory['summary']}"
+                for memory in agent_context["memories"][:6]
+            )
+            compiled["prompt"] += (
+                "\n\n## RELEVANT DINKLY MEMORY\n\n"
+                "Apply only these evidence-linked constraints when they are relevant to this scene:\n"
+                f"{memory_lines}\n"
+            )
         if brief.comics:
             beats = "\n".join(
                 f"{index}. {beat.get('title', f'Comic {index}')}: {beat.get('scene', '')} "
@@ -1263,6 +1346,8 @@ class GenerationEngineService:
             "created_at": now,
             "prompt": compiled["prompt"],
             "rules_included": compiled["rules_included"],
+            "brain_refs_used": agent_context["brain_refs_used"],
+            "memory_refs_used": agent_context["memory_refs_used"],
         }
         with self._lock:
             records = self.repository.read_json(PROMPTS_PATH, [])
@@ -1389,8 +1474,10 @@ class GenerationEngineService:
         month_start = day_start.replace(day=1)
         daily = 0.0
         monthly = 0.0
-        for path in self.runs_dir.glob("*/metadata.json"):
-            run = self.repository.read_json(self.repository.relative(path), {})
+        for relative in self.repository.list_json(
+            "app-data/generation-engine/runs", suffix="/metadata.json"
+        ):
+            run = self.repository.read_json(relative, {})
             try:
                 started = datetime.fromisoformat(str(run.get("started_at", "")).replace("Z", "+00:00"))
             except ValueError:
@@ -1578,13 +1665,16 @@ class GenerationEngineService:
 
     def _load_run(self, run_id: str) -> dict[str, Any]:
         path = self._run_dir(run_id) / "metadata.json"
-        if not path.is_file():
+        relative = self.repository.relative(path)
+        if not self.repository.json_exists(relative):
             raise RepositoryError("Generation run not found")
-        return self.repository.read_json(self.repository.relative(path), {})
+        return self.repository.read_json(relative, {})
 
     def _find_candidate(self, candidate_id: str) -> tuple[dict[str, Any], dict[str, Any]]:
-        for path in self.runs_dir.glob("*/metadata.json"):
-            run = self.repository.read_json(self.repository.relative(path), {})
+        for relative in self.repository.list_json(
+            "app-data/generation-engine/runs", suffix="/metadata.json"
+        ):
+            run = self.repository.read_json(relative, {})
             for candidate in run.get("candidates", []):
                 if candidate.get("id") == candidate_id:
                     return run, candidate
@@ -1596,8 +1686,7 @@ class GenerationEngineService:
         return self.runs_dir / run_id
 
     def _asset_url(self, path: Path) -> str:
-        relative = path.resolve().relative_to(self.repository.settings.generation_engine_dir.resolve()).as_posix()
-        return f"/generation-assets/{relative}"
+        return self.repository.asset_url(self.repository.relative(path))
 
     def _emit(
         self,

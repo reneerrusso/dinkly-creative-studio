@@ -45,6 +45,13 @@ describe("persisted Agent task progress", () => {
     expect(screen.getAllByText("Finishing the current safe step…").length).toBeGreaterThan(0);
     expect(screen.queryByRole("button", { name: "Cancel Task" })).not.toBeInTheDocument();
   });
+
+  it("transitions to a terminal cancelled state without a working loader", () => {
+    render(<AgentTaskProgress task={baseTask({ status: "cancelled", completed_at: "2026-08-07T12:00:05Z" })} run={null} events={[]} onRetry={vi.fn()} onReview={vi.fn()}/>);
+    expect(screen.getByRole("region", { name: "Task cancelled" })).toHaveTextContent("stopped safely");
+    expect(screen.queryByLabelText("Working")).not.toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "Restart Task" })).toBeInTheDocument();
+  });
 });
 
 function baseTask(changes: Partial<AgentTask>): AgentTask { return { id: "task-1", source_channel: "web", source_thread_id: "web-default", user_instruction: "Generate COFFEE / COFFEE WITH YOU", task_type: "generate_comic", status: "running", priority: 1, context: {}, run_ids: [], artifact_ids: [], result: {}, error: null, created_at: "2026-08-07T12:00:00Z", started_at: "2026-08-07T12:00:01Z", completed_at: null, ...changes }; }

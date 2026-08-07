@@ -13,7 +13,7 @@ from app.backend.models.dinkly_agent import (
     AgentTask,
     AgentTaskType,
 )
-from app.backend.services.agent_storage import AgentStorage, LocalAgentStorage
+from app.backend.services.agent_storage import AgentStorage, build_agent_storage
 from app.backend.services.repository_service import RepositoryError, RepositoryService
 
 TASKS_PATH = "app-data/dinkly-agent/tasks.json"
@@ -39,7 +39,7 @@ class AgentTaskService:
 
     def __init__(self, repository: RepositoryService, storage: AgentStorage | None = None) -> None:
         self.repository = repository
-        self.storage = storage or LocalAgentStorage(repository)
+        self.storage = storage or build_agent_storage(repository)
         self._ensure_files()
 
     def create_task(
@@ -99,9 +99,16 @@ class AgentTaskService:
         return task
 
     def claim_next(self) -> dict[str, Any] | None:
+        cloud_claim = getattr(self.storage, "claim_next", None)
+        if callable(cloud_claim):
+            return cloud_claim()
         with self._storage_lock():
             tasks = self.storage.read(TASKS_PATH, [])
-            pending = [item for item in tasks if item.get("status") == "queued"]
+            pending = [
+                item for item in tasks
+                if item.get("status") == "queued"
+                and not (item.get("context") or {}).get("slack_ack_pending")
+            ]
             if not pending:
                 return None
             selected = min(pending, key=lambda item: (int(item.get("priority", 6)), item.get("created_at", "")))
@@ -118,8 +125,20 @@ class AgentTaskService:
         ]
         return min(active, key=lambda item: item.get("started_at") or item.get("created_at", "")) if active else None
 
+    def latest_for_thread(self, thread_id: str, *, statuses: set[str] | None = None) -> dict[str, Any] | None:
+        matches = [
+            item for item in self.storage.read(TASKS_PATH, [])
+            if item.get("source_thread_id") == thread_id
+            and (not statuses or item.get("status") in statuses)
+        ]
+        return max(matches, key=lambda item: item.get("created_at", "")) if matches else None
+
     def peek_next(self) -> dict[str, Any] | None:
-        queued = [item for item in self.storage.read(TASKS_PATH, []) if item.get("status") == "queued"]
+        queued = [
+            item for item in self.storage.read(TASKS_PATH, [])
+            if item.get("status") == "queued"
+            and not (item.get("context") or {}).get("slack_ack_pending")
+        ]
         return min(queued, key=lambda item: (int(item.get("priority", 6)), item.get("created_at", ""))) if queued else None
 
     def request_cancellation(self, task_id: str, *, reason: str = "Cancelled by user", skip: bool = False) -> tuple[dict[str, Any], str]:
@@ -176,8 +195,8 @@ class AgentTaskService:
 
     def restart(self, task_id: str) -> dict[str, Any]:
         original = self.get(task_id)
-        if original.get("status") != "cancelled":
-            raise RepositoryError("Only a cancelled task can be restarted")
+        if original.get("status") not in {"cancelled", "failed"}:
+            raise RepositoryError("Only a cancelled or failed task can be restarted")
         restarted, _ = self.create_task(
             source_channel=original["source_channel"],
             source_thread_id=original["source_thread_id"],
@@ -359,13 +378,8 @@ class AgentTaskService:
         return record
 
     def mark_external_event(self, event_id: str) -> bool:
-        with self._lock:
-            records = self.storage.read(PROCESSED_EVENTS_PATH, [])
-            if any(item.get("id") == event_id for item in records):
-                return False
-            records.append({"id": event_id, "processed_at": datetime.now(UTC).isoformat()})
-            self.storage.write(PROCESSED_EVENTS_PATH, records[-5000:])
-            return True
+        with self._storage_lock():
+            return self.storage.mark_external_event(event_id)
 
     @staticmethod
     def priority_for(source_channel: str, task_type: str) -> int:
@@ -393,12 +407,17 @@ class AgentTaskService:
 
     def _ensure_files(self) -> None:
         for path in (TASKS_PATH, CONVERSATIONS_PATH, PROCESSED_EVENTS_PATH, OUTBOX_PATH):
-            if not self.repository.path(path).exists():
+            if not self.storage.read(path, None):
                 self.storage.write(path, [])
 
     @contextmanager
     def _storage_lock(self):
         """Serialize queue mutations across the API and the persistent worker."""
+        storage_lock = getattr(self.storage, "lock", None)
+        if callable(storage_lock):
+            with self._lock, storage_lock("dinkly-agent-task-inbox"):
+                yield
+            return
         lock_path = self.repository.path("app-data/dinkly-agent/task-inbox.lock")
         lock_path.parent.mkdir(parents=True, exist_ok=True)
         with self._lock, lock_path.open("a+", encoding="utf-8") as handle:

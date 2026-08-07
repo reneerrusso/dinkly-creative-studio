@@ -4,10 +4,11 @@ import asyncio
 import json
 from typing import Annotated
 
-from fastapi import APIRouter, File, UploadFile
+from fastapi import APIRouter, BackgroundTasks, File, UploadFile
 from fastapi import status as http_status
 from fastapi.responses import StreamingResponse
 
+from app.backend.config import settings
 from app.backend.models.dinkly_agent import (
     AgentApprovalRequest,
     AgentInstructionRequest,
@@ -19,6 +20,7 @@ from app.backend.models.dinkly_agent import (
 from app.backend.services.agent_background_service import AgentBackgroundService
 from app.backend.services.agent_task_service import AgentTaskService
 from app.backend.services.agent_visual_state_service import AgentVisualStateService, DinklyLearningLoop
+from app.backend.services.cloud_task_dispatcher import CloudTaskDispatcher
 from app.backend.services.dinkly_agent_runtime import DinklyAgent
 from app.backend.services.repository_service import RepositoryService
 
@@ -29,11 +31,27 @@ learning_loop = DinklyLearningLoop(repository, service)
 task_service = AgentTaskService(repository)
 agent = DinklyAgent(repository, tasks=task_service, visual=service, learning=learning_loop)
 background = AgentBackgroundService(repository)
+dispatcher = CloudTaskDispatcher(repository.settings)
 
 
 @router.get("/status")
 def status() -> dict:
-    return service.status()
+    current = service.status()
+    if settings.app_mode == "cloud" and current.get("state") == "idle":
+        from app.backend.routers.health import agent_health
+
+        health = agent_health()
+        if health["status"] != "healthy":
+            return {
+                **current,
+                "state": "error",
+                "status": "NEEDS ATTENTION",
+                "status_kind": "Warning",
+                "message": "A required cloud service or task executor is unavailable.",
+                "health": health,
+            }
+        return {**current, "status": "ONLINE", "message": "Ready when you are.", "health": health}
+    return current
 
 
 @router.get("/events")
@@ -102,14 +120,16 @@ def workspace() -> dict:
 
 
 @router.post("/instructions", status_code=http_status.HTTP_202_ACCEPTED)
-def receive_instruction(payload: AgentInstructionRequest) -> dict:
-    return agent.receive_instruction(
+def receive_instruction(payload: AgentInstructionRequest, background_tasks: BackgroundTasks) -> dict:
+    result = agent.receive_instruction(
         channel="web",
         message=payload.message,
         user_id=payload.user_id,
         thread_id=payload.thread_id,
         extra_context={**payload.context, "notify_slack": payload.notify_slack},
     )
+    background_tasks.add_task(dispatcher.dispatch)
+    return result
 
 
 @router.get("/conversations")
@@ -138,8 +158,10 @@ def skip_task(task_id: str) -> dict:
 
 
 @router.post("/tasks/{task_id}/restart", status_code=http_status.HTTP_202_ACCEPTED)
-def restart_task(task_id: str) -> dict:
-    return {"task": agent.restart_task(task_id), "message": "A new task was queued."}
+def restart_task(task_id: str, background_tasks: BackgroundTasks) -> dict:
+    result = {"task": agent.restart_task(task_id), "message": "A new task was queued."}
+    background_tasks.add_task(dispatcher.dispatch)
+    return result
 
 
 @router.get("/tasks/{task_id}")
@@ -187,8 +209,8 @@ def approvals() -> dict:
 
 
 @router.post("/approvals", status_code=http_status.HTTP_202_ACCEPTED)
-def approval(payload: AgentApprovalRequest) -> dict:
-    return agent.receive_approval(
+def approval(payload: AgentApprovalRequest, background_tasks: BackgroundTasks) -> dict:
+    result = agent.receive_approval(
         action=payload.action,
         item_type=payload.item_type,
         item_id=payload.item_id,
@@ -196,6 +218,8 @@ def approval(payload: AgentApprovalRequest) -> dict:
         source_channel=payload.source_channel,
         source_thread_id=payload.source_thread_id,
     )
+    background_tasks.add_task(dispatcher.dispatch)
+    return result
 
 
 @router.get("/history")
