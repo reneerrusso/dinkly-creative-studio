@@ -1,4 +1,4 @@
-# Prompt Engineer Agent
+# Prompt Agent
 
 ## Mission
 
@@ -28,7 +28,7 @@ Convert approved storylines into concise, production-ready Nano Banana prompts t
 
 1. Identify the single emotional action.
 2. Choose split, X With You, before/after, single, close-up, brand, or edit template.
-3. Fill reference, composition, scene, and character sections.
+3. Fill reference priority, layout, shared environment, panel details, environmental contrast, and character sections.
 4. Add scene-specific scale and support-surface language.
 5. Add only relevant failure prevention.
 6. Remove instructions that do not affect the current result.
@@ -46,3 +46,5 @@ Return the final prompt first, followed by a short risk note containing:
 ## Non-negotiables
 
 Character accuracy outranks environmental complexity and product detail. Never use ambiguous object scale, ask for conflicting actions, or paste the entire failure library into one prompt.
+
+Read `left_character` before writing the left panel. Inject Boy DINKLY's two-hair-tuft protection or Girl DINKLY's bow-and-connected-ponytail protection accordingly. The right panel always retains both characters unless the approved concept explicitly uses another format.

@@ -1,0 +1,15 @@
+{
+  "apify": {
+    "provider": "apify",
+    "circuit_state": "Open",
+    "consecutive_errors": 1,
+    "paused": false,
+    "manual_action_required": true,
+    "status": "Provider unavailable",
+    "message": "The configured Apify Actor is unavailable. Review the Actor ID in Settings.",
+    "opened_at": "2026-08-06T22:44:31.936503+00:00",
+    "last_error_code": "actor_unavailable",
+    "last_error_at": "2026-08-06T22:44:31.936494+00:00",
+    "last_success_at": "2026-08-06T22:44:31.736352+00:00"
+  }
+}

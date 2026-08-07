@@ -1,0 +1,62 @@
+[
+  {
+    "id": "dinkly-learning-f1623aa9abf4",
+    "learning_type": "failure_pattern",
+    "statement": "1 recent generation produced official orange spots.",
+    "evidence_ids": [
+      "qa:candidate-2bdc88f01a34:5f89dd27314d264d"
+    ],
+    "confidence": "low",
+    "status": "proposed",
+    "created_at": "2026-08-07T15:57:52.914583+00:00",
+    "updated_at": "2026-08-07T15:57:52.914583+00:00"
+  },
+  {
+    "id": "dinkly-learning-e360cf84d071",
+    "learning_type": "failure_pattern",
+    "statement": "1 recent generation produced left sits alone with warm genuine smile.",
+    "evidence_ids": [
+      "qa:candidate-2bdc88f01a34:daa6ca4b7f38c180"
+    ],
+    "confidence": "low",
+    "status": "proposed",
+    "created_at": "2026-08-07T15:57:52.914583+00:00",
+    "updated_at": "2026-08-07T15:57:52.914583+00:00"
+  },
+  {
+    "id": "dinkly-learning-0101a9e3bf51",
+    "learning_type": "failure_pattern",
+    "statement": "1 recent generation produced left only one food bowl.",
+    "evidence_ids": [
+      "qa:candidate-2bdc88f01a34:dbc9638734d4a6f9"
+    ],
+    "confidence": "low",
+    "status": "proposed",
+    "created_at": "2026-08-07T15:57:52.914583+00:00",
+    "updated_at": "2026-08-07T15:57:52.914583+00:00"
+  },
+  {
+    "id": "dinkly-learning-b372223667fd",
+    "learning_type": "failure_pattern",
+    "statement": "1 recent generation produced left stands alone near the snack table holding one red plastic cup.",
+    "evidence_ids": [
+      "qa:candidate-d5eba7b68256:06d044ba96943143"
+    ],
+    "confidence": "low",
+    "status": "proposed",
+    "created_at": "2026-08-07T16:52:24.097525+00:00",
+    "updated_at": "2026-08-07T16:52:24.097525+00:00"
+  },
+  {
+    "id": "dinkly-learning-edddafa445d4",
+    "learning_type": "failure_pattern",
+    "statement": "1 recent generation produced required props and details.",
+    "evidence_ids": [
+      "qa:candidate-d5eba7b68256:d7a38a670cce5970"
+    ],
+    "confidence": "low",
+    "status": "proposed",
+    "created_at": "2026-08-07T16:52:24.097525+00:00",
+    "updated_at": "2026-08-07T16:52:24.097525+00:00"
+  }
+]

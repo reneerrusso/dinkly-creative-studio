@@ -2,40 +2,60 @@
 
 ## REFERENCE PRIORITY
 
-Use {{CHARACTER_REFERENCE}} as the absolute production model. Dinka is the girl with the red bow and connected ponytail. Dinko is the boy with exactly two hair tufts.
+Use {{CHARACTER_REFERENCE}} as the absolute production model. Scene direction controls the environment and action only; the official reference controls every character feature, proportion, marking, color, and outline.
 
 ## LAYOUT
 
-Create one square 1:1 split comic in a {{CAMERA_ANGLE}} view. Fill the entire canvas with one uninterrupted {{BACKGROUND_COLOR}} background. Use a thin black vertical divider at the exact center, approximately half the canvas height and vertically centered. Keep the bottom caption zone clear.
+Create one square 1:1 split comic in a {{CAMERA_ANGLE}} view. Fill the full canvas with one uninterrupted {{BACKGROUND_COLOR}} background. Add a thin black vertical divider at the exact center, approximately half the canvas height and vertically centered. Keep large negative space and a clear bottom caption zone.
+
+## SHARED ENVIRONMENT
+
+{{SHARED_ENVIRONMENT}}
+
+The background color, floor, primary furniture, scale, and camera remain visually consistent across both sides.
 
 ## LEFT PANEL
 
-{{LEFT_SCENE}}
+Title: {{LEFT_CAPTION_INSTRUCTION}}
 
-Show ordinary life alone. The expression is neutral, bored, or gently sad—never happy, devastated, or dramatic.
+Character: {{LEFT_CHARACTER_DISPLAY}} alone.
 
-Bottom caption, exactly:
+Action: {{LEFT_ACTION}}
 
-{{LEFT_TEXT}}
+Setting: {{LEFT_SETTING}}
+
+Props: {{LEFT_PROPS}}
+
+Emotion: {{LEFT_EMOTION}}
 
 ## RIGHT PANEL
 
-{{RIGHT_SCENE}}
+Title: {{RIGHT_CAPTION_INSTRUCTION}}
 
-Keep the activity and environment nearly identical. The feeling becomes visibly warmer because Dinka and Dinko are together.
+Characters: {{RIGHT_CHARACTERS_DISPLAY}} together.
 
-Bottom caption, exactly:
+Actions: {{RIGHT_ACTIONS}}
 
-{{RIGHT_TEXT}}
+Setting: {{RIGHT_SETTING}}
+
+Props: {{RIGHT_PROPS}}
+
+Emotion: {{RIGHT_EMOTION}}
+
+## ENVIRONMENTAL CONTRAST
+
+{{ENVIRONMENTAL_CONTRAST}}
+
+The activity changes very little; the feeling changes because it is shared.
 
 ## CHARACTER LOCK
 
-{{CHARACTER_LOCK}}
+{{SCENE_AWARE_CHARACTER_LOCK}}
 
 ## STYLE
 
-Official DINKLY flat 2D vector artwork. Matte palette, thick clean black outlines, rounded {{ACCENT_COLOR}} accent props, one flat fill per prop, large negative space, no gradients, shadows, texture, realism, 3D effects, or decorative filler. Use Bubblebody Neue Regular for both captions on one baseline.
+Official DINKLY flat 2D vector artwork. Matte palette, thick clean black outlines, rounded {{ACCENT_COLOR}} accent props, one flat fill per prop, and large negative space. Use one setting and two to five purposeful props per panel. No crowds, extra characters, gradients, realistic shadows, texture, 3D effects, or decorative clutter. {{TEXT_STYLE_INSTRUCTION}}
 
 ## FINAL QUALITY CHECK
 
-Verify the exact captions contain no quotation marks or added punctuation. Confirm one continuous background, equal character scale, correct model features, correct support surfaces, and a one-second emotional contrast. Scene-specific risks: {{FAILURE_PREVENTION}}
+{{TEXT_QUALITY_CHECK}} Confirm one continuous background, a visibly shared environment, equal character scale, correct support surfaces, purposeful prop count, and a one-second emotional contrast. Scene-specific risks: {{FAILURE_PREVENTION}}

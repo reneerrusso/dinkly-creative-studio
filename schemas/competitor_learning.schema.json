@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dinkly.local/schemas/competitor_learning.schema.json",
+  "title": "Competitor Intelligence Learning",
+  "type": "object",
+  "required": ["id", "classification", "pattern_key", "pattern", "measured_fact", "hypothesis", "recommendation", "data_limitation", "confidence", "sample_size", "evidence_post_ids", "status", "created_at", "updated_at"],
+  "properties": {
+    "id": {"type": "string"},
+    "classification": {"enum": ["Measured fact", "Observed pattern", "Hypothesis", "Recommendation", "Data limitation"]},
+    "pattern_key": {"type": "string"},
+    "pattern": {"type": "string"},
+    "measured_fact": {"type": "string"},
+    "hypothesis": {"type": "string"},
+    "recommendation": {"type": "string"},
+    "data_limitation": {"type": "string"},
+    "confidence": {"enum": ["High", "Medium", "Low"]},
+    "sample_size": {"type": "integer", "minimum": 1},
+    "evidence_post_ids": {"type": "array", "items": {"type": "string"}},
+    "status": {"enum": ["Pending", "Approved", "Rejected"]},
+    "review_notes": {"type": "string"},
+    "reviewed_at": {"type": "string"},
+    "created_at": {"type": "string"},
+    "updated_at": {"type": "string"}
+  },
+  "additionalProperties": false
+}

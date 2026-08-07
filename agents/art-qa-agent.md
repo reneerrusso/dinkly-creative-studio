@@ -1,4 +1,4 @@
-# Art QA Agent
+# Art Review Agent
 
 ## Mission
 

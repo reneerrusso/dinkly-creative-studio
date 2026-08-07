@@ -1,0 +1,627 @@
+[
+  {
+    "id": "message-0604d6aadcff",
+    "channel": "web",
+    "thread_id": "web-default",
+    "user_id": "owner",
+    "message": "Show me what is waiting for approval.",
+    "role": "user",
+    "created_at": "2026-08-07T15:58:26.891174+00:00",
+    "linked_run_ids": [],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-6b4886c4a0ba"
+    ]
+  },
+  {
+    "id": "message-38926314516d",
+    "channel": "web",
+    "thread_id": "web-default",
+    "user_id": null,
+    "message": "I added this to my work queue.",
+    "role": "agent",
+    "created_at": "2026-08-07T15:58:26.895236+00:00",
+    "linked_run_ids": [],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-6b4886c4a0ba"
+    ]
+  },
+  {
+    "id": "message-aae6e41ee9e4",
+    "channel": "web",
+    "thread_id": "web-default",
+    "user_id": null,
+    "message": "You have 0 comic, 0 concept, and 3 Brain decisions waiting.",
+    "role": "agent",
+    "created_at": "2026-08-07T15:58:27.342370+00:00",
+    "linked_run_ids": [],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-6b4886c4a0ba"
+    ]
+  },
+  {
+    "id": "message-632650fbc0f1",
+    "channel": "web",
+    "thread_id": "web-default",
+    "user_id": "owner",
+    "message": "Give me 10 new concepts.",
+    "role": "user",
+    "created_at": "2026-08-07T15:58:35.448190+00:00",
+    "linked_run_ids": [],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-c88889e02038"
+    ]
+  },
+  {
+    "id": "message-9a37c0d8fe9a",
+    "channel": "web",
+    "thread_id": "web-default",
+    "user_id": null,
+    "message": "I added the concept assignment to my work queue.",
+    "role": "agent",
+    "created_at": "2026-08-07T15:58:35.452856+00:00",
+    "linked_run_ids": [],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-c88889e02038"
+    ]
+  },
+  {
+    "id": "message-f2229ed09d9e",
+    "channel": "web",
+    "thread_id": "web-default",
+    "user_id": null,
+    "message": "I couldn't finish that: No AI provider configured.",
+    "role": "agent",
+    "created_at": "2026-08-07T15:58:35.481473+00:00",
+    "linked_run_ids": [],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-c88889e02038"
+    ]
+  },
+  {
+    "id": "message-4015c1a869cc",
+    "channel": "web",
+    "thread_id": "web-default",
+    "user_id": "owner",
+    "message": "Give me 10 new concepts.",
+    "role": "user",
+    "created_at": "2026-08-07T16:01:27.992026+00:00",
+    "linked_run_ids": [],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-929586779295"
+    ]
+  },
+  {
+    "id": "message-f97ca4f4b42a",
+    "channel": "web",
+    "thread_id": "web-default",
+    "user_id": null,
+    "message": "I added the concept assignment to my work queue.",
+    "role": "agent",
+    "created_at": "2026-08-07T16:01:27.995583+00:00",
+    "linked_run_ids": [],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-929586779295"
+    ]
+  },
+  {
+    "id": "message-0b27f0e75d32",
+    "channel": "web",
+    "thread_id": "web-default",
+    "user_id": "owner",
+    "message": "Generate PARTY / PARTY WITH YOU.",
+    "role": "user",
+    "created_at": "2026-08-07T16:02:11.977379+00:00",
+    "linked_run_ids": [],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-ee31327490f7"
+    ]
+  },
+  {
+    "id": "message-53fcd1b4c9ba",
+    "channel": "web",
+    "thread_id": "web-default",
+    "user_id": null,
+    "message": "I added the comic assignment to my work queue.",
+    "role": "agent",
+    "created_at": "2026-08-07T16:02:11.985713+00:00",
+    "linked_run_ids": [],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-ee31327490f7"
+    ]
+  },
+  {
+    "id": "message-be45704c3a3b",
+    "channel": "web",
+    "thread_id": "web-default",
+    "user_id": null,
+    "message": "I made 10 concepts. I put them in your review queue.",
+    "role": "agent",
+    "created_at": "2026-08-07T16:05:00.830073+00:00",
+    "linked_run_ids": [
+      "run-5f59fcced10c"
+    ],
+    "linked_artifact_ids": [
+      "content-9c3da288018b",
+      "content-90c873a2f2c3",
+      "content-906a07771dce",
+      "content-e77c0c14a7bc",
+      "content-7af5534d5442",
+      "content-8de0219cb6ad",
+      "content-4eb186287abb",
+      "content-2b0ff74cafb5",
+      "content-3afb3f6e74b7",
+      "content-2e44482f42ce"
+    ],
+    "linked_task_ids": [
+      "task-929586779295"
+    ]
+  },
+  {
+    "id": "message-90cd149631fb",
+    "channel": "web",
+    "thread_id": "web-default",
+    "user_id": null,
+    "message": "PARTY / PARTY WITH YOU is ready. Candidate B is my recommendation.",
+    "role": "agent",
+    "created_at": "2026-08-07T16:05:59.421986+00:00",
+    "linked_run_ids": [
+      "generation-96e3ad209916"
+    ],
+    "linked_artifact_ids": [
+      "candidate-3e820aa67697",
+      "candidate-de5f13ed2be4",
+      "candidate-238a777cef2a",
+      "candidate-d5eba7b68256"
+    ],
+    "linked_task_ids": [
+      "task-ee31327490f7"
+    ]
+  },
+  {
+    "id": "message-47473687cd90",
+    "channel": "web",
+    "thread_id": "web-default",
+    "user_id": null,
+    "message": "Concept approve recorded.",
+    "role": "agent",
+    "created_at": "2026-08-07T16:50:39.850972+00:00",
+    "linked_run_ids": [],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-38563a5f9e80"
+    ]
+  },
+  {
+    "id": "message-2c16fe6a03b6",
+    "channel": "web",
+    "thread_id": "web-default",
+    "user_id": null,
+    "message": "Concept approve recorded.",
+    "role": "agent",
+    "created_at": "2026-08-07T16:51:10.469907+00:00",
+    "linked_run_ids": [],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-1a640880bf88"
+    ]
+  },
+  {
+    "id": "message-0a27404019c8",
+    "channel": "web",
+    "thread_id": "web-default",
+    "user_id": null,
+    "message": "Concept approve recorded.",
+    "role": "agent",
+    "created_at": "2026-08-07T16:51:18.652596+00:00",
+    "linked_run_ids": [],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-6caca205843c"
+    ]
+  },
+  {
+    "id": "message-33783cded45f",
+    "channel": "web",
+    "thread_id": "web-default",
+    "user_id": null,
+    "message": "Got it. I’ll give more weight to love this concept. give me like this in future generation decisions.",
+    "role": "agent",
+    "created_at": "2026-08-07T16:51:24.835082+00:00",
+    "linked_run_ids": [],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-4860b0c63d05"
+    ]
+  },
+  {
+    "id": "message-d611d01ba506",
+    "channel": "web",
+    "thread_id": "web-default",
+    "user_id": null,
+    "message": "Comic approved. I queued the result for learning.",
+    "role": "agent",
+    "created_at": "2026-08-07T16:52:24.081531+00:00",
+    "linked_run_ids": [
+      "generation-96e3ad209916"
+    ],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-929f7ba08180"
+    ]
+  },
+  {
+    "id": "message-f0708676626d",
+    "channel": "web",
+    "thread_id": "web-default",
+    "user_id": null,
+    "message": "Comic approved. I queued the result for learning.",
+    "role": "agent",
+    "created_at": "2026-08-07T16:52:36.482296+00:00",
+    "linked_run_ids": [
+      "generation-96e3ad209916"
+    ],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-794eb9eba50d"
+    ]
+  },
+  {
+    "id": "message-53dfbf62a2ac",
+    "channel": "web",
+    "thread_id": "web-default",
+    "user_id": null,
+    "message": "Concept pass recorded.",
+    "role": "agent",
+    "created_at": "2026-08-07T16:54:55.198731+00:00",
+    "linked_run_ids": [],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-e43828c6c79a"
+    ]
+  },
+  {
+    "id": "message-eb880cd911b2",
+    "channel": "web",
+    "thread_id": "web-default",
+    "user_id": null,
+    "message": "Concept approve recorded.",
+    "role": "agent",
+    "created_at": "2026-08-07T17:23:40.497007+00:00",
+    "linked_run_ids": [],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-1f8bd78780f2"
+    ]
+  },
+  {
+    "id": "message-8a06d2369034",
+    "channel": "web",
+    "thread_id": "web-default",
+    "user_id": null,
+    "message": "Concept approve recorded.",
+    "role": "agent",
+    "created_at": "2026-08-07T17:23:46.053448+00:00",
+    "linked_run_ids": [],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-dfa16d0fd385"
+    ]
+  },
+  {
+    "id": "message-222090966597",
+    "channel": "web",
+    "thread_id": "web-default",
+    "user_id": null,
+    "message": "Concept pass recorded.",
+    "role": "agent",
+    "created_at": "2026-08-07T17:38:29.789147+00:00",
+    "linked_run_ids": [],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-6fc72e71af2b"
+    ]
+  },
+  {
+    "id": "message-b26176104732",
+    "channel": "slack",
+    "thread_id": "1786124948.900969",
+    "user_id": "U098G12EZ97",
+    "message": "hi",
+    "role": "user",
+    "created_at": "2026-08-07T17:49:13.206752+00:00",
+    "linked_run_ids": [],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-6bdadf85c729"
+    ]
+  },
+  {
+    "id": "message-7ae603b9e935",
+    "channel": "slack",
+    "thread_id": "1786124948.900969",
+    "user_id": null,
+    "message": "I added this to my work queue.",
+    "role": "agent",
+    "created_at": "2026-08-07T17:49:13.208666+00:00",
+    "linked_run_ids": [],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-6bdadf85c729"
+    ]
+  },
+  {
+    "id": "message-9beb1a46e711",
+    "channel": "slack",
+    "thread_id": "1786124948.900969",
+    "user_id": null,
+    "message": "I couldn't finish that: I can generate concepts or comics, review and repair artwork, learn, or report what is waiting.",
+    "role": "agent",
+    "created_at": "2026-08-07T17:49:13.939209+00:00",
+    "linked_run_ids": [],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-6bdadf85c729"
+    ]
+  },
+  {
+    "id": "message-83a17beeec9b",
+    "channel": "slack",
+    "thread_id": "1786124974.274869",
+    "user_id": "U098G12EZ97",
+    "message": "list the concepts here that need my attention",
+    "role": "user",
+    "created_at": "2026-08-07T17:49:35.451966+00:00",
+    "linked_run_ids": [],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-212e6fef93da"
+    ]
+  },
+  {
+    "id": "message-dc04bb989c20",
+    "channel": "slack",
+    "thread_id": "1786124974.274869",
+    "user_id": null,
+    "message": "I added the concept assignment to my work queue.",
+    "role": "agent",
+    "created_at": "2026-08-07T17:49:35.454444+00:00",
+    "linked_run_ids": [],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-212e6fef93da"
+    ]
+  },
+  {
+    "id": "message-b8e4325f5b1a",
+    "channel": "slack",
+    "thread_id": "1786125090.858899",
+    "user_id": "U098G12EZ97",
+    "message": "report what is waiting",
+    "role": "user",
+    "created_at": "2026-08-07T17:51:32.099718+00:00",
+    "linked_run_ids": [],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-7691e3468edd"
+    ]
+  },
+  {
+    "id": "message-e6957568a3cc",
+    "channel": "slack",
+    "thread_id": "1786125090.858899",
+    "user_id": null,
+    "message": "I added this to my work queue.",
+    "role": "agent",
+    "created_at": "2026-08-07T17:51:32.102427+00:00",
+    "linked_run_ids": [],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-7691e3468edd"
+    ]
+  },
+  {
+    "id": "message-7f4f1e17d966",
+    "channel": "slack",
+    "thread_id": "1786124974.274869",
+    "user_id": null,
+    "message": "I made 10 concepts. I put them in your review queue.",
+    "role": "agent",
+    "created_at": "2026-08-07T17:52:59.610487+00:00",
+    "linked_run_ids": [
+      "run-43d0179094b5"
+    ],
+    "linked_artifact_ids": [
+      "content-38d01570e1ab",
+      "content-1439ba857207",
+      "content-9af4266877d1",
+      "content-ac0f86f1a08d",
+      "content-98552105361a",
+      "content-06af5fdcea3e",
+      "content-7ae8ecfb6c22",
+      "content-f53fdee0695d",
+      "content-40dd8c20a7d9",
+      "content-c3e7e80a66a0"
+    ],
+    "linked_task_ids": [
+      "task-212e6fef93da"
+    ]
+  },
+  {
+    "id": "message-374194a569f1",
+    "channel": "slack",
+    "thread_id": "1786125090.858899",
+    "user_id": null,
+    "message": "I couldn't finish that: I can generate concepts or comics, review and repair artwork, learn, or report what is waiting.",
+    "role": "agent",
+    "created_at": "2026-08-07T17:53:00.438506+00:00",
+    "linked_run_ids": [],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-7691e3468edd"
+    ]
+  },
+  {
+    "id": "message-94dc342a1f20",
+    "channel": "slack",
+    "thread_id": "1786125244.659899",
+    "user_id": "U098G12EZ97",
+    "message": "create me a comic of wings and wings with you",
+    "role": "user",
+    "created_at": "2026-08-07T17:54:05.262760+00:00",
+    "linked_run_ids": [],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-03e7635239de"
+    ]
+  },
+  {
+    "id": "message-f6d845164275",
+    "channel": "slack",
+    "thread_id": "1786125244.659899",
+    "user_id": null,
+    "message": "I added this to my work queue.",
+    "role": "agent",
+    "created_at": "2026-08-07T17:54:05.264667+00:00",
+    "linked_run_ids": [],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-03e7635239de"
+    ]
+  },
+  {
+    "id": "message-ff5aba1303bf",
+    "channel": "slack",
+    "thread_id": "1786125244.659899",
+    "user_id": null,
+    "message": "I couldn't finish that: I can generate concepts or comics, review and repair artwork, learn, or report what is waiting.",
+    "role": "agent",
+    "created_at": "2026-08-07T17:54:05.745639+00:00",
+    "linked_run_ids": [],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-03e7635239de"
+    ]
+  },
+  {
+    "id": "message-7e2cb35a6d7b",
+    "channel": "web",
+    "thread_id": "web-default",
+    "user_id": null,
+    "message": "I couldn't finish that: You already selected 5 from this format. Remove one from Ready to Make before approving another.",
+    "role": "agent",
+    "created_at": "2026-08-07T18:14:10.531366+00:00",
+    "linked_run_ids": [],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-ff75c76b3b93"
+    ]
+  },
+  {
+    "id": "message-7801832ab0f9",
+    "channel": "web",
+    "thread_id": "web-default",
+    "user_id": null,
+    "message": "I couldn't finish that: You already selected 5 from this format. Remove one from Ready to Make before approving another.",
+    "role": "agent",
+    "created_at": "2026-08-07T18:14:10.578502+00:00",
+    "linked_run_ids": [],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-0075e8b91106"
+    ]
+  },
+  {
+    "id": "message-ed07ca555f45",
+    "channel": "slack",
+    "thread_id": "1786127116.185339",
+    "user_id": "U098G12EZ97",
+    "message": "create me a comic of eating wings and eating wings with you",
+    "role": "user",
+    "created_at": "2026-08-07T18:25:16.503386+00:00",
+    "linked_run_ids": [],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-c1092b042058"
+    ]
+  },
+  {
+    "id": "message-abb5e987973c",
+    "channel": "slack",
+    "thread_id": "1786127116.185339",
+    "user_id": null,
+    "message": "I added this to my work queue.",
+    "role": "agent",
+    "created_at": "2026-08-07T18:25:16.505777+00:00",
+    "linked_run_ids": [],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-c1092b042058"
+    ]
+  },
+  {
+    "id": "message-e8e4648f18a1",
+    "channel": "slack",
+    "thread_id": "1786127116.185339",
+    "user_id": null,
+    "message": "I couldn't finish that: I can generate concepts or comics, review and repair artwork, learn, or report what is waiting.",
+    "role": "agent",
+    "created_at": "2026-08-07T18:25:17.815396+00:00",
+    "linked_run_ids": [],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-c1092b042058"
+    ]
+  },
+  {
+    "id": "message-5344609a3be6",
+    "channel": "slack",
+    "thread_id": "1786127116.185339",
+    "user_id": "U098G12EZ97",
+    "message": "create me a comic of eating wings and eating wings with you",
+    "role": "user",
+    "created_at": "2026-08-07T18:26:52.918798+00:00",
+    "linked_run_ids": [],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-51ae5f77e73b"
+    ]
+  },
+  {
+    "id": "message-7b3b124ad05a",
+    "channel": "slack",
+    "thread_id": "1786127116.185339",
+    "user_id": null,
+    "message": "I added this to my work queue.",
+    "role": "agent",
+    "created_at": "2026-08-07T18:26:52.920030+00:00",
+    "linked_run_ids": [],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-51ae5f77e73b"
+    ]
+  },
+  {
+    "id": "message-b315104e06d0",
+    "channel": "slack",
+    "thread_id": "1786127116.185339",
+    "user_id": null,
+    "message": "I couldn't finish that: I can generate concepts or comics, review and repair artwork, learn, or report what is waiting.",
+    "role": "agent",
+    "created_at": "2026-08-07T18:26:54.481654+00:00",
+    "linked_run_ids": [],
+    "linked_artifact_ids": [],
+    "linked_task_ids": [
+      "task-51ae5f77e73b"
+    ]
+  }
+]

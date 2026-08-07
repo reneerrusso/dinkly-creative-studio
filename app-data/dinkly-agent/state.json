@@ -1,0 +1,13 @@
+{
+  "state": "idle",
+  "status": "ONLINE",
+  "status_kind": "Idle",
+  "message": "Ready when you are.",
+  "last_event": "Ready when you are.",
+  "last_event_at": "2026-08-07T18:28:08.378129+00:00",
+  "source_run_id": null,
+  "source_event_id": null,
+  "details": {},
+  "expires_at": null,
+  "updated_at": "2026-08-07T18:28:08.378129+00:00"
+}

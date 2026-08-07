@@ -1,0 +1,8 @@
+{
+  "default_background_family": "warm cream",
+  "default_accent_color": "muted mustard",
+  "default_prompt_format": "x-with-you",
+  "default_output_folder": "app-data/exports",
+  "show_advanced_scoring": true,
+  "require_qa_before_approval": true
+}

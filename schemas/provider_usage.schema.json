@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dinkly.local/schemas/provider_usage.schema.json",
+  "title": "Social Provider Usage",
+  "type": "object",
+  "required": ["id", "provider", "timestamp", "actual_cost", "currency", "requests", "items_returned", "handles_processed", "usage_source", "status", "notes"],
+  "properties": {
+    "id": {"type": "string"},
+    "provider": {"type": "string"},
+    "actor_id": {"type": ["string", "null"]},
+    "run_id": {"type": ["string", "null"]},
+    "timestamp": {"type": "string"},
+    "estimated_cost_before": {"type": ["number", "null"], "minimum": 0},
+    "actual_cost": {"type": ["number", "null"], "minimum": 0},
+    "currency": {"type": "string"},
+    "requests": {"type": "integer", "minimum": 0},
+    "compute_units": {"type": ["number", "null"], "minimum": 0},
+    "items_returned": {"type": "integer", "minimum": 0},
+    "handles_processed": {"type": "integer", "minimum": 0},
+    "platform": {"type": ["string", "null"]},
+    "billing_source": {"type": "string"},
+    "usage_source": {"enum": ["provider_reported", "estimated", "unknown"]},
+    "status": {"type": "string"},
+    "notes": {"type": "string"}
+  },
+  "additionalProperties": false
+}

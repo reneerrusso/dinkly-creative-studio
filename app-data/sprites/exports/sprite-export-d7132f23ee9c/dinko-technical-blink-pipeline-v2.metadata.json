@@ -1,0 +1,57 @@
+{
+  "name": "dinko-technical-blink-pipeline-v2",
+  "animationName": "Dinko Blink - technical pipeline sample v2",
+  "character": "Dinko",
+  "frameWidth": 256,
+  "frameHeight": 256,
+  "frameCount": 3,
+  "frameRate": 8.0,
+  "loop": true,
+  "loopMode": "loop",
+  "anchor": {
+    "x": 0.5,
+    "y": 1.0
+  },
+  "padding": 2,
+  "powerOfTwo": false,
+  "approved": false,
+  "technicalSample": true,
+  "frames": [
+    {
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "width": 260,
+      "height": 260,
+      "durationMs": 125,
+      "anchorX": 0.5,
+      "anchorY": 1.0,
+      "offsetX": 0,
+      "offsetY": 0
+    },
+    {
+      "index": 1,
+      "x": 260,
+      "y": 0,
+      "width": 260,
+      "height": 260,
+      "durationMs": 125,
+      "anchorX": 0.5,
+      "anchorY": 1.0,
+      "offsetX": 0,
+      "offsetY": 0
+    },
+    {
+      "index": 2,
+      "x": 520,
+      "y": 0,
+      "width": 260,
+      "height": 260,
+      "durationMs": 125,
+      "anchorX": 0.5,
+      "anchorY": 1.0,
+      "offsetX": 0,
+      "offsetY": 0
+    }
+  ]
+}

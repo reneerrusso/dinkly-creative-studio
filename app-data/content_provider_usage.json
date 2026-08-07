@@ -1,0 +1,18 @@
+[
+  {
+    "run_id": "run-5f59fcced10c",
+    "batch_id": "batch-2026-08-07-51cc4bd9",
+    "provider": "openai",
+    "timestamp": "2026-08-07T16:05:00.823276+00:00",
+    "estimated_cost": 1.0,
+    "actual_cost": null
+  },
+  {
+    "run_id": "run-43d0179094b5",
+    "batch_id": "batch-2026-08-07-01faa321",
+    "provider": "openai",
+    "timestamp": "2026-08-07T17:52:59.590646+00:00",
+    "estimated_cost": 1.0,
+    "actual_cost": null
+  }
+]

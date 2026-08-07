@@ -1,0 +1,170 @@
+[
+  {
+    "id": "run-32b23c0b18e3",
+    "agent": "social-intelligence",
+    "kind": "social-intelligence-refresh",
+    "status": "Completed with warnings",
+    "request": {
+      "handle_ids": [
+        "handle-dfc366e1fe2f",
+        "handle-5ad261714d26",
+        "handle-e908bd080592",
+        "handle-9ec0d7ed28d6"
+      ],
+      "platforms": [],
+      "posts_per_handle": null,
+      "scheduled": false,
+      "confirmed": true
+    },
+    "summary": {
+      "handles_selected": 4,
+      "handles_processed": 1,
+      "posts_fetched": 20,
+      "posts_skipped": 0,
+      "snapshots_created": 20,
+      "metrics_unavailable": 0,
+      "estimated_cost": 0.72,
+      "provider_reported_cost": 0.0,
+      "provider_reported_cost_complete": true,
+      "learnings_created": 0,
+      "concept_directions_created": 0,
+      "budget_remaining": 5.0
+    },
+    "warnings": [
+      "Instagram: The configured Apify Actor is unavailable. Review the Actor ID in Settings."
+    ],
+    "error": null,
+    "cancel_requested": false,
+    "created_at": "2026-08-06T22:44:21.999394+00:00",
+    "started_at": "2026-08-06T22:44:21.999394+00:00",
+    "completed_at": "2026-08-06T22:44:31.945956+00:00"
+  },
+  {
+    "id": "run-bcf7a3da49a0",
+    "agent": "concept-generator",
+    "kind": "concept-generator-daily-batch",
+    "status": "Skipped",
+    "request": {
+      "date": "2026-08-06",
+      "source": "catch_up",
+      "scheduled_for": "2026-08-06T08:00:00-04:00"
+    },
+    "summary": {
+      "skipped": true,
+      "reason": "No AI provider configured."
+    },
+    "warnings": [],
+    "error": "No AI provider configured.",
+    "cancel_requested": false,
+    "created_at": "2026-08-07T00:59:48.252419+00:00",
+    "started_at": "2026-08-07T00:59:48.252419+00:00",
+    "completed_at": "2026-08-07T00:59:48.255949+00:00"
+  },
+  {
+    "id": "run-bacf833367ac",
+    "agent": "concept-generator",
+    "kind": "concept-generator-daily-batch",
+    "status": "Skipped",
+    "request": {
+      "date": "2026-08-06",
+      "source": "catch_up",
+      "scheduled_for": "2026-08-06T08:00:00-04:00"
+    },
+    "summary": {
+      "skipped": true,
+      "reason": "No AI provider configured."
+    },
+    "warnings": [],
+    "error": "No AI provider configured.",
+    "cancel_requested": false,
+    "created_at": "2026-08-07T01:03:11.027981+00:00",
+    "started_at": "2026-08-07T01:03:11.027981+00:00",
+    "completed_at": "2026-08-07T01:03:11.031474+00:00"
+  },
+  {
+    "id": "run-ebe532be0984",
+    "agent": "concept-generator",
+    "kind": "concept-generator-daily-batch",
+    "status": "Skipped",
+    "request": {
+      "date": "2026-08-07",
+      "source": "scheduled",
+      "scheduled_for": "2026-08-07T08:00:00-04:00"
+    },
+    "summary": {
+      "skipped": true,
+      "reason": "No AI provider configured."
+    },
+    "warnings": [],
+    "error": "No AI provider configured.",
+    "cancel_requested": false,
+    "created_at": "2026-08-07T12:00:07.017945+00:00",
+    "started_at": "2026-08-07T12:00:07.017945+00:00",
+    "completed_at": "2026-08-07T12:00:07.044019+00:00"
+  },
+  {
+    "id": "run-4d4e4496c9f0",
+    "agent": "concept-generator",
+    "kind": "concept-generator-daily-batch",
+    "status": "Skipped",
+    "request": {
+      "date": "2026-08-07",
+      "source": "scheduled",
+      "scheduled_for": null
+    },
+    "summary": {
+      "skipped": true,
+      "reason": "No AI provider configured."
+    },
+    "warnings": [],
+    "error": "No AI provider configured.",
+    "cancel_requested": false,
+    "created_at": "2026-08-07T15:57:52.894359+00:00",
+    "started_at": "2026-08-07T15:57:52.894359+00:00",
+    "completed_at": "2026-08-07T15:57:52.902461+00:00"
+  },
+  {
+    "id": "run-5f59fcced10c",
+    "agent": "concept-generator",
+    "kind": "concept-generator-daily-batch",
+    "status": "Completed",
+    "request": {
+      "date": "2026-08-07",
+      "mode": "primary",
+      "source": "manual",
+      "scheduled_for": null
+    },
+    "summary": {
+      "batch_id": "batch-2026-08-07-51cc4bd9",
+      "finalists": 30
+    },
+    "warnings": [],
+    "error": null,
+    "cancel_requested": false,
+    "created_at": "2026-08-07T16:01:29.628819+00:00",
+    "started_at": "2026-08-07T16:01:29.628819+00:00",
+    "completed_at": "2026-08-07T16:05:00.819275+00:00"
+  },
+  {
+    "id": "run-43d0179094b5",
+    "agent": "concept-generator",
+    "kind": "concept-generator-daily-batch",
+    "status": "Completed",
+    "request": {
+      "date": "2026-08-07",
+      "mode": "supplemental",
+      "source": "manual",
+      "scheduled_for": null
+    },
+    "summary": {
+      "batch_id": "batch-2026-08-07-01faa321",
+      "finalists": 30
+    },
+    "warnings": [],
+    "error": null,
+    "cancel_requested": false,
+    "created_at": "2026-08-07T17:49:36.901786+00:00",
+    "started_at": "2026-08-07T17:49:36.901786+00:00",
+    "completed_at": "2026-08-07T17:52:59.585626+00:00"
+  }
+]

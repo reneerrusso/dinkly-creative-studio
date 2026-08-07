@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dinkly.local/schemas/competitor_profile.schema.json",
+  "title": "Public Competitor Profile",
+  "type": "object",
+  "required": ["id", "handle_id", "username", "verified", "profile_url", "retrieved_at", "provider", "raw_metadata"],
+  "properties": {
+    "id": {"type": "string"},
+    "handle_id": {"type": "string"},
+    "platform_profile_id": {"type": ["string", "number", "null"]},
+    "username": {"type": "string"},
+    "display_name": {"type": ["string", "null"]},
+    "bio": {"type": ["string", "null"]},
+    "profile_image_url": {"type": ["string", "null"]},
+    "followers": {"type": ["integer", "null"], "minimum": 0},
+    "following": {"type": ["integer", "null"], "minimum": 0},
+    "post_count": {"type": ["integer", "null"], "minimum": 0},
+    "verified": {"type": "boolean"},
+    "profile_url": {"type": "string"},
+    "retrieved_at": {"type": "string"},
+    "provider": {"type": "string"},
+    "raw_metadata": {"type": "object"}
+  },
+  "additionalProperties": false
+}

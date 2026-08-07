@@ -1,0 +1,3 @@
+import { AlertCircle } from "lucide-react";
+import { Button } from "@/components/ui/button";
+export function ErrorState({ message, retry }: { message: string; retry?: () => void }) { return <div className="rounded-2xl border border-red-200 bg-red-50 p-5 text-sm text-red-900"><div className="flex gap-3"><AlertCircle className="mt-0.5 size-5 shrink-0"/><div><p className="font-semibold">Something needs attention</p><p className="mt-1 text-red-800">{message}</p>{retry && <Button variant="outline" size="sm" className="mt-3 border-red-200 bg-white" onClick={retry}>Try again</Button>}</div></div></div>; }

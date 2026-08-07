@@ -1,0 +1,21 @@
+[
+  {
+    "id": "usage-6f1d53a5b42d",
+    "provider": "apify",
+    "actor_id": "clockworks~tiktok-profile-scraper",
+    "run_id": "run-32b23c0b18e3",
+    "timestamp": "2026-08-06T22:44:31.734400+00:00",
+    "estimated_cost_before": 0.18,
+    "actual_cost": 0.0,
+    "currency": "USD",
+    "requests": 9,
+    "compute_units": null,
+    "items_returned": 20,
+    "handles_processed": 1,
+    "platform": "tiktok",
+    "billing_source": "apify Actor run",
+    "usage_source": "provider_reported",
+    "status": "Completed",
+    "notes": "Provider-reported actual cost is null when Apify did not expose billing for the run."
+  }
+]

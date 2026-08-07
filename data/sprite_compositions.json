@@ -1,0 +1,169 @@
+[
+  {
+    "id": "sprite-composition-coffee-morning",
+    "name": "Coffee Morning",
+    "preset": "Coffee Morning",
+    "canvas_width": 1080,
+    "canvas_height": 1080,
+    "background_color": "warm cream",
+    "loop_duration_ms": 3000,
+    "layers": [
+      {
+        "id": "layer-bg",
+        "layer_type": "background",
+        "label": "Warm cream background",
+        "x": 0.5,
+        "y": 0.5,
+        "scale": 1.0,
+        "start_offset_ms": 0,
+        "z_index": 0,
+        "visible": true,
+        "settings": {
+          "color": "warm cream"
+        }
+      },
+      {
+        "id": "layer-dinko",
+        "layer_type": "dinko",
+        "animation_id": "sprite-animation-dinko-soft-breathing",
+        "label": "Dinko soft breathing",
+        "x": 0.38,
+        "y": 0.78,
+        "scale": 1.0,
+        "start_offset_ms": 0,
+        "z_index": 10,
+        "visible": true,
+        "settings": {}
+      },
+      {
+        "id": "layer-dinka",
+        "layer_type": "dinka",
+        "animation_id": "sprite-animation-dinka-blink",
+        "label": "Dinka blink",
+        "x": 0.62,
+        "y": 0.78,
+        "scale": 1.0,
+        "start_offset_ms": 120,
+        "z_index": 11,
+        "visible": true,
+        "settings": {}
+      },
+      {
+        "id": "layer-steam",
+        "layer_type": "effect",
+        "animation_id": "sprite-animation-effects-coffee-steam",
+        "label": "Coffee steam",
+        "x": 0.5,
+        "y": 0.55,
+        "scale": 0.65,
+        "start_offset_ms": 0,
+        "z_index": 20,
+        "visible": true,
+        "settings": {}
+      },
+      {
+        "id": "layer-hearts",
+        "layer_type": "effect",
+        "animation_id": "sprite-animation-effects-floating-hearts",
+        "label": "Two floating hearts",
+        "x": 0.5,
+        "y": 0.3,
+        "scale": 0.5,
+        "start_offset_ms": 300,
+        "z_index": 21,
+        "visible": true,
+        "settings": {
+          "count": 2
+        }
+      }
+    ],
+    "notes": "Created in Sprite Composer.",
+    "status": "Draft",
+    "created_at": "2026-08-06T20:00:00Z",
+    "updated_at": "2026-08-06T20:43:51.231755+00:00"
+  },
+  {
+    "id": "sprite-composition-party",
+    "name": "Party",
+    "preset": "Party",
+    "canvas_width": 1080,
+    "canvas_height": 1080,
+    "background_color": "pastel peach",
+    "loop_duration_ms": 2400,
+    "layers": [
+      {
+        "id": "party-bg",
+        "layer_type": "background",
+        "animation_id": null,
+        "label": "Pastel peach background",
+        "x": 0.5,
+        "y": 0.5,
+        "scale": 1,
+        "start_offset_ms": 0,
+        "z_index": 0,
+        "visible": true,
+        "settings": {
+          "color": "pastel peach"
+        }
+      },
+      {
+        "id": "party-dinko",
+        "layer_type": "dinko",
+        "animation_id": "sprite-animation-dinko-happy-bounce",
+        "label": "Dinko happy bounce",
+        "x": 0.4,
+        "y": 0.8,
+        "scale": 1,
+        "start_offset_ms": 0,
+        "z_index": 10,
+        "visible": true,
+        "settings": {}
+      },
+      {
+        "id": "party-dinka",
+        "layer_type": "dinka",
+        "animation_id": "sprite-animation-dinka-laugh",
+        "label": "Dinka laugh",
+        "x": 0.6,
+        "y": 0.8,
+        "scale": 1,
+        "start_offset_ms": 0,
+        "z_index": 11,
+        "visible": true,
+        "settings": {}
+      },
+      {
+        "id": "party-confetti",
+        "layer_type": "effect",
+        "animation_id": "sprite-animation-effects-confetti",
+        "label": "Floating confetti",
+        "x": 0.5,
+        "y": 0.4,
+        "scale": 1,
+        "start_offset_ms": 0,
+        "z_index": 20,
+        "visible": true,
+        "settings": {}
+      },
+      {
+        "id": "party-cups",
+        "layer_type": "prop",
+        "animation_id": "sprite-animation-props-red-plastic-cup",
+        "label": "Red cups",
+        "x": 0.5,
+        "y": 0.72,
+        "scale": 0.35,
+        "start_offset_ms": 0,
+        "z_index": 15,
+        "visible": true,
+        "settings": {
+          "static": true
+        }
+      }
+    ],
+    "notes": "Structural preset only. It does not contain or imply approved final frame artwork.",
+    "status": "Draft",
+    "created_at": "2026-08-06T20:00:00Z",
+    "updated_at": "2026-08-06T20:00:00Z"
+  }
+]

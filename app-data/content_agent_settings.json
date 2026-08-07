@@ -1,0 +1,15 @@
+{
+  "generate_daily_automatically": true,
+  "run_time": "08:00",
+  "timezone": "America/New_York",
+  "schedule_days": "every_day",
+  "catch_up_on_wake": true,
+  "catch_up_on_start": true,
+  "generate_on_start": false,
+  "enable_paid_model_calls": false,
+  "maximum_automatic_batch_cost": 1.0,
+  "maximum_manual_batch_cost": 5.0,
+  "daily_model_budget": 5.0,
+  "monthly_model_budget": 25.0,
+  "last_scheduler_check": null
+}

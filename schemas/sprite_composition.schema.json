@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dinkly.local/schemas/sprite_composition.schema.json",
+  "title": "DINKLY Sprite Composition",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "id",
+    "name",
+    "canvas_width",
+    "canvas_height",
+    "background_color",
+    "loop_duration_ms",
+    "layers",
+    "created_at",
+    "updated_at"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 2
+    },
+    "preset": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "canvas_width": {
+      "type": "integer",
+      "minimum": 64
+    },
+    "canvas_height": {
+      "type": "integer",
+      "minimum": 64
+    },
+    "background_color": {
+      "type": "string"
+    },
+    "loop_duration_ms": {
+      "type": "integer",
+      "minimum": 100
+    },
+    "layers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "layer_type",
+          "label",
+          "x",
+          "y",
+          "scale",
+          "start_offset_ms",
+          "z_index",
+          "visible"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "layer_type": {
+            "enum": [
+              "background",
+              "dinko",
+              "dinka",
+              "shared",
+              "prop",
+              "effect",
+              "foreground",
+              "text"
+            ]
+          },
+          "animation_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "label": {
+            "type": "string"
+          },
+          "x": {
+            "type": "number"
+          },
+          "y": {
+            "type": "number"
+          },
+          "scale": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "start_offset_ms": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "z_index": {
+            "type": "integer"
+          },
+          "visible": {
+            "type": "boolean"
+          },
+          "settings": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "notes": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    }
+  }
+}

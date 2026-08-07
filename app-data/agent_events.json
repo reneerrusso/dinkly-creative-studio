@@ -1,0 +1,3953 @@
+[
+  {
+    "id": "event-e3c2cd1fc24c",
+    "run_id": "run-32b23c0b18e3",
+    "timestamp": "2026-08-06T22:44:22.006202+00:00",
+    "level": "info",
+    "kind": "run",
+    "message": "Run created.",
+    "data": {
+      "kind": "social-intelligence-refresh"
+    }
+  },
+  {
+    "id": "event-ec22a2c8e6f1",
+    "run_id": "run-32b23c0b18e3",
+    "timestamp": "2026-08-06T22:44:22.011317+00:00",
+    "level": "info",
+    "kind": "preflight",
+    "message": "Estimated this run at $0.20 to $0.72.",
+    "data": {
+      "handles": 4,
+      "platforms": [
+        "Instagram",
+        "Tiktok"
+      ],
+      "posts_per_handle": 20,
+      "maximum_posts": 80,
+      "expected_provider_runs": 4,
+      "estimated_cost_low": 0.2,
+      "estimated_cost_high": 0.72,
+      "estimated_cost_label": "Estimated provider cost",
+      "estimate_sources": [
+        "conservative local estimate; Actor pricing not yet observed"
+      ],
+      "daily_budget_remaining": 2.0,
+      "monthly_budget_remaining": 5.0,
+      "monthly_percent_used": 0.0,
+      "requires_confirmation": true,
+      "can_run": true,
+      "warnings": [],
+      "hard_stops": [],
+      "scheduled": false,
+      "provider_health": "Provider unavailable",
+      "provider_configured": true,
+      "manual_import_available": true
+    }
+  },
+  {
+    "id": "event-b0375823868f",
+    "run_id": "run-32b23c0b18e3",
+    "timestamp": "2026-08-06T22:44:22.019448+00:00",
+    "level": "info",
+    "kind": "scope",
+    "message": "Loaded 4 monitored handles.",
+    "data": {}
+  },
+  {
+    "id": "event-a78fa10241b0",
+    "run_id": "run-32b23c0b18e3",
+    "timestamp": "2026-08-06T22:44:22.020423+00:00",
+    "level": "info",
+    "kind": "budget",
+    "message": "Monthly provider budget remaining: $5.00.",
+    "data": {}
+  },
+  {
+    "id": "event-10f7109718ae",
+    "run_id": "run-32b23c0b18e3",
+    "timestamp": "2026-08-06T22:44:22.022017+00:00",
+    "level": "info",
+    "kind": "provider-request",
+    "message": "Starting provider request for Tiktok (Actor start).",
+    "data": {}
+  },
+  {
+    "id": "event-376e7dcd20c9",
+    "run_id": "run-32b23c0b18e3",
+    "timestamp": "2026-08-06T22:44:23.564504+00:00",
+    "level": "info",
+    "kind": "provider-request",
+    "message": "Starting provider request for Tiktok (Actor status).",
+    "data": {}
+  },
+  {
+    "id": "event-8769fcd6a532",
+    "run_id": "run-32b23c0b18e3",
+    "timestamp": "2026-08-06T22:44:24.841953+00:00",
+    "level": "info",
+    "kind": "provider-request",
+    "message": "Starting provider request for Tiktok (Actor status).",
+    "data": {}
+  },
+  {
+    "id": "event-ad5d684d4593",
+    "run_id": "run-32b23c0b18e3",
+    "timestamp": "2026-08-06T22:44:26.072097+00:00",
+    "level": "info",
+    "kind": "provider-request",
+    "message": "Starting provider request for Tiktok (Actor status).",
+    "data": {}
+  },
+  {
+    "id": "event-c4256823f3cc",
+    "run_id": "run-32b23c0b18e3",
+    "timestamp": "2026-08-06T22:44:27.283990+00:00",
+    "level": "info",
+    "kind": "provider-request",
+    "message": "Starting provider request for Tiktok (Actor status).",
+    "data": {}
+  },
+  {
+    "id": "event-50b810a5caa8",
+    "run_id": "run-32b23c0b18e3",
+    "timestamp": "2026-08-06T22:44:28.559771+00:00",
+    "level": "info",
+    "kind": "provider-request",
+    "message": "Starting provider request for Tiktok (Actor status).",
+    "data": {}
+  },
+  {
+    "id": "event-1fba9fd834f5",
+    "run_id": "run-32b23c0b18e3",
+    "timestamp": "2026-08-06T22:44:29.792147+00:00",
+    "level": "info",
+    "kind": "provider-request",
+    "message": "Starting provider request for Tiktok (Actor status).",
+    "data": {}
+  },
+  {
+    "id": "event-07cec32d8dcd",
+    "run_id": "run-32b23c0b18e3",
+    "timestamp": "2026-08-06T22:44:30.999326+00:00",
+    "level": "info",
+    "kind": "provider-request",
+    "message": "Starting provider request for Tiktok (Actor status).",
+    "data": {}
+  },
+  {
+    "id": "event-3229c5282caf",
+    "run_id": "run-32b23c0b18e3",
+    "timestamp": "2026-08-06T22:44:31.292757+00:00",
+    "level": "info",
+    "kind": "provider-request",
+    "message": "Starting provider request for Tiktok (dataset download).",
+    "data": {}
+  },
+  {
+    "id": "event-8ba26cc19249",
+    "run_id": "run-32b23c0b18e3",
+    "timestamp": "2026-08-06T22:44:31.737585+00:00",
+    "level": "info",
+    "kind": "fetch",
+    "message": "Fetched 20 public posts from @dinklygame.",
+    "data": {
+      "created": 20,
+      "skipped": 0,
+      "snapshots": 20,
+      "metrics_unavailable": 0,
+      "profile": {
+        "id": "profile-76d92cc73043",
+        "handle_id": "handle-dfc366e1fe2f",
+        "platform_profile_id": "7362678857944646699",
+        "username": "dinklygame",
+        "display_name": "dinklygame",
+        "bio": "The cutest couple on the internet 💛\nShop DINKLY ⬇️",
+        "profile_image_url": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-avt-0068-tx/7557c570e4547ff2db94486a8a055e00~tplv-tiktokx-cropcenter:720:720.jpeg?dr=9640&refresh_token=58ed61c4&x-expires=1786226400&x-signature=ug6tqZXBjPPUNb%2B73FcdCXfVOVU%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8",
+        "followers": 17900,
+        "following": 0,
+        "post_count": null,
+        "verified": false,
+        "profile_url": "https://www.tiktok.com/@dinklygame",
+        "retrieved_at": "2026-08-06T22:44:31.729349+00:00",
+        "provider": "apify",
+        "raw_metadata": {
+          "source": "normalized provider profile"
+        }
+      }
+    }
+  },
+  {
+    "id": "event-49be592674d9",
+    "run_id": "run-32b23c0b18e3",
+    "timestamp": "2026-08-06T22:44:31.739231+00:00",
+    "level": "info",
+    "kind": "provider-request",
+    "message": "Starting provider request for Instagram (Actor start).",
+    "data": {}
+  },
+  {
+    "id": "event-148c146df08a",
+    "run_id": "run-32b23c0b18e3",
+    "timestamp": "2026-08-06T22:44:31.937350+00:00",
+    "level": "warning",
+    "kind": "provider-warning",
+    "message": "The configured Apify Actor is unavailable. Review the Actor ID in Settings.",
+    "data": {
+      "platform": "instagram",
+      "code": "actor_unavailable"
+    }
+  },
+  {
+    "id": "event-1e471e307a2a",
+    "run_id": "run-32b23c0b18e3",
+    "timestamp": "2026-08-06T22:44:31.944756+00:00",
+    "level": "warning",
+    "kind": "partial-success",
+    "message": "Tiktok completed successfully. Instagram was unavailable.",
+    "data": {}
+  },
+  {
+    "id": "event-bf4ff4d77b3f",
+    "run_id": "run-32b23c0b18e3",
+    "timestamp": "2026-08-06T22:44:31.946611+00:00",
+    "level": "warning",
+    "kind": "complete",
+    "message": "Social Intelligence refresh completed with warnings.",
+    "data": {
+      "status": "Completed with warnings",
+      "summary": {
+        "handles_selected": 4,
+        "handles_processed": 1,
+        "posts_fetched": 20,
+        "posts_skipped": 0,
+        "snapshots_created": 20,
+        "metrics_unavailable": 0,
+        "estimated_cost": 0.72,
+        "provider_reported_cost": 0.0,
+        "provider_reported_cost_complete": true,
+        "learnings_created": 0,
+        "concept_directions_created": 0,
+        "budget_remaining": 5.0
+      }
+    }
+  },
+  {
+    "id": "event-b321fa3bf14f",
+    "run_id": "run-bcf7a3da49a0",
+    "timestamp": "2026-08-07T00:59:48.253570+00:00",
+    "level": "info",
+    "kind": "run",
+    "message": "Run created.",
+    "data": {
+      "kind": "concept-generator-daily-batch"
+    }
+  },
+  {
+    "id": "event-0a2bd3a07000",
+    "run_id": "run-bcf7a3da49a0",
+    "timestamp": "2026-08-07T00:59:48.255138+00:00",
+    "level": "warning",
+    "kind": "preflight",
+    "message": "Skipped: No AI provider configured.",
+    "data": {
+      "problems": [
+        "No AI provider configured.",
+        "Paid model calls are disabled for automatic generation."
+      ]
+    }
+  },
+  {
+    "id": "event-7a917aa2fde4",
+    "run_id": "run-bacf833367ac",
+    "timestamp": "2026-08-07T01:03:11.029162+00:00",
+    "level": "info",
+    "kind": "run",
+    "message": "Run created.",
+    "data": {
+      "kind": "concept-generator-daily-batch"
+    }
+  },
+  {
+    "id": "event-d13c22fa0aa3",
+    "run_id": "run-bacf833367ac",
+    "timestamp": "2026-08-07T01:03:11.030606+00:00",
+    "level": "warning",
+    "kind": "preflight",
+    "message": "Skipped: No AI provider configured.",
+    "data": {
+      "problems": [
+        "No AI provider configured.",
+        "Paid model calls are disabled for automatic generation."
+      ]
+    }
+  },
+  {
+    "id": "event-2a0151858d2e",
+    "run_id": "run-ebe532be0984",
+    "timestamp": "2026-08-07T12:00:07.028169+00:00",
+    "level": "info",
+    "kind": "run",
+    "message": "Run created.",
+    "data": {
+      "kind": "concept-generator-daily-batch"
+    }
+  },
+  {
+    "id": "event-9e6154fd353e",
+    "run_id": "run-ebe532be0984",
+    "timestamp": "2026-08-07T12:00:07.036933+00:00",
+    "level": "warning",
+    "kind": "preflight",
+    "message": "Skipped: No AI provider configured.",
+    "data": {
+      "problems": [
+        "No AI provider configured.",
+        "Paid model calls are disabled for automatic generation."
+      ]
+    }
+  },
+  {
+    "id": "event-cbc66c569b64",
+    "run_id": "generation-cbd56ebce7aa",
+    "timestamp": "2026-08-07T13:25:37.563501+00:00",
+    "level": "info",
+    "kind": "brief",
+    "message": "Story brief loaded.",
+    "data": {}
+  },
+  {
+    "id": "event-88c9ccf47e1b",
+    "run_id": "generation-cbd56ebce7aa",
+    "timestamp": "2026-08-07T13:25:37.566972+00:00",
+    "level": "info",
+    "kind": "prompt",
+    "message": "Prompt recipe compiled.",
+    "data": {}
+  },
+  {
+    "id": "event-01fe9b0c68ea",
+    "run_id": "generation-cbd56ebce7aa",
+    "timestamp": "2026-08-07T13:25:37.568738+00:00",
+    "level": "info",
+    "kind": "reference",
+    "message": "Dinko reference loaded.",
+    "data": {}
+  },
+  {
+    "id": "event-869ceeec24a5",
+    "run_id": "generation-cbd56ebce7aa",
+    "timestamp": "2026-08-07T13:25:37.570281+00:00",
+    "level": "info",
+    "kind": "reference",
+    "message": "Dinka reference loaded.",
+    "data": {}
+  },
+  {
+    "id": "event-8a4204de83f8",
+    "run_id": "generation-cbd56ebce7aa",
+    "timestamp": "2026-08-07T13:25:37.571750+00:00",
+    "level": "info",
+    "kind": "model",
+    "message": "Automatic model selection: Nano Banana 2.",
+    "data": {
+      "reason": "Two character references and split-scene consistency."
+    }
+  },
+  {
+    "id": "event-c300c27c1bf6",
+    "run_id": "generation-cbd56ebce7aa",
+    "timestamp": "2026-08-07T13:25:37.581056+00:00",
+    "level": "info",
+    "kind": "generation",
+    "message": "Submitting Candidate A.",
+    "data": {
+      "candidate": "A"
+    }
+  },
+  {
+    "id": "event-000012eb54c0",
+    "run_id": "generation-cbd56ebce7aa",
+    "timestamp": "2026-08-07T13:25:48.681706+00:00",
+    "level": "info",
+    "kind": "candidate",
+    "message": "Candidate A received.",
+    "data": {
+      "candidate_id": "candidate-2b5d64131062"
+    }
+  },
+  {
+    "id": "event-15e99042e94a",
+    "run_id": "generation-cbd56ebce7aa",
+    "timestamp": "2026-08-07T13:25:48.687106+00:00",
+    "level": "info",
+    "kind": "generation",
+    "message": "Submitting Candidate B.",
+    "data": {
+      "candidate": "B"
+    }
+  },
+  {
+    "id": "event-ac295f277b59",
+    "run_id": "generation-cbd56ebce7aa",
+    "timestamp": "2026-08-07T13:25:57.947965+00:00",
+    "level": "info",
+    "kind": "candidate",
+    "message": "Candidate B received.",
+    "data": {
+      "candidate_id": "candidate-b3804ff77b75"
+    }
+  },
+  {
+    "id": "event-107fa3e1c7c3",
+    "run_id": "generation-cbd56ebce7aa",
+    "timestamp": "2026-08-07T13:25:57.954472+00:00",
+    "level": "info",
+    "kind": "qa",
+    "message": "Starting QA.",
+    "data": {}
+  },
+  {
+    "id": "event-6b8af0ad6fb2",
+    "run_id": "generation-cbd56ebce7aa",
+    "timestamp": "2026-08-07T13:26:10.489433+00:00",
+    "level": "info",
+    "kind": "checkpoint",
+    "message": "Candidates ready for the human checkpoint.",
+    "data": {}
+  },
+  {
+    "id": "event-ad29f9d00a5c",
+    "run_id": "generation-cbd56ebce7aa",
+    "timestamp": "2026-08-07T13:26:52.907264+00:00",
+    "level": "info",
+    "kind": "selection",
+    "message": "Candidate A selected.",
+    "data": {}
+  },
+  {
+    "id": "event-cf2cebafed22",
+    "run_id": "generation-cbd56ebce7aa",
+    "timestamp": "2026-08-07T13:26:55.099092+00:00",
+    "level": "info",
+    "kind": "approval",
+    "message": "Comic approved and saved to History.",
+    "data": {}
+  },
+  {
+    "id": "event-59061863ac86",
+    "run_id": "generation-2538f3dfc7ac",
+    "timestamp": "2026-08-07T13:27:53.255164+00:00",
+    "level": "info",
+    "kind": "brief",
+    "message": "Story brief loaded.",
+    "data": {}
+  },
+  {
+    "id": "event-c7ac7ba976aa",
+    "run_id": "generation-2538f3dfc7ac",
+    "timestamp": "2026-08-07T13:27:53.258768+00:00",
+    "level": "info",
+    "kind": "prompt",
+    "message": "Prompt recipe compiled.",
+    "data": {}
+  },
+  {
+    "id": "event-5b6c94c211dd",
+    "run_id": "generation-2538f3dfc7ac",
+    "timestamp": "2026-08-07T13:27:53.260135+00:00",
+    "level": "info",
+    "kind": "reference",
+    "message": "Dinko reference loaded.",
+    "data": {}
+  },
+  {
+    "id": "event-2390f21e0bf7",
+    "run_id": "generation-2538f3dfc7ac",
+    "timestamp": "2026-08-07T13:27:53.261523+00:00",
+    "level": "info",
+    "kind": "reference",
+    "message": "Dinka reference loaded.",
+    "data": {}
+  },
+  {
+    "id": "event-ae5aaae57980",
+    "run_id": "generation-2538f3dfc7ac",
+    "timestamp": "2026-08-07T13:27:53.262797+00:00",
+    "level": "info",
+    "kind": "model",
+    "message": "Automatic model selection: Nano Banana 2.",
+    "data": {
+      "reason": "Two character references and split-scene consistency."
+    }
+  },
+  {
+    "id": "event-32b5ec973c69",
+    "run_id": "generation-2538f3dfc7ac",
+    "timestamp": "2026-08-07T13:27:53.267814+00:00",
+    "level": "info",
+    "kind": "generation",
+    "message": "Submitting Candidate A.",
+    "data": {
+      "candidate": "A"
+    }
+  },
+  {
+    "id": "event-c3e1584186b5",
+    "run_id": "generation-2538f3dfc7ac",
+    "timestamp": "2026-08-07T13:28:04.194253+00:00",
+    "level": "info",
+    "kind": "candidate",
+    "message": "Candidate A received.",
+    "data": {
+      "candidate_id": "candidate-1d7c1a2679f2"
+    }
+  },
+  {
+    "id": "event-0078cf40d722",
+    "run_id": "generation-2538f3dfc7ac",
+    "timestamp": "2026-08-07T13:28:04.198395+00:00",
+    "level": "info",
+    "kind": "generation",
+    "message": "Submitting Candidate B.",
+    "data": {
+      "candidate": "B"
+    }
+  },
+  {
+    "id": "event-c0a1ae3270f6",
+    "run_id": "generation-2538f3dfc7ac",
+    "timestamp": "2026-08-07T13:28:13.233817+00:00",
+    "level": "info",
+    "kind": "candidate",
+    "message": "Candidate B received.",
+    "data": {
+      "candidate_id": "candidate-4188a3151747"
+    }
+  },
+  {
+    "id": "event-b8cd72a60f2d",
+    "run_id": "generation-2538f3dfc7ac",
+    "timestamp": "2026-08-07T13:28:13.240133+00:00",
+    "level": "info",
+    "kind": "generation",
+    "message": "Submitting Candidate C.",
+    "data": {
+      "candidate": "C"
+    }
+  },
+  {
+    "id": "event-1fd0a02f1053",
+    "run_id": "generation-2538f3dfc7ac",
+    "timestamp": "2026-08-07T13:28:22.174402+00:00",
+    "level": "info",
+    "kind": "candidate",
+    "message": "Candidate C received.",
+    "data": {
+      "candidate_id": "candidate-db68e24e05ac"
+    }
+  },
+  {
+    "id": "event-bb1d4905be8f",
+    "run_id": "generation-2538f3dfc7ac",
+    "timestamp": "2026-08-07T13:28:22.181513+00:00",
+    "level": "info",
+    "kind": "generation",
+    "message": "Submitting Candidate D.",
+    "data": {
+      "candidate": "D"
+    }
+  },
+  {
+    "id": "event-e6df06540aac",
+    "run_id": "generation-2538f3dfc7ac",
+    "timestamp": "2026-08-07T13:28:30.047173+00:00",
+    "level": "info",
+    "kind": "candidate",
+    "message": "Candidate D received.",
+    "data": {
+      "candidate_id": "candidate-d174824edc51"
+    }
+  },
+  {
+    "id": "event-f0ecc593858c",
+    "run_id": "generation-2538f3dfc7ac",
+    "timestamp": "2026-08-07T13:28:30.054288+00:00",
+    "level": "info",
+    "kind": "qa",
+    "message": "Starting QA.",
+    "data": {}
+  },
+  {
+    "id": "event-5a1bc17835bd",
+    "run_id": "generation-2538f3dfc7ac",
+    "timestamp": "2026-08-07T13:29:06.871893+00:00",
+    "level": "info",
+    "kind": "checkpoint",
+    "message": "Candidates ready for the human checkpoint.",
+    "data": {}
+  },
+  {
+    "id": "event-22eea8492df3",
+    "run_id": "generation-2538f3dfc7ac",
+    "timestamp": "2026-08-07T13:29:27.636550+00:00",
+    "level": "info",
+    "kind": "selection",
+    "message": "Candidate D selected.",
+    "data": {}
+  },
+  {
+    "id": "event-06dd095fe2c5",
+    "run_id": "generation-2538f3dfc7ac",
+    "timestamp": "2026-08-07T13:29:30.502153+00:00",
+    "level": "info",
+    "kind": "approval",
+    "message": "Comic approved and saved to History.",
+    "data": {}
+  },
+  {
+    "id": "event-8a0adafad0ae",
+    "run_id": "generation-ed5b5d51a201",
+    "timestamp": "2026-08-07T14:02:48.504984+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Expanding your concept into a DINKLY scene…",
+    "data": {
+      "stage": "story",
+      "status": "active"
+    }
+  },
+  {
+    "id": "event-5d61ff131d24",
+    "run_id": "generation-ed5b5d51a201",
+    "timestamp": "2026-08-07T14:02:48.506683+00:00",
+    "level": "info",
+    "kind": "brief",
+    "message": "Story brief loaded.",
+    "data": {}
+  },
+  {
+    "id": "event-baf6a9f3a7c4",
+    "run_id": "generation-ed5b5d51a201",
+    "timestamp": "2026-08-07T14:02:48.508658+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Story Brief ready.",
+    "data": {
+      "stage": "story",
+      "status": "complete"
+    }
+  },
+  {
+    "id": "event-d4e235a030e4",
+    "run_id": "generation-ed5b5d51a201",
+    "timestamp": "2026-08-07T14:02:48.510180+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Applying character locks and scene rules…",
+    "data": {
+      "stage": "compile",
+      "status": "active"
+    }
+  },
+  {
+    "id": "event-df04f5333aee",
+    "run_id": "generation-ed5b5d51a201",
+    "timestamp": "2026-08-07T14:02:48.512113+00:00",
+    "level": "info",
+    "kind": "prompt",
+    "message": "Prompt recipe compiled.",
+    "data": {}
+  },
+  {
+    "id": "event-4de9dd47d81d",
+    "run_id": "generation-ed5b5d51a201",
+    "timestamp": "2026-08-07T14:02:48.513602+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Production prompt compiled.",
+    "data": {
+      "stage": "compile",
+      "status": "complete"
+    }
+  },
+  {
+    "id": "event-d672400aa5fe",
+    "run_id": "generation-ed5b5d51a201",
+    "timestamp": "2026-08-07T14:02:48.515550+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Loading official Dinko and Dinka references…",
+    "data": {
+      "stage": "references",
+      "status": "active"
+    }
+  },
+  {
+    "id": "event-ee51ee3e35e7",
+    "run_id": "generation-ed5b5d51a201",
+    "timestamp": "2026-08-07T14:02:48.517274+00:00",
+    "level": "info",
+    "kind": "reference",
+    "message": "Dinko reference loaded.",
+    "data": {}
+  },
+  {
+    "id": "event-1c328a1fd6e2",
+    "run_id": "generation-ed5b5d51a201",
+    "timestamp": "2026-08-07T14:02:48.518963+00:00",
+    "level": "info",
+    "kind": "reference",
+    "message": "Dinka reference loaded.",
+    "data": {}
+  },
+  {
+    "id": "event-ab796473731f",
+    "run_id": "generation-ed5b5d51a201",
+    "timestamp": "2026-08-07T14:02:48.520511+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Official character references loaded.",
+    "data": {
+      "stage": "references",
+      "status": "complete"
+    }
+  },
+  {
+    "id": "event-d0582dd06517",
+    "run_id": "generation-ed5b5d51a201",
+    "timestamp": "2026-08-07T14:02:48.522088+00:00",
+    "level": "info",
+    "kind": "model",
+    "message": "Selected BALANCED: Nano Banana 2.",
+    "data": {
+      "reason": "Two character references and split-scene consistency.",
+      "model": {
+        "id": "nano_banana_2",
+        "display_name": "Nano Banana 2",
+        "power_label": "BALANCED",
+        "power_level": 2,
+        "description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+        "recommended_for": [
+          "Dinko + Dinka",
+          "Split comics",
+          "Multiple references",
+          "Most final production"
+        ],
+        "cost_tier": "standard"
+      }
+    }
+  },
+  {
+    "id": "event-5b7be37da7c5",
+    "run_id": "generation-ed5b5d51a201",
+    "timestamp": "2026-08-07T14:02:48.523767+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Preparing 4 candidates with Nano Banana 2…",
+    "data": {
+      "stage": "generate",
+      "status": "active",
+      "model": {
+        "id": "nano_banana_2",
+        "display_name": "Nano Banana 2",
+        "power_label": "BALANCED",
+        "power_level": 2,
+        "description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+        "recommended_for": [
+          "Dinko + Dinka",
+          "Split comics",
+          "Multiple references",
+          "Most final production"
+        ],
+        "cost_tier": "standard"
+      },
+      "completed": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "event-e4fa62739bca",
+    "run_id": "generation-ed5b5d51a201",
+    "timestamp": "2026-08-07T14:02:48.527440+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Generating Candidate A with Nano Banana 2.",
+    "data": {
+      "stage": "generate",
+      "status": "active",
+      "candidate": "A",
+      "candidate_status": "working",
+      "completed": 0,
+      "total": 4,
+      "model": {
+        "id": "nano_banana_2",
+        "display_name": "Nano Banana 2",
+        "power_label": "BALANCED",
+        "power_level": 2,
+        "description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+        "recommended_for": [
+          "Dinko + Dinka",
+          "Split comics",
+          "Multiple references",
+          "Most final production"
+        ],
+        "cost_tier": "standard"
+      }
+    }
+  },
+  {
+    "id": "event-71a9dbfe4647",
+    "run_id": "generation-ed5b5d51a201",
+    "timestamp": "2026-08-07T14:02:48.529166+00:00",
+    "level": "info",
+    "kind": "generation",
+    "message": "Generating Candidate A with Nano Banana 2.",
+    "data": {
+      "candidate": "A",
+      "model": "Nano Banana 2"
+    }
+  },
+  {
+    "id": "event-4a322e7e02a9",
+    "run_id": "generation-ed5b5d51a201",
+    "timestamp": "2026-08-07T14:02:48.567130+00:00",
+    "level": "warning",
+    "kind": "warning",
+    "message": "Candidate A failed: Gemini connection failed: [Errno 8] nodename nor servname provided, or not known",
+    "data": {
+      "code": "network"
+    }
+  },
+  {
+    "id": "event-e8d1cea4f4c6",
+    "run_id": "generation-ed5b5d51a201",
+    "timestamp": "2026-08-07T14:02:48.568912+00:00",
+    "level": "warning",
+    "kind": "progress",
+    "message": "Candidate A failed: Gemini connection failed: [Errno 8] nodename nor servname provided, or not known",
+    "data": {
+      "stage": "generate",
+      "status": "warning",
+      "candidate": "A",
+      "candidate_status": "failed",
+      "completed": 1,
+      "total": 4,
+      "code": "network"
+    }
+  },
+  {
+    "id": "event-a984d744a7f9",
+    "run_id": "generation-ed5b5d51a201",
+    "timestamp": "2026-08-07T14:02:48.572572+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Generating Candidate B with Nano Banana 2.",
+    "data": {
+      "stage": "generate",
+      "status": "active",
+      "candidate": "B",
+      "candidate_status": "working",
+      "completed": 1,
+      "total": 4,
+      "model": {
+        "id": "nano_banana_2",
+        "display_name": "Nano Banana 2",
+        "power_label": "BALANCED",
+        "power_level": 2,
+        "description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+        "recommended_for": [
+          "Dinko + Dinka",
+          "Split comics",
+          "Multiple references",
+          "Most final production"
+        ],
+        "cost_tier": "standard"
+      }
+    }
+  },
+  {
+    "id": "event-5946813fc6f0",
+    "run_id": "generation-ed5b5d51a201",
+    "timestamp": "2026-08-07T14:02:48.574350+00:00",
+    "level": "info",
+    "kind": "generation",
+    "message": "Generating Candidate B with Nano Banana 2.",
+    "data": {
+      "candidate": "B",
+      "model": "Nano Banana 2"
+    }
+  },
+  {
+    "id": "event-bb4e94294861",
+    "run_id": "generation-ed5b5d51a201",
+    "timestamp": "2026-08-07T14:02:48.581685+00:00",
+    "level": "warning",
+    "kind": "warning",
+    "message": "Candidate B failed: Gemini connection failed: [Errno 8] nodename nor servname provided, or not known",
+    "data": {
+      "code": "network"
+    }
+  },
+  {
+    "id": "event-31bd9debb9b5",
+    "run_id": "generation-ed5b5d51a201",
+    "timestamp": "2026-08-07T14:02:48.583394+00:00",
+    "level": "warning",
+    "kind": "progress",
+    "message": "Candidate B failed: Gemini connection failed: [Errno 8] nodename nor servname provided, or not known",
+    "data": {
+      "stage": "generate",
+      "status": "warning",
+      "candidate": "B",
+      "candidate_status": "failed",
+      "completed": 2,
+      "total": 4,
+      "code": "network"
+    }
+  },
+  {
+    "id": "event-06b03aa2a7d3",
+    "run_id": "generation-ed5b5d51a201",
+    "timestamp": "2026-08-07T14:02:48.587076+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Generating Candidate C with Nano Banana 2.",
+    "data": {
+      "stage": "generate",
+      "status": "active",
+      "candidate": "C",
+      "candidate_status": "working",
+      "completed": 2,
+      "total": 4,
+      "model": {
+        "id": "nano_banana_2",
+        "display_name": "Nano Banana 2",
+        "power_label": "BALANCED",
+        "power_level": 2,
+        "description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+        "recommended_for": [
+          "Dinko + Dinka",
+          "Split comics",
+          "Multiple references",
+          "Most final production"
+        ],
+        "cost_tier": "standard"
+      }
+    }
+  },
+  {
+    "id": "event-36114803bd5e",
+    "run_id": "generation-ed5b5d51a201",
+    "timestamp": "2026-08-07T14:02:48.588868+00:00",
+    "level": "info",
+    "kind": "generation",
+    "message": "Generating Candidate C with Nano Banana 2.",
+    "data": {
+      "candidate": "C",
+      "model": "Nano Banana 2"
+    }
+  },
+  {
+    "id": "event-28d13833075d",
+    "run_id": "generation-ed5b5d51a201",
+    "timestamp": "2026-08-07T14:02:48.596946+00:00",
+    "level": "warning",
+    "kind": "warning",
+    "message": "Candidate C failed: Gemini connection failed: [Errno 8] nodename nor servname provided, or not known",
+    "data": {
+      "code": "network"
+    }
+  },
+  {
+    "id": "event-dba15fc7bf8b",
+    "run_id": "generation-ed5b5d51a201",
+    "timestamp": "2026-08-07T14:02:48.598909+00:00",
+    "level": "warning",
+    "kind": "progress",
+    "message": "Candidate C failed: Gemini connection failed: [Errno 8] nodename nor servname provided, or not known",
+    "data": {
+      "stage": "generate",
+      "status": "warning",
+      "candidate": "C",
+      "candidate_status": "failed",
+      "completed": 3,
+      "total": 4,
+      "code": "network"
+    }
+  },
+  {
+    "id": "event-aa61bfa9ed7d",
+    "run_id": "generation-ed5b5d51a201",
+    "timestamp": "2026-08-07T14:02:48.603849+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Generating Candidate D with Nano Banana 2.",
+    "data": {
+      "stage": "generate",
+      "status": "active",
+      "candidate": "D",
+      "candidate_status": "working",
+      "completed": 3,
+      "total": 4,
+      "model": {
+        "id": "nano_banana_2",
+        "display_name": "Nano Banana 2",
+        "power_label": "BALANCED",
+        "power_level": 2,
+        "description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+        "recommended_for": [
+          "Dinko + Dinka",
+          "Split comics",
+          "Multiple references",
+          "Most final production"
+        ],
+        "cost_tier": "standard"
+      }
+    }
+  },
+  {
+    "id": "event-d4d6282a4b7e",
+    "run_id": "generation-ed5b5d51a201",
+    "timestamp": "2026-08-07T14:02:48.605620+00:00",
+    "level": "info",
+    "kind": "generation",
+    "message": "Generating Candidate D with Nano Banana 2.",
+    "data": {
+      "candidate": "D",
+      "model": "Nano Banana 2"
+    }
+  },
+  {
+    "id": "event-c1f8746e0d43",
+    "run_id": "generation-ed5b5d51a201",
+    "timestamp": "2026-08-07T14:02:48.614015+00:00",
+    "level": "warning",
+    "kind": "warning",
+    "message": "Candidate D failed: Gemini connection failed: [Errno 8] nodename nor servname provided, or not known",
+    "data": {
+      "code": "network"
+    }
+  },
+  {
+    "id": "event-43c30080f440",
+    "run_id": "generation-ed5b5d51a201",
+    "timestamp": "2026-08-07T14:02:48.615974+00:00",
+    "level": "warning",
+    "kind": "progress",
+    "message": "Candidate D failed: Gemini connection failed: [Errno 8] nodename nor servname provided, or not known",
+    "data": {
+      "stage": "generate",
+      "status": "warning",
+      "candidate": "D",
+      "candidate_status": "failed",
+      "completed": 4,
+      "total": 4,
+      "code": "network"
+    }
+  },
+  {
+    "id": "event-52fab59f393d",
+    "run_id": "generation-ed5b5d51a201",
+    "timestamp": "2026-08-07T14:02:48.620646+00:00",
+    "level": "warning",
+    "kind": "progress",
+    "message": "All candidate requests failed.",
+    "data": {
+      "stage": "generate",
+      "status": "failed"
+    }
+  },
+  {
+    "id": "event-93fb3df2e54b",
+    "run_id": "generation-ed5b5d51a201",
+    "timestamp": "2026-08-07T14:02:48.622324+00:00",
+    "level": "warning",
+    "kind": "complete",
+    "message": "All candidate requests failed.",
+    "data": {}
+  },
+  {
+    "id": "event-9f16079816fa",
+    "run_id": "generation-25edda36387a",
+    "timestamp": "2026-08-07T14:10:01.113283+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Story Brief ready for model comparison.",
+    "data": {
+      "stage": "story",
+      "status": "complete"
+    }
+  },
+  {
+    "id": "event-a6b409958308",
+    "run_id": "generation-25edda36387a",
+    "timestamp": "2026-08-07T14:10:01.118393+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Production prompt compiled.",
+    "data": {
+      "stage": "compile",
+      "status": "complete"
+    }
+  },
+  {
+    "id": "event-c819a6c1001c",
+    "run_id": "generation-25edda36387a",
+    "timestamp": "2026-08-07T14:10:01.121448+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Official character references loaded.",
+    "data": {
+      "stage": "references",
+      "status": "complete"
+    }
+  },
+  {
+    "id": "event-6edddce51fd0",
+    "run_id": "generation-25edda36387a",
+    "timestamp": "2026-08-07T14:10:01.124344+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Preparing model comparison candidates…",
+    "data": {
+      "stage": "generate",
+      "status": "active",
+      "completed": 0,
+      "total": 2
+    }
+  },
+  {
+    "id": "event-74b46bd31903",
+    "run_id": "generation-25edda36387a",
+    "timestamp": "2026-08-07T14:10:01.127814+00:00",
+    "level": "info",
+    "kind": "comparison",
+    "message": "Model comparison queued.",
+    "data": {}
+  },
+  {
+    "id": "event-e25f151213e5",
+    "run_id": "generation-25edda36387a",
+    "timestamp": "2026-08-07T14:10:01.133785+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Generating FAST candidate with Nano Banana 2 Lite.",
+    "data": {
+      "stage": "generate",
+      "status": "active",
+      "candidate": "FAST",
+      "candidate_status": "working",
+      "completed": 0,
+      "total": 2,
+      "model": {
+        "id": "nano_banana_2_lite",
+        "display_name": "Nano Banana 2 Lite",
+        "power_label": "FAST",
+        "power_level": 1,
+        "description": "Fastest and lowest-cost. Best for simple scenes and high-volume generation.",
+        "recommended_for": [
+          "Simple scenes",
+          "Single character",
+          "Fast iteration"
+        ],
+        "cost_tier": "lowest"
+      }
+    }
+  },
+  {
+    "id": "event-c1869ab26c2a",
+    "run_id": "generation-25edda36387a",
+    "timestamp": "2026-08-07T14:10:01.141257+00:00",
+    "level": "info",
+    "kind": "comparison",
+    "message": "Generating FAST candidate with Nano Banana 2 Lite.",
+    "data": {}
+  },
+  {
+    "id": "event-586fff5c2f7d",
+    "run_id": "generation-25edda36387a",
+    "timestamp": "2026-08-07T14:10:05.064813+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Checking FAST candidate…",
+    "data": {
+      "stage": "qa",
+      "status": "active",
+      "candidate": "FAST",
+      "candidate_status": "working",
+      "completed": 0,
+      "total": 2
+    }
+  },
+  {
+    "id": "event-e27ab46218dd",
+    "run_id": "generation-25edda36387a",
+    "timestamp": "2026-08-07T14:10:09.956066+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "FAST candidate checked.",
+    "data": {
+      "stage": "qa",
+      "status": "active",
+      "candidate": "FAST",
+      "candidate_status": "complete",
+      "qa_status": "Pass",
+      "completed": 1,
+      "total": 2
+    }
+  },
+  {
+    "id": "event-e9d3ab4ff77a",
+    "run_id": "generation-25edda36387a",
+    "timestamp": "2026-08-07T14:10:09.967119+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Generating BALANCED candidate with Nano Banana 2.",
+    "data": {
+      "stage": "generate",
+      "status": "active",
+      "candidate": "BALANCED",
+      "candidate_status": "working",
+      "completed": 1,
+      "total": 2,
+      "model": {
+        "id": "nano_banana_2",
+        "display_name": "Nano Banana 2",
+        "power_label": "BALANCED",
+        "power_level": 2,
+        "description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+        "recommended_for": [
+          "Dinko + Dinka",
+          "Split comics",
+          "Multiple references",
+          "Most final production"
+        ],
+        "cost_tier": "standard"
+      }
+    }
+  },
+  {
+    "id": "event-ad7a7fee61c4",
+    "run_id": "generation-25edda36387a",
+    "timestamp": "2026-08-07T14:10:09.973635+00:00",
+    "level": "info",
+    "kind": "comparison",
+    "message": "Generating BALANCED candidate with Nano Banana 2.",
+    "data": {}
+  },
+  {
+    "id": "event-8f7b3818bf13",
+    "run_id": "generation-25edda36387a",
+    "timestamp": "2026-08-07T14:10:19.369645+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Checking BALANCED candidate…",
+    "data": {
+      "stage": "qa",
+      "status": "active",
+      "candidate": "BALANCED",
+      "candidate_status": "working",
+      "completed": 1,
+      "total": 2
+    }
+  },
+  {
+    "id": "event-7512fad3473a",
+    "run_id": "generation-25edda36387a",
+    "timestamp": "2026-08-07T14:10:25.067296+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "BALANCED candidate checked.",
+    "data": {
+      "stage": "qa",
+      "status": "active",
+      "candidate": "BALANCED",
+      "candidate_status": "complete",
+      "qa_status": "Warning",
+      "completed": 2,
+      "total": 2
+    }
+  },
+  {
+    "id": "event-586d10c65981",
+    "run_id": "generation-25edda36387a",
+    "timestamp": "2026-08-07T14:10:25.086668+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "2 / 2 comparison candidates generated.",
+    "data": {
+      "stage": "generate",
+      "status": "complete",
+      "completed": 2,
+      "total": 2
+    }
+  },
+  {
+    "id": "event-cde314505510",
+    "run_id": "generation-25edda36387a",
+    "timestamp": "2026-08-07T14:10:25.102544+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Comparison candidate QA complete.",
+    "data": {
+      "stage": "qa",
+      "status": "complete"
+    }
+  },
+  {
+    "id": "event-783ae5d7a134",
+    "run_id": "generation-25edda36387a",
+    "timestamp": "2026-08-07T14:10:25.109650+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "No repair requested.",
+    "data": {
+      "stage": "repair",
+      "status": "skipped"
+    }
+  },
+  {
+    "id": "event-ac0bde929e2d",
+    "run_id": "generation-25edda36387a",
+    "timestamp": "2026-08-07T14:10:25.112947+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Ready for your approval.",
+    "data": {
+      "stage": "human_review",
+      "status": "active"
+    }
+  },
+  {
+    "id": "event-ce56a7c05b2e",
+    "run_id": "generation-25edda36387a",
+    "timestamp": "2026-08-07T14:10:25.116113+00:00",
+    "level": "info",
+    "kind": "comparison",
+    "message": "Model comparison complete.",
+    "data": {}
+  },
+  {
+    "id": "event-2570de93d862",
+    "run_id": "generation-25edda36387a",
+    "timestamp": "2026-08-07T14:10:39.836560+00:00",
+    "level": "info",
+    "kind": "selection",
+    "message": "Candidate BALANCED selected.",
+    "data": {}
+  },
+  {
+    "id": "event-3830d2b7f6fa",
+    "run_id": "generation-25edda36387a",
+    "timestamp": "2026-08-07T14:11:00.229915+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Preparing edit for Candidate BALANCED: mugs, phones, tables, carts, and furniture.",
+    "data": {
+      "stage": "repair",
+      "status": "active",
+      "candidate": "BALANCED",
+      "repair_step": "preparing_edit",
+      "issue": "mugs, phones, tables, carts, and furniture",
+      "model": {
+        "id": "nano_banana_2",
+        "display_name": "Nano Banana 2",
+        "power_label": "BALANCED",
+        "power_level": 2,
+        "description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+        "recommended_for": [
+          "Dinko + Dinka",
+          "Split comics",
+          "Multiple references",
+          "Most final production"
+        ],
+        "cost_tier": "standard"
+      }
+    }
+  },
+  {
+    "id": "event-ee7988500ba3",
+    "run_id": "generation-25edda36387a",
+    "timestamp": "2026-08-07T14:11:00.233431+00:00",
+    "level": "info",
+    "kind": "repair",
+    "message": "Repair 1 started with Nano Banana 2.",
+    "data": {}
+  },
+  {
+    "id": "event-ed54ba12ffb9",
+    "run_id": "generation-25edda36387a",
+    "timestamp": "2026-08-07T14:11:00.236400+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Submitting Candidate BALANCED repair with Nano Banana 2.",
+    "data": {
+      "stage": "repair",
+      "status": "active",
+      "candidate": "BALANCED",
+      "repair_step": "submitting_repair",
+      "issue": "mugs, phones, tables, carts, and furniture",
+      "model": {
+        "id": "nano_banana_2",
+        "display_name": "Nano Banana 2",
+        "power_label": "BALANCED",
+        "power_level": 2,
+        "description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+        "recommended_for": [
+          "Dinko + Dinka",
+          "Split comics",
+          "Multiple references",
+          "Most final production"
+        ],
+        "cost_tier": "standard"
+      }
+    }
+  },
+  {
+    "id": "event-842a9015bc86",
+    "run_id": "generation-25edda36387a",
+    "timestamp": "2026-08-07T14:11:08.664367+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Repair received for Candidate BALANCED.",
+    "data": {
+      "stage": "repair",
+      "status": "active",
+      "candidate": "BALANCED",
+      "repair_step": "repair_received",
+      "issue": "mugs, phones, tables, carts, and furniture"
+    }
+  },
+  {
+    "id": "event-99ec04b1ee10",
+    "run_id": "generation-25edda36387a",
+    "timestamp": "2026-08-07T14:11:08.672602+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Running QA again…",
+    "data": {
+      "stage": "repair",
+      "status": "active",
+      "candidate": "BALANCED · Repair 1",
+      "repair_step": "running_qa",
+      "issue": "mugs, phones, tables, carts, and furniture"
+    }
+  },
+  {
+    "id": "event-31d8dde61b1a",
+    "run_id": "generation-25edda36387a",
+    "timestamp": "2026-08-07T14:11:08.675633+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Candidate BALANCED · Repair 1 checking…",
+    "data": {
+      "stage": "qa",
+      "status": "active",
+      "candidate": "BALANCED · Repair 1",
+      "candidate_status": "working",
+      "completed": 0,
+      "total": 1
+    }
+  },
+  {
+    "id": "event-a25bcc7eb01e",
+    "run_id": "generation-25edda36387a",
+    "timestamp": "2026-08-07T14:11:14.709422+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Candidate BALANCED · Repair 1 checked after repair.",
+    "data": {
+      "stage": "qa",
+      "status": "complete",
+      "candidate": "BALANCED · Repair 1",
+      "candidate_status": "complete",
+      "qa_status": "Fail",
+      "completed": 1,
+      "total": 1
+    }
+  },
+  {
+    "id": "event-6cc49004537d",
+    "run_id": "generation-25edda36387a",
+    "timestamp": "2026-08-07T14:11:14.719330+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Repair 1 completed and re-checked.",
+    "data": {
+      "stage": "repair",
+      "status": "complete",
+      "candidate": "BALANCED · Repair 1",
+      "repair_step": "complete",
+      "issue": "mugs, phones, tables, carts, and furniture"
+    }
+  },
+  {
+    "id": "event-d108c96609c9",
+    "run_id": "generation-25edda36387a",
+    "timestamp": "2026-08-07T14:11:14.723617+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Ready for your approval.",
+    "data": {
+      "stage": "human_review",
+      "status": "active"
+    }
+  },
+  {
+    "id": "event-a6bb9acb85fd",
+    "run_id": "generation-25edda36387a",
+    "timestamp": "2026-08-07T14:11:14.727067+00:00",
+    "level": "info",
+    "kind": "repair",
+    "message": "Repair 1 received and re-reviewed.",
+    "data": {}
+  },
+  {
+    "id": "event-44573e49f4a5",
+    "run_id": "generation-25edda36387a",
+    "timestamp": "2026-08-07T14:11:35.950513+00:00",
+    "level": "info",
+    "kind": "selection",
+    "message": "Candidate BALANCED selected.",
+    "data": {}
+  },
+  {
+    "id": "event-3e70a31df269",
+    "run_id": "generation-25edda36387a",
+    "timestamp": "2026-08-07T14:11:41.700996+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Comic approved by the human reviewer.",
+    "data": {
+      "stage": "human_review",
+      "status": "complete"
+    }
+  },
+  {
+    "id": "event-8a5cbc52a946",
+    "run_id": "generation-25edda36387a",
+    "timestamp": "2026-08-07T14:11:41.704597+00:00",
+    "level": "info",
+    "kind": "approval",
+    "message": "Comic approved and saved to History.",
+    "data": {}
+  },
+  {
+    "id": "event-c7a7542d75a0",
+    "run_id": "generation-ee3abbe0e061",
+    "timestamp": "2026-08-07T14:59:43.095425+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Expanding your concept into a DINKLY scene…",
+    "data": {
+      "stage": "story",
+      "status": "active"
+    }
+  },
+  {
+    "id": "event-69735e496df9",
+    "run_id": "generation-ee3abbe0e061",
+    "timestamp": "2026-08-07T14:59:43.101651+00:00",
+    "level": "info",
+    "kind": "brief",
+    "message": "Story brief loaded.",
+    "data": {}
+  },
+  {
+    "id": "event-03531dadde42",
+    "run_id": "generation-ee3abbe0e061",
+    "timestamp": "2026-08-07T14:59:43.107566+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Story Brief ready.",
+    "data": {
+      "stage": "story",
+      "status": "complete"
+    }
+  },
+  {
+    "id": "event-6d0dead4cb1c",
+    "run_id": "generation-ee3abbe0e061",
+    "timestamp": "2026-08-07T14:59:43.112661+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Applying character locks and scene rules…",
+    "data": {
+      "stage": "compile",
+      "status": "active"
+    }
+  },
+  {
+    "id": "event-37ac379a707f",
+    "run_id": "generation-ee3abbe0e061",
+    "timestamp": "2026-08-07T14:59:43.118530+00:00",
+    "level": "info",
+    "kind": "prompt",
+    "message": "Prompt recipe compiled.",
+    "data": {}
+  },
+  {
+    "id": "event-aee1d54541a4",
+    "run_id": "generation-ee3abbe0e061",
+    "timestamp": "2026-08-07T14:59:43.129228+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Production prompt compiled.",
+    "data": {
+      "stage": "compile",
+      "status": "complete"
+    }
+  },
+  {
+    "id": "event-7d2dd131edb2",
+    "run_id": "generation-ee3abbe0e061",
+    "timestamp": "2026-08-07T14:59:43.134294+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Loading official Dinko and Dinka references…",
+    "data": {
+      "stage": "references",
+      "status": "active"
+    }
+  },
+  {
+    "id": "event-40aa36fef70d",
+    "run_id": "generation-ee3abbe0e061",
+    "timestamp": "2026-08-07T14:59:43.138427+00:00",
+    "level": "info",
+    "kind": "reference",
+    "message": "Dinko reference loaded.",
+    "data": {}
+  },
+  {
+    "id": "event-e37472bbaf01",
+    "run_id": "generation-ee3abbe0e061",
+    "timestamp": "2026-08-07T14:59:43.141849+00:00",
+    "level": "info",
+    "kind": "reference",
+    "message": "Dinka reference loaded.",
+    "data": {}
+  },
+  {
+    "id": "event-bcc826423ac5",
+    "run_id": "generation-ee3abbe0e061",
+    "timestamp": "2026-08-07T14:59:43.145567+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Official character references loaded.",
+    "data": {
+      "stage": "references",
+      "status": "complete"
+    }
+  },
+  {
+    "id": "event-9b5b953c7ae9",
+    "run_id": "generation-ee3abbe0e061",
+    "timestamp": "2026-08-07T14:59:43.150886+00:00",
+    "level": "info",
+    "kind": "model",
+    "message": "Selected BALANCED: Nano Banana 2.",
+    "data": {
+      "reason": "Two character references and split-scene consistency.",
+      "model": {
+        "id": "nano_banana_2",
+        "display_name": "Nano Banana 2",
+        "power_label": "BALANCED",
+        "power_level": 2,
+        "description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+        "recommended_for": [
+          "Dinko + Dinka",
+          "Split comics",
+          "Multiple references",
+          "Most final production"
+        ],
+        "cost_tier": "standard"
+      }
+    }
+  },
+  {
+    "id": "event-75e07a2132c1",
+    "run_id": "generation-ee3abbe0e061",
+    "timestamp": "2026-08-07T14:59:43.154794+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Preparing 2 candidates with Nano Banana 2…",
+    "data": {
+      "stage": "generate",
+      "status": "active",
+      "model": {
+        "id": "nano_banana_2",
+        "display_name": "Nano Banana 2",
+        "power_label": "BALANCED",
+        "power_level": 2,
+        "description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+        "recommended_for": [
+          "Dinko + Dinka",
+          "Split comics",
+          "Multiple references",
+          "Most final production"
+        ],
+        "cost_tier": "standard"
+      },
+      "completed": 0,
+      "total": 2
+    }
+  },
+  {
+    "id": "event-852bea48f0c9",
+    "run_id": "generation-ee3abbe0e061",
+    "timestamp": "2026-08-07T14:59:43.162643+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Generating Candidate A with Nano Banana 2.",
+    "data": {
+      "stage": "generate",
+      "status": "active",
+      "candidate": "A",
+      "candidate_status": "working",
+      "completed": 0,
+      "total": 2,
+      "model": {
+        "id": "nano_banana_2",
+        "display_name": "Nano Banana 2",
+        "power_label": "BALANCED",
+        "power_level": 2,
+        "description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+        "recommended_for": [
+          "Dinko + Dinka",
+          "Split comics",
+          "Multiple references",
+          "Most final production"
+        ],
+        "cost_tier": "standard"
+      }
+    }
+  },
+  {
+    "id": "event-ba62cc0a0463",
+    "run_id": "generation-ee3abbe0e061",
+    "timestamp": "2026-08-07T14:59:43.168960+00:00",
+    "level": "info",
+    "kind": "generation",
+    "message": "Generating Candidate A with Nano Banana 2.",
+    "data": {
+      "candidate": "A",
+      "model": "Nano Banana 2"
+    }
+  },
+  {
+    "id": "event-2ed3cab8dba5",
+    "run_id": "generation-ee3abbe0e061",
+    "timestamp": "2026-08-07T14:59:53.036346+00:00",
+    "level": "info",
+    "kind": "candidate",
+    "message": "Candidate A generated with Nano Banana 2.",
+    "data": {
+      "candidate_id": "candidate-2bdc88f01a34",
+      "candidate": "A",
+      "completed": 1,
+      "total": 2,
+      "model": "Nano Banana 2"
+    }
+  },
+  {
+    "id": "event-d3660615eb88",
+    "run_id": "generation-ee3abbe0e061",
+    "timestamp": "2026-08-07T14:59:53.041977+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Candidate A received. 1 / 2 complete.",
+    "data": {
+      "stage": "generate",
+      "status": "active",
+      "candidate": "A",
+      "candidate_status": "complete",
+      "completed": 1,
+      "total": 2,
+      "model": {
+        "id": "nano_banana_2",
+        "display_name": "Nano Banana 2",
+        "power_label": "BALANCED",
+        "power_level": 2,
+        "description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+        "recommended_for": [
+          "Dinko + Dinka",
+          "Split comics",
+          "Multiple references",
+          "Most final production"
+        ],
+        "cost_tier": "standard"
+      }
+    }
+  },
+  {
+    "id": "event-bdac96664db0",
+    "run_id": "generation-ee3abbe0e061",
+    "timestamp": "2026-08-07T14:59:53.051310+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Generating Candidate B with Nano Banana 2.",
+    "data": {
+      "stage": "generate",
+      "status": "active",
+      "candidate": "B",
+      "candidate_status": "working",
+      "completed": 1,
+      "total": 2,
+      "model": {
+        "id": "nano_banana_2",
+        "display_name": "Nano Banana 2",
+        "power_label": "BALANCED",
+        "power_level": 2,
+        "description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+        "recommended_for": [
+          "Dinko + Dinka",
+          "Split comics",
+          "Multiple references",
+          "Most final production"
+        ],
+        "cost_tier": "standard"
+      }
+    }
+  },
+  {
+    "id": "event-aa2d02994236",
+    "run_id": "generation-ee3abbe0e061",
+    "timestamp": "2026-08-07T14:59:53.057620+00:00",
+    "level": "info",
+    "kind": "generation",
+    "message": "Generating Candidate B with Nano Banana 2.",
+    "data": {
+      "candidate": "B",
+      "model": "Nano Banana 2"
+    }
+  },
+  {
+    "id": "event-3942847c21b7",
+    "run_id": "generation-ee3abbe0e061",
+    "timestamp": "2026-08-07T15:00:01.853016+00:00",
+    "level": "info",
+    "kind": "candidate",
+    "message": "Candidate B generated with Nano Banana 2.",
+    "data": {
+      "candidate_id": "candidate-4c0bdaf0d57b",
+      "candidate": "B",
+      "completed": 2,
+      "total": 2,
+      "model": "Nano Banana 2"
+    }
+  },
+  {
+    "id": "event-5c8d8373e7c5",
+    "run_id": "generation-ee3abbe0e061",
+    "timestamp": "2026-08-07T15:00:01.858304+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Candidate B received. 2 / 2 complete.",
+    "data": {
+      "stage": "generate",
+      "status": "active",
+      "candidate": "B",
+      "candidate_status": "complete",
+      "completed": 2,
+      "total": 2,
+      "model": {
+        "id": "nano_banana_2",
+        "display_name": "Nano Banana 2",
+        "power_label": "BALANCED",
+        "power_level": 2,
+        "description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+        "recommended_for": [
+          "Dinko + Dinka",
+          "Split comics",
+          "Multiple references",
+          "Most final production"
+        ],
+        "cost_tier": "standard"
+      }
+    }
+  },
+  {
+    "id": "event-98d567f5a1bd",
+    "run_id": "generation-ee3abbe0e061",
+    "timestamp": "2026-08-07T15:00:01.867693+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "2 / 2 candidates generated.",
+    "data": {
+      "stage": "generate",
+      "status": "complete",
+      "completed": 2,
+      "total": 2
+    }
+  },
+  {
+    "id": "event-3686d1784fff",
+    "run_id": "generation-ee3abbe0e061",
+    "timestamp": "2026-08-07T15:00:01.872395+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Checking character consistency and scene accuracy…",
+    "data": {
+      "stage": "qa",
+      "status": "active",
+      "completed": 0,
+      "total": 2
+    }
+  },
+  {
+    "id": "event-a7c14f6e8bc8",
+    "run_id": "generation-ee3abbe0e061",
+    "timestamp": "2026-08-07T15:00:01.877966+00:00",
+    "level": "info",
+    "kind": "qa",
+    "message": "Starting QA.",
+    "data": {}
+  },
+  {
+    "id": "event-fe9ef9774fcf",
+    "run_id": "generation-ee3abbe0e061",
+    "timestamp": "2026-08-07T15:00:01.883842+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Candidate A checking…",
+    "data": {
+      "stage": "qa",
+      "status": "active",
+      "candidate": "A",
+      "candidate_status": "working",
+      "completed": 0,
+      "total": 2
+    }
+  },
+  {
+    "id": "event-c4b27e85d3a8",
+    "run_id": "generation-ee3abbe0e061",
+    "timestamp": "2026-08-07T15:00:08.788195+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Candidate A checked.",
+    "data": {
+      "stage": "qa",
+      "status": "active",
+      "candidate": "A",
+      "candidate_status": "complete",
+      "qa_status": "Fail",
+      "completed": 1,
+      "total": 2
+    }
+  },
+  {
+    "id": "event-99be292ca3f8",
+    "run_id": "generation-ee3abbe0e061",
+    "timestamp": "2026-08-07T15:00:08.801188+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Candidate B checking…",
+    "data": {
+      "stage": "qa",
+      "status": "active",
+      "candidate": "B",
+      "candidate_status": "working",
+      "completed": 1,
+      "total": 2
+    }
+  },
+  {
+    "id": "event-1fbf9faf7aad",
+    "run_id": "generation-ee3abbe0e061",
+    "timestamp": "2026-08-07T15:00:13.943575+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Candidate B checked.",
+    "data": {
+      "stage": "qa",
+      "status": "active",
+      "candidate": "B",
+      "candidate_status": "complete",
+      "qa_status": "Pass",
+      "completed": 2,
+      "total": 2
+    }
+  },
+  {
+    "id": "event-85c4e5af40ca",
+    "run_id": "generation-ee3abbe0e061",
+    "timestamp": "2026-08-07T15:00:13.970767+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "QA complete for 2 candidates.",
+    "data": {
+      "stage": "qa",
+      "status": "complete",
+      "completed": 2,
+      "total": 2
+    }
+  },
+  {
+    "id": "event-346e13e9f744",
+    "run_id": "generation-ee3abbe0e061",
+    "timestamp": "2026-08-07T15:00:13.975425+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "No repair requested.",
+    "data": {
+      "stage": "repair",
+      "status": "skipped"
+    }
+  },
+  {
+    "id": "event-2aa62d49e5bd",
+    "run_id": "generation-ee3abbe0e061",
+    "timestamp": "2026-08-07T15:00:13.978590+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Ready for your approval.",
+    "data": {
+      "stage": "human_review",
+      "status": "active"
+    }
+  },
+  {
+    "id": "event-bf94d06d08f9",
+    "run_id": "generation-ee3abbe0e061",
+    "timestamp": "2026-08-07T15:00:13.982735+00:00",
+    "level": "info",
+    "kind": "checkpoint",
+    "message": "Candidates ready for the human checkpoint.",
+    "data": {}
+  },
+  {
+    "id": "event-7e7adfcb4c0b",
+    "run_id": "generation-ee3abbe0e061",
+    "timestamp": "2026-08-07T15:00:35.751543+00:00",
+    "level": "info",
+    "kind": "selection",
+    "message": "Candidate A selected.",
+    "data": {}
+  },
+  {
+    "id": "event-b2e7fe08a70a",
+    "run_id": "generation-ee3abbe0e061",
+    "timestamp": "2026-08-07T15:00:53.033614+00:00",
+    "level": "info",
+    "kind": "selection",
+    "message": "Candidate B selected.",
+    "data": {}
+  },
+  {
+    "id": "event-8135b2b02bc4",
+    "run_id": "generation-ee3abbe0e061",
+    "timestamp": "2026-08-07T15:01:01.030969+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Comic approved by the human reviewer.",
+    "data": {
+      "stage": "human_review",
+      "status": "complete"
+    }
+  },
+  {
+    "id": "event-74a8c978aa49",
+    "run_id": "generation-ee3abbe0e061",
+    "timestamp": "2026-08-07T15:01:01.040505+00:00",
+    "level": "info",
+    "kind": "approval",
+    "message": "Comic approved and saved to History.",
+    "data": {}
+  },
+  {
+    "id": "event-eedf724e32e3",
+    "run_id": "run-4d4e4496c9f0",
+    "timestamp": "2026-08-07T15:57:52.897087+00:00",
+    "level": "info",
+    "kind": "run",
+    "message": "Run created.",
+    "data": {
+      "kind": "concept-generator-daily-batch"
+    }
+  },
+  {
+    "id": "event-9ea03a92b7cf",
+    "run_id": "run-4d4e4496c9f0",
+    "timestamp": "2026-08-07T15:57:52.900093+00:00",
+    "level": "warning",
+    "kind": "preflight",
+    "message": "Skipped: No AI provider configured.",
+    "data": {
+      "problems": [
+        "No AI provider configured.",
+        "Paid model calls are disabled for automatic generation."
+      ]
+    }
+  },
+  {
+    "id": "event-3f634355fa6f",
+    "run_id": "run-5f59fcced10c",
+    "timestamp": "2026-08-07T16:01:29.630587+00:00",
+    "level": "info",
+    "kind": "run",
+    "message": "Run created.",
+    "data": {
+      "kind": "concept-generator-daily-batch"
+    }
+  },
+  {
+    "id": "event-0b5c48015caa",
+    "run_id": "run-5f59fcced10c",
+    "timestamp": "2026-08-07T16:01:29.633642+00:00",
+    "level": "info",
+    "kind": "manual",
+    "message": "Concept Generator batch triggered by manual.",
+    "data": {
+      "source": "manual",
+      "date": "2026-08-07"
+    }
+  },
+  {
+    "id": "event-b00ecd57ef5e",
+    "run_id": "run-5f59fcced10c",
+    "timestamp": "2026-08-07T16:01:29.638933+00:00",
+    "level": "info",
+    "kind": "provider",
+    "message": "Verified openai provider configuration.",
+    "data": {
+      "provider": "openai",
+      "real_provider": true
+    }
+  },
+  {
+    "id": "event-44a2ef50ca52",
+    "run_id": "run-5f59fcced10c",
+    "timestamp": "2026-08-07T16:01:29.643449+00:00",
+    "level": "info",
+    "kind": "prepare",
+    "message": "Concept Generator loaded 1 existing DINKLY social posts.",
+    "data": {}
+  },
+  {
+    "id": "event-dc2b4490c1c0",
+    "run_id": "run-5f59fcced10c",
+    "timestamp": "2026-08-07T16:01:29.646917+00:00",
+    "level": "info",
+    "kind": "prepare",
+    "message": "Concept Generator loaded 0 high-confidence social learnings.",
+    "data": {}
+  },
+  {
+    "id": "event-641fd6eba418",
+    "run_id": "run-5f59fcced10c",
+    "timestamp": "2026-08-07T16:01:29.650278+00:00",
+    "level": "info",
+    "kind": "prepare",
+    "message": "Concept Generator loaded 4 Used Storylines.",
+    "data": {}
+  },
+  {
+    "id": "event-66a3e2de55eb",
+    "run_id": "run-5f59fcced10c",
+    "timestamp": "2026-08-07T16:01:29.653362+00:00",
+    "level": "info",
+    "kind": "prepare",
+    "message": "Concept Generator loaded 0 rejected concepts from the past 30 days.",
+    "data": {}
+  },
+  {
+    "id": "event-b39e00b7d583",
+    "run_id": "run-5f59fcced10c",
+    "timestamp": "2026-08-07T16:01:29.656529+00:00",
+    "level": "info",
+    "kind": "research",
+    "message": "Concept Generator loaded 0 current social trends.",
+    "data": {}
+  },
+  {
+    "id": "event-11851dc4ba4a",
+    "run_id": "run-5f59fcced10c",
+    "timestamp": "2026-08-07T16:01:29.659273+00:00",
+    "level": "info",
+    "kind": "build_brief",
+    "message": "Built today’s creative brief from DINKLY rules, evidence, preferences, and originality history.",
+    "data": {
+      "brand_truth": "Ordinary life is better together.",
+      "working_evidence": [],
+      "preferences": [],
+      "overused": [],
+      "timely_signal_count": 0,
+      "format_balance": "10 with-you, 10 before-after, 10 connected five-comic stories"
+    }
+  },
+  {
+    "id": "event-5a560ee209dd",
+    "run_id": "run-5f59fcced10c",
+    "timestamp": "2026-08-07T16:01:29.662678+00:00",
+    "level": "info",
+    "kind": "generate_with_you",
+    "message": "Generating WITH YOU candidates.",
+    "data": {}
+  },
+  {
+    "id": "event-54cb44b1a45b",
+    "run_id": "run-5f59fcced10c",
+    "timestamp": "2026-08-07T16:02:22.295382+00:00",
+    "level": "info",
+    "kind": "generated",
+    "message": "Generated 24 raw WITH YOU candidates.",
+    "data": {
+      "format": "with_you",
+      "count": 24,
+      "attempt": 1
+    }
+  },
+  {
+    "id": "event-91547264ae8f",
+    "run_id": "run-5f59fcced10c",
+    "timestamp": "2026-08-07T16:02:22.318194+00:00",
+    "level": "info",
+    "kind": "deduplicate",
+    "message": "Removed 0 WITH YOU concepts that were too similar to previous stories.",
+    "data": {
+      "format": "with_you"
+    }
+  },
+  {
+    "id": "event-12a4b110fca8",
+    "run_id": "run-5f59fcced10c",
+    "timestamp": "2026-08-07T16:02:22.322564+00:00",
+    "level": "info",
+    "kind": "score",
+    "message": "Completed directional creative evaluation for 24 WITH YOU candidates; no performance prediction was made.",
+    "data": {
+      "format": "with_you",
+      "count": 24
+    }
+  },
+  {
+    "id": "event-230f93d0f0d4",
+    "run_id": "run-5f59fcced10c",
+    "timestamp": "2026-08-07T16:02:22.326286+00:00",
+    "level": "info",
+    "kind": "refine",
+    "message": "Refined 10 WITH YOU candidates.",
+    "data": {}
+  },
+  {
+    "id": "event-ac00949a70fd",
+    "run_id": "run-5f59fcced10c",
+    "timestamp": "2026-08-07T16:02:22.329632+00:00",
+    "level": "info",
+    "kind": "select_finalists",
+    "message": "Selected the strongest 10 WITH YOU concepts.",
+    "data": {}
+  },
+  {
+    "id": "event-72d0ba019edf",
+    "run_id": "run-5f59fcced10c",
+    "timestamp": "2026-08-07T16:02:22.333153+00:00",
+    "level": "info",
+    "kind": "generate_before_after",
+    "message": "Generating BEFORE / AFTER candidates.",
+    "data": {}
+  },
+  {
+    "id": "event-785ad1b0d29d",
+    "run_id": "run-5f59fcced10c",
+    "timestamp": "2026-08-07T16:03:16.563739+00:00",
+    "level": "info",
+    "kind": "generated",
+    "message": "Generated 24 raw BEFORE / AFTER candidates.",
+    "data": {
+      "format": "before_after",
+      "count": 24,
+      "attempt": 1
+    }
+  },
+  {
+    "id": "event-99f98541fe17",
+    "run_id": "run-5f59fcced10c",
+    "timestamp": "2026-08-07T16:03:16.592314+00:00",
+    "level": "info",
+    "kind": "deduplicate",
+    "message": "Removed 2 BEFORE / AFTER concepts that were too similar to previous stories.",
+    "data": {
+      "format": "before_after"
+    }
+  },
+  {
+    "id": "event-3e25413e7b18",
+    "run_id": "run-5f59fcced10c",
+    "timestamp": "2026-08-07T16:03:16.596258+00:00",
+    "level": "info",
+    "kind": "score",
+    "message": "Completed directional creative evaluation for 22 BEFORE / AFTER candidates; no performance prediction was made.",
+    "data": {
+      "format": "before_after",
+      "count": 22
+    }
+  },
+  {
+    "id": "event-e325b048d9a5",
+    "run_id": "run-5f59fcced10c",
+    "timestamp": "2026-08-07T16:03:16.599294+00:00",
+    "level": "info",
+    "kind": "refine",
+    "message": "Refined 10 BEFORE / AFTER candidates.",
+    "data": {}
+  },
+  {
+    "id": "event-75ef33231666",
+    "run_id": "run-5f59fcced10c",
+    "timestamp": "2026-08-07T16:03:16.601837+00:00",
+    "level": "info",
+    "kind": "select_finalists",
+    "message": "Selected the strongest 10 BEFORE / AFTER concepts.",
+    "data": {}
+  },
+  {
+    "id": "event-fcb62fa158d3",
+    "run_id": "run-5f59fcced10c",
+    "timestamp": "2026-08-07T16:03:16.604502+00:00",
+    "level": "info",
+    "kind": "generate_five_story",
+    "message": "Generating five-comic story candidates.",
+    "data": {}
+  },
+  {
+    "id": "event-435cb3523e16",
+    "run_id": "run-5f59fcced10c",
+    "timestamp": "2026-08-07T16:05:00.775096+00:00",
+    "level": "info",
+    "kind": "generated",
+    "message": "Generated 24 raw five-comic story candidates.",
+    "data": {
+      "format": "five_story",
+      "count": 24,
+      "attempt": 1
+    }
+  },
+  {
+    "id": "event-3f407e886979",
+    "run_id": "run-5f59fcced10c",
+    "timestamp": "2026-08-07T16:05:00.801240+00:00",
+    "level": "info",
+    "kind": "deduplicate",
+    "message": "Removed 3 five-comic story concepts that were too similar to previous stories.",
+    "data": {
+      "format": "five_story"
+    }
+  },
+  {
+    "id": "event-45a18b00caf5",
+    "run_id": "run-5f59fcced10c",
+    "timestamp": "2026-08-07T16:05:00.804132+00:00",
+    "level": "info",
+    "kind": "score",
+    "message": "Completed directional creative evaluation for 21 five-comic story candidates; no performance prediction was made.",
+    "data": {
+      "format": "five_story",
+      "count": 21
+    }
+  },
+  {
+    "id": "event-676fbaca2a86",
+    "run_id": "run-5f59fcced10c",
+    "timestamp": "2026-08-07T16:05:00.806456+00:00",
+    "level": "info",
+    "kind": "refine",
+    "message": "Refined 10 five-comic story candidates.",
+    "data": {}
+  },
+  {
+    "id": "event-9fcff5fdce77",
+    "run_id": "run-5f59fcced10c",
+    "timestamp": "2026-08-07T16:05:00.808338+00:00",
+    "level": "info",
+    "kind": "select_finalists",
+    "message": "Selected the strongest 10 five-comic story concepts.",
+    "data": {}
+  },
+  {
+    "id": "event-67c645407a2b",
+    "run_id": "run-5f59fcced10c",
+    "timestamp": "2026-08-07T16:05:00.810629+00:00",
+    "level": "info",
+    "kind": "save_batch",
+    "message": "Saved 30 validated finalists without changing existing DINKLY records.",
+    "data": {}
+  },
+  {
+    "id": "event-018d103ee158",
+    "run_id": "run-5f59fcced10c",
+    "timestamp": "2026-08-07T16:05:00.812658+00:00",
+    "level": "info",
+    "kind": "await_review",
+    "message": "Daily Concept Generator batch complete. Waiting for review.",
+    "data": {}
+  },
+  {
+    "id": "event-76b29adbbe31",
+    "run_id": "run-5f59fcced10c",
+    "timestamp": "2026-08-07T16:05:00.820521+00:00",
+    "level": "info",
+    "kind": "complete",
+    "message": "Daily Concept Generator batch complete.",
+    "data": {
+      "batch_id": "batch-2026-08-07-51cc4bd9",
+      "finalists": 30
+    }
+  },
+  {
+    "id": "event-a7f683100cc7",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:00.852337+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Expanding your concept into a DINKLY scene…",
+    "data": {
+      "stage": "story",
+      "status": "active"
+    }
+  },
+  {
+    "id": "event-cc58543141d5",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:00.857194+00:00",
+    "level": "info",
+    "kind": "brief",
+    "message": "Story brief loaded.",
+    "data": {}
+  },
+  {
+    "id": "event-65fbe93cd3bc",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:00.860973+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Story Brief ready.",
+    "data": {
+      "stage": "story",
+      "status": "complete"
+    }
+  },
+  {
+    "id": "event-95672c85ffbe",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:00.865711+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Applying character locks and scene rules…",
+    "data": {
+      "stage": "compile",
+      "status": "active"
+    }
+  },
+  {
+    "id": "event-748f391587c8",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:00.870195+00:00",
+    "level": "info",
+    "kind": "prompt",
+    "message": "Prompt recipe compiled.",
+    "data": {}
+  },
+  {
+    "id": "event-11d01b0bc90b",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:00.873855+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Production prompt compiled.",
+    "data": {
+      "stage": "compile",
+      "status": "complete"
+    }
+  },
+  {
+    "id": "event-1cf98905d82c",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:00.878010+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Loading official Dinko and Dinka references…",
+    "data": {
+      "stage": "references",
+      "status": "active"
+    }
+  },
+  {
+    "id": "event-7ccd5f3b67f2",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:00.883601+00:00",
+    "level": "info",
+    "kind": "reference",
+    "message": "Dinko reference loaded.",
+    "data": {}
+  },
+  {
+    "id": "event-16b9f1d9131c",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:00.887585+00:00",
+    "level": "info",
+    "kind": "reference",
+    "message": "Dinka reference loaded.",
+    "data": {}
+  },
+  {
+    "id": "event-604d0547132e",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:00.892219+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Official character references loaded.",
+    "data": {
+      "stage": "references",
+      "status": "complete"
+    }
+  },
+  {
+    "id": "event-075324641b8f",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:00.897816+00:00",
+    "level": "info",
+    "kind": "model",
+    "message": "Selected BALANCED: Nano Banana 2.",
+    "data": {
+      "reason": "Two character references and split-scene consistency.",
+      "model": {
+        "id": "nano_banana_2",
+        "display_name": "Nano Banana 2",
+        "power_label": "BALANCED",
+        "power_level": 2,
+        "description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+        "recommended_for": [
+          "Dinko + Dinka",
+          "Split comics",
+          "Multiple references",
+          "Most final production"
+        ],
+        "cost_tier": "standard"
+      }
+    }
+  },
+  {
+    "id": "event-1fe8ae56e898",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:00.902105+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Preparing 4 candidates with Nano Banana 2…",
+    "data": {
+      "stage": "generate",
+      "status": "active",
+      "model": {
+        "id": "nano_banana_2",
+        "display_name": "Nano Banana 2",
+        "power_label": "BALANCED",
+        "power_level": 2,
+        "description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+        "recommended_for": [
+          "Dinko + Dinka",
+          "Split comics",
+          "Multiple references",
+          "Most final production"
+        ],
+        "cost_tier": "standard"
+      },
+      "completed": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "event-2d8ef0080427",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:00.911267+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Generating Candidate A with Nano Banana 2.",
+    "data": {
+      "stage": "generate",
+      "status": "active",
+      "candidate": "A",
+      "candidate_status": "working",
+      "completed": 0,
+      "total": 4,
+      "model": {
+        "id": "nano_banana_2",
+        "display_name": "Nano Banana 2",
+        "power_label": "BALANCED",
+        "power_level": 2,
+        "description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+        "recommended_for": [
+          "Dinko + Dinka",
+          "Split comics",
+          "Multiple references",
+          "Most final production"
+        ],
+        "cost_tier": "standard"
+      }
+    }
+  },
+  {
+    "id": "event-49c890151b9f",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:00.917361+00:00",
+    "level": "info",
+    "kind": "generation",
+    "message": "Generating Candidate A with Nano Banana 2.",
+    "data": {
+      "candidate": "A",
+      "model": "Nano Banana 2"
+    }
+  },
+  {
+    "id": "event-8dfd1ccc293f",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:07.748825+00:00",
+    "level": "info",
+    "kind": "candidate",
+    "message": "Candidate A generated with Nano Banana 2.",
+    "data": {
+      "candidate_id": "candidate-3e820aa67697",
+      "candidate": "A",
+      "completed": 1,
+      "total": 4,
+      "model": "Nano Banana 2"
+    }
+  },
+  {
+    "id": "event-1ff7f256f6a3",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:07.759614+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Candidate A received. 1 / 4 complete.",
+    "data": {
+      "stage": "generate",
+      "status": "active",
+      "candidate": "A",
+      "candidate_status": "complete",
+      "completed": 1,
+      "total": 4,
+      "model": {
+        "id": "nano_banana_2",
+        "display_name": "Nano Banana 2",
+        "power_label": "BALANCED",
+        "power_level": 2,
+        "description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+        "recommended_for": [
+          "Dinko + Dinka",
+          "Split comics",
+          "Multiple references",
+          "Most final production"
+        ],
+        "cost_tier": "standard"
+      }
+    }
+  },
+  {
+    "id": "event-293f331bfa0c",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:07.771134+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Generating Candidate B with Nano Banana 2.",
+    "data": {
+      "stage": "generate",
+      "status": "active",
+      "candidate": "B",
+      "candidate_status": "working",
+      "completed": 1,
+      "total": 4,
+      "model": {
+        "id": "nano_banana_2",
+        "display_name": "Nano Banana 2",
+        "power_label": "BALANCED",
+        "power_level": 2,
+        "description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+        "recommended_for": [
+          "Dinko + Dinka",
+          "Split comics",
+          "Multiple references",
+          "Most final production"
+        ],
+        "cost_tier": "standard"
+      }
+    }
+  },
+  {
+    "id": "event-6728995af541",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:07.778734+00:00",
+    "level": "info",
+    "kind": "generation",
+    "message": "Generating Candidate B with Nano Banana 2.",
+    "data": {
+      "candidate": "B",
+      "model": "Nano Banana 2"
+    }
+  },
+  {
+    "id": "event-42a131c7b230",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:15.692690+00:00",
+    "level": "info",
+    "kind": "candidate",
+    "message": "Candidate B generated with Nano Banana 2.",
+    "data": {
+      "candidate_id": "candidate-de5f13ed2be4",
+      "candidate": "B",
+      "completed": 2,
+      "total": 4,
+      "model": "Nano Banana 2"
+    }
+  },
+  {
+    "id": "event-5f9d1076ec0e",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:15.702171+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Candidate B received. 2 / 4 complete.",
+    "data": {
+      "stage": "generate",
+      "status": "active",
+      "candidate": "B",
+      "candidate_status": "complete",
+      "completed": 2,
+      "total": 4,
+      "model": {
+        "id": "nano_banana_2",
+        "display_name": "Nano Banana 2",
+        "power_label": "BALANCED",
+        "power_level": 2,
+        "description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+        "recommended_for": [
+          "Dinko + Dinka",
+          "Split comics",
+          "Multiple references",
+          "Most final production"
+        ],
+        "cost_tier": "standard"
+      }
+    }
+  },
+  {
+    "id": "event-84d7f7c1cc31",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:15.708924+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Generating Candidate C with Nano Banana 2.",
+    "data": {
+      "stage": "generate",
+      "status": "active",
+      "candidate": "C",
+      "candidate_status": "working",
+      "completed": 2,
+      "total": 4,
+      "model": {
+        "id": "nano_banana_2",
+        "display_name": "Nano Banana 2",
+        "power_label": "BALANCED",
+        "power_level": 2,
+        "description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+        "recommended_for": [
+          "Dinko + Dinka",
+          "Split comics",
+          "Multiple references",
+          "Most final production"
+        ],
+        "cost_tier": "standard"
+      }
+    }
+  },
+  {
+    "id": "event-673e7ee66ef0",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:15.716151+00:00",
+    "level": "info",
+    "kind": "generation",
+    "message": "Generating Candidate C with Nano Banana 2.",
+    "data": {
+      "candidate": "C",
+      "model": "Nano Banana 2"
+    }
+  },
+  {
+    "id": "event-121e43f9194f",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:25.429236+00:00",
+    "level": "info",
+    "kind": "candidate",
+    "message": "Candidate C generated with Nano Banana 2.",
+    "data": {
+      "candidate_id": "candidate-238a777cef2a",
+      "candidate": "C",
+      "completed": 3,
+      "total": 4,
+      "model": "Nano Banana 2"
+    }
+  },
+  {
+    "id": "event-e4517176ea71",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:25.440839+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Candidate C received. 3 / 4 complete.",
+    "data": {
+      "stage": "generate",
+      "status": "active",
+      "candidate": "C",
+      "candidate_status": "complete",
+      "completed": 3,
+      "total": 4,
+      "model": {
+        "id": "nano_banana_2",
+        "display_name": "Nano Banana 2",
+        "power_label": "BALANCED",
+        "power_level": 2,
+        "description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+        "recommended_for": [
+          "Dinko + Dinka",
+          "Split comics",
+          "Multiple references",
+          "Most final production"
+        ],
+        "cost_tier": "standard"
+      }
+    }
+  },
+  {
+    "id": "event-f7ed54f68b19",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:25.454195+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Generating Candidate D with Nano Banana 2.",
+    "data": {
+      "stage": "generate",
+      "status": "active",
+      "candidate": "D",
+      "candidate_status": "working",
+      "completed": 3,
+      "total": 4,
+      "model": {
+        "id": "nano_banana_2",
+        "display_name": "Nano Banana 2",
+        "power_label": "BALANCED",
+        "power_level": 2,
+        "description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+        "recommended_for": [
+          "Dinko + Dinka",
+          "Split comics",
+          "Multiple references",
+          "Most final production"
+        ],
+        "cost_tier": "standard"
+      }
+    }
+  },
+  {
+    "id": "event-58e0815689a9",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:25.462124+00:00",
+    "level": "info",
+    "kind": "generation",
+    "message": "Generating Candidate D with Nano Banana 2.",
+    "data": {
+      "candidate": "D",
+      "model": "Nano Banana 2"
+    }
+  },
+  {
+    "id": "event-e5dfb6385ef8",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:35.708589+00:00",
+    "level": "info",
+    "kind": "candidate",
+    "message": "Candidate D generated with Nano Banana 2.",
+    "data": {
+      "candidate_id": "candidate-d5eba7b68256",
+      "candidate": "D",
+      "completed": 4,
+      "total": 4,
+      "model": "Nano Banana 2"
+    }
+  },
+  {
+    "id": "event-28b304bfc534",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:35.714706+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Candidate D received. 4 / 4 complete.",
+    "data": {
+      "stage": "generate",
+      "status": "active",
+      "candidate": "D",
+      "candidate_status": "complete",
+      "completed": 4,
+      "total": 4,
+      "model": {
+        "id": "nano_banana_2",
+        "display_name": "Nano Banana 2",
+        "power_label": "BALANCED",
+        "power_level": 2,
+        "description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+        "recommended_for": [
+          "Dinko + Dinka",
+          "Split comics",
+          "Multiple references",
+          "Most final production"
+        ],
+        "cost_tier": "standard"
+      }
+    }
+  },
+  {
+    "id": "event-a93143108dbd",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:35.722546+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "4 / 4 candidates generated.",
+    "data": {
+      "stage": "generate",
+      "status": "complete",
+      "completed": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "event-25d1fd39dfca",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:35.730348+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Checking character consistency and scene accuracy…",
+    "data": {
+      "stage": "qa",
+      "status": "active",
+      "completed": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "event-8dc8f4e39a67",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:35.737840+00:00",
+    "level": "info",
+    "kind": "qa",
+    "message": "Starting QA.",
+    "data": {}
+  },
+  {
+    "id": "event-3108a9588e88",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:35.744336+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Candidate A checking…",
+    "data": {
+      "stage": "qa",
+      "status": "active",
+      "candidate": "A",
+      "candidate_status": "working",
+      "completed": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "event-be1a5cd14120",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:43.190381+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Candidate A checked.",
+    "data": {
+      "stage": "qa",
+      "status": "active",
+      "candidate": "A",
+      "candidate_status": "complete",
+      "qa_status": "Pass",
+      "completed": 1,
+      "total": 4
+    }
+  },
+  {
+    "id": "event-a366fd5d66f8",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:43.204944+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Candidate B checking…",
+    "data": {
+      "stage": "qa",
+      "status": "active",
+      "candidate": "B",
+      "candidate_status": "working",
+      "completed": 1,
+      "total": 4
+    }
+  },
+  {
+    "id": "event-80c961297694",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:48.145044+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Candidate B checked.",
+    "data": {
+      "stage": "qa",
+      "status": "active",
+      "candidate": "B",
+      "candidate_status": "complete",
+      "qa_status": "Pass",
+      "completed": 2,
+      "total": 4
+    }
+  },
+  {
+    "id": "event-135ca37d01a8",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:48.157306+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Candidate C checking…",
+    "data": {
+      "stage": "qa",
+      "status": "active",
+      "candidate": "C",
+      "candidate_status": "working",
+      "completed": 2,
+      "total": 4
+    }
+  },
+  {
+    "id": "event-89f2fe94dde4",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:52.401788+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Candidate C checked.",
+    "data": {
+      "stage": "qa",
+      "status": "active",
+      "candidate": "C",
+      "candidate_status": "complete",
+      "qa_status": "Pass",
+      "completed": 3,
+      "total": 4
+    }
+  },
+  {
+    "id": "event-d2ef60ffba86",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:52.419647+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Candidate D checking…",
+    "data": {
+      "stage": "qa",
+      "status": "active",
+      "candidate": "D",
+      "candidate_status": "working",
+      "completed": 3,
+      "total": 4
+    }
+  },
+  {
+    "id": "event-74f858416abc",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:59.364808+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Candidate D checked.",
+    "data": {
+      "stage": "qa",
+      "status": "active",
+      "candidate": "D",
+      "candidate_status": "complete",
+      "qa_status": "Warning",
+      "completed": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "event-f5347aafd68c",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:59.378727+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "QA complete for 4 candidates.",
+    "data": {
+      "stage": "qa",
+      "status": "complete",
+      "completed": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "event-0eb6e1b51ab1",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:59.390776+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "No repair requested.",
+    "data": {
+      "stage": "repair",
+      "status": "skipped"
+    }
+  },
+  {
+    "id": "event-abd26ec19d7e",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:59.398700+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Ready for your approval.",
+    "data": {
+      "stage": "human_review",
+      "status": "active"
+    }
+  },
+  {
+    "id": "event-a3e9d75c18e9",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:05:59.407070+00:00",
+    "level": "info",
+    "kind": "checkpoint",
+    "message": "Candidates ready for the human checkpoint.",
+    "data": {}
+  },
+  {
+    "id": "event-ead88ac6f783",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:52:23.201385+00:00",
+    "level": "info",
+    "kind": "selection",
+    "message": "Candidate B selected.",
+    "data": {}
+  },
+  {
+    "id": "event-01acbf53830e",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:52:24.025673+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Comic approved by the human reviewer.",
+    "data": {
+      "stage": "human_review",
+      "status": "complete",
+      "event_name": "run_completed"
+    }
+  },
+  {
+    "id": "event-39f8f9e7a4f0",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:52:24.046210+00:00",
+    "level": "info",
+    "kind": "approval",
+    "message": "Comic approved and saved to History.",
+    "data": {}
+  },
+  {
+    "id": "event-6781b61c6ef1",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:52:36.429993+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Comic approved by the human reviewer.",
+    "data": {
+      "stage": "human_review",
+      "status": "complete",
+      "event_name": "run_completed"
+    }
+  },
+  {
+    "id": "event-cabb3e61fe10",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T16:52:36.448799+00:00",
+    "level": "info",
+    "kind": "approval",
+    "message": "Comic approved and saved to History.",
+    "data": {}
+  },
+  {
+    "id": "event-8d128f4f0010",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T17:20:02.677999+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Comic approved by the human reviewer.",
+    "data": {
+      "stage": "human_review",
+      "status": "complete",
+      "event_name": "run_completed"
+    }
+  },
+  {
+    "id": "event-9497be83c099",
+    "run_id": "generation-96e3ad209916",
+    "timestamp": "2026-08-07T17:20:02.694356+00:00",
+    "level": "info",
+    "kind": "approval",
+    "message": "Comic approved and saved to History.",
+    "data": {}
+  },
+  {
+    "id": "event-d464ab792bf4",
+    "run_id": "generation-63d4617c79c3",
+    "timestamp": "2026-08-07T17:39:22.688547+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Expanding your concept into a DINKLY scene…",
+    "data": {
+      "stage": "story",
+      "status": "active",
+      "event_name": "story_brief_started"
+    }
+  },
+  {
+    "id": "event-cfb1eb641380",
+    "run_id": "generation-63d4617c79c3",
+    "timestamp": "2026-08-07T17:39:22.714221+00:00",
+    "level": "info",
+    "kind": "brief",
+    "message": "Story brief loaded.",
+    "data": {}
+  },
+  {
+    "id": "event-b13b825e0838",
+    "run_id": "generation-63d4617c79c3",
+    "timestamp": "2026-08-07T17:39:22.730101+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Story Brief ready.",
+    "data": {
+      "stage": "story",
+      "status": "complete",
+      "event_name": null
+    }
+  },
+  {
+    "id": "event-87ca463c3a90",
+    "run_id": "generation-63d4617c79c3",
+    "timestamp": "2026-08-07T17:39:22.747221+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Applying character locks and scene rules…",
+    "data": {
+      "stage": "compile",
+      "status": "active",
+      "event_name": null
+    }
+  },
+  {
+    "id": "event-58e97e379b4e",
+    "run_id": "generation-63d4617c79c3",
+    "timestamp": "2026-08-07T17:39:22.763160+00:00",
+    "level": "info",
+    "kind": "prompt",
+    "message": "Prompt recipe compiled.",
+    "data": {}
+  },
+  {
+    "id": "event-945c93923471",
+    "run_id": "generation-63d4617c79c3",
+    "timestamp": "2026-08-07T17:39:22.777373+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Production prompt compiled.",
+    "data": {
+      "stage": "compile",
+      "status": "complete",
+      "event_name": null
+    }
+  },
+  {
+    "id": "event-3365fa8b8e79",
+    "run_id": "generation-63d4617c79c3",
+    "timestamp": "2026-08-07T17:39:22.792430+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Loading official Dinko and Dinka references…",
+    "data": {
+      "stage": "references",
+      "status": "active",
+      "event_name": null
+    }
+  },
+  {
+    "id": "event-02ddb35d9a9a",
+    "run_id": "generation-63d4617c79c3",
+    "timestamp": "2026-08-07T17:39:22.807512+00:00",
+    "level": "info",
+    "kind": "reference",
+    "message": "Dinko reference loaded.",
+    "data": {}
+  },
+  {
+    "id": "event-d762972527e2",
+    "run_id": "generation-63d4617c79c3",
+    "timestamp": "2026-08-07T17:39:22.821509+00:00",
+    "level": "info",
+    "kind": "reference",
+    "message": "Dinka reference loaded.",
+    "data": {}
+  },
+  {
+    "id": "event-2e84d7229f5e",
+    "run_id": "generation-63d4617c79c3",
+    "timestamp": "2026-08-07T17:39:22.836141+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Official character references loaded.",
+    "data": {
+      "stage": "references",
+      "status": "complete",
+      "event_name": null
+    }
+  },
+  {
+    "id": "event-369450f98456",
+    "run_id": "generation-63d4617c79c3",
+    "timestamp": "2026-08-07T17:39:22.851876+00:00",
+    "level": "info",
+    "kind": "model",
+    "message": "Selected BALANCED: Nano Banana 2.",
+    "data": {
+      "reason": "Two character references and split-scene consistency.",
+      "model": {
+        "id": "nano_banana_2",
+        "display_name": "Nano Banana 2",
+        "power_label": "BALANCED",
+        "power_level": 2,
+        "description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+        "recommended_for": [
+          "Dinko + Dinka",
+          "Split comics",
+          "Multiple references",
+          "Most final production"
+        ],
+        "cost_tier": "standard"
+      }
+    }
+  },
+  {
+    "id": "event-e9dcb8db097d",
+    "run_id": "generation-63d4617c79c3",
+    "timestamp": "2026-08-07T17:39:22.866094+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Preparing 1 candidates with Nano Banana 2…",
+    "data": {
+      "stage": "generate",
+      "status": "active",
+      "event_name": "generation_started",
+      "model": {
+        "id": "nano_banana_2",
+        "display_name": "Nano Banana 2",
+        "power_label": "BALANCED",
+        "power_level": 2,
+        "description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+        "recommended_for": [
+          "Dinko + Dinka",
+          "Split comics",
+          "Multiple references",
+          "Most final production"
+        ],
+        "cost_tier": "standard"
+      },
+      "completed": 0,
+      "total": 1
+    }
+  },
+  {
+    "id": "event-57812d0259cb",
+    "run_id": "generation-63d4617c79c3",
+    "timestamp": "2026-08-07T17:39:22.886978+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Generating Candidate A with Nano Banana 2.",
+    "data": {
+      "stage": "generate",
+      "status": "active",
+      "event_name": "generation_started",
+      "candidate": "A",
+      "candidate_status": "working",
+      "completed": 0,
+      "total": 1,
+      "model": {
+        "id": "nano_banana_2",
+        "display_name": "Nano Banana 2",
+        "power_label": "BALANCED",
+        "power_level": 2,
+        "description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+        "recommended_for": [
+          "Dinko + Dinka",
+          "Split comics",
+          "Multiple references",
+          "Most final production"
+        ],
+        "cost_tier": "standard"
+      }
+    }
+  },
+  {
+    "id": "event-a53dc2a771f0",
+    "run_id": "generation-63d4617c79c3",
+    "timestamp": "2026-08-07T17:39:22.902740+00:00",
+    "level": "info",
+    "kind": "generation",
+    "message": "Generating Candidate A with Nano Banana 2.",
+    "data": {
+      "candidate": "A",
+      "model": "Nano Banana 2"
+    }
+  },
+  {
+    "id": "event-817042e34ab0",
+    "run_id": "generation-63d4617c79c3",
+    "timestamp": "2026-08-07T17:39:33.165809+00:00",
+    "level": "info",
+    "kind": "candidate",
+    "message": "Candidate A generated with Nano Banana 2.",
+    "data": {
+      "candidate_id": "candidate-f85470181413",
+      "candidate": "A",
+      "completed": 1,
+      "total": 1,
+      "model": "Nano Banana 2"
+    }
+  },
+  {
+    "id": "event-e3683272c121",
+    "run_id": "generation-63d4617c79c3",
+    "timestamp": "2026-08-07T17:39:33.184152+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Candidate A received. 1 / 1 complete.",
+    "data": {
+      "stage": "generate",
+      "status": "active",
+      "event_name": "candidate_received",
+      "candidate": "A",
+      "candidate_status": "complete",
+      "completed": 1,
+      "total": 1,
+      "model": {
+        "id": "nano_banana_2",
+        "display_name": "Nano Banana 2",
+        "power_label": "BALANCED",
+        "power_level": 2,
+        "description": "Stronger character consistency and multi-reference generation. Recommended for most Dinko + Dinka comics.",
+        "recommended_for": [
+          "Dinko + Dinka",
+          "Split comics",
+          "Multiple references",
+          "Most final production"
+        ],
+        "cost_tier": "standard"
+      }
+    }
+  },
+  {
+    "id": "event-b76f6b967805",
+    "run_id": "generation-63d4617c79c3",
+    "timestamp": "2026-08-07T17:39:33.204327+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "1 / 1 candidates generated.",
+    "data": {
+      "stage": "generate",
+      "status": "complete",
+      "event_name": "candidate_received",
+      "completed": 1,
+      "total": 1
+    }
+  },
+  {
+    "id": "event-3624ff5d4d97",
+    "run_id": "generation-63d4617c79c3",
+    "timestamp": "2026-08-07T17:39:33.222515+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Applying the final DINKLY 80/20 composition.",
+    "data": {
+      "stage": "layout",
+      "status": "active",
+      "event_name": "layout_started"
+    }
+  },
+  {
+    "id": "event-a33171d1c570",
+    "run_id": "generation-63d4617c79c3",
+    "timestamp": "2026-08-07T17:39:35.299712+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Validated 80/20 final layouts applied to the generated candidates.",
+    "data": {
+      "stage": "layout",
+      "status": "complete",
+      "event_name": null
+    }
+  },
+  {
+    "id": "event-4894cfef0dbd",
+    "run_id": "generation-63d4617c79c3",
+    "timestamp": "2026-08-07T17:39:35.313846+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Checking character consistency and scene accuracy…",
+    "data": {
+      "stage": "qa",
+      "status": "active",
+      "event_name": "qa_started",
+      "completed": 0,
+      "total": 1
+    }
+  },
+  {
+    "id": "event-95d63e6d84bf",
+    "run_id": "generation-63d4617c79c3",
+    "timestamp": "2026-08-07T17:39:35.328441+00:00",
+    "level": "info",
+    "kind": "qa",
+    "message": "Starting QA.",
+    "data": {}
+  },
+  {
+    "id": "event-b5eaa58d7b99",
+    "run_id": "generation-63d4617c79c3",
+    "timestamp": "2026-08-07T17:39:35.342367+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Candidate A checking…",
+    "data": {
+      "stage": "qa",
+      "status": "active",
+      "event_name": "qa_started",
+      "candidate": "A",
+      "candidate_status": "working",
+      "completed": 0,
+      "total": 1
+    }
+  },
+  {
+    "id": "event-a50f621ce013",
+    "run_id": "generation-63d4617c79c3",
+    "timestamp": "2026-08-07T17:39:40.796093+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Candidate A checked.",
+    "data": {
+      "stage": "qa",
+      "status": "active",
+      "event_name": "qa_started",
+      "candidate": "A",
+      "candidate_status": "complete",
+      "qa_status": "Pass",
+      "completed": 1,
+      "total": 1
+    }
+  },
+  {
+    "id": "event-5ad98ea5c23b",
+    "run_id": "generation-63d4617c79c3",
+    "timestamp": "2026-08-07T17:39:40.825475+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "QA complete for 1 candidates.",
+    "data": {
+      "stage": "qa",
+      "status": "complete",
+      "event_name": null,
+      "completed": 1,
+      "total": 1
+    }
+  },
+  {
+    "id": "event-37c0d1d23ffc",
+    "run_id": "generation-63d4617c79c3",
+    "timestamp": "2026-08-07T17:39:40.840253+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "No repair requested.",
+    "data": {
+      "stage": "repair",
+      "status": "skipped",
+      "event_name": null
+    }
+  },
+  {
+    "id": "event-194ed3c45c5b",
+    "run_id": "generation-63d4617c79c3",
+    "timestamp": "2026-08-07T17:39:40.854854+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Ready for your approval.",
+    "data": {
+      "stage": "human_review",
+      "status": "active",
+      "event_name": "awaiting_human"
+    }
+  },
+  {
+    "id": "event-ff26ce76c975",
+    "run_id": "generation-63d4617c79c3",
+    "timestamp": "2026-08-07T17:39:40.870366+00:00",
+    "level": "info",
+    "kind": "checkpoint",
+    "message": "Candidates ready for the human checkpoint.",
+    "data": {}
+  },
+  {
+    "id": "event-a34c53a84857",
+    "run_id": "run-43d0179094b5",
+    "timestamp": "2026-08-07T17:49:36.902895+00:00",
+    "level": "info",
+    "kind": "run",
+    "message": "Run created.",
+    "data": {
+      "kind": "concept-generator-daily-batch"
+    }
+  },
+  {
+    "id": "event-10d115fe4a23",
+    "run_id": "run-43d0179094b5",
+    "timestamp": "2026-08-07T17:49:36.909487+00:00",
+    "level": "info",
+    "kind": "manual",
+    "message": "Concept Generator batch triggered by manual.",
+    "data": {
+      "source": "manual",
+      "date": "2026-08-07"
+    }
+  },
+  {
+    "id": "event-6382f71c2de8",
+    "run_id": "run-43d0179094b5",
+    "timestamp": "2026-08-07T17:49:36.916082+00:00",
+    "level": "info",
+    "kind": "provider",
+    "message": "Verified openai provider configuration.",
+    "data": {
+      "provider": "openai",
+      "real_provider": true
+    }
+  },
+  {
+    "id": "event-286209a814ec",
+    "run_id": "run-43d0179094b5",
+    "timestamp": "2026-08-07T17:49:36.922911+00:00",
+    "level": "info",
+    "kind": "prepare",
+    "message": "Concept Generator loaded 1 existing DINKLY social posts.",
+    "data": {}
+  },
+  {
+    "id": "event-6f30069c8111",
+    "run_id": "run-43d0179094b5",
+    "timestamp": "2026-08-07T17:49:36.927018+00:00",
+    "level": "info",
+    "kind": "prepare",
+    "message": "Concept Generator loaded 0 high-confidence social learnings.",
+    "data": {}
+  },
+  {
+    "id": "event-e26040558ea5",
+    "run_id": "run-43d0179094b5",
+    "timestamp": "2026-08-07T17:49:36.930888+00:00",
+    "level": "info",
+    "kind": "prepare",
+    "message": "Concept Generator loaded 5 Used Storylines.",
+    "data": {}
+  },
+  {
+    "id": "event-ccd9906e1c00",
+    "run_id": "run-43d0179094b5",
+    "timestamp": "2026-08-07T17:49:36.933727+00:00",
+    "level": "info",
+    "kind": "prepare",
+    "message": "Concept Generator loaded 2 rejected concepts from the past 30 days.",
+    "data": {}
+  },
+  {
+    "id": "event-8fadc01834d0",
+    "run_id": "run-43d0179094b5",
+    "timestamp": "2026-08-07T17:49:36.936563+00:00",
+    "level": "info",
+    "kind": "research",
+    "message": "Concept Generator loaded 0 current social trends.",
+    "data": {}
+  },
+  {
+    "id": "event-7f7a2c1200c3",
+    "run_id": "run-43d0179094b5",
+    "timestamp": "2026-08-07T17:49:36.939176+00:00",
+    "level": "info",
+    "kind": "build_brief",
+    "message": "Built today’s creative brief from DINKLY rules, evidence, preferences, and originality history.",
+    "data": {
+      "brand_truth": "Ordinary life is better together.",
+      "working_evidence": [],
+      "preferences": [],
+      "overused": [],
+      "timely_signal_count": 0,
+      "format_balance": "10 with-you, 10 before-after, 10 connected five-comic stories"
+    }
+  },
+  {
+    "id": "event-aeaaf977978d",
+    "run_id": "run-43d0179094b5",
+    "timestamp": "2026-08-07T17:49:36.943179+00:00",
+    "level": "info",
+    "kind": "generate_with_you",
+    "message": "Generating WITH YOU candidates.",
+    "data": {}
+  },
+  {
+    "id": "event-032e3f0f2f2d",
+    "run_id": "run-43d0179094b5",
+    "timestamp": "2026-08-07T17:50:28.124328+00:00",
+    "level": "info",
+    "kind": "generated",
+    "message": "Generated 24 raw WITH YOU candidates.",
+    "data": {
+      "format": "with_you",
+      "count": 24,
+      "attempt": 1
+    }
+  },
+  {
+    "id": "event-c618767f58f9",
+    "run_id": "run-43d0179094b5",
+    "timestamp": "2026-08-07T17:50:28.156189+00:00",
+    "level": "info",
+    "kind": "deduplicate",
+    "message": "Removed 5 WITH YOU concepts that were too similar to previous stories.",
+    "data": {
+      "format": "with_you"
+    }
+  },
+  {
+    "id": "event-3249b246e66d",
+    "run_id": "run-43d0179094b5",
+    "timestamp": "2026-08-07T17:50:28.160091+00:00",
+    "level": "info",
+    "kind": "score",
+    "message": "Completed directional creative evaluation for 19 WITH YOU candidates; no performance prediction was made.",
+    "data": {
+      "format": "with_you",
+      "count": 19
+    }
+  },
+  {
+    "id": "event-b198271109ee",
+    "run_id": "run-43d0179094b5",
+    "timestamp": "2026-08-07T17:50:28.162973+00:00",
+    "level": "info",
+    "kind": "refine",
+    "message": "Refined 10 WITH YOU candidates.",
+    "data": {}
+  },
+  {
+    "id": "event-34d51a9c72ca",
+    "run_id": "run-43d0179094b5",
+    "timestamp": "2026-08-07T17:50:28.166144+00:00",
+    "level": "info",
+    "kind": "select_finalists",
+    "message": "Selected the strongest 10 WITH YOU concepts.",
+    "data": {}
+  },
+  {
+    "id": "event-ad5910abf20b",
+    "run_id": "run-43d0179094b5",
+    "timestamp": "2026-08-07T17:50:28.169351+00:00",
+    "level": "info",
+    "kind": "generate_before_after",
+    "message": "Generating BEFORE / AFTER candidates.",
+    "data": {}
+  },
+  {
+    "id": "event-5550888c840a",
+    "run_id": "run-43d0179094b5",
+    "timestamp": "2026-08-07T17:51:28.692239+00:00",
+    "level": "info",
+    "kind": "generated",
+    "message": "Generated 24 raw BEFORE / AFTER candidates.",
+    "data": {
+      "format": "before_after",
+      "count": 24,
+      "attempt": 1
+    }
+  },
+  {
+    "id": "event-8afd434d7b58",
+    "run_id": "run-43d0179094b5",
+    "timestamp": "2026-08-07T17:51:28.722702+00:00",
+    "level": "info",
+    "kind": "deduplicate",
+    "message": "Removed 2 BEFORE / AFTER concepts that were too similar to previous stories.",
+    "data": {
+      "format": "before_after"
+    }
+  },
+  {
+    "id": "event-da6ff38ea7ee",
+    "run_id": "run-43d0179094b5",
+    "timestamp": "2026-08-07T17:51:28.729684+00:00",
+    "level": "info",
+    "kind": "score",
+    "message": "Completed directional creative evaluation for 22 BEFORE / AFTER candidates; no performance prediction was made.",
+    "data": {
+      "format": "before_after",
+      "count": 22
+    }
+  },
+  {
+    "id": "event-044fe9f8663a",
+    "run_id": "run-43d0179094b5",
+    "timestamp": "2026-08-07T17:51:28.734184+00:00",
+    "level": "info",
+    "kind": "refine",
+    "message": "Refined 10 BEFORE / AFTER candidates.",
+    "data": {}
+  },
+  {
+    "id": "event-6c6fcc1dbbbf",
+    "run_id": "run-43d0179094b5",
+    "timestamp": "2026-08-07T17:51:28.737163+00:00",
+    "level": "info",
+    "kind": "select_finalists",
+    "message": "Selected the strongest 10 BEFORE / AFTER concepts.",
+    "data": {}
+  },
+  {
+    "id": "event-7c1edb8861d7",
+    "run_id": "run-43d0179094b5",
+    "timestamp": "2026-08-07T17:51:28.741792+00:00",
+    "level": "info",
+    "kind": "generate_five_story",
+    "message": "Generating five-comic story candidates.",
+    "data": {}
+  },
+  {
+    "id": "event-fffa41886d46",
+    "run_id": "run-43d0179094b5",
+    "timestamp": "2026-08-07T17:52:59.527112+00:00",
+    "level": "info",
+    "kind": "generated",
+    "message": "Generated 24 raw five-comic story candidates.",
+    "data": {
+      "format": "five_story",
+      "count": 24,
+      "attempt": 1
+    }
+  },
+  {
+    "id": "event-f19e40bd6649",
+    "run_id": "run-43d0179094b5",
+    "timestamp": "2026-08-07T17:52:59.557697+00:00",
+    "level": "info",
+    "kind": "deduplicate",
+    "message": "Removed 6 five-comic story concepts that were too similar to previous stories.",
+    "data": {
+      "format": "five_story"
+    }
+  },
+  {
+    "id": "event-08a3d96c7a55",
+    "run_id": "run-43d0179094b5",
+    "timestamp": "2026-08-07T17:52:59.561354+00:00",
+    "level": "info",
+    "kind": "score",
+    "message": "Completed directional creative evaluation for 18 five-comic story candidates; no performance prediction was made.",
+    "data": {
+      "format": "five_story",
+      "count": 18
+    }
+  },
+  {
+    "id": "event-9316020843e1",
+    "run_id": "run-43d0179094b5",
+    "timestamp": "2026-08-07T17:52:59.565177+00:00",
+    "level": "info",
+    "kind": "refine",
+    "message": "Refined 10 five-comic story candidates.",
+    "data": {}
+  },
+  {
+    "id": "event-70a1cc707191",
+    "run_id": "run-43d0179094b5",
+    "timestamp": "2026-08-07T17:52:59.568674+00:00",
+    "level": "info",
+    "kind": "select_finalists",
+    "message": "Selected the strongest 10 five-comic story concepts.",
+    "data": {}
+  },
+  {
+    "id": "event-7a4cf76aee9b",
+    "run_id": "run-43d0179094b5",
+    "timestamp": "2026-08-07T17:52:59.572312+00:00",
+    "level": "info",
+    "kind": "save_batch",
+    "message": "Saved 30 validated finalists without changing existing DINKLY records.",
+    "data": {}
+  },
+  {
+    "id": "event-01e5e12fb60b",
+    "run_id": "run-43d0179094b5",
+    "timestamp": "2026-08-07T17:52:59.575890+00:00",
+    "level": "info",
+    "kind": "await_review",
+    "message": "Daily Concept Generator batch complete. Waiting for review.",
+    "data": {}
+  },
+  {
+    "id": "event-eebe9a535b52",
+    "run_id": "run-43d0179094b5",
+    "timestamp": "2026-08-07T17:52:59.587164+00:00",
+    "level": "info",
+    "kind": "complete",
+    "message": "Daily Concept Generator batch complete.",
+    "data": {
+      "batch_id": "batch-2026-08-07-01faa321",
+      "finalists": 30
+    }
+  },
+  {
+    "id": "event-d1c5eddcc736",
+    "run_id": "generation-63d4617c79c3",
+    "timestamp": "2026-08-07T17:53:05.201264+00:00",
+    "level": "info",
+    "kind": "selection",
+    "message": "Candidate A selected.",
+    "data": {}
+  },
+  {
+    "id": "event-babd6f806fe3",
+    "run_id": "generation-63d4617c79c3",
+    "timestamp": "2026-08-07T17:53:07.039043+00:00",
+    "level": "info",
+    "kind": "progress",
+    "message": "Comic approved by the human reviewer.",
+    "data": {
+      "stage": "human_review",
+      "status": "complete",
+      "event_name": "run_completed"
+    }
+  },
+  {
+    "id": "event-f27e25c2574b",
+    "run_id": "generation-63d4617c79c3",
+    "timestamp": "2026-08-07T17:53:07.052651+00:00",
+    "level": "info",
+    "kind": "approval",
+    "message": "Comic approved and saved to History.",
+    "data": {}
+  }
+]

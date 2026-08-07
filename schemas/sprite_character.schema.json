@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dinkly.local/schemas/sprite_character.schema.json",
+  "title": "DINKLY Sprite Character",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "id",
+    "name",
+    "slug",
+    "character_type",
+    "official_reference_paths",
+    "default_canvas_width",
+    "default_canvas_height",
+    "default_anchor_x",
+    "default_anchor_y",
+    "default_frame_rate",
+    "approved",
+    "created_at",
+    "updated_at"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 2
+    },
+    "name": {
+      "type": "string",
+      "minLength": 2
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "character_type": {
+      "enum": [
+        "dinko",
+        "dinka",
+        "shared",
+        "prop",
+        "effect"
+      ]
+    },
+    "official_reference_paths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "default_canvas_width": {
+      "type": "integer",
+      "minimum": 16,
+      "maximum": 4096
+    },
+    "default_canvas_height": {
+      "type": "integer",
+      "minimum": 16,
+      "maximum": 4096
+    },
+    "default_anchor_x": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "default_anchor_y": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "default_frame_rate": {
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "maximum": 60
+    },
+    "approved": {
+      "type": "boolean"
+    },
+    "locked": {
+      "type": "boolean"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    }
+  }
+}

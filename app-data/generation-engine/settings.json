@@ -1,0 +1,16 @@
+{
+  "provider": "google_gemini",
+  "default_selection": "automatic",
+  "candidate_count": 4,
+  "default_aspect_ratio": "1:1",
+  "default_resolution": "model_default",
+  "demo_mode": true,
+  "developer_mode": false,
+  "enable_paid_generation": true,
+  "maximum_cost_per_run": 1.0,
+  "daily_image_budget": 5.0,
+  "monthly_image_budget": 25.0,
+  "automatic_pro_usage": false,
+  "warn_at_percent": 80,
+  "hard_stop_at_percent": 100
+}

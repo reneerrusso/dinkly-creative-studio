@@ -1,0 +1,58 @@
+[
+  {
+    "concept_id": "content-9c3da288018b",
+    "batch_id": "batch-2026-08-07-51cc4bd9",
+    "format": "with_you",
+    "action": "approved",
+    "feedback_note": null,
+    "timestamp": "2026-08-07T16:50:39.832512Z"
+  },
+  {
+    "concept_id": "content-90c873a2f2c3",
+    "batch_id": "batch-2026-08-07-51cc4bd9",
+    "format": "with_you",
+    "action": "approved",
+    "feedback_note": null,
+    "timestamp": "2026-08-07T16:51:10.442704Z"
+  },
+  {
+    "concept_id": "content-906a07771dce",
+    "batch_id": "batch-2026-08-07-51cc4bd9",
+    "format": "with_you",
+    "action": "approved",
+    "feedback_note": null,
+    "timestamp": "2026-08-07T16:51:18.629785Z"
+  },
+  {
+    "concept_id": "content-e77c0c14a7bc",
+    "batch_id": "batch-2026-08-07-51cc4bd9",
+    "format": "with_you",
+    "action": "rejected",
+    "feedback_note": null,
+    "timestamp": "2026-08-07T16:54:55.175726Z"
+  },
+  {
+    "concept_id": "content-7af5534d5442",
+    "batch_id": "batch-2026-08-07-51cc4bd9",
+    "format": "with_you",
+    "action": "approved",
+    "feedback_note": null,
+    "timestamp": "2026-08-07T17:23:40.467049Z"
+  },
+  {
+    "concept_id": "content-8de0219cb6ad",
+    "batch_id": "batch-2026-08-07-51cc4bd9",
+    "format": "with_you",
+    "action": "approved",
+    "feedback_note": null,
+    "timestamp": "2026-08-07T17:23:46.021192Z"
+  },
+  {
+    "concept_id": "content-4eb186287abb",
+    "batch_id": "batch-2026-08-07-51cc4bd9",
+    "format": "with_you",
+    "action": "rejected",
+    "feedback_note": null,
+    "timestamp": "2026-08-07T17:38:29.762243Z"
+  }
+]

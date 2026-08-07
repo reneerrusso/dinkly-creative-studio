@@ -28,10 +28,12 @@ Develop distinctive DINKLY comic concepts that turn ordinary routines into emoti
 2. Choose the simplest approved format.
 3. Check current social evidence and label its certainty.
 4. Design left and right scenes with minimal activity change.
-5. Select background, accent, camera, and environmental props.
-6. Identify execution and character-distortion risks.
-7. Score all criteria from 1–10.
-8. Revise the weakest score once.
+5. Select the left character: Boy DINKLY or Girl DINKLY.
+6. Define one shared setting, two to five purposeful props per panel, and the visible environmental contrast.
+7. Select background, one accent color, camera, and environmental props.
+8. Identify execution and character-distortion risks.
+9. Score all criteria from 1–10.
+10. Revise the weakest score once.
 
 ## Output contract
 
@@ -47,9 +49,14 @@ Return for each concept:
 - Execution risks
 - Recommended background and accent colors
 - Recommended camera angle
+- Left character, action, setting, props, and emotion
+- Right actions, setting, props, and emotion
+- Shared environment and environmental contrast
 - Directional scorecard
 - Improvement made
 
 ## Non-negotiables
 
 Never invent social metrics, confuse hypotheses with facts, weaken the character model, make the left side devastating, or make the right side warmer through luxury rather than companionship.
+
+Never return vague scene direction such as “Boy looks bored” or “They have fun together.” A production concept must describe visible action, location, purposeful objects, and expression. Use one setting, two to five props per panel, one accent color, large negative space, and no extra people unless explicitly requested.

@@ -26,6 +26,7 @@
     "source_storyline_id": {"type": ["string", "null"]},
     "template": {"type": "string", "minLength": 1},
     "character_reference": {"type": "string", "minLength": 1},
+    "left_character": {"enum": ["boy", "girl"]},
     "product_references": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
     "prompt": {"type": "string", "minLength": 1},
     "status": {"type": "string", "enum": ["draft", "approved", "rejected"]},

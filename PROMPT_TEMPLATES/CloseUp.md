@@ -18,9 +18,7 @@ Use a single flat {{BACKGROUND_COLOR}} background and one subtle {{ACCENT_COLOR}
 
 ## TEXT
 
-Render only this approved text, exactly as supplied:
-
-{{TEXT}}
+{{TEXT_INSTRUCTION}}
 
 ## STYLE
 

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dinkly.local/schemas/competitor_concept_direction.schema.json",
+  "title": "Original DINKLY Concept Direction",
+  "type": "object",
+  "required": ["id", "source_learning_id", "signal", "source_pattern", "reusable_principle", "must_not_copy", "dinkly_emotional_angle", "title_pair", "left_character", "left_scene", "right_scene", "shared_setting", "purposeful_props", "pastel_background", "accent_color", "execution_risks", "why_original", "why_someone_may_share", "supporting_evidence", "confidence", "status", "created_at"],
+  "properties": {
+    "id": {"type": "string"},
+    "source_learning_id": {"type": "string"},
+    "signal": {"type": "string"},
+    "source_pattern": {"type": "string"},
+    "reusable_principle": {"type": "string"},
+    "must_not_copy": {"type": "string"},
+    "dinkly_emotional_angle": {"type": "string"},
+    "title_pair": {"type": "object", "required": ["left", "right"], "properties": {"left": {"type": "string"}, "right": {"type": "string"}}},
+    "left_character": {"enum": ["boy", "girl"]},
+    "left_scene": {"type": "string"},
+    "right_scene": {"type": "string"},
+    "shared_setting": {"type": "string"},
+    "purposeful_props": {"type": "array", "items": {"type": "string"}},
+    "pastel_background": {"type": "string"},
+    "accent_color": {"type": "string"},
+    "execution_risks": {"type": "array", "items": {"type": "string"}},
+    "why_original": {"type": "string"},
+    "why_someone_may_share": {"type": "string"},
+    "supporting_evidence": {"type": "array", "items": {"type": "string"}},
+    "confidence": {"enum": ["High", "Medium", "Low"]},
+    "status": {"type": "string"},
+    "concept_id": {"type": ["string", "null"]},
+    "created_at": {"type": "string"}
+  },
+  "additionalProperties": false
+}

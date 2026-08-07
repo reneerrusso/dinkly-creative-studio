@@ -1,0 +1,112 @@
+[
+  {
+    "id": "sprite-export-5530fd0b69b1",
+    "animation_id": "sprite-animation-c3a229ebb1f4",
+    "animation_name": "Dinko Blink — technical pipeline sample",
+    "character": "Dinko",
+    "export_format": "horizontal",
+    "path": "app-data/sprites/exports/sprite-export-5530fd0b69b1/dinko-technical-blink-pipeline-horizontal.png",
+    "metadata_path": "app-data/sprites/exports/sprite-export-5530fd0b69b1/dinko-technical-blink-pipeline.metadata.json",
+    "frame_width": 256,
+    "frame_height": 256,
+    "sheet_width": 780,
+    "sheet_height": 260,
+    "frame_count": 3,
+    "frame_rate": 8.0,
+    "loop_mode": "loop",
+    "padding": 2,
+    "anchor": {
+      "x": 0.5,
+      "y": 1.0
+    },
+    "frame_durations": [
+      125,
+      125,
+      125
+    ],
+    "cells": [
+      {
+        "index": 0,
+        "x": 0,
+        "y": 0,
+        "width": 260,
+        "height": 260
+      },
+      {
+        "index": 1,
+        "x": 260,
+        "y": 0,
+        "width": 260,
+        "height": 260
+      },
+      {
+        "index": 2,
+        "x": 520,
+        "y": 0,
+        "width": 260,
+        "height": 260
+      }
+    ],
+    "sha256": "cec0142071c3c739fb47640700be3f57d5badd5a416545d3a46afb12dfbc99bb",
+    "asset_url": "/sprite-assets/exports/sprite-export-5530fd0b69b1/dinko-technical-blink-pipeline-horizontal.png",
+    "metadata_url": "/sprite-assets/exports/sprite-export-5530fd0b69b1/dinko-technical-blink-pipeline.metadata.json",
+    "official_use": false,
+    "warning": "Draft export — not approved for production use",
+    "created_at": "2026-08-06T20:23:12.215312+00:00"
+  },
+  {
+    "id": "sprite-export-d7132f23ee9c",
+    "animation_id": "sprite-animation-43afd62527e1",
+    "animation_name": "Dinko Blink - technical pipeline sample v2",
+    "character": "Dinko",
+    "export_format": "horizontal",
+    "path": "app-data/sprites/exports/sprite-export-d7132f23ee9c/dinko-technical-blink-pipeline-v2-horizontal.png",
+    "metadata_path": "app-data/sprites/exports/sprite-export-d7132f23ee9c/dinko-technical-blink-pipeline-v2.metadata.json",
+    "frame_width": 256,
+    "frame_height": 256,
+    "sheet_width": 780,
+    "sheet_height": 260,
+    "frame_count": 3,
+    "frame_rate": 8.0,
+    "loop_mode": "loop",
+    "padding": 2,
+    "anchor": {
+      "x": 0.5,
+      "y": 1.0
+    },
+    "frame_durations": [
+      125,
+      125,
+      125
+    ],
+    "cells": [
+      {
+        "index": 0,
+        "x": 0,
+        "y": 0,
+        "width": 260,
+        "height": 260
+      },
+      {
+        "index": 1,
+        "x": 260,
+        "y": 0,
+        "width": 260,
+        "height": 260
+      },
+      {
+        "index": 2,
+        "x": 520,
+        "y": 0,
+        "width": 260,
+        "height": 260
+      }
+    ],
+    "sha256": "01ea24018af855a2f8c26a7b975822cb115b66631d52ea461959477e3b0c4186",
+    "asset_url": "/sprite-assets/exports/sprite-export-d7132f23ee9c/dinko-technical-blink-pipeline-v2-horizontal.png",
+    "metadata_url": "/sprite-assets/exports/sprite-export-d7132f23ee9c/dinko-technical-blink-pipeline-v2.metadata.json",
+    "official_use": false,
+    "warning": "Draft export — not approved for production use",
+    "created_at": "2026-08-06T20:26:23.611472+00:00"
+  }
+]

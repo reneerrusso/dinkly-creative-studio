@@ -1,0 +1,360 @@
+[
+  {
+    "id": "used-3daa6e83c6cc",
+    "concept": {
+      "id": "story-v2-saturdays",
+      "concept_id": "story-v2-saturdays",
+      "format": "x-with-you",
+      "title_left": "SATURDAYS",
+      "title_right": "SATURDAYS WITH YOU",
+      "left_character": "boy",
+      "left_action": "sleeps late in a rumpled bed near noon",
+      "left_setting": "a minimal bedroom at the start of a slow Saturday",
+      "left_props": [
+        "rumpled bed",
+        "small clock",
+        "one pillow on the floor",
+        "phone on nightstand"
+      ],
+      "left_emotion": "Sleepy and unmotivated, never cheerful.",
+      "right_characters": [
+        "boy",
+        "girl"
+      ],
+      "right_action": "walk side by side through a small farmers market, sharing the morning outing",
+      "right_setting": "a minimalist farmers market later in the same Saturday",
+      "right_props": [
+        "two coffee cups",
+        "small flower bundle",
+        "one produce stand",
+        "one striped canopy"
+      ],
+      "right_emotion": "Curious, energized, and warmly connected.",
+      "shared_environment": "One continuous pastel background, consistent character scale, rounded prop language, and matching weekend-day simplicity connect the two Saturday snapshots.",
+      "environmental_contrast": "Left is an inactive late bedroom. Right is a calm market outing with gentle movement and shared discovery.",
+      "background_color": "warm sand",
+      "accent_color": "muted teal",
+      "camera_angle": "medium-wide straight-on",
+      "execution_risks": [
+        "Treat this as a deliberate before-and-after weekend contrast",
+        "Keep the market to one stand with no crowd",
+        "Characters remain on the floor with no visible legs"
+      ],
+      "emotional_insight": "Sleepy and unmotivated, never cheerful. The same moment feels warmer together.",
+      "brand_sensitive": true,
+      "comics": []
+    },
+    "format": "with_you",
+    "date_generated": "2026-08-07T13:25:37.555383+00:00",
+    "date_approved": "2026-08-07T13:26:55.096094+00:00",
+    "date_used": "2026-08-07T13:26:55.096094+00:00",
+    "prompt_ids": [
+      "generation-prompt-1d057766f4b6"
+    ],
+    "generation_ids": [
+      "generation-cbd56ebce7aa"
+    ],
+    "published_post_ids": [],
+    "performance_data": {},
+    "feedback": [],
+    "source_batch": "generation-engine",
+    "source_trend": null,
+    "status": "used"
+  },
+  {
+    "id": "used-dd61e4c8c316",
+    "concept": {
+      "id": "story-v2-party",
+      "concept_id": "story-v2-party",
+      "format": "x-with-you",
+      "title_left": "PARTY",
+      "title_right": "PARTY WITH YOU",
+      "left_character": "boy",
+      "left_action": "stands alone near the snack table holding one red plastic cup",
+      "left_setting": "a small minimalist indoor party room",
+      "left_props": [
+        "red plastic cup",
+        "two deflated balloons",
+        "small snack table",
+        "plain bowl of chips",
+        "two pieces of confetti"
+      ],
+      "left_emotion": "Nervous, awkward, and unsure where to stand—never happy.",
+      "right_characters": [
+        "boy",
+        "girl"
+      ],
+      "right_action": "stand close together, each holding one red plastic cup, laughing and dancing while looking at each other",
+      "right_setting": "the same small minimalist indoor party room",
+      "right_props": [
+        "two red plastic cups",
+        "floating balloons",
+        "same snack table",
+        "small assortment of warm-neutral snacks",
+        "a few pieces of confetti"
+      ],
+      "right_emotion": "Lively, playful, and warm because they are together.",
+      "shared_environment": "Same small indoor party room with one snack table, balloons, the same floor, and the same camera view.",
+      "environmental_contrast": "Left has deflated balloons, sparse snacks, and stillness. Right has floating balloons, fuller snacks, confetti, and movement.",
+      "background_color": "pastel peach",
+      "accent_color": "muted red",
+      "camera_angle": "medium-wide straight-on",
+      "execution_risks": [
+        "No crowds or extra characters",
+        "Keep cups correctly scaled and do not create fingers",
+        "Keep the snack table secondary and both characters on the floor"
+      ],
+      "emotional_insight": "Nervous, awkward, and unsure where to stand—never happy. The same moment feels warmer together.",
+      "brand_sensitive": true,
+      "comics": []
+    },
+    "format": "with_you",
+    "date_generated": "2026-08-07T13:27:53.246205+00:00",
+    "date_approved": "2026-08-07T13:29:30.497893+00:00",
+    "date_used": "2026-08-07T13:29:30.497893+00:00",
+    "prompt_ids": [
+      "generation-prompt-d46fb1839b06"
+    ],
+    "generation_ids": [
+      "generation-2538f3dfc7ac"
+    ],
+    "published_post_ids": [],
+    "performance_data": {},
+    "feedback": [],
+    "source_batch": "generation-engine",
+    "source_trend": null,
+    "status": "used"
+  },
+  {
+    "id": "used-dd388b075dc9",
+    "concept": {
+      "id": "story-weekends-surprises",
+      "concept_id": "story-weekends-surprises",
+      "format": "x-with-you",
+      "title_left": "LITTLE SURPRISES",
+      "title_right": "LITTLE SURPRISES WITH YOU",
+      "left_character": "boy",
+      "left_action": "Thoughtfulness over spectacle",
+      "left_setting": "a simple rounded room",
+      "left_props": [],
+      "left_emotion": "Neutral, bored, or gently sad—never happy.",
+      "right_characters": [
+        "boy",
+        "girl"
+      ],
+      "right_action": "Thoughtfulness over spectacle",
+      "right_setting": "the same simple rounded room",
+      "right_props": [],
+      "right_emotion": "Warm and connected because the moment is shared.",
+      "shared_environment": "One flower or favorite snack, close-up",
+      "environmental_contrast": "The left remains quiet and sparse; the right adds warmth and gentle activity without changing the core location.",
+      "background_color": "warm cream",
+      "accent_color": "muted mustard",
+      "camera_angle": "medium straight-on",
+      "execution_risks": [],
+      "emotional_insight": "Thoughtfulness over spectacle",
+      "brand_sensitive": false,
+      "comics": []
+    },
+    "format": "with_you",
+    "date_generated": "2026-08-07T14:10:01.099645+00:00",
+    "date_approved": "2026-08-07T14:11:41.698049+00:00",
+    "date_used": "2026-08-07T14:11:41.698049+00:00",
+    "prompt_ids": [
+      "generation-prompt-c02221f28ca8"
+    ],
+    "generation_ids": [
+      "generation-25edda36387a"
+    ],
+    "published_post_ids": [],
+    "performance_data": {},
+    "feedback": [],
+    "source_batch": "generation-engine",
+    "source_trend": null,
+    "status": "used"
+  },
+  {
+    "id": "used-20aa715b22a9",
+    "concept": {
+      "id": "story-v2-beach-days",
+      "concept_id": "story-v2-beach-days",
+      "format": "x-with-you",
+      "title_left": "BEACH DAYS",
+      "title_right": "BEACH DAYS WITH YOU",
+      "left_character": "boy",
+      "left_action": "sits alone directly on one beach towel beneath an umbrella",
+      "left_setting": "a minimalist beach with a flat horizon",
+      "left_props": [
+        "beach towel",
+        "umbrella",
+        "one small snack bowl"
+      ],
+      "left_emotion": "Quiet and mildly bored, never happy.",
+      "right_characters": [
+        "boy",
+        "girl"
+      ],
+      "right_action": "sit close together on the same towel and look at each other",
+      "right_setting": "the same minimalist beach with the same flat horizon",
+      "right_props": [
+        "same beach towel",
+        "same umbrella",
+        "two drinks",
+        "two snack bags"
+      ],
+      "right_emotion": "Relaxed, affectionate, and content.",
+      "shared_environment": "Same shoreline, flat horizon, towel, umbrella, and wide camera view.",
+      "environmental_contrast": "Left has one snack and open space. Right keeps the same shade setup and adds two drinks, shared snacks, and closeness.",
+      "background_color": "powder blue",
+      "accent_color": "muted coral",
+      "camera_angle": "wide straight-on",
+      "execution_risks": [
+        "Bodies sit directly on the towel",
+        "No realistic water texture or complex horizon",
+        "Keep drinks and snack bags below face height"
+      ],
+      "emotional_insight": "Quiet and mildly bored, never happy. The same moment feels warmer together.",
+      "brand_sensitive": true,
+      "comics": []
+    },
+    "format": "with_you",
+    "date_generated": "2026-08-07T14:59:43.082451+00:00",
+    "date_approved": "2026-08-07T15:01:01.027331+00:00",
+    "date_used": "2026-08-07T15:01:01.027331+00:00",
+    "prompt_ids": [
+      "generation-prompt-649610661533"
+    ],
+    "generation_ids": [
+      "generation-ee3abbe0e061"
+    ],
+    "published_post_ids": [],
+    "performance_data": {},
+    "feedback": [],
+    "source_batch": "generation-engine",
+    "source_trend": null,
+    "status": "used"
+  },
+  {
+    "id": "used-eaa16412ef07",
+    "concept": {
+      "id": "story-v2-party",
+      "concept_id": "story-v2-party",
+      "format": "x-with-you",
+      "title_left": "PARTY",
+      "title_right": "PARTY WITH YOU",
+      "left_character": "boy",
+      "left_action": "stands alone near the snack table holding one red plastic cup",
+      "left_setting": "a small minimalist indoor party room",
+      "left_props": [
+        "red plastic cup",
+        "two deflated balloons",
+        "small snack table",
+        "plain bowl of chips",
+        "two pieces of confetti"
+      ],
+      "left_emotion": "Nervous, awkward, and unsure where to stand—never happy.",
+      "right_characters": [
+        "boy",
+        "girl"
+      ],
+      "right_action": "stand close together, each holding one red plastic cup, laughing and dancing while looking at each other",
+      "right_setting": "the same small minimalist indoor party room",
+      "right_props": [
+        "two red plastic cups",
+        "floating balloons",
+        "same snack table",
+        "small assortment of warm-neutral snacks",
+        "a few pieces of confetti"
+      ],
+      "right_emotion": "Lively, playful, and warm because they are together.",
+      "shared_environment": "Same small indoor party room with one snack table, balloons, the same floor, and the same camera view.",
+      "environmental_contrast": "Left has deflated balloons, sparse snacks, and stillness. Right has floating balloons, fuller snacks, confetti, and movement.",
+      "background_color": "pastel peach",
+      "accent_color": "muted red",
+      "camera_angle": "medium-wide straight-on",
+      "execution_risks": [
+        "No crowds or extra characters",
+        "Keep cups correctly scaled and do not create fingers",
+        "Keep the snack table secondary and both characters on the floor"
+      ],
+      "emotional_insight": "Nervous, awkward, and unsure where to stand—never happy. The same moment feels warmer together.",
+      "brand_sensitive": true,
+      "comics": []
+    },
+    "format": "with_you",
+    "date_generated": "2026-08-07T16:05:00.846619+00:00",
+    "date_approved": "2026-08-07T16:52:24.024321+00:00",
+    "date_used": "2026-08-07T16:52:24.024321+00:00",
+    "prompt_ids": [
+      "generation-prompt-3eccabae3f12"
+    ],
+    "generation_ids": [
+      "generation-96e3ad209916"
+    ],
+    "published_post_ids": [],
+    "performance_data": {},
+    "feedback": [],
+    "source_batch": "generation-engine",
+    "source_trend": null,
+    "status": "used"
+  },
+  {
+    "id": "used-8b4d21e55767",
+    "concept": {
+      "id": "story-concept-content-7af5534d5442",
+      "concept_id": "story-concept-content-7af5534d5442",
+      "format": "x-with-you",
+      "title_left": "Missing Piece",
+      "title_right": "Found Together",
+      "left_character": "boy",
+      "left_action": "Looks down at an unfinished floor puzzle and holds one loose piece.",
+      "left_setting": "Pastel library reading nook",
+      "left_props": [
+        "unfinished floor puzzle",
+        "loose puzzle piece",
+        "round floor cushion"
+      ],
+      "left_emotion": "Frustrated and quiet",
+      "right_characters": [
+        "boy",
+        "girl"
+      ],
+      "right_action": "Crawls beside him and checks beneath the cushion for the missing piece.",
+      "right_setting": "Same pastel library reading nook",
+      "right_props": [
+        "unfinished floor puzzle",
+        "round floor cushion",
+        "low book basket"
+      ],
+      "right_emotion": "Patient and helpful",
+      "shared_environment": "One continuous library nook with mint walls, peach shelves, a lavender rug, and a sunlit window.",
+      "environmental_contrast": "An incomplete picture becomes a joint search.",
+      "background_color": "#D8F0E7",
+      "accent_color": "#E9899A",
+      "camera_angle": "Eye-level overhead-leaning view",
+      "execution_risks": [
+        "Show a clearly incomplete puzzle without clutter.",
+        "Use one readable search action for each character."
+      ],
+      "emotional_insight": "Help does not need to solve everything to make frustration smaller.",
+      "brand_sensitive": false,
+      "comics": []
+    },
+    "format": "with_you",
+    "date_generated": "2026-08-07T17:39:22.675551+00:00",
+    "date_approved": "2026-08-07T17:53:07.037769+00:00",
+    "date_used": "2026-08-07T17:53:07.037769+00:00",
+    "prompt_ids": [
+      "generation-prompt-211488e4ced0"
+    ],
+    "generation_ids": [
+      "generation-63d4617c79c3"
+    ],
+    "published_post_ids": [],
+    "performance_data": {},
+    "feedback": [],
+    "source_batch": "generation-engine",
+    "source_trend": null,
+    "status": "used"
+  }
+]
